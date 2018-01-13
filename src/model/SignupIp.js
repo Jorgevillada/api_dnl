@@ -80,7 +80,7 @@
    * @member {module:model/SignupIp.MaskEnum} mask
    * @default MaskEnum.32
    */
-  exports.prototype['mask'] = MaskEnum.32;
+  exports.prototype['mask'] = 32;
   /**
    * @member {String} ip
    */
