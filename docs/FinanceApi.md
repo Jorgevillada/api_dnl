@@ -856,8 +856,8 @@ var opts = {
   'clientPaymentId': 56, // Number | 
   'paymentType': "paymentType_example", // String | 
   'updateBy': "updateBy_example", // String | 
-  'amountGt': 3.4, // Number | 
-  'amountLt': 3.4, // Number | 
+  'amountGt': 8.14, // Number | 
+  'amountLt': 8.14, // Number | 
   'paymentTimeGt': "paymentTimeGt_example", // String | 
   'paymentTimeLt': "paymentTimeLt_example", // String | 
   'receivingTimeGt': "receivingTimeGt_example", // String | 
@@ -1779,8 +1779,8 @@ var opts = {
   'clientPaymentId': 56, // Number | 
   'paymentType': "paymentType_example", // String | 
   'updateBy': "updateBy_example", // String | 
-  'amountGt': 3.4, // Number | 
-  'amountLt': 3.4, // Number | 
+  'amountGt': 8.14, // Number | 
+  'amountLt': 8.14, // Number | 
   'paymentTimeGt': "paymentTimeGt_example", // String | 
   'paymentTimeLt': "paymentTimeLt_example", // String | 
   'receivingTimeGt': "receivingTimeGt_example", // String | 
@@ -2022,8 +2022,8 @@ var opts = {
   'clientPaymentId': 56, // Number | 
   'paymentType': "paymentType_example", // String | 
   'updateBy': "updateBy_example", // String | 
-  'amountGt': 3.4, // Number | 
-  'amountLt': 3.4, // Number | 
+  'amountGt': 8.14, // Number | 
+  'amountLt': 8.14, // Number | 
   'paymentTimeGt': "paymentTimeGt_example", // String | 
   'paymentTimeLt': "paymentTimeLt_example", // String | 
   'receivingTimeGt': "receivingTimeGt_example", // String | 

@@ -478,8 +478,8 @@ var opts = {
   'carrierTemplateId': 56, // Number | 
   'clientIdIn': "clientIdIn_example", // String | 
   'company': "company_example", // String | 
-  'creditLimitGt': 3.4, // Number | 
-  'creditLimitLt': 3.4, // Number | 
+  'creditLimitGt': 8.14, // Number | 
+  'creditLimitLt': 8.14, // Number | 
   'egressCount': 56, // Number | 
   'ingressCount': 56, // Number | 
   'isActive': true, // Boolean | 
@@ -561,8 +561,8 @@ var opts = {
   'carrierTemplateId': 56, // Number | 
   'clientIdIn': "clientIdIn_example", // String | 
   'company': "company_example", // String | 
-  'creditLimitGt': 3.4, // Number | 
-  'creditLimitLt': 3.4, // Number | 
+  'creditLimitGt': 8.14, // Number | 
+  'creditLimitLt': 8.14, // Number | 
   'egressCount': 56, // Number | 
   'ingressCount': 56, // Number | 
   'isActive': true, // Boolean | 
@@ -1888,8 +1888,8 @@ var opts = {
   'carrierTemplateId': 56, // Number | 
   'clientIdIn': "clientIdIn_example", // String | 
   'company': "company_example", // String | 
-  'creditLimitGt': 3.4, // Number | 
-  'creditLimitLt': 3.4, // Number | 
+  'creditLimitGt': 8.14, // Number | 
+  'creditLimitLt': 8.14, // Number | 
   'egressCount': 56, // Number | 
   'ingressCount': 56, // Number | 
   'isActive': true, // Boolean | 
@@ -1971,8 +1971,8 @@ var opts = {
   'carrierTemplateId': 56, // Number | 
   'clientIdIn': "clientIdIn_example", // String | 
   'company': "company_example", // String | 
-  'creditLimitGt': 3.4, // Number | 
-  'creditLimitLt': 3.4, // Number | 
+  'creditLimitGt': 8.14, // Number | 
+  'creditLimitLt': 8.14, // Number | 
   'egressCount': 56, // Number | 
   'ingressCount': 56, // Number | 
   'isActive': true, // Boolean | 

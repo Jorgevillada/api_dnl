@@ -91,8 +91,8 @@ var opts = {
   'carrierTemplateId': 56, // Number | 
   'clientIdIn': "clientIdIn_example", // String | 
   'company': "company_example", // String | 
-  'creditLimitGt': 3.4, // Number | 
-  'creditLimitLt': 3.4, // Number | 
+  'creditLimitGt': 8.14, // Number | 
+  'creditLimitLt': 8.14, // Number | 
   'egressCount': 56, // Number | 
   'ingressCount': 56, // Number | 
   'isActive': true, // Boolean | 
@@ -174,8 +174,8 @@ var opts = {
   'carrierTemplateId': 56, // Number | 
   'clientIdIn': "clientIdIn_example", // String | 
   'company': "company_example", // String | 
-  'creditLimitGt': 3.4, // Number | 
-  'creditLimitLt': 3.4, // Number | 
+  'creditLimitGt': 8.14, // Number | 
+  'creditLimitLt': 8.14, // Number | 
   'egressCount': 56, // Number | 
   'ingressCount': 56, // Number | 
   'isActive': true, // Boolean | 
@@ -2245,10 +2245,10 @@ var opts = {
   'callLimitLt': 56, // Number | 
   'cpsLimitGt': 56, // Number | 
   'cpsLimitLt': 56, // Number | 
-  'creditLimitGt': 3.4, // Number | 
-  'creditLimitLt': 3.4, // Number | 
-  'profitMarginGt': 3.4, // Number | 
-  'profitMarginLt': 3.4, // Number | 
+  'creditLimitGt': 8.14, // Number | 
+  'creditLimitLt': 8.14, // Number | 
+  'profitMarginGt': 8.14, // Number | 
+  'profitMarginLt': 8.14, // Number | 
   'updateAtGt': "updateAtGt_example", // String | 
   'updateAtLt': "updateAtLt_example" // String | 
 };
@@ -2534,7 +2534,7 @@ var opts = {
   'orderDir': "orderDir_example", // String | 
   'clientId': 56, // Number | 
   'name': "name_example", // String | 
-  'overDueGt': 3.4, // Number | 
+  'overDueGt': 8.14, // Number | 
   'overDueIsnull': true // Boolean | 
 };
 
