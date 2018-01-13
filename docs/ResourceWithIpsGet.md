@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**trunkId** | **String** |  | [optional] 
-**routeStrategyId** | **String** |  | [optional] 
-**ip** | [**[ResourceIp]**](ResourceIp.md) |  | [optional] 
 **rateTableId** | **String** |  | [optional] 
+**ip** | [**[ResourceIp]**](ResourceIp.md) |  | [optional] 
+**routeStrategyId** | **String** |  | [optional] 
+**trunkId** | **Number** |  | [optional] 
 
 

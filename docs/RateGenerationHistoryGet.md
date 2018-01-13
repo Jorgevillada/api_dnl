@@ -3,16 +3,16 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**createOn** | **Date** |  | [optional] 
-**rateTableType** | **Number** |  | [optional] 
-**rateCount** | **Number** |  | [optional] 
-**progress** | **String** |  | [optional] 
-**id** | **Number** |  | [optional] 
-**isApplied** | **Boolean** |  | [optional] 
-**createBy** | **String** |  | [optional] 
-**processingTime** | **Number** |  | [optional] 
 **status** | **String** |  | [optional] [default to &#39;initial&#39;]
+**id** | **Number** |  | [optional] 
 **finishedTime** | **Date** |  | [optional] 
+**processingTime** | **Number** |  | [optional] 
+**rateTableType** | **Number** |  | [optional] 
+**progress** | **String** |  | [optional] 
+**rateCount** | **Number** |  | [optional] 
+**isApplied** | **Boolean** |  | [optional] 
+**createOn** | **Date** |  | [optional] 
+**createBy** | **String** |  | [optional] 
 **rateGenerationTemplateId** | **Number** |  | [optional] 
 
 
@@ -22,11 +22,11 @@ Name | Type | Description | Notes
 
 * `initial` (value: `"initial"`)
 
-* `error` (value: `"error"`)
+* `in process` (value: `"in process"`)
 
 * `finished` (value: `"finished"`)
 
-* `in process` (value: `"in process"`)
+* `error` (value: `"error"`)
 
 
 

@@ -3,31 +3,33 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**strategy** | **String** |  | [optional] [default to &#39;By Percentage&#39;]
-**maxAcd** | **Number** |  | [optional] 
-**minAcd** | **Number** |  | [optional] 
-**timeProfileId** | **Number** |  | [optional] 
-**maxAsr** | **Number** |  | [optional] 
-**limitPrice** | **Number** |  | [optional] 
-**minAloc** | **Number** |  | [optional] 
-**minLen** | **Number** |  | [optional] 
-**minPdd** | **Number** |  | [optional] 
-**maxAbr** | **Number** |  | [optional] 
-**updateBy** | **String** |  | [optional] 
-**codeName** | **String** |  | [optional] 
-**maxAloc** | **Number** |  | [optional] 
-**did** | **String** |  | [optional] 
-**itemId** | **Number** |  | [optional] 
-**minAsr** | **Number** |  | [optional] 
-**updateAt** | **Date** |  | [optional] 
-**product** | **String** |  | [optional] 
-**maxLen** | **Number** |  | [optional] 
-**alias** | **String** |  | [optional] 
 **maxPdd** | **Number** |  | [optional] 
-**minAbr** | **Number** |  | [optional] 
+**hasTrunkId** | **Number** |  | [optional] 
+**updateBy** | **String** |  | [optional] 
+**strategy** | **String** |  | [optional] [default to &#39;By Percentage&#39;]
+**product** | **String** |  | [optional] 
+**itemId** | **Number** |  | [optional] 
+**maxAcd** | **Number** |  | [optional] 
+**minAloc** | **Number** |  | [optional] 
+**minAcd** | **Number** |  | [optional] 
+**maxAloc** | **Number** |  | [optional] 
+**minPdd** | **Number** |  | [optional] 
+**timeProfileId** | **Number** |  | [optional] 
+**timeProfileName** | **String** |  | [optional] 
+**updateAt** | **Date** |  | [optional] 
+**codeName** | **String** |  | [optional] 
 **trunks** | [**[ProductsItemsResourceGet]**](ProductsItemsResourceGet.md) |  | [optional] 
-**staticRouteId** | **Number** |  | [optional] 
+**did** | **String** |  | [optional] 
+**alias** | **String** |  | [optional] 
 **digits** | **String** |  | [optional] 
+**staticRouteId** | **Number** |  | [optional] 
+**minAbr** | **Number** |  | [optional] 
+**maxLen** | **Number** |  | [optional] 
+**limitPrice** | **Number** |  | [optional] 
+**minLen** | **Number** |  | [optional] 
+**minAsr** | **Number** |  | [optional] 
+**maxAsr** | **Number** |  | [optional] 
+**maxAbr** | **Number** |  | [optional] 
 
 
 <a name="StrategyEnum"></a>
@@ -36,9 +38,9 @@ Name | Type | Description | Notes
 
 * `By Percentage` (value: `"By Percentage"`)
 
-* `Round-Robin` (value: `"Round-Robin"`)
-
 * `Top-Down` (value: `"Top-Down"`)
+
+* `Round-Robin` (value: `"Round-Robin"`)
 
 
 

@@ -3,11 +3,11 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**callTime** | **Date** |  | [optional] 
-**ingressHost** | **String** |  | [optional] 
-**ani** | **String** |  | [optional] 
 **server** | **String** |  | [optional] 
 **dnis** | **String** |  | [optional] 
+**callTime** | **Date** |  | [optional] 
 **ingressTrunk** | **Number** |  | [optional] 
+**ingressHost** | **String** |  | [optional] 
+**ani** | **String** |  | [optional] 
 
 

@@ -3,10 +3,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** |  | [optional] 
+**company** | **String** |  | [optional] 
 **clientId** | **Number** |  | [optional] 
 **isActive** | **Boolean** |  | [optional] 
-**company** | **String** |  | [optional] 
+**name** | **String** |  | [optional] 
 **user** | [**UserMin**](UserMin.md) |  | [optional] 
 
 

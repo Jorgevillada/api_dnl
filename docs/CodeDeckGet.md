@@ -3,10 +3,11 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** |  | [optional] 
+**usageCount** | **Number** |  | [optional] 
+**updateBy** | **String** |  | [optional] 
 **codeDeckId** | **Number** |  | [optional] 
 **updateOn** | **Date** |  | [optional] 
-**updateBy** | **String** |  | [optional] 
-**usageCount** | **Number** |  | [optional] 
+**codeCount** | **Number** |  | [optional] 
+**name** | **String** |  | [optional] 
 
 

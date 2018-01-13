@@ -1,6 +1,6 @@
 # DnlApi.ProductApi
 
-All URIs are relative to *https://148.251.91.143:8000/v1*
+All URIs are relative to *https://198.100.149.164:8000/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -122,7 +122,7 @@ Name | Type | Description  | Notes
 
 <a name="productIdGet"></a>
 # **productIdGet**
-> InlineResponse200132 productIdGet(id)
+> InlineResponse200150 productIdGet(id)
 
 
 
@@ -162,7 +162,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200132**](InlineResponse200132.md)
+[**InlineResponse200150**](InlineResponse200150.md)
 
 ### Authorization
 
@@ -175,7 +175,7 @@ Name | Type | Description  | Notes
 
 <a name="productIdPatch"></a>
 # **productIdPatch**
-> InlineResponse200132 productIdPatch(id, opts)
+> InlineResponse200150 productIdPatch(id, opts)
 
 
 
@@ -219,7 +219,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200132**](InlineResponse200132.md)
+[**InlineResponse200150**](InlineResponse200150.md)
 
 ### Authorization
 
@@ -285,7 +285,7 @@ Name | Type | Description  | Notes
 
 <a name="productListGet"></a>
 # **productListGet**
-> InlineResponse200133 productListGet(opts)
+> InlineResponse200151 productListGet(opts)
 
 
 
@@ -315,6 +315,7 @@ var opts = {
   'routePlanId': 56, // Number | 
   'type': "type_example", // String | 
   'updateBy': "updateBy_example", // String | 
+  'idIn': "idIn_example", // String | 
   'updateAtGt': "updateAtGt_example", // String | 
   'updateAtLt': "updateAtLt_example" // String | 
 };
@@ -343,12 +344,13 @@ Name | Type | Description  | Notes
  **routePlanId** | **Number**|  | [optional] 
  **type** | **String**|  | [optional] 
  **updateBy** | **String**|  | [optional] 
+ **idIn** | **String**|  | [optional] 
  **updateAtGt** | **String**|  | [optional] 
  **updateAtLt** | **String**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse200133**](InlineResponse200133.md)
+[**InlineResponse200151**](InlineResponse200151.md)
 
 ### Authorization
 
@@ -361,7 +363,7 @@ Name | Type | Description  | Notes
 
 <a name="productPublicGet"></a>
 # **productPublicGet**
-> InlineResponse200134 productPublicGet(opts)
+> InlineResponse200152 productPublicGet(opts)
 
 
 
@@ -412,7 +414,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200134**](InlineResponse200134.md)
+[**InlineResponse200152**](InlineResponse200152.md)
 
 ### Authorization
 

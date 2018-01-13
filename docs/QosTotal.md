@@ -3,15 +3,15 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**call** | **Number** |  | [optional] 
-**cps** | **Number** |  | [optional] 
-**serverPort** | **Number** |  | [optional] 
-**ingressCps** | **Number** |  | [optional] 
-**egressChannels** | **Number** |  | [optional] 
-**egressCps** | **Number** |  | [optional] 
-**ingressChannels** | **Number** |  | [optional] 
-**serverIp** | **String** |  | [optional] 
 **reportTime** | **Date** |  | [optional] 
+**ingressCps** | **Number** |  | [optional] 
+**serverPort** | **Number** |  | [optional] 
 **channels** | **Number** |  | [optional] 
+**egressCps** | **Number** |  | [optional] 
+**cps** | **Number** |  | [optional] 
+**egressChannels** | **Number** |  | [optional] 
+**call** | **Number** |  | [optional] 
+**serverIp** | **String** |  | [optional] 
+**ingressChannels** | **Number** |  | [optional] 
 
 

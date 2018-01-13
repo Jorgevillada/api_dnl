@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**InlineResponse20075Payload**](InlineResponse20075Payload.md) |  | [optional] 
+**payload** | [**SystemParameterSystemSetting**](SystemParameterSystemSetting.md) |  | [optional] 
 
 

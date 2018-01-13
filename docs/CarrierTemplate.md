@@ -3,87 +3,98 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**showCodeNameSummary** | **Boolean** |  | [optional] 
-**includeTax** | **Boolean** |  | [optional] 
-**sendInvoiceAsLink** | **Boolean** |  | [optional] 
-**notifyClientBalanceType** | **Number** |  | [optional] 
-**isShowCodeName** | **Boolean** |  | [optional] 
-**mode** | **String** |  | [optional] [default to &#39;prepay&#39;]
-**dailyCdrGeneration** | **Boolean** |  | [optional] 
-**lowBalanceConfig** | [**CarrierTemplateLowBalConfig**](CarrierTemplateLowBalConfig.md) |  | [optional] 
-**autoSummaryGroupBy** | **String** |  | [optional] [default to &#39;By Country&#39;]
-**autoSendZone** | **String** |  | [optional] 
-**showCountrySummary** | **Boolean** |  | [optional] 
-**isShowTotalTrunk** | **Boolean** |  | [optional] 
-**showPaymentSummary** | **Boolean** |  | [optional] 
 **templateName** | **String** |  | [optional] 
-**profitMargin** | **Number** |  | 
-**timeZone** | **String** |  | [optional] 
-**isShowCountry** | **Boolean** |  | [optional] 
-**showCodeSummary** | **Boolean** |  | [optional] 
-**autoSummaryNotZero** | **Number** |  | [optional] 
-**dailyCdrGenerationZone** | **String** |  | [optional] 
-**autoSummaryHour** | **Number** |  | [optional] 
-**showAccountSummary** | **Boolean** |  | [optional] 
-**paymentTerm** | **String** |  | [optional] 
-**format** | **String** |  | [optional] [default to &#39;PDF&#39;]
-**creditLimit** | **Number** |  | [optional] 
-**autoSummaryPeriod** | **Number** |  | [optional] 
-**isUnlimited** | **Boolean** |  | [optional] 
-**isDailyBalanceNotification** | **Boolean** |  | [optional] 
-**isShortDurationCallSurchargeDetail** | **Boolean** |  | [optional] 
-**testCredit** | **Number** |  | [optional] 
-**callLimit** | **Number** |  | [optional] 
-**isSendTrunkUpdate** | **Boolean** |  | [optional] 
 **profitType** | **String** |  | [optional] [default to &#39;percentage&#39;]
-**invoiceZone** | **String** |  | [optional] 
-**showDetailByTrunk** | **Boolean** |  | [optional] 
-**usageDetailFields** | **String** |  | [optional] 
-**cdrFormat** | **String** |  | [optional] [default to &#39;Excel&#39;]
-**autoSendInvoice** | **Boolean** |  | [optional] 
-**rateValue** | **String** |  | [optional] [default to &#39;Actual Value&#39;]
-**nonZeroInvoiceOnly** | **Boolean** |  | [optional] 
-**includeShortCallCharge** | **Boolean** |  | [optional] 
 **sccCharge** | **Number** |  | [optional] 
-**showTrunkSummary** | **Boolean** |  | [optional] 
-**isAutoSummary** | **Boolean** |  | [optional] 
-**isBreakdownByRateTable** | **Boolean** |  | [optional] 
-**showJurisdictionDetail** | **Boolean** |  | [optional] 
-**sccBelow** | **Number** |  | [optional] 
-**cpsLimit** | **Number** |  | [optional] 
-**sccPercent** | **Number** |  | [optional] 
-**decimal** | **Number** |  | [optional] 
-**showDailyUsage** | **Boolean** |  | [optional] 
-**sccType** | **String** |  | [optional] [default to &#39;meeting the short duration defined neighboring&#39;]
-**attachCdrsList** | **Boolean** |  | [optional] 
-**isShowDailyUsage** | **Boolean** |  | [optional] 
-**autoDailyBalanceRecipient** | **String** |  | [optional] [default to &#39;Partner Billing Contact&#39;]
-**currency** | **String** |  | [optional] 
-**inlcudeCdrInEmail** | **Boolean** |  | [optional] 
+**notifyClientBalanceType** | **Number** |  | [optional] 
+**mode** | **String** |  | [optional] [default to &#39;prepay&#39;]
 **paymentReceivedNotice** | **Boolean** |  | [optional] 
+**testCredit** | **Number** |  | [optional] 
+**autoSummaryNotZero** | **Number** |  | [optional] 
+**currency** | **String** |  | [optional] 
+**isDailyBalanceNotification** | **Boolean** |  | [optional] 
+**lowBalanceConfig** | [**CarrierTemplateLowBalConfig**](CarrierTemplateLowBalConfig.md) |  | [optional] 
+**creditLimit** | **Number** |  | [optional] 
+**sccBelow** | **Number** |  | [optional] 
+**tax** | **Number** |  | [optional] 
+**unlimitedCredit** | **Boolean** |  | [optional] 
+**showAccountSummary** | **Boolean** |  | [optional] 
+**autoSendInvoice** | **Boolean** |  | [optional] 
 **isAutoBalance** | **Boolean** |  | [optional] 
+**isShortDurationCallSurchargeDetail** | **Boolean** |  | [optional] 
+**profitMargin** | **Number** |  | [optional] 
+**isShowDailyUsage** | **Boolean** |  | [optional] 
+**inlcudeCdrInEmail** | **Boolean** |  | [optional] 
+**sendInvoiceAsLink** | **Boolean** |  | [optional] 
+**timeZone** | **String** |  | [optional] 
+**dailyCdrGenerationZone** | **String** |  | [optional] 
+**autoDailyBalanceRecipient** | **String** |  | [optional] [default to &#39;Partner Billing Contact&#39;]
+**nonZeroInvoiceOnly** | **Boolean** |  | [optional] 
+**isBreakdownByRateTable** | **Boolean** |  | [optional] 
+**showCountrySummary** | **Boolean** |  | [optional] 
+**autoSummaryPeriod** | **Number** |  | [optional] 
+**format** | **String** |  | [optional] [default to &#39;PDF&#39;]
+**isShowCountry** | **Boolean** |  | [optional] 
+**sccType** | **String** |  | [optional] [default to &#39;meeting the short duration defined neighboring&#39;]
+**autoSummaryHour** | **Number** |  | [optional] 
+**showTrunkSummary** | **Boolean** |  | [optional] 
+**isSendTrunkUpdate** | **Boolean** |  | [optional] 
+**cpsLimit** | **Number** |  | [optional] 
+**showCodeSummary** | **Boolean** |  | [optional] 
+**decimal** | **Number** |  | [optional] 
+**autoSendZone** | **String** |  | [optional] 
+**usageDetailFields** | **String** |  | [optional] 
+**autoSummaryGroupBy** | **String** |  | [optional] [default to &#39;By Country&#39;]
+**showDailyUsage** | **Boolean** |  | [optional] 
+**isShowTotalTrunk** | **Boolean** |  | [optional] 
+**showJurisdictionDetail** | **Boolean** |  | [optional] 
+**cdrFormat** | **String** |  | [optional] [default to &#39;Excel&#39;]
+**paymentTerm** | **String** |  | [optional] 
+**showPaymentSummary** | **Boolean** |  | [optional] 
+**isAutoSummary** | **Boolean** |  | [optional] 
+**rateValue** | **String** |  | [optional] [default to &#39;null&#39;]
+**sccPercent** | **Number** |  | [optional] 
+**showDetailByTrunk** | **Boolean** |  | [optional] 
+**isShowCodeName** | **Boolean** |  | [optional] 
+**includeTax** | **Boolean** |  | [optional] 
+**includeShortCallCharge** | **Boolean** |  | [optional] 
+**callLimit** | **Number** |  | [optional] 
+**invoiceZone** | **String** |  | [optional] 
+**dailyCdrGeneration** | **Boolean** |  | [optional] 
+**showCodeNameSummary** | **Boolean** |  | [optional] 
+
+
+<a name="ProfitTypeEnum"></a>
+## Enum: ProfitTypeEnum
+
+
+* `percentage` (value: `"percentage"`)
+
+* `value` (value: `"value"`)
+
+
 
 
 <a name="ModeEnum"></a>
 ## Enum: ModeEnum
 
 
-* `postpay` (value: `"postpay"`)
-
 * `prepay` (value: `"prepay"`)
 
+* `postpay` (value: `"postpay"`)
 
 
 
-<a name="AutoSummaryGroupByEnum"></a>
-## Enum: AutoSummaryGroupByEnum
+
+<a name="AutoDailyBalanceRecipientEnum"></a>
+## Enum: AutoDailyBalanceRecipientEnum
 
 
-* `Country` (value: `"By Country"`)
+* `Partner Billing Contact` (value: `"Partner Billing Contact"`)
 
-* `Code Name` (value: `"By Code Name"`)
+* `Owner Billing Contact` (value: `"Owner Billing Contact"`)
 
-* `Code` (value: `"By Code"`)
+* `Both` (value: `"Both"`)
 
 
 
@@ -101,43 +112,6 @@ Name | Type | Description | Notes
 
 
 
-<a name="ProfitTypeEnum"></a>
-## Enum: ProfitTypeEnum
-
-
-* `value` (value: `"value"`)
-
-* `percentage` (value: `"percentage"`)
-
-
-
-
-<a name="CdrFormatEnum"></a>
-## Enum: CdrFormatEnum
-
-
-* `Excel` (value: `"Excel"`)
-
-* `tar.gz` (value: `"tar.gz"`)
-
-* `CSV` (value: `"CSV"`)
-
-* `zip` (value: `"zip"`)
-
-
-
-
-<a name="RateValueEnum"></a>
-## Enum: RateValueEnum
-
-
-* `Average Value` (value: `"Average Value"`)
-
-* `Actual Value` (value: `"Actual Value"`)
-
-
-
-
 <a name="SccTypeEnum"></a>
 ## Enum: SccTypeEnum
 
@@ -149,15 +123,45 @@ Name | Type | Description | Notes
 
 
 
-<a name="AutoDailyBalanceRecipientEnum"></a>
-## Enum: AutoDailyBalanceRecipientEnum
+<a name="AutoSummaryGroupByEnum"></a>
+## Enum: AutoSummaryGroupByEnum
 
 
-* `Owner Billing Contact` (value: `"Owner Billing Contact"`)
+* `Country` (value: `"By Country"`)
 
-* `Both` (value: `"Both"`)
+* `Code Name` (value: `"By Code Name"`)
 
-* `Partner Billing Contact` (value: `"Partner Billing Contact"`)
+* `Code` (value: `"By Code"`)
+
+
+
+
+<a name="CdrFormatEnum"></a>
+## Enum: CdrFormatEnum
+
+
+* `Excel` (value: `"Excel"`)
+
+* `CSV` (value: `"CSV"`)
+
+* `zip` (value: `"zip"`)
+
+* `tar.gz` (value: `"tar.gz"`)
+
+
+
+
+<a name="RateValueEnum"></a>
+## Enum: RateValueEnum
+
+
+* `null` (value: `"null"`)
+
+* `Actual Value` (value: `"Actual Value"`)
+
+* `Average Value` (value: `"Average Value"`)
+
+* `undefined` (value: `"undefined"`)
 
 
 

@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**ClientPortal**](ClientPortal.md) |  | [optional] 
+**payload** | [**InlineResponse20030Payload**](InlineResponse20030Payload.md) |  | [optional] 
 
 

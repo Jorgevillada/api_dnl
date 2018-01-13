@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**ResourceTranslationRefGet**](ResourceTranslationRefGet.md) |  | [optional] 
+**payload** | [**InlineResponse200194Payload**](InlineResponse200194Payload.md) |  | [optional] 
 
 

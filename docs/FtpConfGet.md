@@ -3,41 +3,28 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** |  | [optional] 
-**includeAllIngress** | **Boolean** |  | [optional] 
-**includeFields** | **[String]** |  | [optional] 
-**origReturnCode** | **[Number]** |  | [optional] 
-**ingressTrunks** | **[Number]** |  | [optional] 
-**termReturnCode** | **[Number]** |  | [optional] 
+**compression** | **String** |  | [optional] [default to &#39;gz&#39;]
 **nonZero** | **Boolean** |  | [optional] 
 **ftpServerPort** | **String** |  | [optional] 
-**fileBreakdown** | **String** |  | [optional] [default to &#39;as one big file&#39;]
-**time** | **String** |  | [optional] 
-**compression** | **String** |  | [optional] [default to &#39;gz&#39;]
-**egressTrunks** | **[Number]** |  | [optional] 
-**ftpPassword** | **String** |  | [optional] 
-**active** | **Boolean** |  | [optional] 
-**frequency** | **String** |  | [optional] [default to &#39;daily&#39;]
 **includeAllEgress** | **Boolean** |  | [optional] 
-**ftpUsername** | **String** |  | [optional] 
 **ftpDirectory** | **String** |  | [optional] 
-**maxLinePerFile** | **Number** |  | [optional] 
-**ftpServerIp** | **String** |  | [optional] 
+**includeAllIngress** | **Boolean** |  | [optional] 
+**ftpPassword** | **String** |  | [optional] 
 **id** | **Number** |  | [optional] 
 **includeHeader** | **Boolean** |  | [optional] 
-
-
-<a name="FileBreakdownEnum"></a>
-## Enum: FileBreakdownEnum
-
-
-* `one big file` (value: `"as one big file"`)
-
-* `daily file` (value: `"as daily file"`)
-
-* `hourly file` (value: `"as hourly file"`)
-
-
+**fileBreakdown** | **String** |  | [optional] [default to &#39;as one big file&#39;]
+**ftpUsername** | **String** |  | [optional] 
+**active** | **Boolean** |  | [optional] 
+**ftpServerIp** | **String** |  | [optional] 
+**includeFields** | **[String]** |  | [optional] 
+**ingressTrunks** | **[Number]** |  | [optional] 
+**frequency** | **String** |  | [optional] [default to &#39;daily&#39;]
+**origReturnCode** | **[Number]** |  | [optional] 
+**name** | **String** |  | [optional] 
+**termReturnCode** | **[Number]** |  | [optional] 
+**maxLinePerFile** | **Number** |  | [optional] 
+**time** | **String** |  | [optional] 
+**egressTrunks** | **[Number]** |  | [optional] 
 
 
 <a name="CompressionEnum"></a>
@@ -46,9 +33,24 @@ Name | Type | Description | Notes
 
 * `gz` (value: `"gz"`)
 
+* `tar.gz` (value: `"tar.gz"`)
+
 * `tar.bz2` (value: `"tar.bz2"`)
 
-* `tar.gz` (value: `"tar.gz"`)
+* `zip` (value: `"zip"`)
+
+
+
+
+<a name="FileBreakdownEnum"></a>
+## Enum: FileBreakdownEnum
+
+
+* `one big file` (value: `"as one big file"`)
+
+* `hourly file` (value: `"as hourly file"`)
+
+* `daily file` (value: `"as daily file"`)
 
 
 
@@ -57,13 +59,13 @@ Name | Type | Description | Notes
 ## Enum: FrequencyEnum
 
 
+* `daily` (value: `"daily"`)
+
 * `hourly` (value: `"hourly"`)
 
 * `minutely` (value: `"minutely"`)
 
 * `weekly` (value: `"weekly"`)
-
-* `daily` (value: `"daily"`)
 
 
 

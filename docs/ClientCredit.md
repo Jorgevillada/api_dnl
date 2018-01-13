@@ -5,8 +5,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **paymentTermId** | **Number** |  | [optional] 
 **cpsLimit** | **Number** |  | [optional] 
-**active** | **Boolean** |  | [optional] 
 **callLimit** | **Number** |  | [optional] 
+**active** | **Boolean** |  | [optional] 
 **creditLimit** | **Number** |  | [optional] 
 
 

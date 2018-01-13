@@ -3,17 +3,17 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**aniMinLength** | **Number** |  | [optional] 
+**aniPrefix** | **String** |  | [optional] 
 **dnisMaxLength** | **Number** |  | [optional] 
-**dnis** | **String** |  | [optional] 
 **dnisPrefix** | **String** |  | [optional] 
 **id** | **Number** |  | [optional] 
-**aniMinLength** | **Number** |  | [optional] 
-**aniMaxLength** | **Number** |  | [optional] 
-**dnisMinLength** | **Number** |  | [optional] 
-**resourceId** | **Number** |  | 
-**aniPrefix** | **String** |  | [optional] 
 **type** | **String** |  | [optional] [default to &#39;ani only replace the caller&#39;]
+**aniMaxLength** | **Number** |  | [optional] 
 **ani** | **String** |  | [optional] 
+**dnis** | **String** |  | [optional] 
+**resourceId** | **Number** |  | 
+**dnisMinLength** | **Number** |  | [optional] 
 
 
 <a name="TypeEnum"></a>
@@ -22,9 +22,9 @@ Name | Type | Description | Notes
 
 * `ani only replace the caller` (value: `"ani only replace the caller"`)
 
-* `both replace the calling and called` (value: `"both replace the calling and called"`)
-
 * `dnis only replace the called` (value: `"dnis only replace the called"`)
+
+* `both replace the calling and called` (value: `"both replace the calling and called"`)
 
 
 

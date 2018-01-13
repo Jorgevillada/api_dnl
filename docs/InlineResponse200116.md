@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**LoopDetectionGet**](LoopDetectionGet.md) |  | [optional] 
+**payload** | [**InlineResponse200116Payload**](InlineResponse200116Payload.md) |  | [optional] 
 
 

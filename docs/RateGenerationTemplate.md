@@ -3,38 +3,22 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** |  | [optional] 
-**lcrDigit** | **Number** |  | [optional] 
-**includeLocalRate** | **Boolean** |  | [optional] 
 **details** | [**[RateGenerationTemplateDetail]**](RateGenerationTemplateDetail.md) |  | [optional] 
-**egressStr** | **String** |  | [optional] 
-**rateTableType** | **String** |  | [optional] [default to &#39;A-Z&#39;]
-**codeDeckId** | **Number** |  | [optional] 
-**effectiveDays** | **Number** |  | [optional] 
-**marginDefaultType** | **String** |  | [optional] [default to &#39;Percentage&#39;]
-**defaultRate** | **Number** |  | [optional] 
-**includeBlockedRoute** | **Boolean** |  | [optional] 
-**defaultMinTime** | **Number** |  | [optional] 
-**lastGenerated** | **Date** |  | [optional] 
 **margins** | [**[RateGenerationTemplateMargin]**](RateGenerationTemplateMargin.md) |  | [optional] 
-**marginDefaultValue** | **String** |  | [optional] 
+**marginDefaultType** | **String** |  | [optional] [default to &#39;Percentage&#39;]
+**rateTableType** | **String** |  | [optional] [default to &#39;A-Z&#39;]
+**includeLocalRate** | **Boolean** |  | [optional] 
 **defaultInterval** | **Number** |  | [optional] 
+**marginDefaultValue** | **String** |  | [optional] 
+**name** | **String** |  | [optional] 
+**effectiveDays** | **Number** |  | [optional] 
+**codeDeckId** | **Number** |  | [optional] 
+**defaultMinTime** | **Number** |  | [optional] 
+**lcrDigit** | **Number** |  | [optional] 
+**includeBlockedRoute** | **Boolean** |  | [optional] 
 **decimalPlaces** | **Number** |  | [optional] 
-
-
-<a name="RateTableTypeEnum"></a>
-## Enum: RateTableTypeEnum
-
-
-* `OCN-LATA` (value: `"OCN-LATA"`)
-
-* `US Non Jurisdictional` (value: `"US Non Jurisdictional"`)
-
-* `US Jurisdictional` (value: `"US Jurisdictional"`)
-
-* `A-Z` (value: `"A-Z"`)
-
-
+**egressTrunks** | **[Number]** |  | [optional] 
+**defaultRate** | **Number** |  | [optional] 
 
 
 <a name="MarginDefaultTypeEnum"></a>
@@ -44,6 +28,21 @@ Name | Type | Description | Notes
 * `Percentage` (value: `"Percentage"`)
 
 * `Value` (value: `"Value"`)
+
+
+
+
+<a name="RateTableTypeEnum"></a>
+## Enum: RateTableTypeEnum
+
+
+* `A-Z` (value: `"A-Z"`)
+
+* `US Jurisdictional` (value: `"US Jurisdictional"`)
+
+* `US Non Jurisdictional` (value: `"US Non Jurisdictional"`)
+
+* `OCN-LATA` (value: `"OCN-LATA"`)
 
 
 

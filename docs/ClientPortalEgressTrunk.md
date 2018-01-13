@@ -3,10 +3,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**host** | [**[ResourceIpGet]**](ResourceIpGet.md) |  | [optional] 
 **egressName** | **String** |  | [optional] 
-**rateTableName** | **String** |  | [optional] 
 **cpsLimit** | **Number** |  | [optional] 
+**rateTableName** | **String** |  | [optional] 
+**host** | [**[ResourceIpGet]**](ResourceIpGet.md) |  | [optional] 
 **callLimit** | **Number** |  | [optional] 
 
 

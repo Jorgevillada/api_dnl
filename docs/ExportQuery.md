@@ -12,11 +12,11 @@ Name | Type | Description | Notes
 ## Enum: FormatEnum
 
 
+* `csv` (value: `"csv"`)
+
 * `xml` (value: `"xml"`)
 
 * `json` (value: `"json"`)
-
-* `csv` (value: `"csv"`)
 
 
 

@@ -3,12 +3,13 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**finishTime** | **Date** |  | [optional] 
-**ruleName** | **String** |  | [optional] 
-**createOn** | **Date** |  | [optional] 
-**id** | **Number** |  | [optional] 
 **status** | **String** |  | [optional] [default to &#39;normal&#39;]
+**id** | **Number** |  | [optional] 
 **fraudDetectionId** | **Number** |  | [optional] 
+**ruleName** | **String** |  | [optional] 
+**detail** | [**[FraudDetectionLogDetailGet]**](FraudDetectionLogDetailGet.md) |  | [optional] 
+**finishTime** | **Date** |  | [optional] 
+**createOn** | **Date** |  | [optional] 
 **createBy** | **String** |  | [optional] 
 
 
@@ -16,9 +17,9 @@ Name | Type | Description | Notes
 ## Enum: StatusEnum
 
 
-* `over limit` (value: `"over limit"`)
-
 * `normal` (value: `"normal"`)
+
+* `over limit` (value: `"over limit"`)
 
 
 

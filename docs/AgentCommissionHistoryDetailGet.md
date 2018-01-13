@@ -3,13 +3,13 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**startTime** | **Date** |  | [optional] 
-**clientId** | **Number** |  | [optional] 
 **id** | **Number** |  | [optional] 
-**totalDate** | **Number** |  | [optional] 
-**commission** | **String** |  | [optional] 
-**clientName** | **String** |  | [optional] 
 **clientCost** | **String** |  | [optional] 
+**startTime** | **Date** |  | [optional] 
 **endTime** | **Date** |  | [optional] 
+**totalDate** | **Number** |  | [optional] 
+**clientName** | **String** |  | [optional] 
+**clientId** | **Number** |  | [optional] 
+**commission** | **String** |  | [optional] 
 
 

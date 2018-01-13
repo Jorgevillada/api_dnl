@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**RateGenerationTemplateGet**](RateGenerationTemplateGet.md) |  | [optional] 
+**payload** | [**InlineResponse200175Payload**](InlineResponse200175Payload.md) |  | [optional] 
 
 

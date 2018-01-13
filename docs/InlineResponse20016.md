@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**CarrierAllertSettings**](CarrierAllertSettings.md) |  | [optional] 
+**payload** | [**CarrierLong**](CarrierLong.md) |  | [optional] 
 
 

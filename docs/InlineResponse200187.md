@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**InlineResponse200187Payload**](InlineResponse200187Payload.md) |  | [optional] 
+**payload** | [**CurrencyGet**](CurrencyGet.md) |  | [optional] 
 
 

@@ -3,27 +3,27 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**direction** | **String** |  | [optional] 
-**rateTableName** | **String** |  | [optional] 
-**active** | **Boolean** |  | [optional] 
-**trunkId** | **Number** |  | [optional] 
-**updateAt** | **Date** |  | [optional] 
 **rateTableId** | **Number** |  | [optional] 
 **carrierId** | **Number** |  | [optional] 
-**carrier** | **String** |  | [optional] 
+**direction** | **String** |  | [optional] 
 **rateEmail** | **String** |  | [optional] 
 **type** | **String** |  | [optional] 
+**trunkId** | **Number** |  | [optional] 
+**carrier** | **String** |  | [optional] 
 **trunkName** | **String** |  | [optional] 
 **prefix** | **String** |  | [optional] 
+**rateTableName** | **String** |  | [optional] 
+**updateAt** | **Date** |  | [optional] 
+**active** | **Boolean** |  | [optional] 
 
 
 <a name="DirectionEnum"></a>
 ## Enum: DirectionEnum
 
 
-* `egress` (value: `"egress"`)
-
 * `ingress` (value: `"ingress"`)
+
+* `egress` (value: `"egress"`)
 
 
 
@@ -32,9 +32,9 @@ Name | Type | Description | Notes
 ## Enum: TypeEnum
 
 
-* `term` (value: `"term"`)
-
 * `orig` (value: `"orig"`)
+
+* `term` (value: `"term"`)
 
 
 

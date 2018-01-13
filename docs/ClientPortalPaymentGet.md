@@ -3,50 +3,50 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**carrierName** | **String** |  | [optional] 
-**clientId** | **Number** |  | [optional] 
-**updateBy** | **String** |  | [optional] 
-**paymentTypeName** | **String** |  | [optional] [default to &#39;n/a&#39;]
-**paymentTime** | **Date** |  | [optional] 
-**clientPaymentId** | **Number** |  | [optional] 
 **paidOn** | **Date** |  | [optional] 
-**note** | **String** |  | [optional] 
+**balancenote** | **String** |  | [optional] 
 **amount** | **Number** |  | [optional] [default to 0.0]
+**clientId** | **Number** |  | [optional] 
+**carrierName** | **String** |  | [optional] 
+**paymentTime** | **Date** |  | [optional] 
+**paymentTypeName** | **String** |  | [optional] [default to &#39;n/a&#39;]
+**updateBy** | **String** |  | [optional] 
+**clientPaymentId** | **Number** |  | [optional] 
 
 
 <a name="PaymentTypeNameEnum"></a>
 ## Enum: PaymentTypeNameEnum
 
 
-* `invoice payment sent` (value: `"invoice payment sent"`)
-
-* `debit received` (value: `"debit received"`)
-
-* `prepayment` (value: `"prepayment"`)
+* `n/a` (value: `"n/a"`)
 
 * `undefined` (value: `"undefined"`)
 
-* `offset` (value: `"offset"`)
+* `invoice payment sent` (value: `"invoice payment sent"`)
+
+* `invoice payment received` (value: `"invoice payment received"`)
+
+* `prepay payment received` (value: `"prepay payment received"`)
 
 * `payment sent` (value: `"payment sent"`)
 
 * `credit note received` (value: `"credit note received"`)
 
-* `debit sent` (value: `"debit sent"`)
-
-* `actual reset` (value: `"actual reset"`)
-
-* `n/a` (value: `"n/a"`)
-
 * `credit note sent` (value: `"credit note sent"`)
-
-* `mutual reset` (value: `"mutual reset"`)
 
 * `reset` (value: `"reset"`)
 
-* `prepay payment received` (value: `"prepay payment received"`)
+* `offset` (value: `"offset"`)
 
-* `invoice payment received` (value: `"invoice payment received"`)
+* `debit received` (value: `"debit received"`)
+
+* `debit sent` (value: `"debit sent"`)
+
+* `mutual reset` (value: `"mutual reset"`)
+
+* `actual reset` (value: `"actual reset"`)
+
+* `prepayment` (value: `"prepayment"`)
 
 
 

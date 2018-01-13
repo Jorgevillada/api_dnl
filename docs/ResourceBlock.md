@@ -3,32 +3,30 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**dNISMax** | **Number** |  | [optional] 
+**ingressTrunkId** | **Number** |  | [optional] 
 **dNISMin** | **Number** |  | [optional] 
 **dNISPrefix** | **String** |  | [optional] 
-**ingressTrunkId** | **Number** |  | [optional] 
-**aNIMax** | **Number** |  | [optional] 
-**egressClientId** | **Number** |  | [optional] 
+**dNISMax** | **Number** |  | [optional] 
 **aNIEmpty** | **Boolean** |  | [optional] 
-**blockType** | **String** |  | [optional] 
-**timeProfileId** | **Number** |  | [optional] 
-**ingressGroupId** | **Number** |  | [optional] 
-**ingressClientId** | **Number** |  | [optional] 
-**aNIPrefix** | **String** |  | [optional] 
 **aNIMin** | **Number** |  | [optional] 
 **egressTrunkId** | **Number** |  | [optional] 
 **egressGroupId** | **Number** |  | [optional] 
+**timeProfileId** | **Number** |  | [optional] 
+**blockType** | **String** |  | [optional] 
+**aNIPrefix** | **String** |  | [optional] 
+**aNIMax** | **Number** |  | [optional] 
+**ingressGroupId** | **Number** |  | [optional] 
 
 
 <a name="BlockTypeEnum"></a>
 ## Enum: BlockTypeEnum
 
 
-* `carrier` (value: `"specific carrier"`)
+* `group` (value: `"specific group"`)
 
 * `trunk` (value: `"specific trunk"`)
 
-* `group` (value: `"specific group"`)
+* `carrier` (value: `"specific carrier"`)
 
 
 

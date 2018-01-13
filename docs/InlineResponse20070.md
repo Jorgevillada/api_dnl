@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**TrunkTemplateGet**](TrunkTemplateGet.md) |  | [optional] 
+**payload** | [**FtpConfGet**](FtpConfGet.md) |  | [optional] 
 
 

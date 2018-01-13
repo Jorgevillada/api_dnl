@@ -3,9 +3,13 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**content** | **String** |  | [optional] 
-**useCaptcha** | **Boolean** |  | [optional] 
 **imageUrl** | **String** |  | [optional] 
+**logoIconId** | **Number** |  | [optional] 
+**baseUrl** | **String** |  | [optional] 
+**logoImageId** | **Number** |  | [optional] 
+**content** | **String** |  | [optional] 
+**defaultAvatarId** | **Number** |  | [optional] 
+**useCaptcha** | **Boolean** |  | [optional] 
 **fitToScreen** | **Boolean** |  | [optional] 
 
 

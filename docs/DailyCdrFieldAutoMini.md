@@ -3,11 +3,11 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**clientViewable** | **Boolean** |  | [optional] 
-**id** | **Number** |  | [optional] 
-**displayName** | **String** |  | [optional] 
 **dbName** | **String** |  | [optional] 
-**vendorViewable** | **Boolean** |  | [optional] 
+**displayName** | **String** |  | [optional] 
+**id** | **Number** |  | [optional] 
+**clientViewable** | **Boolean** |  | [optional] 
 **adminDefault** | **Boolean** |  | [optional] 
+**vendorViewable** | **Boolean** |  | [optional] 
 
 

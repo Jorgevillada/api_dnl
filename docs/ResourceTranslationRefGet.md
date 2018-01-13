@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**timeProfile** | **String** |  | [optional] 
-**refId** | **Number** |  | [optional] 
 **translation** | **String** |  | [optional] 
+**refId** | **Number** |  | [optional] 
+**timeProfile** | **String** |  | [optional] 
 **gateway** | **String** |  | [optional] 
 
 

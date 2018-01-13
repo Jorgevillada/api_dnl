@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**SignupGet**](SignupGet.md) |  | [optional] 
+**payload** | [**InlineResponse2003Payload**](InlineResponse2003Payload.md) |  | [optional] 
 
 

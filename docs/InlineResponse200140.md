@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**ProductItemsGet**](ProductItemsGet.md) |  | [optional] 
+**payload** | [**VendorDidGet**](VendorDidGet.md) |  | [optional] 
 
 

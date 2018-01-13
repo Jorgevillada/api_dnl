@@ -3,22 +3,22 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** |  | [optional] 
-**monthlyFee** | **Number** |  | [optional] 
-**ratePerMin** | **Number** |  | [optional] 
 **rateTableId** | **Number** |  | [optional] 
+**monthlyFee** | **Number** |  | [optional] 
 **payphoneSubcharge** | **String** |  | [optional] 
-**type** | **String** |  | [optional] [default to &#39;fixed&#39;]
+**type** | **String** |  | [optional] [default to &#39;fixed rate&#39;]
+**ratePerMin** | **Number** |  | [optional] 
 **setupFee** | **Number** |  | [optional] 
+**name** | **String** |  | 
 
 
 <a name="TypeEnum"></a>
 ## Enum: TypeEnum
 
 
-* `varialble` (value: `"varialble"`)
+* `fixed rate` (value: `"fixed rate"`)
 
-* `fixed` (value: `"fixed"`)
+* `variable rate` (value: `"variable rate"`)
 
 
 

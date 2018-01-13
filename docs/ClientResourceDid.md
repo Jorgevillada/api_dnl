@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ip** | [**[ResourceIp]**](ResourceIp.md) |  | [optional] 
 **billingByPort** | **String** |  | [optional] [default to &#39;by minutes&#39;]
 **mediaType** | **String** |  | [optional] [default to &#39;Proxy Media + Transcoding&#39;]
+**ip** | [**[ResourceIp]**](ResourceIp.md) |  | [optional] 
 
 
 <a name="BillingByPortEnum"></a>

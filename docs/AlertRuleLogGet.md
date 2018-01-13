@@ -3,109 +3,71 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** |  | [optional] 
-**monitorIngress** | **Boolean** |  | [optional] 
-**finishTime** | **Date** |  | [optional] 
-**acdOperator** | **String** |  | [optional] [default to &#39;1&#39;]
-**limitRevenue** | **String** |  | [optional] 
-**acdValue** | **Number** |  | [optional] 
-**time** | **String** |  | [optional] 
 **subject** | **String** |  | [optional] 
-**autoUnblockAfter** | **Number** |  | [optional] 
-**asrValue** | **Number** |  | [optional] 
-**limitAbr** | **String** |  | [optional] 
-**runOn** | **Number** |  | [optional] 
+**limitRevenue** | **String** |  | [optional] 
+**createOn** | **Date** |  | [optional] 
+**asrOperator** | **String** |  | [optional] [default to &#39;1&#39;]
 **limitAcd** | **String** |  | [optional] 
-**runEvery** | **Number** |  | [optional] 
-**sendEmail** | **Boolean** |  | [optional] 
-**sendTo** | **String** |  | [optional] 
-**limitAsrValue** | **Number** |  | [optional] 
-**autoUnblock** | **Boolean** |  | [optional] 
+**monitorBy** | **String** |  | [optional] 
+**id** | **Number** |  | [optional] 
+**asrValue** | **Number** |  | [optional] 
 **fromMailId** | **Number** |  | [optional] 
-**allTrunks** | **Boolean** |  | [optional] 
-**revenueOperator** | **String** |  | [optional] [default to &#39;1&#39;]
+**alertRulesId** | **Number** |  | [optional] 
+**profitabilityOperator** | **String** |  | [optional] [default to &#39;1&#39;]
+**monitorIngress** | **Boolean** |  | [optional] 
+**trunks** | **[Number]** |  | [optional] 
+**scope** | **String** |  | [optional] 
+**sendTo** | **String** |  | [optional] 
+**pddOperator** | **String** |  | [optional] [default to &#39;1&#39;]
+**name** | **String** |  | [optional] 
+**acdValue** | **Number** |  | [optional] 
+**runOn** | **Number** |  | [optional] 
+**finishTime** | **Date** |  | [optional] 
+**runDayOfWeek** | **Number** |  | [optional] 
+**sendEmail** | **Boolean** |  | [optional] 
+**autoUnblock** | **Boolean** |  | [optional] 
+**profitabilityValue** | **Number** |  | [optional] 
+**block** | **Boolean** |  | [optional] 
+**samplePeriod** | **Number** |  | [optional] 
+**excludeCodes** | **[Number]** |  | [optional] 
+**schedule** | **String** |  | [optional] 
+**htmlContent** | **String** |  | [optional] 
+**detail** | **[String]** |  | [optional] 
 **limitAsr** | **String** |  | [optional] 
 **limitAbrValue** | **Number** |  | [optional] 
-**asrOperator** | **String** |  | [optional] [default to &#39;1&#39;]
-**trunks** | **[Number]** |  | [optional] 
-**status** | **String** |  | [optional] [default to &#39;initial&#39;]
-**excludeCodes** | **[Number]** |  | [optional] 
-**profitabilityOperator** | **String** |  | [optional] [default to &#39;1&#39;]
 **limitPddValue** | **Number** |  | [optional] 
-**limitProfitabilityValue** | **Number** |  | [optional] 
-**alertRulesId** | **Number** |  | [optional] 
-**block** | **Boolean** |  | [optional] 
-**createOn** | **Date** |  | [optional] 
-**pddOperator** | **String** |  | [optional] [default to &#39;1&#39;]
-**schedule** | **String** |  | [optional] 
-**pddValue** | **Number** |  | [optional] 
+**trunkType** | **String** |  | [optional] 
+**runEvery** | **Number** |  | [optional] 
+**status** | **String** |  | [optional] [default to &#39;normal&#39;]
 **revenueValue** | **Number** |  | [optional] 
-**activate** | **Boolean** |  | [optional] 
+**limitAsrValue** | **Number** |  | [optional] 
+**time** | **String** |  | [optional] 
 **limitRevenueValue** | **Number** |  | [optional] 
-**htmlContent** | **String** |  | [optional] 
-**profitabilityValue** | **Number** |  | [optional] 
-**limitPdd** | **String** |  | [optional] 
-**samplePeriod** | **Number** |  | [optional] 
-**runDayOfWeek** | **Number** |  | [optional] 
-**id** | **Number** |  | [optional] 
+**acdOperator** | **String** |  | [optional] [default to &#39;1&#39;]
+**limitProfitabilityValue** | **Number** |  | [optional] 
 **limitProfitability** | **String** |  | [optional] 
-**scope** | **String** |  | [optional] 
 **limitAcdValue** | **Number** |  | [optional] 
+**pddValue** | **Number** |  | [optional] 
+**limitPdd** | **String** |  | [optional] 
+**activate** | **Boolean** |  | [optional] 
+**limitAbr** | **String** |  | [optional] 
+**revenueOperator** | **String** |  | [optional] [default to &#39;1&#39;]
+**allTrunks** | **Boolean** |  | [optional] 
 **minAttempt** | **Number** |  | [optional] 
-
-
-<a name="AcdOperatorEnum"></a>
-## Enum: AcdOperatorEnum
-
-
-* `EQUAL` (value: `"="`)
-
-* `1` (value: `"1"`)
-
-* `LESS_THAN` (value: `"<"`)
-
-* `GREATER_THAN` (value: `">"`)
-
-
-
-
-<a name="RevenueOperatorEnum"></a>
-## Enum: RevenueOperatorEnum
-
-
-* `EQUAL` (value: `"="`)
-
-* `1` (value: `"1"`)
-
-* `LESS_THAN` (value: `"<"`)
-
-* `GREATER_THAN` (value: `">"`)
-
-
+**autoUnblockAfter** | **Number** |  | [optional] 
 
 
 <a name="AsrOperatorEnum"></a>
 ## Enum: AsrOperatorEnum
 
 
-* `EQUAL` (value: `"="`)
-
 * `1` (value: `"1"`)
-
-* `LESS_THAN` (value: `"<"`)
 
 * `GREATER_THAN` (value: `">"`)
 
+* `LESS_THAN` (value: `"<"`)
 
-
-
-<a name="StatusEnum"></a>
-## Enum: StatusEnum
-
-
-* `success` (value: `"success"`)
-
-* `initial` (value: `"initial"`)
+* `EQUAL` (value: `"="`)
 
 
 
@@ -114,13 +76,13 @@ Name | Type | Description | Notes
 ## Enum: ProfitabilityOperatorEnum
 
 
-* `EQUAL` (value: `"="`)
-
 * `1` (value: `"1"`)
+
+* `GREATER_THAN` (value: `">"`)
 
 * `LESS_THAN` (value: `"<"`)
 
-* `GREATER_THAN` (value: `">"`)
+* `EQUAL` (value: `"="`)
 
 
 
@@ -129,13 +91,54 @@ Name | Type | Description | Notes
 ## Enum: PddOperatorEnum
 
 
-* `EQUAL` (value: `"="`)
-
 * `1` (value: `"1"`)
+
+* `GREATER_THAN` (value: `">"`)
 
 * `LESS_THAN` (value: `"<"`)
 
+* `EQUAL` (value: `"="`)
+
+
+
+
+<a name="StatusEnum"></a>
+## Enum: StatusEnum
+
+
+* `normal` (value: `"normal"`)
+
+* `over limit` (value: `"over limit"`)
+
+
+
+
+<a name="AcdOperatorEnum"></a>
+## Enum: AcdOperatorEnum
+
+
+* `1` (value: `"1"`)
+
 * `GREATER_THAN` (value: `">"`)
+
+* `LESS_THAN` (value: `"<"`)
+
+* `EQUAL` (value: `"="`)
+
+
+
+
+<a name="RevenueOperatorEnum"></a>
+## Enum: RevenueOperatorEnum
+
+
+* `1` (value: `"1"`)
+
+* `GREATER_THAN` (value: `">"`)
+
+* `LESS_THAN` (value: `"<"`)
+
+* `EQUAL` (value: `"="`)
 
 
 

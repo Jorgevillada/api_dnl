@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**CarrierTemplateGet**](CarrierTemplateGet.md) |  | [optional] 
+**payload** | [**OriginationFailoverGet**](OriginationFailoverGet.md) |  | [optional] 
 
 

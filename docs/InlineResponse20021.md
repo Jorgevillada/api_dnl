@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**CarrierLowBalanceConfig**](CarrierLowBalanceConfig.md) |  | [optional] 
+**payload** | [**CarrierPortal**](CarrierPortal.md) |  | [optional] 
 
 

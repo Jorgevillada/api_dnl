@@ -3,25 +3,25 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** |  | [optional] 
-**secure** | **String** |  | [optional] [default to &#39;NO&#39;]
+**password** | **String** |  | [optional] 
+**mailServer** | **String** |  | [optional] 
 **email** | **String** |  | [optional] 
+**secure** | **String** |  | [optional] [default to &#39;NO&#39;]
 **username** | **String** |  | [optional] 
 **enableAuth** | **Boolean** |  | [optional] 
-**password** | **String** |  | [optional] 
+**name** | **String** |  | [optional] 
 **mailPort** | **String** |  | [optional] 
-**mailServer** | **String** |  | [optional] 
 
 
 <a name="SecureEnum"></a>
 ## Enum: SecureEnum
 
 
-* `SSL` (value: `"SSL"`)
+* `NO` (value: `"NO"`)
 
 * `TLS` (value: `"TLS"`)
 
-* `NO` (value: `"NO"`)
+* `SSL` (value: `"SSL"`)
 
 
 

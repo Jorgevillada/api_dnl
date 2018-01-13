@@ -4,11 +4,11 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **userName** | **String** |  | [optional] 
+**createTime** | **Date** |  | [optional] 
+**host** | **String** |  | [optional] 
+**agent** | **String** |  | [optional] 
 **userId** | **Number** |  | [optional] 
 **id** | **Number** |  | [optional] 
-**agent** | **String** |  | [optional] 
-**host** | **String** |  | [optional] 
-**createTime** | **Date** |  | [optional] 
 **msg** | **String** |  | [optional] 
 
 

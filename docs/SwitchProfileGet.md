@@ -3,24 +3,24 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**cps** | **Number** |  | [optional] 
-**cliIp** | **String** |  | [optional] 
-**cap** | **Number** |  | [optional] 
-**id** | **Number** |  | [optional] 
-**cliPort** | **Number** |  | [optional] 
-**status** | **String** |  | [optional] [default to &#39;disabled&#39;]
-**switchName** | **String** |  | [optional] 
 **switchId** | **String** |  | [optional] 
+**status** | **String** |  | [optional] [default to &#39;disabled&#39;]
+**id** | **Number** |  | [optional] 
+**cliIp** | **String** |  | [optional] 
+**switchName** | **String** |  | [optional] 
 **expirationDate** | **Date** |  | [optional] 
+**cps** | **Number** |  | [optional] 
+**cliPort** | **Number** |  | [optional] 
+**cap** | **Number** |  | [optional] 
 
 
 <a name="StatusEnum"></a>
 ## Enum: StatusEnum
 
 
-* `connected` (value: `"connected"`)
-
 * `disabled` (value: `"disabled"`)
+
+* `connected` (value: `"connected"`)
 
 
 

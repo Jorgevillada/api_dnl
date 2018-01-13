@@ -11,15 +11,15 @@ Name | Type | Description | Notes
 ## Enum: FormatEnum
 
 
-* `xml` (value: `"xml"`)
+* `csv` (value: `"csv"`)
 
-* `jpg` (value: `"jpg"`)
+* `xml` (value: `"xml"`)
 
 * `json` (value: `"json"`)
 
-* `csv` (value: `"csv"`)
-
 * `png` (value: `"png"`)
+
+* `jpg` (value: `"jpg"`)
 
 
 

@@ -3,12 +3,12 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**rateTableId** | **Number** |  | [optional] 
-**techPrefix** | **String** |  | [optional] 
-**routingPlanId** | **Number** |  | [optional] 
-**ips** | **[String]** |  | [optional] 
-**codeCps** | **Number** |  | [optional] 
 **code** | **String** |  | [optional] 
+**rateTableId** | **Number** |  | [optional] 
+**ips** | **[String]** |  | [optional] 
+**routingPlanId** | **Number** |  | [optional] 
+**techPrefix** | **String** |  | [optional] 
+**codeCps** | **Number** |  | [optional] 
 **codeCap** | **Number** |  | [optional] 
 
 

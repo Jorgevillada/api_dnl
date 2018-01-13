@@ -3,26 +3,12 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** |  | [optional] 
-**currencyId** | **Number** |  | [optional] [default to 1]
+**jurisdictionCountryId** | **Number** |  | [optional] 
 **codeDeckId** | **Number** |  | [optional] 
-**rateTypeName** | **String** |  | [optional] [default to &#39;A-Z&#39;]
 **billingMethod** | **String** |  | [optional] [default to &#39;DNIS&#39;]
-
-
-<a name="RateTypeNameEnum"></a>
-## Enum: RateTypeNameEnum
-
-
-* `OCN-LATA` (value: `"OCN-LATA"`)
-
-* `US Non Jurisdictional` (value: `"US Non Jurisdictional"`)
-
-* `US Jurisdictional` (value: `"US Jurisdictional"`)
-
-* `A-Z` (value: `"A-Z"`)
-
-
+**rateTypeName** | **String** |  | [optional] [default to &#39;A-Z&#39;]
+**currencyId** | **Number** |  | [optional] [default to 1]
+**name** | **String** |  | [optional] 
 
 
 <a name="BillingMethodEnum"></a>
@@ -31,9 +17,24 @@ Name | Type | Description | Notes
 
 * `DNIS` (value: `"DNIS"`)
 
+* `LRN` (value: `"LRN"`)
+
 * `LRN BLOCK` (value: `"LRN BLOCK"`)
 
-* `LRN` (value: `"LRN"`)
+
+
+
+<a name="RateTypeNameEnum"></a>
+## Enum: RateTypeNameEnum
+
+
+* `A-Z` (value: `"A-Z"`)
+
+* `US Jurisdictional` (value: `"US Jurisdictional"`)
+
+* `US Non Jurisdictional` (value: `"US Non Jurisdictional"`)
+
+* `OCN-LATA` (value: `"OCN-LATA"`)
 
 
 

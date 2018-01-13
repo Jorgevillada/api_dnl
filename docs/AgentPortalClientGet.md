@@ -3,13 +3,14 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**methodType** | **String** |  | [optional] [default to &#39;By Profit&#39;]
-**agent** | **String** |  | [optional] 
-**id** | **Number** |  | [optional] 
 **client** | [**CarrierGet**](CarrierGet.md) |  | [optional] 
-**assignedOn** | **Date** |  | [optional] 
+**id** | **Number** |  | [optional] 
 **commission** | **Number** |  | [optional] 
+**agent** | **String** |  | [optional] 
+**assignedOn** | **Date** |  | [optional] 
+**clientName** | **String** |  | [optional] 
 **assignedBy** | **String** |  | [optional] 
+**methodType** | **String** |  | [optional] [default to &#39;By Profit&#39;]
 
 
 <a name="MethodTypeEnum"></a>

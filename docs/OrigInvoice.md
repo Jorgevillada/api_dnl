@@ -3,43 +3,23 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**clientId** | **Number** |  | [optional] 
-**state** | **String** |  | [optional] [default to &#39;normal&#39;]
-**totalAmount** | **Number** |  | [optional] 
-**invoiceEnd** | **Date** |  | [optional] 
-**invoiceNumber** | **String** |  | [optional] 
-**invoiceId** | **Number** |  | [optional] 
-**invoiceStart** | **Date** |  | [optional] 
-**invoiceTime** | **Date** |  | [optional] 
-**clientName** | **String** |  | [optional] 
 **createType** | **String** |  | [optional] [default to &#39;sent(out--buy)&#39;]
-**pdfPath** | **String** |  | [optional] 
-
-
-<a name="StateEnum"></a>
-## Enum: StateEnum
-
-
-* `send` (value: `"send"`)
-
-* `verify` (value: `"verify"`)
-
-* `normal` (value: `"normal"`)
-
-
+**clientId** | **Number** |  | [optional] 
+**invoiceStart** | **Date** |  | [optional] 
+**invoiceEnd** | **Date** |  | [optional] 
 
 
 <a name="CreateTypeEnum"></a>
 ## Enum: CreateTypeEnum
 
 
-* `sent(all)` (value: `"sent(all)"`)
+* `sent(out--buy)` (value: `"sent(out--buy)"`)
 
 * `received(in--sell)` (value: `"received(in--sell)"`)
 
-* `incoming` (value: `"incoming"`)
+* `sent(all)` (value: `"sent(all)"`)
 
-* `sent(out--buy)` (value: `"sent(out--buy)"`)
+* `incoming` (value: `"incoming"`)
 
 
 

@@ -3,11 +3,11 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**createOn** | **Date** |  | [optional] 
-**id** | **Number** |  | [optional] 
+**status** | **String** |  | [optional] [default to &#39;waiting&#39;]
 **downloadFile** | **String** |  | [optional] 
 **createBy** | **String** |  | [optional] 
-**status** | **String** |  | [optional] [default to &#39;waiting&#39;]
+**createOn** | **Date** |  | [optional] 
+**id** | **Number** |  | [optional] 
 **finishedTime** | **Date** |  | [optional] 
 
 
@@ -17,9 +17,9 @@ Name | Type | Description | Notes
 
 * `waiting` (value: `"waiting"`)
 
-* `done` (value: `"done"`)
-
 * `progress` (value: `"progress"`)
+
+* `done` (value: `"done"`)
 
 * `error` (value: `"error"`)
 

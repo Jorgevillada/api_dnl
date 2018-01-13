@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**InlineResponse200182Payload**](InlineResponse200182Payload.md) |  | [optional] 
+**payload** | [**CodeAllGet**](CodeAllGet.md) |  | [optional] 
 
 

@@ -3,12 +3,12 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**id** | **Number** |  | [optional] 
 **state** | **String** |  | [optional] 
 **ocn** | **String** |  | [optional] 
-**id** | **Number** |  | [optional] 
-**lata** | **String** |  | [optional] 
 **effectiveDate** | **Date** |  | [optional] 
-**prefix** | **String** |  | [optional] 
 **country** | **String** |  | [optional] 
+**prefix** | **String** |  | [optional] 
+**lata** | **String** |  | [optional] 
 
 

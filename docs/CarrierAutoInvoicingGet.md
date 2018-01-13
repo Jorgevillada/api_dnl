@@ -3,10 +3,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**clientId** | **Number** |  | [optional] 
-**ptName** | **String** |  | [optional] 
 **paymentTermId** | **Number** |  | [optional] 
+**clientId** | **Number** |  | [optional] 
 **lastInvoice** | [**InvoiceGet**](InvoiceGet.md) |  | [optional] 
 **autoInvoicing** | **Boolean** |  | [optional] 
+**ptName** | **String** |  | [optional] 
 
 

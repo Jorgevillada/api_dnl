@@ -3,8 +3,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**rateInterval** | **Number** |  | [optional] 
 **minTime** | **Number** |  | [optional] 
 **code** | **String** |  | [optional] 
+**id** | **Number** |  | [optional] 
+**rateInterval** | **Number** |  | [optional] 
+**template** | **String** |  | [optional] 
 
 

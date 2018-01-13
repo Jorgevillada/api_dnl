@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**InlineResponse20023Payload**](InlineResponse20023Payload.md) |  | [optional] 
+**payload** | [**CarrierLowBalanceConfig**](CarrierLowBalanceConfig.md) |  | [optional] 
 
 

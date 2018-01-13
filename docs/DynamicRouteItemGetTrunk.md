@@ -3,6 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**trunk** | [**EgressTrunkGet**](EgressTrunkGet.md) |  | [optional] 
+**trunkName** | **String** |  | [optional] 
+**clientName** | **String** |  | [optional] 
+**clientId** | **Number** |  | [optional] 
+**resourceId** | **Number** |  | 
 
 

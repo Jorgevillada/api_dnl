@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**DailyCdrFieldGet**](DailyCdrFieldGet.md) |  | [optional] 
+**payload** | [**RolePrivilegeGet**](RolePrivilegeGet.md) |  | [optional] 
 
 

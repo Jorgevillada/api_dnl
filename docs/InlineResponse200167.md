@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**CodeDeckGet**](CodeDeckGet.md) |  | [optional] 
+**payload** | [**InlineResponse200167Payload**](InlineResponse200167Payload.md) |  | [optional] 
 
 

@@ -3,10 +3,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**loginIp** | **String** |  | [optional] 
-**username** | **String** |  | [optional] 
 **failedReason** | **String** |  | [optional] [default to &#39;success&#39;]
 **status** | **String** |  | [optional] [default to &#39;pass&#39;]
+**loginIp** | **String** |  | [optional] 
+**username** | **String** |  | [optional] 
 **enteredPassword** | **String** |  | [optional] 
 **loginTime** | **Date** |  | [optional] 
 
@@ -15,9 +15,9 @@ Name | Type | Description | Notes
 ## Enum: FailedReasonEnum
 
 
-* `fail` (value: `"fail"`)
-
 * `success` (value: `"success"`)
+
+* `fail` (value: `"fail"`)
 
 * `forbidden` (value: `"forbidden"`)
 

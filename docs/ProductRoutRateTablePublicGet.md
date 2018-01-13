@@ -3,12 +3,12 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** |  | [optional] 
-**techPrefix** | **Number** |  | [optional] 
-**description** | **String** |  | [optional] 
 **id** | **Number** |  | [optional] 
-**reference** | **Number** |  | [optional] 
+**description** | **String** |  | [optional] 
 **type** | **String** |  | [optional] [default to &#39;public&#39;]
+**reference** | **Number** |  | [optional] 
+**techPrefix** | **Number** |  | [optional] 
+**name** | **String** |  | [optional] 
 
 
 <a name="TypeEnum"></a>

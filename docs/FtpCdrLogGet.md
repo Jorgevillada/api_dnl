@@ -3,34 +3,34 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**clientAlias** | **String** |  | [optional] 
-**cdrEndTime** | **Date** |  | [optional] 
+**status** | **String** |  | [optional] [default to &#39;initial&#39;]
 **result** | [**[FtpCdrLogDetailGet]**](FtpCdrLogDetailGet.md) |  | [optional] 
 **ftpIp** | **String** |  | [optional] 
-**id** | **Number** |  | [optional] 
-**ftpEndTime** | **Date** |  | [optional] 
-**ftpStartTime** | **Date** |  | [optional] 
-**ftpDir** | **String** |  | [optional] 
-**status** | **String** |  | [optional] [default to &#39;initial&#39;]
+**cdrEndTime** | **Date** |  | [optional] 
 **pid** | **Number** |  | [optional] 
+**ftpEndTime** | **Date** |  | [optional] 
 **cdrStartTime** | **Date** |  | [optional] 
+**ftpDir** | **String** |  | [optional] 
+**clientAlias** | **String** |  | [optional] 
+**id** | **Number** |  | [optional] 
+**ftpStartTime** | **Date** |  | [optional] 
 
 
 <a name="StatusEnum"></a>
 ## Enum: StatusEnum
 
 
-* `finished` (value: `"finished"`)
+* `initial` (value: `"initial"`)
 
 * `in process` (value: `"in process"`)
 
-* `ftp finished` (value: `"ftp finished"`)
+* `finished` (value: `"finished"`)
 
 * `error` (value: `"error"`)
 
-* `ftp error` (value: `"ftp error"`)
+* `ftp finished` (value: `"ftp finished"`)
 
-* `initial` (value: `"initial"`)
+* `ftp error` (value: `"ftp error"`)
 
 
 

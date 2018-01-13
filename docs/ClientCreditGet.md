@@ -3,16 +3,16 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** |  | [optional] 
-**clientId** | **Number** |  | [optional] 
-**paymentTermName** | **String** |  | [optional] 
-**cpsLimit** | **Number** |  | [optional] 
-**active** | **Boolean** |  | [optional] 
-**callLimit** | **Number** |  | [optional] 
 **lastPayment** | [**ClientPayment**](ClientPayment.md) |  | [optional] 
-**updateBy** | **String** |  | [optional] 
+**paymentTermName** | **String** |  | [optional] 
+**clientId** | **Number** |  | [optional] 
+**creditLimit** | **Number** |  | [optional] 
+**cpsLimit** | **Number** |  | [optional] 
 **billingMode** | **String** |  | [optional] 
 **updateAt** | **String** |  | [optional] 
-**creditLimit** | **Number** |  | [optional] 
+**callLimit** | **Number** |  | [optional] 
+**updateBy** | **String** |  | [optional] 
+**active** | **Boolean** |  | [optional] 
+**name** | **String** |  | [optional] 
 
 

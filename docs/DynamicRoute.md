@@ -3,18 +3,18 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** |  | [optional] 
-**routeRuleName** | **String** |  | [optional] [default to &#39;LCR&#39;]
-**egressTrunks** | [**[DynamicRouteItem]**](DynamicRouteItem.md) |  | [optional] 
-**qosCycle** | **String** |  | [optional] [default to &#39;15 minutes&#39;]
 **timeProfileId** | **Number** |  | [optional] 
+**routeRuleName** | **String** |  | [optional] [default to &#39;LCR&#39;]
+**name** | **String** |  | [optional] 
+**egressTrunks** | [**[DynamicRouteItem]**](DynamicRouteItem.md) |  | [optional] 
+**qosCycle** | **String** |  | [optional] [default to &#39;not set&#39;]
 
 
 <a name="RouteRuleNameEnum"></a>
 ## Enum: RouteRuleNameEnum
 
 
-* `by maximum ACD` (value: `"by maximum ACD"`)
+* `By LCR` (value: `"By LCR"`)
 
 * `By ASR` (value: `"By ASR"`)
 
@@ -22,7 +22,7 @@ Name | Type | Description | Notes
 
 * `by maximum ASR` (value: `"by maximum ASR"`)
 
-* `at the lowest cost` (value: `"at the lowest cost"`)
+* `by maximum ACD` (value: `"by maximum ACD"`)
 
 * `LCR` (value: `"LCR"`)
 
@@ -33,13 +33,15 @@ Name | Type | Description | Notes
 ## Enum: QosCycleEnum
 
 
-* `1 days` (value: `"1 days"`)
+* `not set` (value: `"not set"`)
+
+* `15 minutes` (value: `"15 minutes"`)
 
 * `30 minutes` (value: `"30 minutes"`)
 
 * `1 hours` (value: `"1 hours"`)
 
-* `15 minutes` (value: `"15 minutes"`)
+* `1 days` (value: `"1 days"`)
 
 
 

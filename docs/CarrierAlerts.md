@@ -3,22 +3,22 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**autoSummaryPeriod** | **Number** |  | [optional] [default to 24]
-**lowBalanceNotice** | **Boolean** |  | [optional] 
-**lowBalanceNotificationTimeCycle** | **Number** |  | [optional] 
-**isDailyBalanceNotification** | **Boolean** |  | [optional] 
-**isSendTrunkUpdate** | **Boolean** |  | [optional] 
-**notifyClientBalanceType** | **Number** |  | [optional] 
-**isShowDailyUsage** | **Boolean** |  | [optional] 
-**dailyCdrGeneration** | **Boolean** |  | [optional] 
 **zeroBalanceNotice** | **Boolean** |  | [optional] 
-**attachCdrsList** | **Boolean** |  | [optional] 
-**autoSummaryNotZero** | **Boolean** |  | [optional] 
-**autoSummaryGroupBy** | **String** |  | [optional] [default to &#39;By Country&#39;]
-**dailyCdrGenerationZone** | **String** |  | [optional] 
-**autoSummaryHour** | **Number** |  | [optional] 
 **lowBalanceNotificationTimeType** | **Number** |  | [optional] 
+**isShowDailyUsage** | **Boolean** |  | [optional] 
+**autoSummaryHour** | **Number** |  | [optional] 
+**notifyClientBalanceType** | **Number** |  | [optional] 
 **isAutoSummary** | **Boolean** |  | [optional] 
+**autoSummaryNotZero** | **Boolean** |  | [optional] 
+**isDailyBalanceNotification** | **Boolean** |  | [optional] 
+**lowBalanceNotice** | **Boolean** |  | [optional] 
+**dailyCdrGenerationZone** | **String** |  | [optional] 
+**attachCdrsList** | **Boolean** |  | [optional] 
+**isSendTrunkUpdate** | **Boolean** |  | [optional] 
+**autoSummaryGroupBy** | **String** |  | [optional] [default to &#39;By Country&#39;]
+**autoSummaryPeriod** | **Number** |  | [optional] [default to 24]
+**dailyCdrGeneration** | **Boolean** |  | [optional] 
+**lowBalanceNotificationTimeCycle** | **Number** |  | [optional] 
 
 
 <a name="AutoSummaryGroupByEnum"></a>

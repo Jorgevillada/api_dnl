@@ -3,16 +3,16 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**clientId** | **String** |  | [optional] 
-**commission** | **Number** |  | [optional] 
-**registeredOn** | **Date** |  | [optional] 
 **status** | **String** |  | [optional] 
-**agentId** | **String** |  | [optional] 
-**agentName** | **String** |  | [optional] 
+**commission** | **Number** |  | [optional] 
+**agentId** | **Number** |  | [optional] 
+**methodType** | **String** |  | [optional] [default to &#39;By Profit&#39;]
+**registeredOn** | **Date** |  | [optional] 
 **assignedOn** | **Date** |  | [optional] 
 **clientName** | **String** |  | [optional] 
-**methodType** | **String** |  | [optional] [default to &#39;By Profit&#39;]
+**clientId** | **Number** |  | [optional] 
 **assignedBy** | **String** |  | [optional] 
+**agentName** | **String** |  | [optional] 
 
 
 <a name="MethodTypeEnum"></a>

@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**DynamicRouteQosGet**](DynamicRouteQosGet.md) |  | [optional] 
+**payload** | [**InlineResponse200146Payload**](InlineResponse200146Payload.md) |  | [optional] 
 
 

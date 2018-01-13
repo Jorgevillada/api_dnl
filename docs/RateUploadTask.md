@@ -3,35 +3,53 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**operatorUser** | **String** |  | [optional] 
-**rateTableName** | **String** |  | [optional] 
-**progress** | **String** |  | [optional] 
+**allRateEndDate** | **Date** |  | [optional] 
+**useOcnLataCode** | **String** |  | [optional] [default to &#39;No&#39;]
+**rateTableCodeDeckId** | **Number** |  | [optional] 
+**rateDateFormat** | **String** |  | [optional] 
 **rateTableId** | **Number** |  | [optional] 
-**status** | **String** |  | [optional] [default to &#39;initial&#39;]
+**codeNameMatch** | **Boolean** |  | [optional] 
+**info** | [**RateUploadTaskInfo**](RateUploadTaskInfo.md) |  | 
+**codeDeckFlag** | **String** |  | [optional] [default to &#39;use rate code&#39;]
 **method** | **String** |  | [optional] [default to &#39;ignore&#39;]
-**id** | **Number** |  | [optional] 
-**uploadDateTime** | **Date** |  | [optional] 
-**endDateTime** | **Date** |  | [optional] 
-**expenseDetail** | **String** |  | [optional] 
-**startDateTime** | **Date** |  | [optional] 
-**uploadOrigFile** | **String** |  | [optional] 
+**rateEndDate** | **String** |  | [optional] 
 
 
-<a name="StatusEnum"></a>
-## Enum: StatusEnum
+<a name="UseOcnLataCodeEnum"></a>
+## Enum: UseOcnLataCodeEnum
 
 
-* `finished` (value: `"finished"`)
+* `No` (value: `"No"`)
 
-* `download rate` (value: `"download rate"`)
+* `Yes` (value: `"Yes"`)
 
-* `process rate` (value: `"process rate"`)
 
-* `commit rate to db` (value: `"commit rate to db"`)
 
-* `error` (value: `"error"`)
 
-* `initial` (value: `"initial"`)
+<a name="RateDateFormatEnum"></a>
+## Enum: RateDateFormatEnum
+
+
+* `mm/dd/yyyy` (value: `"mm/dd/yyyy"`)
+
+* `yyyy-mm-dd` (value: `"yyyy-mm-dd"`)
+
+* `dd-mm-yyyy` (value: `"dd-mm-yyyy"`)
+
+* `dd/mm/yyyy` (value: `"dd/mm/yyyy"`)
+
+* `yyyy/mm/dd` (value: `"yyyy/mm/dd"`)
+
+
+
+
+<a name="CodeDeckFlagEnum"></a>
+## Enum: CodeDeckFlagEnum
+
+
+* `rate code` (value: `"use rate code"`)
+
+* `system global code deck` (value: `"use system global code deck"`)
 
 
 

@@ -3,12 +3,12 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**startTime** | **Date** |  | [optional] 
-**clientId** | **Number** |  | [optional] 
-**resetMutualBalance** | **Boolean** |  | [optional] 
-**newBalance** | **String** |  | [optional] 
-**resetActualBalance** | **Boolean** |  | [optional] 
 **status** | **String** |  | [optional] [default to &#39;initial&#39;]
+**startTime** | **Date** |  | [optional] 
+**resetActualBalance** | **Boolean** |  | [optional] 
+**resetMutualBalance** | **Boolean** |  | [optional] 
+**clientId** | **Number** |  | [optional] 
+**newBalance** | **String** |  | [optional] 
 **finishedTime** | **Date** |  | [optional] 
 
 
@@ -18,11 +18,11 @@ Name | Type | Description | Notes
 
 * `initial` (value: `"initial"`)
 
-* `error` (value: `"error"`)
+* `in process` (value: `"in process"`)
 
 * `finished` (value: `"finished"`)
 
-* `in process` (value: `"in process"`)
+* `error` (value: `"error"`)
 
 
 

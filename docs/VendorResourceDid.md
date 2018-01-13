@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ip** | [**[ResourceIp]**](ResourceIp.md) |  | [optional] 
+**egressDids** | [**[VendorDidBillingRel]**](VendorDidBillingRel.md) |  | 
 **billingByPort** | **String** |  | [optional] [default to &#39;by minutes&#39;]
-**egressDids** | [**[VendorDidBillingRel]**](VendorDidBillingRel.md) |  | [optional] 
+**ip** | [**[ResourceIp]**](ResourceIp.md) |  | [optional] 
 **mediaType** | **String** |  | [optional] [default to &#39;Proxy Media + Transcoding&#39;]
 **t38** | **Boolean** |  | [optional] 
 

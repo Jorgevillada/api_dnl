@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**sccBelow** | **Number** |  | [optional] 
-**sccType** | **Number** |  | [optional] 
 **sccCharge** | **Number** |  | [optional] 
+**sccBelow** | **Number** |  | [optional] 
 **sccPercent** | **Number** |  | [optional] 
+**sccType** | **Number** |  | [optional] 
 
 

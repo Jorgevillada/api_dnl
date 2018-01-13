@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**ClientDidGet**](ClientDidGet.md) |  | [optional] 
+**payload** | [**InlineResponse200122Payload**](InlineResponse200122Payload.md) |  | [optional] 
 
 

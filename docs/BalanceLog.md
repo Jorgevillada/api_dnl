@@ -3,10 +3,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**balance** | **Number** |  | [optional] 
+**_date** | **Date** |  | [optional] 
+**id** | **Number** |  | [optional] 
 **clientId** | **Number** |  | [optional] 
 **clientName** | **String** |  | [optional] 
-**id** | **Number** |  | [optional] 
-**_date** | **Date** |  | [optional] 
+**balance** | **Number** |  | [optional] 
 
 

@@ -1,6 +1,6 @@
 # DnlApi.LogApi
 
-All URIs are relative to *https://148.251.91.143:8000/v1*
+All URIs are relative to *https://198.100.149.164:8000/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -40,7 +40,7 @@ Method | HTTP request | Description
 
 <a name="logAlertRuleGet"></a>
 # **logAlertRuleGet**
-> InlineResponse200112 logAlertRuleGet(opts)
+> InlineResponse200128 logAlertRuleGet(opts)
 
 
 
@@ -64,8 +64,8 @@ var opts = {
   'perPage': 56, // Number | 
   'orderBy': "orderBy_example", // String | 
   'orderDir': "orderDir_example", // String | 
-  'alertRulesId': 56, // Number | 
   'status': "status_example", // String | 
+  'alertRulesIdIn': "alertRulesIdIn_example", // String | 
   'finishTimeGt': "finishTimeGt_example", // String | 
   'finishTimeLt': "finishTimeLt_example" // String | 
 };
@@ -88,14 +88,14 @@ Name | Type | Description  | Notes
  **perPage** | **Number**|  | [optional] 
  **orderBy** | **String**|  | [optional] 
  **orderDir** | **String**|  | [optional] 
- **alertRulesId** | **Number**|  | [optional] 
  **status** | **String**|  | [optional] 
+ **alertRulesIdIn** | **String**|  | [optional] 
  **finishTimeGt** | **String**|  | [optional] 
  **finishTimeLt** | **String**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse200112**](InlineResponse200112.md)
+[**InlineResponse200128**](InlineResponse200128.md)
 
 ### Authorization
 
@@ -108,7 +108,7 @@ Name | Type | Description  | Notes
 
 <a name="logAuthGet"></a>
 # **logAuthGet**
-> InlineResponse20086 logAuthGet(opts)
+> InlineResponse200102 logAuthGet(opts)
 
 
 
@@ -135,7 +135,9 @@ var opts = {
   'failedReason': "failedReason_example", // String | 
   'loginIp': "loginIp_example", // String | 
   'status': "status_example", // String | 
-  'username': "username_example" // String | 
+  'username': "username_example", // String | 
+  'loginTimeGt': "loginTimeGt_example", // String | 
+  'loginTimeLt': "loginTimeLt_example" // String | 
 };
 
 var callback = function(error, data, response) {
@@ -160,10 +162,12 @@ Name | Type | Description  | Notes
  **loginIp** | **String**|  | [optional] 
  **status** | **String**|  | [optional] 
  **username** | **String**|  | [optional] 
+ **loginTimeGt** | **String**|  | [optional] 
+ **loginTimeLt** | **String**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse20086**](InlineResponse20086.md)
+[**InlineResponse200102**](InlineResponse200102.md)
 
 ### Authorization
 
@@ -176,7 +180,7 @@ Name | Type | Description  | Notes
 
 <a name="logBalanceGet"></a>
 # **logBalanceGet**
-> InlineResponse20089 logBalanceGet(opts)
+> InlineResponse200105 logBalanceGet(opts)
 
 
 
@@ -231,7 +235,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20089**](InlineResponse20089.md)
+[**InlineResponse200105**](InlineResponse200105.md)
 
 ### Authorization
 
@@ -244,7 +248,7 @@ Name | Type | Description  | Notes
 
 <a name="logCreditGet"></a>
 # **logCreditGet**
-> InlineResponse20090 logCreditGet(opts)
+> InlineResponse200106 logCreditGet(opts)
 
 
 
@@ -301,7 +305,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20090**](InlineResponse20090.md)
+[**InlineResponse200106**](InlineResponse200106.md)
 
 ### Authorization
 
@@ -314,7 +318,7 @@ Name | Type | Description  | Notes
 
 <a name="logEmailGet"></a>
 # **logEmailGet**
-> InlineResponse20087 logEmailGet(opts)
+> InlineResponse200103 logEmailGet(opts)
 
 
 
@@ -379,7 +383,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20087**](InlineResponse20087.md)
+[**InlineResponse200103**](InlineResponse200103.md)
 
 ### Authorization
 
@@ -392,7 +396,7 @@ Name | Type | Description  | Notes
 
 <a name="logExportGet"></a>
 # **logExportGet**
-> InlineResponse20091 logExportGet(opts)
+> InlineResponse200107 logExportGet(opts)
 
 
 
@@ -453,7 +457,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20091**](InlineResponse20091.md)
+[**InlineResponse200107**](InlineResponse200107.md)
 
 ### Authorization
 
@@ -466,7 +470,7 @@ Name | Type | Description  | Notes
 
 <a name="logFraudDetectionGet"></a>
 # **logFraudDetectionGet**
-> InlineResponse200111 logFraudDetectionGet(opts)
+> InlineResponse200127 logFraudDetectionGet(opts)
 
 
 
@@ -491,6 +495,7 @@ var opts = {
   'orderBy': "orderBy_example", // String | 
   'orderDir': "orderDir_example", // String | 
   'fraudDetectionId': 56, // Number | 
+  'ruleName': "ruleName_example", // String | 
   'status': "status_example", // String | 
   'finishTimeGt': "finishTimeGt_example", // String | 
   'finishTimeLt': "finishTimeLt_example" // String | 
@@ -515,13 +520,14 @@ Name | Type | Description  | Notes
  **orderBy** | **String**|  | [optional] 
  **orderDir** | **String**|  | [optional] 
  **fraudDetectionId** | **Number**|  | [optional] 
+ **ruleName** | **String**|  | [optional] 
  **status** | **String**|  | [optional] 
  **finishTimeGt** | **String**|  | [optional] 
  **finishTimeLt** | **String**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse200111**](InlineResponse200111.md)
+[**InlineResponse200127**](InlineResponse200127.md)
 
 ### Authorization
 
@@ -534,7 +540,7 @@ Name | Type | Description  | Notes
 
 <a name="logFtpGet"></a>
 # **logFtpGet**
-> InlineResponse20093 logFtpGet(opts)
+> InlineResponse200109 logFtpGet(opts)
 
 
 
@@ -595,7 +601,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20093**](InlineResponse20093.md)
+[**InlineResponse200109**](InlineResponse200109.md)
 
 ### Authorization
 
@@ -608,7 +614,7 @@ Name | Type | Description  | Notes
 
 <a name="logFtpServerGet"></a>
 # **logFtpServerGet**
-> InlineResponse20094 logFtpServerGet(opts)
+> InlineResponse200110 logFtpServerGet(opts)
 
 
 
@@ -663,7 +669,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20094**](InlineResponse20094.md)
+[**InlineResponse200110**](InlineResponse200110.md)
 
 ### Authorization
 
@@ -676,7 +682,7 @@ Name | Type | Description  | Notes
 
 <a name="logImportGet"></a>
 # **logImportGet**
-> InlineResponse20092 logImportGet(opts)
+> InlineResponse200108 logImportGet(opts)
 
 
 
@@ -739,7 +745,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20092**](InlineResponse20092.md)
+[**InlineResponse200108**](InlineResponse200108.md)
 
 ### Authorization
 
@@ -752,7 +758,7 @@ Name | Type | Description  | Notes
 
 <a name="logInvoiceCdrGet"></a>
 # **logInvoiceCdrGet**
-> InlineResponse20095 logInvoiceCdrGet(opts)
+> InlineResponse200111 logInvoiceCdrGet(opts)
 
 
 
@@ -811,7 +817,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20095**](InlineResponse20095.md)
+[**InlineResponse200111**](InlineResponse200111.md)
 
 ### Authorization
 
@@ -824,7 +830,7 @@ Name | Type | Description  | Notes
 
 <a name="logInvoiceGet"></a>
 # **logInvoiceGet**
-> InlineResponse20096 logInvoiceGet(opts)
+> InlineResponse200112 logInvoiceGet(opts)
 
 
 
@@ -883,7 +889,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20096**](InlineResponse20096.md)
+[**InlineResponse200112**](InlineResponse200112.md)
 
 ### Authorization
 
@@ -896,7 +902,7 @@ Name | Type | Description  | Notes
 
 <a name="logIpModifyGet"></a>
 # **logIpModifyGet**
-> InlineResponse20097 logIpModifyGet(opts)
+> InlineResponse200113 logIpModifyGet(opts)
 
 
 
@@ -957,7 +963,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20097**](InlineResponse20097.md)
+[**InlineResponse200113**](InlineResponse200113.md)
 
 ### Authorization
 
@@ -970,7 +976,7 @@ Name | Type | Description  | Notes
 
 <a name="logLicenseModifyGet"></a>
 # **logLicenseModifyGet**
-> InlineResponse20099 logLicenseModifyGet(opts)
+> InlineResponse200115 logLicenseModifyGet(opts)
 
 
 
@@ -1033,7 +1039,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20099**](InlineResponse20099.md)
+[**InlineResponse200115**](InlineResponse200115.md)
 
 ### Authorization
 
@@ -1046,7 +1052,7 @@ Name | Type | Description  | Notes
 
 <a name="logModifyGet"></a>
 # **logModifyGet**
-> InlineResponse20098 logModifyGet(opts)
+> InlineResponse200114 logModifyGet(opts)
 
 
 
@@ -1072,6 +1078,7 @@ var opts = {
   'orderDir': "orderDir_example", // String | 
   'detail': "detail_example", // String | 
   'id': 56, // Number | 
+  'module': "module_example", // String | 
   'name': "name_example", // String | 
   'type': "type_example", // String | 
   'timeGt': "timeGt_example", // String | 
@@ -1098,6 +1105,7 @@ Name | Type | Description  | Notes
  **orderDir** | **String**|  | [optional] 
  **detail** | **String**|  | [optional] 
  **id** | **Number**|  | [optional] 
+ **module** | **String**|  | [optional] 
  **name** | **String**|  | [optional] 
  **type** | **String**|  | [optional] 
  **timeGt** | **String**|  | [optional] 
@@ -1105,7 +1113,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20098**](InlineResponse20098.md)
+[**InlineResponse200114**](InlineResponse200114.md)
 
 ### Authorization
 
@@ -1118,7 +1126,7 @@ Name | Type | Description  | Notes
 
 <a name="logOrigGet"></a>
 # **logOrigGet**
-> InlineResponse200100 logOrigGet(opts)
+> InlineResponse200116 logOrigGet(opts)
 
 
 
@@ -1179,7 +1187,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200100**](InlineResponse200100.md)
+[**InlineResponse200116**](InlineResponse200116.md)
 
 ### Authorization
 
@@ -1192,7 +1200,7 @@ Name | Type | Description  | Notes
 
 <a name="logRateDownloadGet"></a>
 # **logRateDownloadGet**
-> InlineResponse200102 logRateDownloadGet(opts)
+> InlineResponse200118 logRateDownloadGet(opts)
 
 
 
@@ -1249,7 +1257,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200102**](InlineResponse200102.md)
+[**InlineResponse200118**](InlineResponse200118.md)
 
 ### Authorization
 
@@ -1262,7 +1270,7 @@ Name | Type | Description  | Notes
 
 <a name="logRateGenerationGet"></a>
 # **logRateGenerationGet**
-> InlineResponse200104 logRateGenerationGet(opts)
+> InlineResponse200120 logRateGenerationGet(opts)
 
 
 
@@ -1291,6 +1299,8 @@ var opts = {
   'isApplied': true, // Boolean | 
   'rateGenerationTemplateId': 56, // Number | 
   'status': "status_example", // String | 
+  'createOnGt': "createOnGt_example", // String | 
+  'createOnLt': "createOnLt_example", // String | 
   'finishedTimeGt': "finishedTimeGt_example", // String | 
   'finishedTimeLt': "finishedTimeLt_example" // String | 
 };
@@ -1318,12 +1328,14 @@ Name | Type | Description  | Notes
  **isApplied** | **Boolean**|  | [optional] 
  **rateGenerationTemplateId** | **Number**|  | [optional] 
  **status** | **String**|  | [optional] 
+ **createOnGt** | **String**|  | [optional] 
+ **createOnLt** | **String**|  | [optional] 
  **finishedTimeGt** | **String**|  | [optional] 
  **finishedTimeLt** | **String**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse200104**](InlineResponse200104.md)
+[**InlineResponse200120**](InlineResponse200120.md)
 
 ### Authorization
 
@@ -1336,7 +1348,7 @@ Name | Type | Description  | Notes
 
 <a name="logRateMassEditGet"></a>
 # **logRateMassEditGet**
-> InlineResponse200103 logRateMassEditGet(opts)
+> InlineResponse200119 logRateMassEditGet(opts)
 
 
 
@@ -1395,7 +1407,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200103**](InlineResponse200103.md)
+[**InlineResponse200119**](InlineResponse200119.md)
 
 ### Authorization
 
@@ -1408,7 +1420,7 @@ Name | Type | Description  | Notes
 
 <a name="logRateUploadGet"></a>
 # **logRateUploadGet**
-> InlineResponse200101 logRateUploadGet(opts)
+> InlineResponse200117 logRateUploadGet(opts)
 
 
 
@@ -1436,9 +1448,15 @@ var opts = {
   'method': "method_example", // String | 
   'operatorUser': "operatorUser_example", // String | 
   'rateTableId': 56, // Number | 
+  'rateTableName': "rateTableName_example", // String | 
   'status': "status_example", // String | 
-  'startTimeGt': "startTimeGt_example", // String | 
-  'startTimeLt': "startTimeLt_example" // String | 
+  'createDateTimeGt': "createDateTimeGt_example", // String | 
+  'createDateTimeLt': "createDateTimeLt_example", // String | 
+  'endDateTimeGt': "endDateTimeGt_example", // String | 
+  'endDateTimeLt': "endDateTimeLt_example", // String | 
+  'idIn': "idIn_example", // String | 
+  'startDateTimeGt': "startDateTimeGt_example", // String | 
+  'startDateTimeLt': "startDateTimeLt_example" // String | 
 };
 
 var callback = function(error, data, response) {
@@ -1463,13 +1481,19 @@ Name | Type | Description  | Notes
  **method** | **String**|  | [optional] 
  **operatorUser** | **String**|  | [optional] 
  **rateTableId** | **Number**|  | [optional] 
+ **rateTableName** | **String**|  | [optional] 
  **status** | **String**|  | [optional] 
- **startTimeGt** | **String**|  | [optional] 
- **startTimeLt** | **String**|  | [optional] 
+ **createDateTimeGt** | **String**|  | [optional] 
+ **createDateTimeLt** | **String**|  | [optional] 
+ **endDateTimeGt** | **String**|  | [optional] 
+ **endDateTimeLt** | **String**|  | [optional] 
+ **idIn** | **String**|  | [optional] 
+ **startDateTimeGt** | **String**|  | [optional] 
+ **startDateTimeLt** | **String**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse200101**](InlineResponse200101.md)
+[**InlineResponse200117**](InlineResponse200117.md)
 
 ### Authorization
 
@@ -1482,7 +1506,7 @@ Name | Type | Description  | Notes
 
 <a name="logRegenerateBalanceGet"></a>
 # **logRegenerateBalanceGet**
-> InlineResponse20088 logRegenerateBalanceGet(opts)
+> InlineResponse200104 logRegenerateBalanceGet(opts)
 
 
 
@@ -1543,7 +1567,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20088**](InlineResponse20088.md)
+[**InlineResponse200104**](InlineResponse200104.md)
 
 ### Authorization
 
@@ -1556,7 +1580,7 @@ Name | Type | Description  | Notes
 
 <a name="logRerateCdrDownloadGet"></a>
 # **logRerateCdrDownloadGet**
-> InlineResponse200114 logRerateCdrDownloadGet(opts)
+> InlineResponse200130 logRerateCdrDownloadGet(opts)
 
 
 
@@ -1613,7 +1637,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200114**](InlineResponse200114.md)
+[**InlineResponse200130**](InlineResponse200130.md)
 
 ### Authorization
 
@@ -1626,7 +1650,7 @@ Name | Type | Description  | Notes
 
 <a name="logRerateExecGet"></a>
 # **logRerateExecGet**
-> InlineResponse200113 logRerateExecGet(opts)
+> InlineResponse200129 logRerateExecGet(opts)
 
 
 
@@ -1687,7 +1711,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200113**](InlineResponse200113.md)
+[**InlineResponse200129**](InlineResponse200129.md)
 
 ### Authorization
 
@@ -1700,7 +1724,7 @@ Name | Type | Description  | Notes
 
 <a name="logRetrievePasswordGet"></a>
 # **logRetrievePasswordGet**
-> InlineResponse200105 logRetrievePasswordGet(opts)
+> InlineResponse200121 logRetrievePasswordGet(opts)
 
 
 
@@ -1759,7 +1783,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200105**](InlineResponse200105.md)
+[**InlineResponse200121**](InlineResponse200121.md)
 
 ### Authorization
 
@@ -1772,7 +1796,7 @@ Name | Type | Description  | Notes
 
 <a name="logRevisionsGet"></a>
 # **logRevisionsGet**
-> InlineResponse20085 logRevisionsGet(opts)
+> InlineResponse200101 logRevisionsGet(opts)
 
 
 
@@ -1833,7 +1857,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20085**](InlineResponse20085.md)
+[**InlineResponse200101**](InlineResponse200101.md)
 
 ### Authorization
 
@@ -1899,7 +1923,7 @@ Name | Type | Description  | Notes
 
 <a name="logScheduledReportGet"></a>
 # **logScheduledReportGet**
-> InlineResponse200106 logScheduledReportGet(opts)
+> InlineResponse200122 logScheduledReportGet(opts)
 
 
 
@@ -1956,7 +1980,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200106**](InlineResponse200106.md)
+[**InlineResponse200122**](InlineResponse200122.md)
 
 ### Authorization
 
@@ -1969,7 +1993,7 @@ Name | Type | Description  | Notes
 
 <a name="logSchedulerGet"></a>
 # **logSchedulerGet**
-> InlineResponse200107 logSchedulerGet(opts)
+> InlineResponse200123 logSchedulerGet(opts)
 
 
 
@@ -2024,7 +2048,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200107**](InlineResponse200107.md)
+[**InlineResponse200123**](InlineResponse200123.md)
 
 ### Authorization
 
@@ -2037,7 +2061,7 @@ Name | Type | Description  | Notes
 
 <a name="logSipRegisterGet"></a>
 # **logSipRegisterGet**
-> InlineResponse200108 logSipRegisterGet(opts)
+> InlineResponse200124 logSipRegisterGet(opts)
 
 
 
@@ -2102,7 +2126,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200108**](InlineResponse200108.md)
+[**InlineResponse200124**](InlineResponse200124.md)
 
 ### Authorization
 
@@ -2115,7 +2139,7 @@ Name | Type | Description  | Notes
 
 <a name="logSqlGet"></a>
 # **logSqlGet**
-> InlineResponse200109 logSqlGet(opts)
+> InlineResponse200125 logSqlGet(opts)
 
 
 
@@ -2162,7 +2186,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200109**](InlineResponse200109.md)
+[**InlineResponse200125**](InlineResponse200125.md)
 
 ### Authorization
 
@@ -2175,7 +2199,7 @@ Name | Type | Description  | Notes
 
 <a name="logUserSignonGet"></a>
 # **logUserSignonGet**
-> InlineResponse200110 logUserSignonGet(opts)
+> InlineResponse200126 logUserSignonGet(opts)
 
 
 
@@ -2236,7 +2260,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200110**](InlineResponse200110.md)
+[**InlineResponse200126**](InlineResponse200126.md)
 
 ### Authorization
 
@@ -2249,7 +2273,7 @@ Name | Type | Description  | Notes
 
 <a name="logVersionsGet"></a>
 # **logVersionsGet**
-> InlineResponse200115 logVersionsGet(opts)
+> InlineResponse200131 logVersionsGet(opts)
 
 
 
@@ -2300,7 +2324,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200115**](InlineResponse200115.md)
+[**InlineResponse200131**](InlineResponse200131.md)
 
 ### Authorization
 

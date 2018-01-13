@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**ResourcePrefixGet**](ResourcePrefixGet.md) |  | [optional] 
+**payload** | [**InlineResponse200188Payload**](InlineResponse200188Payload.md) |  | [optional] 
 
 

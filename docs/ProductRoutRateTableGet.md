@@ -3,20 +3,22 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** |  | [optional] 
-**techPrefix** | **Number** |  | [optional] 
-**rateTableName** | **String** |  | [optional] 
-**description** | **String** |  | [optional] 
-**rateTableId** | **Number** |  | [optional] 
-**type** | **String** |  | [optional] [default to &#39;public&#39;]
-**updateAt** | **Date** |  | [optional] 
-**agentId** | **Number** |  | [optional] 
 **routePlanId** | **Number** |  | [optional] 
+**rateTableId** | **Number** |  | [optional] 
 **updateBy** | **String** |  | [optional] 
-**allowedClients** | **[Number]** |  | [optional] 
-**id** | **Number** |  | [optional] 
-**routePlanName** | **String** |  | [optional] 
+**rateTableName** | **String** |  | [optional] 
 **clients** | **[Number]** |  | [optional] 
+**agents** | **[Number]** |  | [optional] 
+**type** | **String** |  | [optional] [default to &#39;public&#39;]
+**name** | **String** |  | [optional] 
+**id** | **Number** |  | [optional] 
+**description** | **String** |  | [optional] 
+**agentId** | **Number** |  | [optional] 
+**allowedClients** | **[Number]** |  | [optional] 
+**routePlanName** | **String** |  | [optional] 
+**techPrefix** | **Number** |  | [optional] 
+**updateAt** | **Date** |  | [optional] 
+**trunks** | [**[ResourcePrefix]**](ResourcePrefix.md) |  | [optional] 
 
 
 <a name="TypeEnum"></a>

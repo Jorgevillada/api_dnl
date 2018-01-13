@@ -3,11 +3,11 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** |  | 
+**routePlanId** | **Number** |  | [optional] 
 **usageCount** | **Number** |  | [optional] 
 **updateBy** | **String** |  | [optional] 
-**isVirtual** | **Boolean** |  | [optional] 
-**routePlanId** | **Number** |  | [optional] 
 **updateAt** | **Date** |  | [optional] 
+**isVirtual** | **Boolean** |  | [optional] 
+**name** | **String** |  | 
 
 

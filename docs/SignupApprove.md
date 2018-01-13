@@ -12,9 +12,9 @@ Name | Type | Description | Notes
 
 * `new` (value: `"new"`)
 
-* `rejected` (value: `"rejected"`)
-
 * `approved` (value: `"approved"`)
+
+* `rejected` (value: `"rejected"`)
 
 
 

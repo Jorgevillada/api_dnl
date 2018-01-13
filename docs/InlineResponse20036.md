@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**SystemFunctionGet**](SystemFunctionGet.md) |  | [optional] 
+**payload** | [**InlineResponse20036Payload**](InlineResponse20036Payload.md) |  | [optional] 
 
 

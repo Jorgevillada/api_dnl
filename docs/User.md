@@ -3,40 +3,41 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** |  | 
-**clientId** | **Number** |  | [optional] 
-**resellerId** | **Number** |  | [optional] 
-**email** | **String** |  | [optional] 
-**active** | **Boolean** |  | [optional] 
-**defaultMod** | **Number** |  | [optional] 
-**showCarrierTrunkDropOnly** | **Boolean** |  | [optional] 
-**roleId** | **Number** |  | [optional] 
-**defaultMod2** | **Number** |  | [optional] 
 **userType** | **String** |  | [optional] [default to &#39;admin&#39;]
-**fullname** | **String** |  | [optional] 
-**cardId** | **Number** |  | [optional] 
-**landingPage** | **String** |  | [optional] 
-**outboundReport** | **Boolean** |  | [optional] 
-**passwd** | **String** |  | [optional] 
-**loginIp** | **String** |  | [optional] 
-**reportGroup** | **Boolean** |  | [optional] 
-**allTermination** | **Boolean** |  | [optional] 
+**clientId** | **Number** |  | [optional] 
 **clientLimits** | [**[UsersLimit]**](UsersLimit.md) |  | [optional] 
+**passwd** | **String** |  | [optional] 
+**outboundReport** | **Boolean** |  | [optional] 
+**showCarrierTrunkDropOnly** | **Boolean** |  | [optional] 
+**defaultMod2** | **String** |  | [optional] 
+**name** | **String** |  | 
+**authIp** | [**[UserAuthIp]**](UserAuthIp.md) |  | [optional] 
 **reportFields** | **String** |  | [optional] 
-**isOnline** | **Number** |  | [optional] 
+**roleId** | **Number** |  | [optional] 
+**active** | **Boolean** |  | [optional] 
+**landingPage** | **String** |  | [optional] 
+**defaultMod** | **String** |  | [optional] 
+**lastName** | **String** |  | [optional] 
+**avatarId** | **Number** |  | [optional] 
+**reportGroup** | **Boolean** |  | [optional] 
+**firstName** | **String** |  | [optional] 
+**email** | **String** |  | [optional] 
+**resellerId** | **Number** |  | [optional] 
+**cardId** | **Number** |  | [optional] 
+**allTermination** | **Boolean** |  | [optional] 
 
 
 <a name="UserTypeEnum"></a>
 ## Enum: UserTypeEnum
 
 
-* `viewer` (value: `"viewer"`)
+* `admin` (value: `"admin"`)
 
 * `client` (value: `"client"`)
 
-* `admin` (value: `"admin"`)
-
 * `agent` (value: `"agent"`)
+
+* `viewer` (value: `"viewer"`)
 
 
 

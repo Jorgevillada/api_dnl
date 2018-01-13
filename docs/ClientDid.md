@@ -3,33 +3,46 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** |  | [optional] 
-**isUnlimited** | **Boolean** |  | [optional] 
 **isPanelInvoices** | **Boolean** |  | [optional] 
-**username** | **String** |  | [optional] 
-**callLimit** | **Number** |  | [optional] 
-**password** | **String** |  | [optional] 
-**autoInvoicing** | **Boolean** |  | [optional] 
-**isPanelAccountsummary** | **Boolean** |  | [optional] 
-**isPanelCdrslist** | **Boolean** |  | [optional] 
-**isPanelMydid** | **Boolean** |  | [optional] 
-**isPanelRatetable** | **Boolean** |  | [optional] 
-**billingEmail** | **String** |  | [optional] 
-**company** | **String** |  | [optional] 
-**isPanelPaymenthistory** | **Boolean** |  | [optional] 
-**rateEmail** | **String** |  | [optional] 
-**billingMode** | **String** |  | [optional] 
-**isPanelDidrequest** | **Boolean** |  | [optional] 
-**testCredit** | **Number** |  | [optional] 
-**isPanelBalance** | **Boolean** |  | [optional] 
-**nocEmail** | **String** |  | [optional] 
-**address** | **String** |  | [optional] 
-**isPanelSummaryreport** | **Boolean** |  | [optional] 
-**isPanelTrunks** | **Boolean** |  | [optional] 
 **allowedCredit** | **Number** |  | [optional] 
+**billingEmail** | **String** |  | [optional] 
+**paymentTermId** | **Number** |  | [optional] 
 **mainEmail** | **String** |  | [optional] 
-**isPanelProducts** | **Boolean** |  | [optional] 
+**testCredit** | **Number** |  | [optional] 
+**name** | **String** |  | [optional] 
+**isPanelDidrequest** | **Boolean** |  | [optional] 
+**nocEmail** | **String** |  | [optional] 
+**autoInvoicing** | **Boolean** |  | [optional] 
+**billingMode** | **String** |  | [optional] 
 **resource** | [**ClientResourceDid**](ClientResourceDid.md) |  | [optional] 
 **active** | **Boolean** |  | [optional] 
+**isPanelTrunks** | **Boolean** |  | [optional] 
+**rateEmail** | **String** |  | [optional] 
+**isPanelPaymenthistory** | **Boolean** |  | [optional] 
+**isPanelAccountsummary** | **Boolean** |  | [optional] 
+**company** | **String** |  | [optional] 
+**password** | **String** |  | [optional] 
+**isPanelRatetable** | **Boolean** |  | [optional] 
+**isPanelCdrslist** | **Boolean** |  | [optional] 
+**username** | **String** |  | [optional] 
+**autoSendInvoice** | **Boolean** |  | [optional] 
+**unlimitedCredit** | **Boolean** |  | [optional] 
+**isPanelSummaryreport** | **Boolean** |  | [optional] 
+**address** | **String** |  | [optional] 
+**callLimit** | **Number** |  | [optional] 
+**isPanelMydid** | **Boolean** |  | [optional] 
+**isPanelProducts** | **Boolean** |  | [optional] 
+**isPanelBalance** | **Boolean** |  | [optional] 
+
+
+<a name="BillingModeEnum"></a>
+## Enum: BillingModeEnum
+
+
+* `prepay` (value: `"prepay"`)
+
+* `postpay` (value: `"postpay"`)
+
+
 
 

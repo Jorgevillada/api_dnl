@@ -3,27 +3,27 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**trunkName** | **String** |  | [optional] 
+**id** | **Number** |  | [optional] 
 **carrierName** | **String** |  | [optional] 
+**status** | **String** |  | [optional] [default to &#39;un-register&#39;]
 **contact** | **String** |  | [optional] 
 **networkIp** | **String** |  | [optional] 
-**networkPort** | **Number** |  | [optional] 
-**id** | **Number** |  | [optional] 
+**username** | **String** |  | [optional] 
 **expires** | **Number** |  | [optional] 
 **time** | **Date** |  | [optional] 
-**status** | **String** |  | [optional] [default to &#39;un-register&#39;]
-**trunkName** | **String** |  | [optional] 
-**username** | **String** |  | [optional] 
+**networkPort** | **Number** |  | [optional] 
 
 
 <a name="StatusEnum"></a>
 ## Enum: StatusEnum
 
 
-* `register failed` (value: `"register failed"`)
+* `un-register` (value: `"un-register"`)
 
 * `registered` (value: `"registered"`)
 
-* `un-register` (value: `"un-register"`)
+* `register failed` (value: `"register failed"`)
 
 
 

@@ -3,38 +3,38 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**billingCity** | **String** |  | [optional] 
-**company** | **String** |  | [optional] 
-**username** | **String** |  | [optional] 
-**phone** | **String** |  | [optional] 
-**zip** | **String** |  | [optional] 
-**password** | **String** |  | [optional] 
-**rateSendFromEmail** | **String** |  | [optional] 
-**billingContactName** | **String** |  | [optional] 
-**billingAddress** | **String** |  | [optional] 
 **ipAddress** | [**[SignupIpGet]**](SignupIpGet.md) |  | [optional] 
-**state** | **String** |  | [optional] 
-**billingZip** | **String** |  | [optional] 
 **billingEmail** | **String** |  | [optional] 
-**clientName** | **String** |  | [optional] 
-**signedUpOn** | **Date** |  | [optional] 
-**billingState** | **String** |  | [optional] 
-**billingPhone** | **String** |  | [optional] 
-**referral** | **String** |  | [optional] 
-**nocEmail** | **String** |  | [optional] 
-**modifiedOn** | **Date** |  | [optional] 
-**companyDetail** | **String** |  | [optional] 
-**address** | **String** |  | [optional] 
-**products** | **[Number]** |  | [optional] 
-**id** | **Number** |  | [optional] 
-**taxId** | **String** |  | [optional] 
-**rateSendToEmail** | **String** |  | [optional] 
-**city** | **String** |  | [optional] 
+**mainEmail** | **String** |  | 
 **billingCountry** | **String** |  | [optional] 
-**country** | **String** |  | [optional] 
+**referral** | **String** |  | [optional] 
+**zip** | **String** |  | [optional] 
+**rateSendFromEmail** | **String** |  | [optional] 
+**billingAddress** | **String** |  | [optional] 
 **status** | **String** |  | [optional] [default to &#39;new&#39;]
+**id** | **Number** |  | [optional] 
+**billingPhone** | **String** |  | [optional] 
+**rateSendToEmail** | **String** |  | [optional] 
+**modifiedOn** | **Date** |  | [optional] 
+**billingZip** | **String** |  | [optional] 
+**taxId** | **String** |  | [optional] 
+**company** | **String** |  | [optional] 
+**password** | **String** |  | [optional] 
+**nocEmail** | **String** |  | [optional] 
+**city** | **String** |  | [optional] 
+**country** | **String** |  | [optional] 
+**username** | **String** |  | 
+**companyDetail** | **String** |  | [optional] 
+**state** | **String** |  | [optional] 
+**address** | **String** |  | [optional] 
+**billingContactName** | **String** |  | [optional] 
+**billingState** | **String** |  | [optional] 
 **sendSignupNotification** | **Number** |  | [optional] 
-**mainEmail** | **String** |  | [optional] 
+**signedUpOn** | **Date** |  | [optional] 
+**clientName** | **String** |  | 
+**billingCity** | **String** |  | [optional] 
+**products** | **[Number]** |  | [optional] 
+**phone** | **String** |  | [optional] 
 
 
 <a name="StatusEnum"></a>
@@ -43,9 +43,9 @@ Name | Type | Description | Notes
 
 * `new` (value: `"new"`)
 
-* `rejected` (value: `"rejected"`)
-
 * `approved` (value: `"approved"`)
+
+* `rejected` (value: `"rejected"`)
 
 
 

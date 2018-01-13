@@ -3,15 +3,28 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** |  | [optional] 
-**prefixCount** | **Number** |  | [optional] 
-**updateBy** | **String** |  | [optional] 
-**routedBy** | **String** |  | [optional] [default to &#39;LRN&#39;]
 **definedBy** | **String** |  | [optional] [default to &#39;Code&#39;]
-**routeCount** | **Number** |  | [optional] 
-**staticRouteId** | **Number** |  | [optional] 
-**updateAt** | **Date** |  | [optional] 
+**routedBy** | **String** |  | [optional] [default to &#39;DNIS&#39;]
+**updateBy** | **String** |  | [optional] 
 **codeDeckName** | **String** |  | [optional] 
+**prefixCount** | **Number** |  | [optional] 
+**updateAt** | **Date** |  | [optional] 
+**staticRouteId** | **Number** |  | [optional] 
+**routeCount** | **Number** |  | [optional] 
+**name** | **String** |  | [optional] 
+
+
+<a name="DefinedByEnum"></a>
+## Enum: DefinedByEnum
+
+
+* `Code` (value: `"Code"`)
+
+* `Code Name` (value: `"Code Name"`)
+
+* `Country` (value: `"Country"`)
+
+
 
 
 <a name="RoutedByEnum"></a>
@@ -22,18 +35,7 @@ Name | Type | Description | Notes
 
 * `LRN` (value: `"LRN"`)
 
-
-
-
-<a name="DefinedByEnum"></a>
-## Enum: DefinedByEnum
-
-
-* `Country` (value: `"Country"`)
-
-* `Code` (value: `"Code"`)
-
-* `Code Name` (value: `"Code Name"`)
+* `None` (value: `"None"`)
 
 
 

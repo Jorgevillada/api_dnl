@@ -1,21 +1,25 @@
 # DnlApi.AuthApi
 
-All URIs are relative to *https://148.251.91.143:8000/v1*
+All URIs are relative to *https://198.100.149.164:8000/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**authAsAgentPost**](AuthApi.md#authAsAgentPost) | **POST** /auth/as_agent | 
 [**authAsClientPost**](AuthApi.md#authAsClientPost) | **POST** /auth/as_client | 
 [**authCheckPasswordPost**](AuthApi.md#authCheckPasswordPost) | **POST** /auth/check-password | 
 [**authCheckTokenPost**](AuthApi.md#authCheckTokenPost) | **POST** /auth/check-token | 
 [**authPost**](AuthApi.md#authPost) | **POST** /auth | 
 [**authResetEmailPost**](AuthApi.md#authResetEmailPost) | **POST** /auth/reset_email | 
-[**authResetPasswordPost**](AuthApi.md#authResetPasswordPost) | **POST** /auth/reset_password | 
+[**authResetTokenGet**](AuthApi.md#authResetTokenGet) | **GET** /auth/reset/{token} | 
+[**registrationAllDelete**](AuthApi.md#registrationAllDelete) | **DELETE** /registration/all | 
 [**registrationCreatePost**](AuthApi.md#registrationCreatePost) | **POST** /registration/create | 
 [**registrationIdApprovePatch**](AuthApi.md#registrationIdApprovePatch) | **PATCH** /registration/{id}/approve | 
 [**registrationIdDelete**](AuthApi.md#registrationIdDelete) | **DELETE** /registration/{id} | 
 [**registrationIdGet**](AuthApi.md#registrationIdGet) | **GET** /registration/{id} | 
 [**registrationIdPatch**](AuthApi.md#registrationIdPatch) | **PATCH** /registration/{id} | 
 [**registrationListGet**](AuthApi.md#registrationListGet) | **GET** /registration/list | 
+[**userAllDelete**](AuthApi.md#userAllDelete) | **DELETE** /user/all | 
+[**userAllPatch**](AuthApi.md#userAllPatch) | **PATCH** /user/all | 
 [**userCreatePost**](AuthApi.md#userCreatePost) | **POST** /user/create | 
 [**userGet**](AuthApi.md#userGet) | **GET** /user | 
 [**userListGet**](AuthApi.md#userListGet) | **GET** /user/list | 
@@ -23,6 +27,60 @@ Method | HTTP request | Description
 [**userUserIdGet**](AuthApi.md#userUserIdGet) | **GET** /user/{user_id} | 
 [**userUserIdPatch**](AuthApi.md#userUserIdPatch) | **PATCH** /user/{user_id} | 
 
+
+<a name="authAsAgentPost"></a>
+# **authAsAgentPost**
+> AuthToken authAsAgentPost(opts)
+
+
+
+Authenticate as agent
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.AuthApi();
+
+var opts = { 
+  'body': new DnlApi.AuthAsAgent() // AuthAsAgent | Agent reference id
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.authAsAgentPost(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**AuthAsAgent**](AuthAsAgent.md)| Agent reference id | [optional] 
+
+### Return type
+
+[**AuthToken**](AuthToken.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 <a name="authAsClientPost"></a>
 # **authAsClientPost**
@@ -285,9 +343,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="authResetPasswordPost"></a>
-# **authResetPasswordPost**
-> Success authResetPasswordPost(opts)
+<a name="authResetTokenGet"></a>
+# **authResetTokenGet**
+> Success authResetTokenGet(token)
 
 
 
@@ -306,8 +364,73 @@ auth_token.apiKey = 'YOUR API KEY';
 
 var apiInstance = new DnlApi.AuthApi();
 
+var token = "token_example"; // String | Token from email
+
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.authResetTokenGet(token, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **token** | **String**| Token from email | 
+
+### Return type
+
+[**Success**](Success.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="registrationAllDelete"></a>
+# **registrationAllDelete**
+> InlineResponse2002 registrationAllDelete(opts)
+
+
+
+Deletes multiple found signup
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.AuthApi();
+
 var opts = { 
-  'body': new DnlApi.UserResetPassword() // UserResetPassword | User data
+  'city': "city_example", // String | 
+  'clientName': "clientName_example", // String | 
+  'company': "company_example", // String | 
+  'idIn': "idIn_example", // String | 
+  'mainEmail': "mainEmail_example", // String | 
+  'modifiedOnGt': "modifiedOnGt_example", // String | 
+  'modifiedOnLt': "modifiedOnLt_example", // String | 
+  'phone': "phone_example", // String | 
+  'referral': "referral_example", // String | 
+  'signedUpOnGt': "signedUpOnGt_example", // String | 
+  'signedUpOnLt': "signedUpOnLt_example", // String | 
+  'status': "status_example", // String | 
+  'username': "username_example" // String | 
 };
 
 var callback = function(error, data, response) {
@@ -317,18 +440,30 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.authResetPasswordPost(opts, callback);
+apiInstance.registrationAllDelete(opts, callback);
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**UserResetPassword**](UserResetPassword.md)| User data | [optional] 
+ **city** | **String**|  | [optional] 
+ **clientName** | **String**|  | [optional] 
+ **company** | **String**|  | [optional] 
+ **idIn** | **String**|  | [optional] 
+ **mainEmail** | **String**|  | [optional] 
+ **modifiedOnGt** | **String**|  | [optional] 
+ **modifiedOnLt** | **String**|  | [optional] 
+ **phone** | **String**|  | [optional] 
+ **referral** | **String**|  | [optional] 
+ **signedUpOnGt** | **String**|  | [optional] 
+ **signedUpOnLt** | **String**|  | [optional] 
+ **status** | **String**|  | [optional] 
+ **username** | **String**|  | [optional] 
 
 ### Return type
 
-[**Success**](Success.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -393,7 +528,7 @@ Name | Type | Description  | Notes
 
 <a name="registrationIdApprovePatch"></a>
 # **registrationIdApprovePatch**
-> InlineResponse2003 registrationIdApprovePatch(id, opts)
+> InlineResponse2004 registrationIdApprovePatch(id, opts)
 
 
 
@@ -437,7 +572,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2003**](InlineResponse2003.md)
+[**InlineResponse2004**](InlineResponse2004.md)
 
 ### Authorization
 
@@ -503,7 +638,7 @@ Name | Type | Description  | Notes
 
 <a name="registrationIdGet"></a>
 # **registrationIdGet**
-> InlineResponse2003 registrationIdGet(id)
+> InlineResponse2004 registrationIdGet(id)
 
 
 
@@ -543,7 +678,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2003**](InlineResponse2003.md)
+[**InlineResponse2004**](InlineResponse2004.md)
 
 ### Authorization
 
@@ -556,7 +691,7 @@ Name | Type | Description  | Notes
 
 <a name="registrationIdPatch"></a>
 # **registrationIdPatch**
-> InlineResponse2003 registrationIdPatch(id, opts)
+> InlineResponse2004 registrationIdPatch(id, opts)
 
 
 
@@ -578,7 +713,7 @@ var apiInstance = new DnlApi.AuthApi();
 var id = 789; // Number | Signup id to get info about
 
 var opts = { 
-  'body': new DnlApi.Signup() // Signup | Signup to modify
+  'body': new DnlApi.SignupModify() // SignupModify | Signup to modify
 };
 
 var callback = function(error, data, response) {
@@ -596,11 +731,11 @@ apiInstance.registrationIdPatch(id, opts, callback);
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Number**| Signup id to get info about | 
- **body** | [**Signup**](Signup.md)| Signup to modify | [optional] 
+ **body** | [**SignupModify**](SignupModify.md)| Signup to modify | [optional] 
 
 ### Return type
 
-[**InlineResponse2003**](InlineResponse2003.md)
+[**InlineResponse2004**](InlineResponse2004.md)
 
 ### Authorization
 
@@ -613,7 +748,7 @@ Name | Type | Description  | Notes
 
 <a name="registrationListGet"></a>
 # **registrationListGet**
-> InlineResponse2004 registrationListGet(opts)
+> InlineResponse2005 registrationListGet(opts)
 
 
 
@@ -645,6 +780,7 @@ var opts = {
   'referral': "referral_example", // String | 
   'status': "status_example", // String | 
   'username': "username_example", // String | 
+  'idIn': "idIn_example", // String | 
   'modifiedOnGt': "modifiedOnGt_example", // String | 
   'modifiedOnLt': "modifiedOnLt_example", // String | 
   'signedUpOnGt': "signedUpOnGt_example", // String | 
@@ -677,6 +813,7 @@ Name | Type | Description  | Notes
  **referral** | **String**|  | [optional] 
  **status** | **String**|  | [optional] 
  **username** | **String**|  | [optional] 
+ **idIn** | **String**|  | [optional] 
  **modifiedOnGt** | **String**|  | [optional] 
  **modifiedOnLt** | **String**|  | [optional] 
  **signedUpOnGt** | **String**|  | [optional] 
@@ -684,7 +821,165 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2004**](InlineResponse2004.md)
+[**InlineResponse2005**](InlineResponse2005.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="userAllDelete"></a>
+# **userAllDelete**
+> InlineResponse2002 userAllDelete(opts)
+
+
+
+Deletes multiple found user
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.AuthApi();
+
+var opts = { 
+  'active': true, // Boolean | 
+  'createTimeGt': "createTimeGt_example", // String | 
+  'createTimeLt': "createTimeLt_example", // String | 
+  'email': "email_example", // String | 
+  'isOnline': 56, // Number | 
+  'lastLoginTimeGt': "lastLoginTimeGt_example", // String | 
+  'lastLoginTimeLt': "lastLoginTimeLt_example", // String | 
+  'loginIp': "loginIp_example", // String | 
+  'name': "name_example", // String | 
+  'roleId': 56, // Number | 
+  'userId': 56, // Number | 
+  'userIdIn': "userIdIn_example", // String | 
+  'userType': "userType_example" // String | 
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.userAllDelete(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **active** | **Boolean**|  | [optional] 
+ **createTimeGt** | **String**|  | [optional] 
+ **createTimeLt** | **String**|  | [optional] 
+ **email** | **String**|  | [optional] 
+ **isOnline** | **Number**|  | [optional] 
+ **lastLoginTimeGt** | **String**|  | [optional] 
+ **lastLoginTimeLt** | **String**|  | [optional] 
+ **loginIp** | **String**|  | [optional] 
+ **name** | **String**|  | [optional] 
+ **roleId** | **Number**|  | [optional] 
+ **userId** | **Number**|  | [optional] 
+ **userIdIn** | **String**|  | [optional] 
+ **userType** | **String**|  | [optional] 
+
+### Return type
+
+[**InlineResponse2002**](InlineResponse2002.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="userAllPatch"></a>
+# **userAllPatch**
+> InlineResponse2002 userAllPatch(opts)
+
+
+
+Modifies multiple found user
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.AuthApi();
+
+var opts = { 
+  'body': new DnlApi.UserActivate(), // UserActivate | User to modify
+  'active': true, // Boolean | 
+  'createTimeGt': "createTimeGt_example", // String | 
+  'createTimeLt': "createTimeLt_example", // String | 
+  'email': "email_example", // String | 
+  'isOnline': 56, // Number | 
+  'lastLoginTimeGt': "lastLoginTimeGt_example", // String | 
+  'lastLoginTimeLt': "lastLoginTimeLt_example", // String | 
+  'loginIp': "loginIp_example", // String | 
+  'name': "name_example", // String | 
+  'roleId': 56, // Number | 
+  'userId': 56, // Number | 
+  'userIdIn': "userIdIn_example", // String | 
+  'userType': "userType_example" // String | 
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.userAllPatch(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**UserActivate**](UserActivate.md)| User to modify | [optional] 
+ **active** | **Boolean**|  | [optional] 
+ **createTimeGt** | **String**|  | [optional] 
+ **createTimeLt** | **String**|  | [optional] 
+ **email** | **String**|  | [optional] 
+ **isOnline** | **Number**|  | [optional] 
+ **lastLoginTimeGt** | **String**|  | [optional] 
+ **lastLoginTimeLt** | **String**|  | [optional] 
+ **loginIp** | **String**|  | [optional] 
+ **name** | **String**|  | [optional] 
+ **roleId** | **Number**|  | [optional] 
+ **userId** | **Number**|  | [optional] 
+ **userIdIn** | **String**|  | [optional] 
+ **userType** | **String**|  | [optional] 
+
+### Return type
+
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -755,7 +1050,7 @@ Name | Type | Description  | Notes
 
 
 
-Gets user
+Gets userinfo
 
 ### Example
 ```javascript
@@ -798,7 +1093,7 @@ This endpoint does not need any parameter.
 
 <a name="userListGet"></a>
 # **userListGet**
-> InlineResponse2002 userListGet(opts)
+> InlineResponse2003 userListGet(opts)
 
 
 
@@ -830,7 +1125,9 @@ var opts = {
   'createTimeGt': "createTimeGt_example", // String | 
   'createTimeLt': "createTimeLt_example", // String | 
   'lastLoginTimeGt': "lastLoginTimeGt_example", // String | 
-  'lastLoginTimeLt': "lastLoginTimeLt_example" // String | 
+  'lastLoginTimeIsnull': true, // Boolean | 
+  'lastLoginTimeLt': "lastLoginTimeLt_example", // String | 
+  'userIdIn': "userIdIn_example" // String | 
 };
 
 var callback = function(error, data, response) {
@@ -859,11 +1156,13 @@ Name | Type | Description  | Notes
  **createTimeGt** | **String**|  | [optional] 
  **createTimeLt** | **String**|  | [optional] 
  **lastLoginTimeGt** | **String**|  | [optional] 
+ **lastLoginTimeIsnull** | **Boolean**|  | [optional] 
  **lastLoginTimeLt** | **String**|  | [optional] 
+ **userIdIn** | **String**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 

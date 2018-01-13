@@ -3,45 +3,95 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** |  | [optional] 
+**regGateway** | [**[ResourceIpRegGatewayGet]**](ResourceIpRegGatewayGet.md) |  | [optional] 
+**createdBy** | **String** |  | [optional] 
+**rateDecimal** | **Number** |  | [optional] [default to 6]
 **maxDuration** | **Number** |  | [optional] 
-**cpsLimit** | **Number** |  | [optional] 
-**callLimit** | **Number** |  | [optional] 
-**passLrn** | **Number** |  | [optional] 
-**routePlanId** | **Number** |  | [optional] 
-**resourceTemplateId** | **Number** |  | [optional] 
-**egress** | **Boolean** |  | [optional] 
-**minDuration** | **Number** |  | [optional] 
-**createTime** | **Date** |  | [optional] 
+**resourceId** | **Number** |  | [optional] 
+**enfourceCid** | **Boolean** |  | [optional] 
+**updateAt** | **Date** |  | [optional] 
+**createdAt** | **Date** |  | [optional] 
+**isActive** | **Boolean** |  | [optional] 
+**authType** | **String** |  | [optional] [default to &#39;Authorized by Host Only&#39;]
+**prefix** | **String** |  | [optional] 
 **hostRoutingStrategy** | **String** |  | [optional] [default to &#39;top-down&#39;]
-**carrierId** | **String** |  | [optional] 
+**rpidPrivacy** | **String** |  | [optional] [default to &#39;None&#39;]
+**ip** | [**[ResourceIpAllGet]**](ResourceIpAllGet.md) |  | [optional] 
+**callLimit** | **Number** |  | [optional] 
+**transactionFeeId** | **Number** |  | [optional] 
+**routePlanName** | **String** |  | [optional] 
+**ipCount** | **Number** |  | [optional] 
+**oli** | **Boolean** |  | [optional] 
+**codecs** | [**[ResourceCodecsRefGet]**](ResourceCodecsRefGet.md) |  | [optional] 
 **usageCount** | **Number** |  | [optional] 
 **updateBy** | **String** |  | [optional] 
-**mediaTimeout** | **Number** |  | [optional] 
-**pdd** | **Number** |  | [optional] 
+**carrierId** | **Number** |  | [optional] 
+**prefixes** | [**[ResourcePrefixGet]**](ResourcePrefixGet.md) |  | [optional] 
+**paid** | **Boolean** |  | [optional] 
+**priv** | **Boolean** |  | [optional] 
+**trunkType2** | **String** |  | [optional] [default to &#39;Termination Traffic&#39;]
 **aniCapLimit** | **Number** |  | [optional] 
-**trunkName** | **String** |  | [optional] 
-**prefix** | **String** |  | [optional] 
-**t38** | **Boolean** |  | [optional] 
-**isActive** | **Boolean** |  | [optional] 
-**aniCpsLimit** | **Number** |  | [optional] 
-**minProfitType** | **String** |  | [optional] [default to &#39;percentage&#39;]
-**dnisCpsLimit** | **Number** |  | [optional] 
-**rateTableId** | **Number** |  | [optional] 
-**resourceId** | **Number** |  | [optional] 
-**ringTimeout** | **Number** |  | [optional] 
-**trunkId** | **Number** |  | [optional] 
-**updateAt** | **Date** |  | [optional] 
-**minProfitValue** | **Number** |  | [optional] 
+**name** | **String** |  | [optional] 
+**regUser** | [**[ResourceIpRegUserGet]**](ResourceIpRegUserGet.md) |  | [optional] 
 **codes** | [**[ResourceTranslationRefGet]**](ResourceTranslationRefGet.md) |  | [optional] 
-**ip** | [**[ResourceIp]**](ResourceIp.md) |  | [optional] 
-**rpidIdType** | **String** |  | [optional] [default to &#39;None&#39;]
-**bypassMedia** | **String** |  | [optional] [default to &#39;Proxy Media + Transcoding&#39;]
-**carrier** | **String** |  | [optional] 
-**enfourceCid** | **Boolean** |  | [optional] 
-**codecs** | [**[ResourceCodecsRefGet]**](ResourceCodecsRefGet.md) |  | [optional] 
-**routePlanName** | **String** |  | [optional] 
+**passLrn** | **Number** |  | [optional] 
+**accountId** | **String** |  | [optional] 
+**usOther** | **String** |  | [optional] [default to &#39;other&#39;]
+**pci** | **Boolean** |  | [optional] 
+**minProfitType** | **String** |  | [optional] [default to &#39;percentage&#39;]
+**serviceType** | **String** |  | [optional] [default to &#39;Self Service&#39;]
 **dnisCapLimit** | **Number** |  | [optional] 
+**ignoreEarlyMedia** | **Boolean** |  | [optional] 
+**rpidParty** | **String** |  | [optional] [default to &#39;None&#39;]
+**rateTableName** | **String** |  | [optional] 
+**productId** | **Number** |  | [optional] 
+**cliType** | **String** |  | [optional] [default to &#39;white&#39;]
+**authorizationType** | **String** |  | [optional] [default to &#39;Authorized by Host Only&#39;]
+**displayName** | **Boolean** |  | [optional] 
+**ringTimeout** | **Number** |  | [optional] 
+**cpsLimit** | **Number** |  | [optional] 
+**pdd** | **Number** |  | [optional] 
+**div** | **Boolean** |  | [optional] 
+**billingMethod** | **String** |  | [optional] [default to &#39;by minutes&#39;]
+**dynamicCount** | **Number** |  | [optional] 
+**enableGlobal404Blocking** | **Boolean** |  | [optional] 
+**mediaTimeout** | **Number** |  | [optional] 
+**carrier** | **String** |  | [optional] 
+**routePlanId** | **Number** |  | [optional] 
+**rateTableId** | **Number** |  | [optional] 
+**minProfitValue** | **Number** |  | [optional] 
+**jurisdictionUseDnis** | **String** |  | [optional] [default to &#39;LRN&#39;]
+**mediaType** | **String** |  | [optional] [default to &#39;Proxy Media + Transcoding&#39;]
+**clientId** | **String** |  | [optional] 
+**amountPerPort** | **Number** |  | [optional] 
+**rpidIdType** | **String** |  | [optional] [default to &#39;None&#39;]
+**passThrough** | **String** |  | [optional] [default to &#39;transparent&#39;]
+**bypassMedia** | **String** |  | [optional] [default to &#39;Bypass Media&#39;]
+**trunkName** | **String** |  | [optional] 
+**dnisCpsLimit** | **Number** |  | [optional] 
+**rpid** | **String** |  | [optional] [default to &#39;Never&#39;]
+**ignoreEarlyNoSdp** | **Boolean** |  | [optional] 
+**aniCpsLimit** | **Number** |  | [optional] 
+**trunkId** | **Number** |  | [optional] 
+**minDuration** | **Number** |  | [optional] 
+**rateRounding** | **String** |  | [optional] [default to &#39;Up&#39;]
+**t38** | **Boolean** |  | [optional] 
+**enoughBalance** | **Boolean** |  | [optional] 
+**staticCount** | **Number** |  | [optional] 
+**rpidScreen** | **String** |  | [optional] [default to &#39;None&#39;]
+
+
+<a name="AuthTypeEnum"></a>
+## Enum: AuthTypeEnum
+
+
+* `Authorized by Host Only` (value: `"Authorized by Host Only"`)
+
+* `Authorized by SIP Registration` (value: `"Authorized by SIP Registration"`)
+
+* `Register to gateway` (value: `"Register to gateway"`)
+
+
 
 
 <a name="HostRoutingStrategyEnum"></a>
@@ -55,13 +105,147 @@ Name | Type | Description | Notes
 
 
 
+<a name="RpidPrivacyEnum"></a>
+## Enum: RpidPrivacyEnum
+
+
+* `None` (value: `"None"`)
+
+* `Full` (value: `"Full"`)
+
+* `Name` (value: `"Name"`)
+
+* `Url` (value: `"Url"`)
+
+* `OFF` (value: `"OFF"`)
+
+* `Ipaddr` (value: `"Ipaddr"`)
+
+* `Proxy` (value: `"Proxy"`)
+
+
+
+
+<a name="TrunkType2Enum"></a>
+## Enum: TrunkType2Enum
+
+
+* `Termination Traffic` (value: `"Termination Traffic"`)
+
+* `DID Traffic` (value: `"DID Traffic"`)
+
+
+
+
+<a name="UsOtherEnum"></a>
+## Enum: UsOtherEnum
+
+
+* `other` (value: `"other"`)
+
+* `intra` (value: `"intra"`)
+
+* `inter` (value: `"inter"`)
+
+* `highest` (value: `"highest"`)
+
+
+
+
 <a name="MinProfitTypeEnum"></a>
 ## Enum: MinProfitTypeEnum
 
 
+* `percentage` (value: `"percentage"`)
+
 * `value` (value: `"value"`)
 
-* `percentage` (value: `"percentage"`)
+
+
+
+<a name="ServiceTypeEnum"></a>
+## Enum: ServiceTypeEnum
+
+
+* `Self Service` (value: `"Self Service"`)
+
+* `Standand Deck` (value: `"Standand Deck"`)
+
+
+
+
+<a name="RpidPartyEnum"></a>
+## Enum: RpidPartyEnum
+
+
+* `None` (value: `"None"`)
+
+* `Calling` (value: `"Calling"`)
+
+* `Called` (value: `"Called"`)
+
+* `Proxy` (value: `"Proxy"`)
+
+
+
+
+<a name="CliTypeEnum"></a>
+## Enum: CliTypeEnum
+
+
+* `white` (value: `"white"`)
+
+* `white non cli` (value: `"white non cli"`)
+
+* `gray` (value: `"gray"`)
+
+
+
+
+<a name="AuthorizationTypeEnum"></a>
+## Enum: AuthorizationTypeEnum
+
+
+* `Authorized by Host Only` (value: `"Authorized by Host Only"`)
+
+* `Authorized by SIP Registration` (value: `"Authorized by SIP Registration"`)
+
+* `Register to gateway` (value: `"Register to gateway"`)
+
+
+
+
+<a name="BillingMethodEnum"></a>
+## Enum: BillingMethodEnum
+
+
+* `minutes` (value: `"by minutes"`)
+
+* `port` (value: `"by port"`)
+
+
+
+
+<a name="JurisdictionUseDnisEnum"></a>
+## Enum: JurisdictionUseDnisEnum
+
+
+* `LRN` (value: `"LRN"`)
+
+* `DNIS` (value: `"DNIS"`)
+
+
+
+
+<a name="MediaTypeEnum"></a>
+## Enum: MediaTypeEnum
+
+
+* `Proxy Media + Transcoding` (value: `"Proxy Media + Transcoding"`)
+
+* `Proxy Media` (value: `"Proxy Media"`)
+
+* `Bypass Media` (value: `"Bypass Media"`)
 
 
 
@@ -70,15 +254,26 @@ Name | Type | Description | Notes
 ## Enum: RpidIdTypeEnum
 
 
+* `None` (value: `"None"`)
+
 * `Subscriber` (value: `"Subscriber"`)
 
 * `User` (value: `"User"`)
 
+* `Term` (value: `"Term"`)
+
 * `Proxy` (value: `"Proxy"`)
 
-* `None` (value: `"None"`)
 
-* `Term` (value: `"Term"`)
+
+
+<a name="PassThroughEnum"></a>
+## Enum: PassThroughEnum
+
+
+* `transparent` (value: `"transparent"`)
+
+* `not pass through the ban` (value: `"not pass through the ban"`)
 
 
 
@@ -92,6 +287,45 @@ Name | Type | Description | Notes
 * `Proxy Media` (value: `"Proxy Media"`)
 
 * `Bypass Media` (value: `"Bypass Media"`)
+
+
+
+
+<a name="RpidEnum"></a>
+## Enum: RpidEnum
+
+
+* `Never` (value: `"Never"`)
+
+* `Pass Through` (value: `"Pass Through"`)
+
+* `Always` (value: `"Always"`)
+
+
+
+
+<a name="RateRoundingEnum"></a>
+## Enum: RateRoundingEnum
+
+
+* `Up` (value: `"Up"`)
+
+* `Down` (value: `"Down"`)
+
+
+
+
+<a name="RpidScreenEnum"></a>
+## Enum: RpidScreenEnum
+
+
+* `None` (value: `"None"`)
+
+* `No` (value: `"No"`)
+
+* `Yes` (value: `"Yes"`)
+
+* `Proxy` (value: `"Proxy"`)
 
 
 

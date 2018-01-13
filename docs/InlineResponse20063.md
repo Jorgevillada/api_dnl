@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**SystemParameterInvoiceSetting**](SystemParameterInvoiceSetting.md) |  | [optional] 
+**payload** | [**InlineResponse20063Payload**](InlineResponse20063Payload.md) |  | [optional] 
 
 

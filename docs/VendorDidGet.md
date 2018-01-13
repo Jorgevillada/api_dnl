@@ -3,24 +3,25 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**balance** | **Number** |  | [optional] 
 **clientId** | **Number** |  | [optional] 
-**name** | **String** |  | [optional] 
-**callLimit** | **Number** |  | [optional] 
-**billingMethod** | **String** |  | [optional] [default to &#39;percentage&#39;]
-**updateBy** | **String** |  | [optional] 
 **status** | **Boolean** |  | [optional] 
+**updateBy** | **String** |  | [optional] 
+**vendorBillingRuleId** | **Number** |  | [optional] 
+**resource** | [**VendorResourceDidGet**](VendorResourceDidGet.md) |  | [optional] 
+**balance** | **Number** |  | [optional] 
+**billingMethod** | **String** |  | [optional] [default to &#39;percentage&#39;]
 **updateAt** | **Date** |  | [optional] 
-**resource** | [**VendorResourceDid**](VendorResourceDid.md) |  | [optional] 
+**callLimit** | **Number** |  | [optional] 
+**name** | **String** |  | 
 
 
 <a name="BillingMethodEnum"></a>
 ## Enum: BillingMethodEnum
 
 
-* `value` (value: `"value"`)
-
 * `percentage` (value: `"percentage"`)
+
+* `value` (value: `"value"`)
 
 
 

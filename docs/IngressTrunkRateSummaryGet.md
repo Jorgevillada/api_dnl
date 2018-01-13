@@ -3,11 +3,12 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**carrierId** | **Number** |  | [optional] 
-**rateEmail** | **String** |  | [optional] 
-**trunkId** | **Number** |  | [optional] 
-**carrier** | **String** |  | [optional] 
-**ingressTrunkName** | **String** |  | [optional] 
 **prefix** | **String** |  | [optional] 
+**carrierId** | **Number** |  | [optional] 
+**trunkId** | **Number** |  | [optional] 
+**ingressTrunkName** | **String** |  | [optional] 
+**rateTableName** | **String** |  | [optional] 
+**carrier** | **String** |  | [optional] 
+**rateEmail** | **String** |  | [optional] 
 
 

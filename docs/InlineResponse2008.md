@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**InlineResponse2008Payload**](InlineResponse2008Payload.md) |  | [optional] 
+**payload** | [**AgentCarriersGet**](AgentCarriersGet.md) |  | [optional] 
 
 

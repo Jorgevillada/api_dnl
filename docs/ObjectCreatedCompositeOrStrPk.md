@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**success** | **Boolean** |  | [optional] [default to true]
 **objectPk** | **String** |  | [optional] 
+**success** | **Boolean** |  | [optional] [default to true]
 
 

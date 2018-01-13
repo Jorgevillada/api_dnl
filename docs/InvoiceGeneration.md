@@ -3,25 +3,25 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**showJurisdictionDetail** | **Boolean** |  | [optional] 
-**sendInvoiceAsLink** | **Boolean** |  | [optional] 
 **showCdr** | **Boolean** |  | [optional] 
-**rateDecimal** | **Number** |  | [optional] 
-**endDate** | **Date** |  | [optional] 
-**showDetailByTrunk** | **Boolean** |  | [optional] 
-**showRateTableBreakdown** | **Boolean** |  | [optional] 
-**showTrunkBreakdown** | **Boolean** |  | [optional] 
-**includeCdrInEmail** | **Boolean** |  | [optional] 
-**showDetailByCodeName** | **Boolean** |  | [optional] 
-**billingEndTime** | **String** |  | [optional] 
 **showDetailByCountry** | **Boolean** |  | [optional] 
-**gmt** | **String** |  | [optional] [default to &#39;+00&#39;]
-**startDate** | **Date** |  | [optional] 
-**showCodeSummary** | **Boolean** |  | [optional] 
+**billingStartTime** | **Date** |  | [optional] 
+**showRateTableBreakdown** | **Boolean** |  | [optional] 
+**showJurisdictionDetail** | **Boolean** |  | [optional] 
+**includeCdrInEmail** | **Boolean** |  | [optional] 
+**sendInvoiceAsLink** | **Boolean** |  | [optional] 
 **autoSendInvoice** | **Boolean** |  | [optional] 
+**showDetailByTrunk** | **Boolean** |  | [optional] 
+**rateDecimal** | **Number** |  | [optional] 
 **includeAccountDetail** | **Boolean** |  | [optional] 
-**billingStartTime** | **String** |  | [optional] 
+**gmt** | **String** |  | [optional] [default to &#39;+00&#39;]
+**showCodeSummary** | **Boolean** |  | [optional] 
+**showDetailByCodeName** | **Boolean** |  | [optional] 
+**endDate** | **Date** |  | 
+**startDate** | **Date** |  | 
 **showPaymentSummary** | **Boolean** |  | [optional] 
+**billingEndTime** | **Date** |  | [optional] 
 **showDailyBreakdown** | **Boolean** |  | [optional] 
+**showTrunkBreakdown** | **Boolean** |  | [optional] 
 
 

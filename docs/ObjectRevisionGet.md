@@ -3,15 +3,15 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**action** | **String** |  | [optional] 
+**changes** | [**[ObjectRevisionRecordGet]**](ObjectRevisionRecordGet.md) |  | [optional] 
 **id** | **Number** |  | [optional] 
 **revisionNumber** | **Number** |  | 
-**changes** | [**[ObjectRevisionRecordGet]**](ObjectRevisionRecordGet.md) |  | [optional] 
-**revisionTime** | **Date** |  | [optional] 
-**entityName** | **String** |  | 
-**entityPk** | **String** |  | 
-**userId** | **Number** |  | 
 **restoredFromRevisionId** | **Number** |  | [optional] 
+**userId** | **Number** |  | 
+**action** | **String** |  | [optional] 
+**revisionTime** | **Date** |  | [optional] 
+**entityPk** | **String** |  | 
+**entityName** | **String** |  | 
 
 
 <a name="ActionEnum"></a>
@@ -20,11 +20,11 @@ Name | Type | Description | Notes
 
 * `create` (value: `"create"`)
 
+* `update` (value: `"update"`)
+
 * `delete` (value: `"delete"`)
 
 * `restore` (value: `"restore"`)
-
-* `update` (value: `"update"`)
 
 
 

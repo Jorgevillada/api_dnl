@@ -1,6 +1,6 @@
 # DnlApi.ClientPortalApi
 
-All URIs are relative to *https://148.251.91.143:8000/v1*
+All URIs are relative to *https://198.100.149.164:8000/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 <a name="homeClientGatewayPaymentsGet"></a>
 # **homeClientGatewayPaymentsGet**
-> InlineResponse20032 homeClientGatewayPaymentsGet(opts)
+> InlineResponse20039 homeClientGatewayPaymentsGet(opts)
 
 
 
@@ -35,8 +35,11 @@ var opts = {
   'perPage': 56, // Number | 
   'orderBy': "orderBy_example", // String | 
   'orderDir': "orderDir_example", // String | 
+  'cardnumber': "cardnumber_example", // String | 
+  'clientId': 56, // Number | 
   'paypalId': "paypalId_example", // String | 
   'paypalTransactionId': "paypalTransactionId_example", // String | 
+  'status': "status_example", // String | 
   'type': "type_example", // String | 
   'paidOnGt': "paidOnGt_example", // String | 
   'paidOnLt': "paidOnLt_example" // String | 
@@ -60,15 +63,18 @@ Name | Type | Description  | Notes
  **perPage** | **Number**|  | [optional] 
  **orderBy** | **String**|  | [optional] 
  **orderDir** | **String**|  | [optional] 
+ **cardnumber** | **String**|  | [optional] 
+ **clientId** | **Number**|  | [optional] 
  **paypalId** | **String**|  | [optional] 
  **paypalTransactionId** | **String**|  | [optional] 
+ **status** | **String**|  | [optional] 
  **type** | **String**|  | [optional] 
  **paidOnGt** | **String**|  | [optional] 
  **paidOnLt** | **String**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse20032**](InlineResponse20032.md)
+[**InlineResponse20039**](InlineResponse20039.md)
 
 ### Authorization
 
@@ -81,7 +87,7 @@ Name | Type | Description  | Notes
 
 <a name="homeClientGet"></a>
 # **homeClientGet**
-> InlineResponse20030 homeClientGet()
+> InlineResponse20037 homeClientGet()
 
 
 
@@ -115,7 +121,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20030**](InlineResponse20030.md)
+[**InlineResponse20037**](InlineResponse20037.md)
 
 ### Authorization
 
@@ -128,7 +134,7 @@ This endpoint does not need any parameter.
 
 <a name="homeClientPaymentsGet"></a>
 # **homeClientPaymentsGet**
-> InlineResponse20031 homeClientPaymentsGet(opts)
+> InlineResponse20038 homeClientPaymentsGet(opts)
 
 
 
@@ -183,7 +189,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20031**](InlineResponse20031.md)
+[**InlineResponse20038**](InlineResponse20038.md)
 
 ### Authorization
 

@@ -3,50 +3,50 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**clientId** | **Number** |  | [optional] 
-**id** | **Number** |  | [optional] 
-**paypalFee** | **Number** |  | [optional] 
-**cardnumber** | **String** |  | [optional] 
-**error** | **String** |  | [optional] 
-**paypalId** | **String** |  | [optional] 
-**paidOn** | **Date** |  | [optional] 
-**type** | **String** |  | [optional] [default to &#39;undefined&#39;]
-**actualReceived** | **Number** |  | [optional] 
-**clientName** | **String** |  | [optional] 
-**cardexpyear** | **String** |  | [optional] 
-**returnCode** | **String** |  | [optional] 
-**cardexpmonth** | **String** |  | [optional] 
-**stripId** | **String** |  | [optional] 
-**stripTransactionId** | **String** |  | [optional] 
-**paypalTransactionId** | **String** |  | [optional] 
-**status** | **String** |  | [optional] [default to &#39;initial&#39;]
-**enteredOn** | **Date** |  | [optional] 
 **amount** | **Number** |  | [optional] 
+**stripId** | **String** |  | [optional] 
+**paypalId** | **String** |  | [optional] 
+**paypalFee** | **Number** |  | [optional] 
+**status** | **String** |  | [optional] [default to &#39;initial&#39;]
+**cardexpyear** | **String** |  | [optional] 
+**type** | **String** |  | [optional] [default to &#39;undefined&#39;]
+**clientId** | **Number** |  | [optional] 
+**paypalTransactionId** | **String** |  | [optional] 
+**returnCode** | **String** |  | [optional] 
+**actualReceived** | **Number** |  | [optional] 
+**paidOn** | **Date** |  | [optional] 
+**error** | **String** |  | [optional] 
+**id** | **Number** |  | [optional] 
 **response** | **String** |  | [optional] 
-
-
-<a name="TypeEnum"></a>
-## Enum: TypeEnum
-
-
-* `yourpay` (value: `"yourpay"`)
-
-* `paypal` (value: `"paypal"`)
-
-* `undefined` (value: `"undefined"`)
-
-
+**stripTransactionId** | **String** |  | [optional] 
+**clientName** | **String** |  | [optional] 
+**cardnumber** | **String** |  | [optional] 
+**enteredOn** | **Date** |  | [optional] 
+**cardexpmonth** | **String** |  | [optional] 
 
 
 <a name="StatusEnum"></a>
 ## Enum: StatusEnum
 
 
-* `success` (value: `"success"`)
-
 * `initial` (value: `"initial"`)
 
 * `error` (value: `"error"`)
+
+* `success` (value: `"success"`)
+
+
+
+
+<a name="TypeEnum"></a>
+## Enum: TypeEnum
+
+
+* `undefined` (value: `"undefined"`)
+
+* `paypal` (value: `"paypal"`)
+
+* `yourpay` (value: `"yourpay"`)
 
 
 

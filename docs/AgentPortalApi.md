@@ -1,6 +1,6 @@
 # DnlApi.AgentPortalApi
 
-All URIs are relative to *https://148.251.91.143:8000/v1*
+All URIs are relative to *https://198.100.149.164:8000/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="homeAgentClientsGet"></a>
 # **homeAgentClientsGet**
-> InlineResponse20011 homeAgentClientsGet(opts)
+> InlineResponse20012 homeAgentClientsGet(opts)
 
 
 
@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20011**](InlineResponse20011.md)
+[**InlineResponse20012**](InlineResponse20012.md)
 
 ### Authorization
 

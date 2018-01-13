@@ -3,11 +3,11 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**carrierName** | **String** |  | [optional] 
-**modifiedTo** | **Number** |  | [optional] 
 **id** | **Number** |  | [optional] 
-**modifiedFrom** | **Number** |  | [optional] 
-**modifiedBy** | **String** |  | [optional] 
+**carrierName** | **String** |  | [optional] 
 **modifiedOn** | **Date** |  | [optional] 
+**modifiedFrom** | **Number** |  | [optional] 
+**modifiedTo** | **Number** |  | [optional] 
+**modifiedBy** | **String** |  | [optional] 
 
 

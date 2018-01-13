@@ -1,10 +1,11 @@
 # DnlApi.ConfigApi
 
-All URIs are relative to *https://148.251.91.143:8000/v1*
+All URIs are relative to *https://198.100.149.164:8000/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**configAutoCdrFormatEditPatch**](ConfigApi.md#configAutoCdrFormatEditPatch) | **PATCH** /config/auto_cdr_format/edit | 
+[**configCarrierTemplateAllDelete**](ConfigApi.md#configCarrierTemplateAllDelete) | **DELETE** /config/carrier_template/all | 
 [**configCarrierTemplateCreatePost**](ConfigApi.md#configCarrierTemplateCreatePost) | **POST** /config/carrier_template/create | 
 [**configCarrierTemplateIdDelete**](ConfigApi.md#configCarrierTemplateIdDelete) | **DELETE** /config/carrier_template/{id} | 
 [**configCarrierTemplateIdGet**](ConfigApi.md#configCarrierTemplateIdGet) | **GET** /config/carrier_template/{id} | 
@@ -16,39 +17,49 @@ Method | HTTP request | Description
 [**configCdrVisibilityIdGet**](ConfigApi.md#configCdrVisibilityIdGet) | **GET** /config/cdr_visibility/{id} | 
 [**configCdrVisibilityIdPatch**](ConfigApi.md#configCdrVisibilityIdPatch) | **PATCH** /config/cdr_visibility/{id} | 
 [**configCdrVisibilityListGet**](ConfigApi.md#configCdrVisibilityListGet) | **GET** /config/cdr_visibility/list | 
+[**configCountryCreatePost**](ConfigApi.md#configCountryCreatePost) | **POST** /config/country/create | 
+[**configCountryListGet**](ConfigApi.md#configCountryListGet) | **GET** /config/country/list | 
+[**configCountryTimeProfileIdDelete**](ConfigApi.md#configCountryTimeProfileIdDelete) | **DELETE** /config/country/{time_profile_id} | 
+[**configCountryTimeProfileIdGet**](ConfigApi.md#configCountryTimeProfileIdGet) | **GET** /config/country/{time_profile_id} | 
+[**configCountryTimeProfileIdPatch**](ConfigApi.md#configCountryTimeProfileIdPatch) | **PATCH** /config/country/{time_profile_id} | 
+[**configEgressTrunkTemplateAllDelete**](ConfigApi.md#configEgressTrunkTemplateAllDelete) | **DELETE** /config/egress_trunk_template/all | 
 [**configEgressTrunkTemplateApplyResourceTemplateIdClientIdPost**](ConfigApi.md#configEgressTrunkTemplateApplyResourceTemplateIdClientIdPost) | **POST** /config/egress_trunk_template/apply/{resource_template_id}/{client_id} | 
 [**configEgressTrunkTemplateCreatePost**](ConfigApi.md#configEgressTrunkTemplateCreatePost) | **POST** /config/egress_trunk_template/create | 
 [**configEgressTrunkTemplateListGet**](ConfigApi.md#configEgressTrunkTemplateListGet) | **GET** /config/egress_trunk_template/list | 
 [**configEgressTrunkTemplateResourceTemplateIdDelete**](ConfigApi.md#configEgressTrunkTemplateResourceTemplateIdDelete) | **DELETE** /config/egress_trunk_template/{resource_template_id} | 
 [**configEgressTrunkTemplateResourceTemplateIdGet**](ConfigApi.md#configEgressTrunkTemplateResourceTemplateIdGet) | **GET** /config/egress_trunk_template/{resource_template_id} | 
 [**configEgressTrunkTemplateResourceTemplateIdPatch**](ConfigApi.md#configEgressTrunkTemplateResourceTemplateIdPatch) | **PATCH** /config/egress_trunk_template/{resource_template_id} | 
+[**configEmailsGet**](ConfigApi.md#configEmailsGet) | **GET** /config/emails | 
+[**configEmailsPatch**](ConfigApi.md#configEmailsPatch) | **PATCH** /config/emails | 
 [**configExportErrorsIdGet**](ConfigApi.md#configExportErrorsIdGet) | **GET** /config/export_errors/{id} | 
 [**configExportIdGet**](ConfigApi.md#configExportIdGet) | **GET** /config/export/{id} | 
 [**configExportPost**](ConfigApi.md#configExportPost) | **POST** /config/export | 
+[**configExportPublicIdGet**](ConfigApi.md#configExportPublicIdGet) | **GET** /config/export/public/{id} | 
 [**configFailoverGlobalCreatePost**](ConfigApi.md#configFailoverGlobalCreatePost) | **POST** /config/failover/global/create | 
 [**configFailoverGlobalIdDelete**](ConfigApi.md#configFailoverGlobalIdDelete) | **DELETE** /config/failover/global/{id} | 
 [**configFailoverGlobalIdGet**](ConfigApi.md#configFailoverGlobalIdGet) | **GET** /config/failover/global/{id} | 
 [**configFailoverGlobalIdPatch**](ConfigApi.md#configFailoverGlobalIdPatch) | **PATCH** /config/failover/global/{id} | 
 [**configFailoverGlobalListGet**](ConfigApi.md#configFailoverGlobalListGet) | **GET** /config/failover/global/list | 
 [**configFailoverGlobalPatch**](ConfigApi.md#configFailoverGlobalPatch) | **PATCH** /config/failover/global | 
-[**configFailoverOriginationCreatePost**](ConfigApi.md#configFailoverOriginationCreatePost) | **POST** /config/failover/origination/create | 
-[**configFailoverOriginationIdDelete**](ConfigApi.md#configFailoverOriginationIdDelete) | **DELETE** /config/failover/origination/{id} | 
 [**configFailoverOriginationIdGet**](ConfigApi.md#configFailoverOriginationIdGet) | **GET** /config/failover/origination/{id} | 
 [**configFailoverOriginationIdPatch**](ConfigApi.md#configFailoverOriginationIdPatch) | **PATCH** /config/failover/origination/{id} | 
 [**configFailoverOriginationListGet**](ConfigApi.md#configFailoverOriginationListGet) | **GET** /config/failover/origination/list | 
 [**configFailoverOriginationPatch**](ConfigApi.md#configFailoverOriginationPatch) | **PATCH** /config/failover/origination | 
-[**configFailoverTerminationCreatePost**](ConfigApi.md#configFailoverTerminationCreatePost) | **POST** /config/failover/termination/create | 
-[**configFailoverTerminationIdDelete**](ConfigApi.md#configFailoverTerminationIdDelete) | **DELETE** /config/failover/termination/{id} | 
 [**configFailoverTerminationIdGet**](ConfigApi.md#configFailoverTerminationIdGet) | **GET** /config/failover/termination/{id} | 
 [**configFailoverTerminationIdPatch**](ConfigApi.md#configFailoverTerminationIdPatch) | **PATCH** /config/failover/termination/{id} | 
 [**configFailoverTerminationListGet**](ConfigApi.md#configFailoverTerminationListGet) | **GET** /config/failover/termination/list | 
 [**configFailoverTerminationPatch**](ConfigApi.md#configFailoverTerminationPatch) | **PATCH** /config/failover/termination | 
+[**configFtpAllDelete**](ConfigApi.md#configFtpAllDelete) | **DELETE** /config/ftp/all | 
+[**configFtpAllPatch**](ConfigApi.md#configFtpAllPatch) | **PATCH** /config/ftp/all | 
 [**configFtpCreatePost**](ConfigApi.md#configFtpCreatePost) | **POST** /config/ftp/create | 
 [**configFtpIdDelete**](ConfigApi.md#configFtpIdDelete) | **DELETE** /config/ftp/{id} | 
 [**configFtpIdGet**](ConfigApi.md#configFtpIdGet) | **GET** /config/ftp/{id} | 
 [**configFtpIdPatch**](ConfigApi.md#configFtpIdPatch) | **PATCH** /config/ftp/{id} | 
 [**configFtpListGet**](ConfigApi.md#configFtpListGet) | **GET** /config/ftp/list | 
+[**configImportIdKillPost**](ConfigApi.md#configImportIdKillPost) | **POST** /config/import/{id}/kill | 
+[**configImportIdRunPost**](ConfigApi.md#configImportIdRunPost) | **POST** /config/import/{id}/run | 
 [**configImportPost**](ConfigApi.md#configImportPost) | **POST** /config/import | 
+[**configIngressTrunkTemplateAllDelete**](ConfigApi.md#configIngressTrunkTemplateAllDelete) | **DELETE** /config/ingress_trunk_template/all | 
 [**configIngressTrunkTemplateApplyResourceTemplateIdClientIdPost**](ConfigApi.md#configIngressTrunkTemplateApplyResourceTemplateIdClientIdPost) | **POST** /config/ingress_trunk_template/apply/{resource_template_id}/{client_id} | 
 [**configIngressTrunkTemplateCreatePost**](ConfigApi.md#configIngressTrunkTemplateCreatePost) | **POST** /config/ingress_trunk_template/create | 
 [**configIngressTrunkTemplateListGet**](ConfigApi.md#configIngressTrunkTemplateListGet) | **GET** /config/ingress_trunk_template/list | 
@@ -59,16 +70,22 @@ Method | HTTP request | Description
 [**configInvoicePatch**](ConfigApi.md#configInvoicePatch) | **PATCH** /config/invoice | 
 [**configLoginGet**](ConfigApi.md#configLoginGet) | **GET** /config/login | 
 [**configLoginPatch**](ConfigApi.md#configLoginPatch) | **PATCH** /config/login | 
+[**configLoginPublicGet**](ConfigApi.md#configLoginPublicGet) | **GET** /config/login/public | 
+[**configLrnGet**](ConfigApi.md#configLrnGet) | **GET** /config/lrn | 
+[**configLrnPatch**](ConfigApi.md#configLrnPatch) | **PATCH** /config/lrn | 
+[**configMailSenderAllDelete**](ConfigApi.md#configMailSenderAllDelete) | **DELETE** /config/mail_sender/all | 
 [**configMailSenderCreatePost**](ConfigApi.md#configMailSenderCreatePost) | **POST** /config/mail_sender/create | 
 [**configMailSenderIdDelete**](ConfigApi.md#configMailSenderIdDelete) | **DELETE** /config/mail_sender/{id} | 
 [**configMailSenderIdGet**](ConfigApi.md#configMailSenderIdGet) | **GET** /config/mail_sender/{id} | 
 [**configMailSenderIdPatch**](ConfigApi.md#configMailSenderIdPatch) | **PATCH** /config/mail_sender/{id} | 
 [**configMailSenderIdTestPatch**](ConfigApi.md#configMailSenderIdTestPatch) | **PATCH** /config/mail_sender/{id}/test | 
 [**configMailSenderListGet**](ConfigApi.md#configMailSenderListGet) | **GET** /config/mail_sender/list | 
+[**configMailTemplateListGet**](ConfigApi.md#configMailTemplateListGet) | **GET** /config/mail_template/list | 
 [**configMailTemplateTitleGet**](ConfigApi.md#configMailTemplateTitleGet) | **GET** /config/mail_template/{title} | 
 [**configMailTemplateTitlePatch**](ConfigApi.md#configMailTemplateTitlePatch) | **PATCH** /config/mail_template/{title} | 
 [**configPaymentGet**](ConfigApi.md#configPaymentGet) | **GET** /config/payment | 
 [**configPaymentPatch**](ConfigApi.md#configPaymentPatch) | **PATCH** /config/payment | 
+[**configPaymentTermAllDelete**](ConfigApi.md#configPaymentTermAllDelete) | **DELETE** /config/payment_term/all | 
 [**configPaymentTermCreatePost**](ConfigApi.md#configPaymentTermCreatePost) | **POST** /config/payment_term/create | 
 [**configPaymentTermListGet**](ConfigApi.md#configPaymentTermListGet) | **GET** /config/payment_term/list | 
 [**configPaymentTermPaymentTermIdDelete**](ConfigApi.md#configPaymentTermPaymentTermIdDelete) | **DELETE** /config/payment_term/{payment_term_id} | 
@@ -86,11 +103,11 @@ Method | HTTP request | Description
 [**configRoleRoleIdPrivilegeListGet**](ConfigApi.md#configRoleRoleIdPrivilegeListGet) | **GET** /config/role/{role_id}/privilege/list | 
 [**configRoleRoleIdPrivilegesGet**](ConfigApi.md#configRoleRoleIdPrivilegesGet) | **GET** /config/role/{role_id}/privileges | 
 [**configRoleRoleIdSystemFunctionIdPrivilegePost**](ConfigApi.md#configRoleRoleIdSystemFunctionIdPrivilegePost) | **POST** /config/role/{role_id}/{system_function_id}/privilege | 
-[**configRouteErrorCreatePost**](ConfigApi.md#configRouteErrorCreatePost) | **POST** /config/route_error/create | 
-[**configRouteErrorIdDelete**](ConfigApi.md#configRouteErrorIdDelete) | **DELETE** /config/route_error/{id} | 
 [**configRouteErrorIdGet**](ConfigApi.md#configRouteErrorIdGet) | **GET** /config/route_error/{id} | 
 [**configRouteErrorIdPatch**](ConfigApi.md#configRouteErrorIdPatch) | **PATCH** /config/route_error/{id} | 
 [**configRouteErrorListGet**](ConfigApi.md#configRouteErrorListGet) | **GET** /config/route_error/list | 
+[**configRouteErrorPatch**](ConfigApi.md#configRouteErrorPatch) | **PATCH** /config/route_error | 
+[**configSendRateTemplateAllDelete**](ConfigApi.md#configSendRateTemplateAllDelete) | **DELETE** /config/send_rate_template/all | 
 [**configSendRateTemplateCreatePost**](ConfigApi.md#configSendRateTemplateCreatePost) | **POST** /config/send_rate_template/create | 
 [**configSendRateTemplateIdDelete**](ConfigApi.md#configSendRateTemplateIdDelete) | **DELETE** /config/send_rate_template/{id} | 
 [**configSendRateTemplateIdGet**](ConfigApi.md#configSendRateTemplateIdGet) | **GET** /config/send_rate_template/{id} | 
@@ -104,11 +121,15 @@ Method | HTTP request | Description
 [**configSystemGet**](ConfigApi.md#configSystemGet) | **GET** /config/system | 
 [**configSystemModulesListGet**](ConfigApi.md#configSystemModulesListGet) | **GET** /config/system_modules/list | 
 [**configSystemPatch**](ConfigApi.md#configSystemPatch) | **PATCH** /config/system | 
+[**configTimeProfileAllDelete**](ConfigApi.md#configTimeProfileAllDelete) | **DELETE** /config/time_profile/all | 
 [**configTimeProfileCreatePost**](ConfigApi.md#configTimeProfileCreatePost) | **POST** /config/time_profile/create | 
 [**configTimeProfileListGet**](ConfigApi.md#configTimeProfileListGet) | **GET** /config/time_profile/list | 
 [**configTimeProfileTimeProfileIdDelete**](ConfigApi.md#configTimeProfileTimeProfileIdDelete) | **DELETE** /config/time_profile/{time_profile_id} | 
 [**configTimeProfileTimeProfileIdGet**](ConfigApi.md#configTimeProfileTimeProfileIdGet) | **GET** /config/time_profile/{time_profile_id} | 
 [**configTimeProfileTimeProfileIdPatch**](ConfigApi.md#configTimeProfileTimeProfileIdPatch) | **PATCH** /config/time_profile/{time_profile_id} | 
+[**configTimeoutsGet**](ConfigApi.md#configTimeoutsGet) | **GET** /config/timeouts | 
+[**configTimeoutsPatch**](ConfigApi.md#configTimeoutsPatch) | **PATCH** /config/timeouts | 
+[**configUsJurisdictionprefixAllDelete**](ConfigApi.md#configUsJurisdictionprefixAllDelete) | **DELETE** /config/us_jurisdictionprefix/all | 
 [**configUsJurisdictionprefixCreatePost**](ConfigApi.md#configUsJurisdictionprefixCreatePost) | **POST** /config/us_jurisdictionprefix/create | 
 [**configUsJurisdictionprefixIdDelete**](ConfigApi.md#configUsJurisdictionprefixIdDelete) | **DELETE** /config/us_jurisdictionprefix/{id} | 
 [**configUsJurisdictionprefixIdGet**](ConfigApi.md#configUsJurisdictionprefixIdGet) | **GET** /config/us_jurisdictionprefix/{id} | 
@@ -160,6 +181,76 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Success**](Success.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="configCarrierTemplateAllDelete"></a>
+# **configCarrierTemplateAllDelete**
+> InlineResponse2002 configCarrierTemplateAllDelete(opts)
+
+
+
+Deletes multiple found carriertemplate
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.ConfigApi();
+
+var opts = { 
+  'createBy': "createBy_example", // String | 
+  'createOnGte': "createOnGte_example", // String | 
+  'createOnLt': "createOnLt_example", // String | 
+  'id': 56, // Number | 
+  'idIn': "idIn_example", // String | 
+  'templateName': "templateName_example", // String | 
+  'updateOnGte': "updateOnGte_example", // String | 
+  'updateOnLt': "updateOnLt_example", // String | 
+  'usedBy': 56 // Number | 
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.configCarrierTemplateAllDelete(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **createBy** | **String**|  | [optional] 
+ **createOnGte** | **String**|  | [optional] 
+ **createOnLt** | **String**|  | [optional] 
+ **id** | **Number**|  | [optional] 
+ **idIn** | **String**|  | [optional] 
+ **templateName** | **String**|  | [optional] 
+ **updateOnGte** | **String**|  | [optional] 
+ **updateOnLt** | **String**|  | [optional] 
+ **usedBy** | **Number**|  | [optional] 
+
+### Return type
+
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -279,7 +370,7 @@ Name | Type | Description  | Notes
 
 <a name="configCarrierTemplateIdGet"></a>
 # **configCarrierTemplateIdGet**
-> InlineResponse20068 configCarrierTemplateIdGet(id)
+> InlineResponse20081 configCarrierTemplateIdGet(id)
 
 
 
@@ -319,7 +410,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20068**](InlineResponse20068.md)
+[**InlineResponse20081**](InlineResponse20081.md)
 
 ### Authorization
 
@@ -332,7 +423,7 @@ Name | Type | Description  | Notes
 
 <a name="configCarrierTemplateIdPatch"></a>
 # **configCarrierTemplateIdPatch**
-> InlineResponse20068 configCarrierTemplateIdPatch(id, opts)
+> InlineResponse20081 configCarrierTemplateIdPatch(id, opts)
 
 
 
@@ -354,7 +445,7 @@ var apiInstance = new DnlApi.ConfigApi();
 var id = 789; // Number | CarrierTemplate id to get info about
 
 var opts = { 
-  'body': new DnlApi.CarrierTemplate() // CarrierTemplate | CarrierTemplate to modify
+  'body': new DnlApi.CarrierTemplateModify() // CarrierTemplateModify | CarrierTemplate to modify
 };
 
 var callback = function(error, data, response) {
@@ -372,11 +463,11 @@ apiInstance.configCarrierTemplateIdPatch(id, opts, callback);
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Number**| CarrierTemplate id to get info about | 
- **body** | [**CarrierTemplate**](CarrierTemplate.md)| CarrierTemplate to modify | [optional] 
+ **body** | [**CarrierTemplateModify**](CarrierTemplateModify.md)| CarrierTemplate to modify | [optional] 
 
 ### Return type
 
-[**InlineResponse20068**](InlineResponse20068.md)
+[**InlineResponse20081**](InlineResponse20081.md)
 
 ### Authorization
 
@@ -389,7 +480,7 @@ Name | Type | Description  | Notes
 
 <a name="configCarrierTemplateListGet"></a>
 # **configCarrierTemplateListGet**
-> InlineResponse20069 configCarrierTemplateListGet(opts)
+> InlineResponse20082 configCarrierTemplateListGet(opts)
 
 
 
@@ -419,6 +510,7 @@ var opts = {
   'usedBy': 56, // Number | 
   'createOnGte': "createOnGte_example", // String | 
   'createOnLt': "createOnLt_example", // String | 
+  'idIn': "idIn_example", // String | 
   'updateOnGte': "updateOnGte_example", // String | 
   'updateOnLt': "updateOnLt_example" // String | 
 };
@@ -447,12 +539,13 @@ Name | Type | Description  | Notes
  **usedBy** | **Number**|  | [optional] 
  **createOnGte** | **String**|  | [optional] 
  **createOnLt** | **String**|  | [optional] 
+ **idIn** | **String**|  | [optional] 
  **updateOnGte** | **String**|  | [optional] 
  **updateOnLt** | **String**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse20069**](InlineResponse20069.md)
+[**InlineResponse20082**](InlineResponse20082.md)
 
 ### Authorization
 
@@ -626,7 +719,7 @@ Name | Type | Description  | Notes
 
 <a name="configCdrVisibilityIdGet"></a>
 # **configCdrVisibilityIdGet**
-> InlineResponse20050 configCdrVisibilityIdGet(id)
+> InlineResponse20060 configCdrVisibilityIdGet(id)
 
 
 
@@ -666,7 +759,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20050**](InlineResponse20050.md)
+[**InlineResponse20060**](InlineResponse20060.md)
 
 ### Authorization
 
@@ -679,7 +772,7 @@ Name | Type | Description  | Notes
 
 <a name="configCdrVisibilityIdPatch"></a>
 # **configCdrVisibilityIdPatch**
-> InlineResponse20050 configCdrVisibilityIdPatch(id, opts)
+> InlineResponse20060 configCdrVisibilityIdPatch(id, opts)
 
 
 
@@ -723,7 +816,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20050**](InlineResponse20050.md)
+[**InlineResponse20060**](InlineResponse20060.md)
 
 ### Authorization
 
@@ -736,7 +829,7 @@ Name | Type | Description  | Notes
 
 <a name="configCdrVisibilityListGet"></a>
 # **configCdrVisibilityListGet**
-> InlineResponse20051 configCdrVisibilityListGet(opts)
+> InlineResponse20061 configCdrVisibilityListGet(opts)
 
 
 
@@ -787,7 +880,358 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20051**](InlineResponse20051.md)
+[**InlineResponse20061**](InlineResponse20061.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="configCountryCreatePost"></a>
+# **configCountryCreatePost**
+> ObjectCreated configCountryCreatePost(opts)
+
+
+
+Creates new codecountry
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.ConfigApi();
+
+var opts = { 
+  'body': new DnlApi.CodeCountry() // CodeCountry | CodeCountry to create
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.configCountryCreatePost(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**CodeCountry**](CodeCountry.md)| CodeCountry to create | [optional] 
+
+### Return type
+
+[**ObjectCreated**](ObjectCreated.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="configCountryListGet"></a>
+# **configCountryListGet**
+> InlineResponse20042 configCountryListGet(opts)
+
+
+
+Gets codecountrys
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.ConfigApi();
+
+var opts = { 
+  'page': 56, // Number | 
+  'perPage': 56, // Number | 
+  'orderBy': "orderBy_example", // String | 
+  'orderDir': "orderDir_example", // String | 
+  'country': "country_example", // String | 
+  'countryCode': "countryCode_example" // String | 
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.configCountryListGet(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**|  | [optional] 
+ **perPage** | **Number**|  | [optional] 
+ **orderBy** | **String**|  | [optional] 
+ **orderDir** | **String**|  | [optional] 
+ **country** | **String**|  | [optional] 
+ **countryCode** | **String**|  | [optional] 
+
+### Return type
+
+[**InlineResponse20042**](InlineResponse20042.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="configCountryTimeProfileIdDelete"></a>
+# **configCountryTimeProfileIdDelete**
+> Success configCountryTimeProfileIdDelete(countryCode)
+
+
+
+Deletes codecountry
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.ConfigApi();
+
+var countryCode = "countryCode_example"; // String | CodeCountry id to get info about
+
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.configCountryTimeProfileIdDelete(countryCode, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **countryCode** | **String**| CodeCountry id to get info about | 
+
+### Return type
+
+[**Success**](Success.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="configCountryTimeProfileIdGet"></a>
+# **configCountryTimeProfileIdGet**
+> InlineResponse20041 configCountryTimeProfileIdGet(countryCode)
+
+
+
+Gets codecountry
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.ConfigApi();
+
+var countryCode = "countryCode_example"; // String | CodeCountry id to get info about
+
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.configCountryTimeProfileIdGet(countryCode, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **countryCode** | **String**| CodeCountry id to get info about | 
+
+### Return type
+
+[**InlineResponse20041**](InlineResponse20041.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="configCountryTimeProfileIdPatch"></a>
+# **configCountryTimeProfileIdPatch**
+> InlineResponse20041 configCountryTimeProfileIdPatch(countryCode, opts)
+
+
+
+Modifies codecountry
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.ConfigApi();
+
+var countryCode = "countryCode_example"; // String | CodeCountry id to get info about
+
+var opts = { 
+  'body': new DnlApi.CodeCountry() // CodeCountry | CodeCountry to modify
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.configCountryTimeProfileIdPatch(countryCode, opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **countryCode** | **String**| CodeCountry id to get info about | 
+ **body** | [**CodeCountry**](CodeCountry.md)| CodeCountry to modify | [optional] 
+
+### Return type
+
+[**InlineResponse20041**](InlineResponse20041.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="configEgressTrunkTemplateAllDelete"></a>
+# **configEgressTrunkTemplateAllDelete**
+> InlineResponse2002 configEgressTrunkTemplateAllDelete(opts)
+
+
+
+Deletes multiple found egresstrunktemplate
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.ConfigApi();
+
+var opts = { 
+  'createBy': "createBy_example", // String | 
+  'createOnGte': "createOnGte_example", // String | 
+  'createOnLt': "createOnLt_example", // String | 
+  'name': "name_example", // String | 
+  'resourceTemplateId': 56, // Number | 
+  'resourceTemplateIdIn': "resourceTemplateIdIn_example", // String | 
+  'updateOnGte': "updateOnGte_example", // String | 
+  'updateOnLt': "updateOnLt_example", // String | 
+  'usedByGt': 56 // Number | 
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.configEgressTrunkTemplateAllDelete(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **createBy** | **String**|  | [optional] 
+ **createOnGte** | **String**|  | [optional] 
+ **createOnLt** | **String**|  | [optional] 
+ **name** | **String**|  | [optional] 
+ **resourceTemplateId** | **Number**|  | [optional] 
+ **resourceTemplateIdIn** | **String**|  | [optional] 
+ **updateOnGte** | **String**|  | [optional] 
+ **updateOnLt** | **String**|  | [optional] 
+ **usedByGt** | **Number**|  | [optional] 
+
+### Return type
+
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -880,7 +1324,7 @@ auth_token.apiKey = 'YOUR API KEY';
 var apiInstance = new DnlApi.ConfigApi();
 
 var opts = { 
-  'body': new DnlApi.TrunkTemplate() // TrunkTemplate | EgressTrunkTemplate to create
+  'body': new DnlApi.EgressTrunkTemplate() // EgressTrunkTemplate | EgressTrunkTemplate to create
 };
 
 var callback = function(error, data, response) {
@@ -897,7 +1341,7 @@ apiInstance.configEgressTrunkTemplateCreatePost(opts, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**TrunkTemplate**](TrunkTemplate.md)| EgressTrunkTemplate to create | [optional] 
+ **body** | [**EgressTrunkTemplate**](EgressTrunkTemplate.md)| EgressTrunkTemplate to create | [optional] 
 
 ### Return type
 
@@ -914,7 +1358,7 @@ Name | Type | Description  | Notes
 
 <a name="configEgressTrunkTemplateListGet"></a>
 # **configEgressTrunkTemplateListGet**
-> InlineResponse20071 configEgressTrunkTemplateListGet(opts)
+> InlineResponse20084 configEgressTrunkTemplateListGet(opts)
 
 
 
@@ -943,6 +1387,7 @@ var opts = {
   'resourceTemplateId': 56, // Number | 
   'createOnGte': "createOnGte_example", // String | 
   'createOnLt': "createOnLt_example", // String | 
+  'resourceTemplateIdIn': "resourceTemplateIdIn_example", // String | 
   'updateOnGte': "updateOnGte_example", // String | 
   'updateOnLt': "updateOnLt_example", // String | 
   'usedByGt': 56 // Number | 
@@ -971,13 +1416,14 @@ Name | Type | Description  | Notes
  **resourceTemplateId** | **Number**|  | [optional] 
  **createOnGte** | **String**|  | [optional] 
  **createOnLt** | **String**|  | [optional] 
+ **resourceTemplateIdIn** | **String**|  | [optional] 
  **updateOnGte** | **String**|  | [optional] 
  **updateOnLt** | **String**|  | [optional] 
  **usedByGt** | **Number**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse20071**](InlineResponse20071.md)
+[**InlineResponse20084**](InlineResponse20084.md)
 
 ### Authorization
 
@@ -1043,7 +1489,7 @@ Name | Type | Description  | Notes
 
 <a name="configEgressTrunkTemplateResourceTemplateIdGet"></a>
 # **configEgressTrunkTemplateResourceTemplateIdGet**
-> InlineResponse20070 configEgressTrunkTemplateResourceTemplateIdGet(resourceTemplateId)
+> InlineResponse20083 configEgressTrunkTemplateResourceTemplateIdGet(resourceTemplateId)
 
 
 
@@ -1083,7 +1529,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20070**](InlineResponse20070.md)
+[**InlineResponse20083**](InlineResponse20083.md)
 
 ### Authorization
 
@@ -1096,7 +1542,7 @@ Name | Type | Description  | Notes
 
 <a name="configEgressTrunkTemplateResourceTemplateIdPatch"></a>
 # **configEgressTrunkTemplateResourceTemplateIdPatch**
-> InlineResponse20070 configEgressTrunkTemplateResourceTemplateIdPatch(resourceTemplateId, opts)
+> InlineResponse20083 configEgressTrunkTemplateResourceTemplateIdPatch(resourceTemplateId, opts)
 
 
 
@@ -1118,7 +1564,7 @@ var apiInstance = new DnlApi.ConfigApi();
 var resourceTemplateId = 789; // Number | EgressTrunkTemplate id to get info about
 
 var opts = { 
-  'body': new DnlApi.TrunkTemplate() // TrunkTemplate | EgressTrunkTemplate to modify
+  'body': new DnlApi.EgressTrunkTemplate() // EgressTrunkTemplate | EgressTrunkTemplate to modify
 };
 
 var callback = function(error, data, response) {
@@ -1136,11 +1582,112 @@ apiInstance.configEgressTrunkTemplateResourceTemplateIdPatch(resourceTemplateId,
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **resourceTemplateId** | **Number**| EgressTrunkTemplate id to get info about | 
- **body** | [**TrunkTemplate**](TrunkTemplate.md)| EgressTrunkTemplate to modify | [optional] 
+ **body** | [**EgressTrunkTemplate**](EgressTrunkTemplate.md)| EgressTrunkTemplate to modify | [optional] 
 
 ### Return type
 
-[**InlineResponse20070**](InlineResponse20070.md)
+[**InlineResponse20083**](InlineResponse20083.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="configEmailsGet"></a>
+# **configEmailsGet**
+> InlineResponse20077 configEmailsGet()
+
+
+
+Gets systemparameter - system emails
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.ConfigApi();
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.configEmailsGet(callback);
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**InlineResponse20077**](InlineResponse20077.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="configEmailsPatch"></a>
+# **configEmailsPatch**
+> InlineResponse20077 configEmailsPatch(opts)
+
+
+
+Modifies systemparameter - system emails
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.ConfigApi();
+
+var opts = { 
+  'body': new DnlApi.SystemParameterSystemEmails() // SystemParameterSystemEmails | SystemParameter - System emails to modify
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.configEmailsPatch(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**SystemParameterSystemEmails**](SystemParameterSystemEmails.md)| SystemParameter - System emails to modify | [optional] 
+
+### Return type
+
+[**InlineResponse20077**](InlineResponse20077.md)
 
 ### Authorization
 
@@ -1153,7 +1700,7 @@ Name | Type | Description  | Notes
 
 <a name="configExportErrorsIdGet"></a>
 # **configExportErrorsIdGet**
-> InlineResponse20033 configExportErrorsIdGet(id)
+> InlineResponse20040 configExportErrorsIdGet(id)
 
 
 
@@ -1193,7 +1740,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20033**](InlineResponse20033.md)
+[**InlineResponse20040**](InlineResponse20040.md)
 
 ### Authorization
 
@@ -1206,7 +1753,7 @@ Name | Type | Description  | Notes
 
 <a name="configExportIdGet"></a>
 # **configExportIdGet**
-> InlineResponse20033 configExportIdGet(id)
+> InlineResponse20040 configExportIdGet(id)
 
 
 
@@ -1246,7 +1793,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20033**](InlineResponse20033.md)
+[**InlineResponse20040**](InlineResponse20040.md)
 
 ### Authorization
 
@@ -1255,7 +1802,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, image/png, text/csv
+ - **Accept**: application/json, image/ico, image/jpg, image/png, text/csv
 
 <a name="configExportPost"></a>
 # **configExportPost**
@@ -1310,6 +1857,59 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
+
+<a name="configExportPublicIdGet"></a>
+# **configExportPublicIdGet**
+> InlineResponse20040 configExportPublicIdGet(id)
+
+
+
+Gets export file
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.ConfigApi();
+
+var id = 789; // Number | Export file id to get info about
+
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.configExportPublicIdGet(id, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **Number**| Export file id to get info about | 
+
+### Return type
+
+[**InlineResponse20040**](InlineResponse20040.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json, image/ico, image/jpg, image/png, text/csv
 
 <a name="configFailoverGlobalCreatePost"></a>
 # **configFailoverGlobalCreatePost**
@@ -1420,7 +2020,7 @@ Name | Type | Description  | Notes
 
 <a name="configFailoverGlobalIdGet"></a>
 # **configFailoverGlobalIdGet**
-> InlineResponse20054 configFailoverGlobalIdGet(id)
+> InlineResponse20064 configFailoverGlobalIdGet(id)
 
 
 
@@ -1460,7 +2060,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20054**](InlineResponse20054.md)
+[**InlineResponse20064**](InlineResponse20064.md)
 
 ### Authorization
 
@@ -1473,7 +2073,7 @@ Name | Type | Description  | Notes
 
 <a name="configFailoverGlobalIdPatch"></a>
 # **configFailoverGlobalIdPatch**
-> InlineResponse20054 configFailoverGlobalIdPatch(id, opts)
+> InlineResponse20064 configFailoverGlobalIdPatch(id, opts)
 
 
 
@@ -1495,7 +2095,7 @@ var apiInstance = new DnlApi.ConfigApi();
 var id = 789; // Number | GlobalFailover id to get info about
 
 var opts = { 
-  'body': new DnlApi.GlobalFailover() // GlobalFailover | GlobalFailover to modify
+  'body': new DnlApi.GlobalFailoverModify() // GlobalFailoverModify | GlobalFailover to modify
 };
 
 var callback = function(error, data, response) {
@@ -1513,11 +2113,11 @@ apiInstance.configFailoverGlobalIdPatch(id, opts, callback);
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Number**| GlobalFailover id to get info about | 
- **body** | [**GlobalFailover**](GlobalFailover.md)| GlobalFailover to modify | [optional] 
+ **body** | [**GlobalFailoverModify**](GlobalFailoverModify.md)| GlobalFailover to modify | [optional] 
 
 ### Return type
 
-[**InlineResponse20054**](InlineResponse20054.md)
+[**InlineResponse20064**](InlineResponse20064.md)
 
 ### Authorization
 
@@ -1530,7 +2130,7 @@ Name | Type | Description  | Notes
 
 <a name="configFailoverGlobalListGet"></a>
 # **configFailoverGlobalListGet**
-> InlineResponse20055 configFailoverGlobalListGet(opts)
+> InlineResponse20065 configFailoverGlobalListGet(opts)
 
 
 
@@ -1555,7 +2155,6 @@ var opts = {
   'orderBy': "orderBy_example", // String | 
   'orderDir': "orderDir_example", // String | 
   'failoverMethod': "failoverMethod_example", // String | 
-  'matchCode': 56, // Number | 
   'returnClause': "returnClause_example", // String | 
   'returnCode': 56 // Number | 
 };
@@ -1579,13 +2178,12 @@ Name | Type | Description  | Notes
  **orderBy** | **String**|  | [optional] 
  **orderDir** | **String**|  | [optional] 
  **failoverMethod** | **String**|  | [optional] 
- **matchCode** | **Number**|  | [optional] 
  **returnClause** | **String**|  | [optional] 
  **returnCode** | **Number**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse20055**](InlineResponse20055.md)
+[**InlineResponse20065**](InlineResponse20065.md)
 
 ### Authorization
 
@@ -1650,116 +2248,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="configFailoverOriginationCreatePost"></a>
-# **configFailoverOriginationCreatePost**
-> ObjectCreated configFailoverOriginationCreatePost(opts)
-
-
-
-Creates new originationfailover
-
-### Example
-```javascript
-var DnlApi = require('dnl_api');
-var defaultClient = DnlApi.ApiClient.instance;
-
-// Configure API key authorization: auth_token
-var auth_token = defaultClient.authentications['auth_token'];
-auth_token.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//auth_token.apiKeyPrefix = 'Token';
-
-var apiInstance = new DnlApi.ConfigApi();
-
-var opts = { 
-  'body': new DnlApi.OriginationFailover() // OriginationFailover | OriginationFailover to create
-};
-
-var callback = function(error, data, response) {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-};
-apiInstance.configFailoverOriginationCreatePost(opts, callback);
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**OriginationFailover**](OriginationFailover.md)| OriginationFailover to create | [optional] 
-
-### Return type
-
-[**ObjectCreated**](ObjectCreated.md)
-
-### Authorization
-
-[auth_token](../README.md#auth_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-<a name="configFailoverOriginationIdDelete"></a>
-# **configFailoverOriginationIdDelete**
-> Success configFailoverOriginationIdDelete(id)
-
-
-
-Deletes originationfailover
-
-### Example
-```javascript
-var DnlApi = require('dnl_api');
-var defaultClient = DnlApi.ApiClient.instance;
-
-// Configure API key authorization: auth_token
-var auth_token = defaultClient.authentications['auth_token'];
-auth_token.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//auth_token.apiKeyPrefix = 'Token';
-
-var apiInstance = new DnlApi.ConfigApi();
-
-var id = 789; // Number | OriginationFailover id to get info about
-
-
-var callback = function(error, data, response) {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-};
-apiInstance.configFailoverOriginationIdDelete(id, callback);
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Number**| OriginationFailover id to get info about | 
-
-### Return type
-
-[**Success**](Success.md)
-
-### Authorization
-
-[auth_token](../README.md#auth_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
 <a name="configFailoverOriginationIdGet"></a>
 # **configFailoverOriginationIdGet**
-> InlineResponse20058 configFailoverOriginationIdGet(id)
+> InlineResponse20068 configFailoverOriginationIdGet(id)
 
 
 
@@ -1799,7 +2290,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20058**](InlineResponse20058.md)
+[**InlineResponse20068**](InlineResponse20068.md)
 
 ### Authorization
 
@@ -1812,7 +2303,7 @@ Name | Type | Description  | Notes
 
 <a name="configFailoverOriginationIdPatch"></a>
 # **configFailoverOriginationIdPatch**
-> InlineResponse20058 configFailoverOriginationIdPatch(id, opts)
+> InlineResponse20068 configFailoverOriginationIdPatch(id, opts)
 
 
 
@@ -1834,7 +2325,7 @@ var apiInstance = new DnlApi.ConfigApi();
 var id = 789; // Number | OriginationFailover id to get info about
 
 var opts = { 
-  'body': new DnlApi.OriginationFailover() // OriginationFailover | OriginationFailover to modify
+  'body': new DnlApi.OriginationFailoverModify() // OriginationFailoverModify | OriginationFailover to modify
 };
 
 var callback = function(error, data, response) {
@@ -1852,11 +2343,11 @@ apiInstance.configFailoverOriginationIdPatch(id, opts, callback);
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Number**| OriginationFailover id to get info about | 
- **body** | [**OriginationFailover**](OriginationFailover.md)| OriginationFailover to modify | [optional] 
+ **body** | [**OriginationFailoverModify**](OriginationFailoverModify.md)| OriginationFailover to modify | [optional] 
 
 ### Return type
 
-[**InlineResponse20058**](InlineResponse20058.md)
+[**InlineResponse20068**](InlineResponse20068.md)
 
 ### Authorization
 
@@ -1869,7 +2360,7 @@ Name | Type | Description  | Notes
 
 <a name="configFailoverOriginationListGet"></a>
 # **configFailoverOriginationListGet**
-> InlineResponse20059 configFailoverOriginationListGet(opts)
+> InlineResponse20069 configFailoverOriginationListGet(opts)
 
 
 
@@ -1894,7 +2385,7 @@ var opts = {
   'orderBy': "orderBy_example", // String | 
   'orderDir': "orderDir_example", // String | 
   'failoverMethod': "failoverMethod_example", // String | 
-  'matchCode': 56, // Number | 
+  'id': 56, // Number | 
   'returnClause': "returnClause_example", // String | 
   'returnCode': 56 // Number | 
 };
@@ -1918,13 +2409,13 @@ Name | Type | Description  | Notes
  **orderBy** | **String**|  | [optional] 
  **orderDir** | **String**|  | [optional] 
  **failoverMethod** | **String**|  | [optional] 
- **matchCode** | **Number**|  | [optional] 
+ **id** | **Number**|  | [optional] 
  **returnClause** | **String**|  | [optional] 
  **returnCode** | **Number**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse20059**](InlineResponse20059.md)
+[**InlineResponse20069**](InlineResponse20069.md)
 
 ### Authorization
 
@@ -1989,116 +2480,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="configFailoverTerminationCreatePost"></a>
-# **configFailoverTerminationCreatePost**
-> ObjectCreated configFailoverTerminationCreatePost(opts)
-
-
-
-Creates new terminationfailover
-
-### Example
-```javascript
-var DnlApi = require('dnl_api');
-var defaultClient = DnlApi.ApiClient.instance;
-
-// Configure API key authorization: auth_token
-var auth_token = defaultClient.authentications['auth_token'];
-auth_token.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//auth_token.apiKeyPrefix = 'Token';
-
-var apiInstance = new DnlApi.ConfigApi();
-
-var opts = { 
-  'body': new DnlApi.TerminationFailover() // TerminationFailover | TerminationFailover to create
-};
-
-var callback = function(error, data, response) {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-};
-apiInstance.configFailoverTerminationCreatePost(opts, callback);
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**TerminationFailover**](TerminationFailover.md)| TerminationFailover to create | [optional] 
-
-### Return type
-
-[**ObjectCreated**](ObjectCreated.md)
-
-### Authorization
-
-[auth_token](../README.md#auth_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-<a name="configFailoverTerminationIdDelete"></a>
-# **configFailoverTerminationIdDelete**
-> Success configFailoverTerminationIdDelete(id)
-
-
-
-Deletes terminationfailover
-
-### Example
-```javascript
-var DnlApi = require('dnl_api');
-var defaultClient = DnlApi.ApiClient.instance;
-
-// Configure API key authorization: auth_token
-var auth_token = defaultClient.authentications['auth_token'];
-auth_token.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//auth_token.apiKeyPrefix = 'Token';
-
-var apiInstance = new DnlApi.ConfigApi();
-
-var id = 789; // Number | TerminationFailover id to get info about
-
-
-var callback = function(error, data, response) {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-};
-apiInstance.configFailoverTerminationIdDelete(id, callback);
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Number**| TerminationFailover id to get info about | 
-
-### Return type
-
-[**Success**](Success.md)
-
-### Authorization
-
-[auth_token](../README.md#auth_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
 <a name="configFailoverTerminationIdGet"></a>
 # **configFailoverTerminationIdGet**
-> InlineResponse20056 configFailoverTerminationIdGet(id)
+> InlineResponse20066 configFailoverTerminationIdGet(id)
 
 
 
@@ -2138,7 +2522,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20056**](InlineResponse20056.md)
+[**InlineResponse20066**](InlineResponse20066.md)
 
 ### Authorization
 
@@ -2151,7 +2535,7 @@ Name | Type | Description  | Notes
 
 <a name="configFailoverTerminationIdPatch"></a>
 # **configFailoverTerminationIdPatch**
-> InlineResponse20056 configFailoverTerminationIdPatch(id, opts)
+> InlineResponse20066 configFailoverTerminationIdPatch(id, opts)
 
 
 
@@ -2173,7 +2557,7 @@ var apiInstance = new DnlApi.ConfigApi();
 var id = 789; // Number | TerminationFailover id to get info about
 
 var opts = { 
-  'body': new DnlApi.TerminationFailover() // TerminationFailover | TerminationFailover to modify
+  'body': new DnlApi.TerminationFailoverModify() // TerminationFailoverModify | TerminationFailover to modify
 };
 
 var callback = function(error, data, response) {
@@ -2191,11 +2575,11 @@ apiInstance.configFailoverTerminationIdPatch(id, opts, callback);
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Number**| TerminationFailover id to get info about | 
- **body** | [**TerminationFailover**](TerminationFailover.md)| TerminationFailover to modify | [optional] 
+ **body** | [**TerminationFailoverModify**](TerminationFailoverModify.md)| TerminationFailover to modify | [optional] 
 
 ### Return type
 
-[**InlineResponse20056**](InlineResponse20056.md)
+[**InlineResponse20066**](InlineResponse20066.md)
 
 ### Authorization
 
@@ -2208,7 +2592,7 @@ Name | Type | Description  | Notes
 
 <a name="configFailoverTerminationListGet"></a>
 # **configFailoverTerminationListGet**
-> InlineResponse20057 configFailoverTerminationListGet(opts)
+> InlineResponse20067 configFailoverTerminationListGet(opts)
 
 
 
@@ -2233,7 +2617,6 @@ var opts = {
   'orderBy': "orderBy_example", // String | 
   'orderDir': "orderDir_example", // String | 
   'failoverMethod': "failoverMethod_example", // String | 
-  'matchCode': 56, // Number | 
   'returnClause': "returnClause_example", // String | 
   'returnCode': 56 // Number | 
 };
@@ -2257,13 +2640,12 @@ Name | Type | Description  | Notes
  **orderBy** | **String**|  | [optional] 
  **orderDir** | **String**|  | [optional] 
  **failoverMethod** | **String**|  | [optional] 
- **matchCode** | **Number**|  | [optional] 
  **returnClause** | **String**|  | [optional] 
  **returnCode** | **Number**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse20057**](InlineResponse20057.md)
+[**InlineResponse20067**](InlineResponse20067.md)
 
 ### Authorization
 
@@ -2318,6 +2700,136 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Success**](Success.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="configFtpAllDelete"></a>
+# **configFtpAllDelete**
+> InlineResponse2002 configFtpAllDelete(opts)
+
+
+
+Deletes multiple found ftpconf
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.ConfigApi();
+
+var opts = { 
+  'active': true, // Boolean | 
+  'ftpServerIp': "ftpServerIp_example", // String | 
+  'name': "name_example", // String | 
+  'time': "time_example", // String | 
+  'timeGt': "timeGt_example", // String | 
+  'timeLt': "timeLt_example" // String | 
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.configFtpAllDelete(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **active** | **Boolean**|  | [optional] 
+ **ftpServerIp** | **String**|  | [optional] 
+ **name** | **String**|  | [optional] 
+ **time** | **String**|  | [optional] 
+ **timeGt** | **String**|  | [optional] 
+ **timeLt** | **String**|  | [optional] 
+
+### Return type
+
+[**InlineResponse2002**](InlineResponse2002.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="configFtpAllPatch"></a>
+# **configFtpAllPatch**
+> InlineResponse2002 configFtpAllPatch(opts)
+
+
+
+Modifies multiple found ftpconf
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.ConfigApi();
+
+var opts = { 
+  'body': new DnlApi.FtpConfActivate(), // FtpConfActivate | FtpConf to modify
+  'active': true, // Boolean | 
+  'ftpServerIp': "ftpServerIp_example", // String | 
+  'name': "name_example", // String | 
+  'time': "time_example", // String | 
+  'timeGt': "timeGt_example", // String | 
+  'timeLt': "timeLt_example" // String | 
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.configFtpAllPatch(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**FtpConfActivate**](FtpConfActivate.md)| FtpConf to modify | [optional] 
+ **active** | **Boolean**|  | [optional] 
+ **ftpServerIp** | **String**|  | [optional] 
+ **name** | **String**|  | [optional] 
+ **time** | **String**|  | [optional] 
+ **timeGt** | **String**|  | [optional] 
+ **timeLt** | **String**|  | [optional] 
+
+### Return type
+
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -2437,7 +2949,7 @@ Name | Type | Description  | Notes
 
 <a name="configFtpIdGet"></a>
 # **configFtpIdGet**
-> InlineResponse20060 configFtpIdGet(id)
+> InlineResponse20070 configFtpIdGet(id)
 
 
 
@@ -2477,7 +2989,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20060**](InlineResponse20060.md)
+[**InlineResponse20070**](InlineResponse20070.md)
 
 ### Authorization
 
@@ -2490,7 +3002,7 @@ Name | Type | Description  | Notes
 
 <a name="configFtpIdPatch"></a>
 # **configFtpIdPatch**
-> InlineResponse20060 configFtpIdPatch(id, opts)
+> InlineResponse20070 configFtpIdPatch(id, opts)
 
 
 
@@ -2534,7 +3046,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20060**](InlineResponse20060.md)
+[**InlineResponse20070**](InlineResponse20070.md)
 
 ### Authorization
 
@@ -2547,7 +3059,7 @@ Name | Type | Description  | Notes
 
 <a name="configFtpListGet"></a>
 # **configFtpListGet**
-> InlineResponse20061 configFtpListGet(opts)
+> InlineResponse20071 configFtpListGet(opts)
 
 
 
@@ -2606,7 +3118,113 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20061**](InlineResponse20061.md)
+[**InlineResponse20071**](InlineResponse20071.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="configImportIdKillPost"></a>
+# **configImportIdKillPost**
+> Success configImportIdKillPost(id)
+
+
+
+
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.ConfigApi();
+
+var id = 789; // Number | Import job id to stop
+
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.configImportIdKillPost(id, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **Number**| Import job id to stop | 
+
+### Return type
+
+[**Success**](Success.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="configImportIdRunPost"></a>
+# **configImportIdRunPost**
+> Success configImportIdRunPost(id)
+
+
+
+
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.ConfigApi();
+
+var id = 789; // Number | Import job id to run
+
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.configImportIdRunPost(id, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **Number**| Import job id to run | 
+
+### Return type
+
+[**Success**](Success.md)
 
 ### Authorization
 
@@ -2619,7 +3237,7 @@ Name | Type | Description  | Notes
 
 <a name="configImportPost"></a>
 # **configImportPost**
-> ObjectCreated configImportPost(entity, format, file)
+> ObjectCreated configImportPost(entity, format, file, opts)
 
 
 
@@ -2644,6 +3262,12 @@ var format = "csv"; // String | format
 
 var file = "/path/to/file.txt"; // File | File to upload
 
+var opts = { 
+  'ignoreFields': "ignoreFields_example", // String | comma separated list of fields to ignore from import
+  'replaceFields': "replaceFields_example", // String | comma separated list of fields to replace from import
+  'replaceValues': "replaceValues_example", // String | comma separated list of values  for replace from import
+  'deleteDublicates': true // Boolean | If set, will override rows with dublicate values of this field
+};
 
 var callback = function(error, data, response) {
   if (error) {
@@ -2652,7 +3276,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.configImportPost(entity, format, file, callback);
+apiInstance.configImportPost(entity, format, file, opts, callback);
 ```
 
 ### Parameters
@@ -2662,6 +3286,10 @@ Name | Type | Description  | Notes
  **entity** | **String**| Entity to import | [default to Rate]
  **format** | **String**| format | [default to csv]
  **file** | **File**| File to upload | 
+ **ignoreFields** | **String**| comma separated list of fields to ignore from import | [optional] 
+ **replaceFields** | **String**| comma separated list of fields to replace from import | [optional] 
+ **replaceValues** | **String**| comma separated list of values  for replace from import | [optional] 
+ **deleteDublicates** | **Boolean**| If set, will override rows with dublicate values of this field | [optional] 
 
 ### Return type
 
@@ -2674,6 +3302,76 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: multipart/form-data
+ - **Accept**: application/json
+
+<a name="configIngressTrunkTemplateAllDelete"></a>
+# **configIngressTrunkTemplateAllDelete**
+> InlineResponse2002 configIngressTrunkTemplateAllDelete(opts)
+
+
+
+Deletes multiple found ingresstrunktemplate
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.ConfigApi();
+
+var opts = { 
+  'createBy': "createBy_example", // String | 
+  'createOnGte': "createOnGte_example", // String | 
+  'createOnLt': "createOnLt_example", // String | 
+  'name': "name_example", // String | 
+  'resourceTemplateId': 56, // Number | 
+  'resourceTemplateIdIn': "resourceTemplateIdIn_example", // String | 
+  'updateOnGte': "updateOnGte_example", // String | 
+  'updateOnLt': "updateOnLt_example", // String | 
+  'usedByGt': 56 // Number | 
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.configIngressTrunkTemplateAllDelete(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **createBy** | **String**|  | [optional] 
+ **createOnGte** | **String**|  | [optional] 
+ **createOnLt** | **String**|  | [optional] 
+ **name** | **String**|  | [optional] 
+ **resourceTemplateId** | **Number**|  | [optional] 
+ **resourceTemplateIdIn** | **String**|  | [optional] 
+ **updateOnGte** | **String**|  | [optional] 
+ **updateOnLt** | **String**|  | [optional] 
+ **usedByGt** | **Number**|  | [optional] 
+
+### Return type
+
+[**InlineResponse2002**](InlineResponse2002.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="configIngressTrunkTemplateApplyResourceTemplateIdClientIdPost"></a>
@@ -2758,7 +3456,7 @@ auth_token.apiKey = 'YOUR API KEY';
 var apiInstance = new DnlApi.ConfigApi();
 
 var opts = { 
-  'body': new DnlApi.TrunkTemplate() // TrunkTemplate | IngressTrunkTemplate to create
+  'body': new DnlApi.IngressTrunkTemplate() // IngressTrunkTemplate | IngressTrunkTemplate to create
 };
 
 var callback = function(error, data, response) {
@@ -2775,7 +3473,7 @@ apiInstance.configIngressTrunkTemplateCreatePost(opts, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**TrunkTemplate**](TrunkTemplate.md)| IngressTrunkTemplate to create | [optional] 
+ **body** | [**IngressTrunkTemplate**](IngressTrunkTemplate.md)| IngressTrunkTemplate to create | [optional] 
 
 ### Return type
 
@@ -2792,7 +3490,7 @@ Name | Type | Description  | Notes
 
 <a name="configIngressTrunkTemplateListGet"></a>
 # **configIngressTrunkTemplateListGet**
-> InlineResponse20071 configIngressTrunkTemplateListGet(opts)
+> InlineResponse20086 configIngressTrunkTemplateListGet(opts)
 
 
 
@@ -2821,6 +3519,7 @@ var opts = {
   'resourceTemplateId': 56, // Number | 
   'createOnGte': "createOnGte_example", // String | 
   'createOnLt': "createOnLt_example", // String | 
+  'resourceTemplateIdIn': "resourceTemplateIdIn_example", // String | 
   'updateOnGte': "updateOnGte_example", // String | 
   'updateOnLt': "updateOnLt_example", // String | 
   'usedByGt': 56 // Number | 
@@ -2849,13 +3548,14 @@ Name | Type | Description  | Notes
  **resourceTemplateId** | **Number**|  | [optional] 
  **createOnGte** | **String**|  | [optional] 
  **createOnLt** | **String**|  | [optional] 
+ **resourceTemplateIdIn** | **String**|  | [optional] 
  **updateOnGte** | **String**|  | [optional] 
  **updateOnLt** | **String**|  | [optional] 
  **usedByGt** | **Number**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse20071**](InlineResponse20071.md)
+[**InlineResponse20086**](InlineResponse20086.md)
 
 ### Authorization
 
@@ -2921,7 +3621,7 @@ Name | Type | Description  | Notes
 
 <a name="configIngressTrunkTemplateResourceTemplateIdGet"></a>
 # **configIngressTrunkTemplateResourceTemplateIdGet**
-> InlineResponse20070 configIngressTrunkTemplateResourceTemplateIdGet(resourceTemplateId)
+> InlineResponse20085 configIngressTrunkTemplateResourceTemplateIdGet(resourceTemplateId)
 
 
 
@@ -2961,7 +3661,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20070**](InlineResponse20070.md)
+[**InlineResponse20085**](InlineResponse20085.md)
 
 ### Authorization
 
@@ -2974,7 +3674,7 @@ Name | Type | Description  | Notes
 
 <a name="configIngressTrunkTemplateResourceTemplateIdPatch"></a>
 # **configIngressTrunkTemplateResourceTemplateIdPatch**
-> InlineResponse20070 configIngressTrunkTemplateResourceTemplateIdPatch(resourceTemplateId, opts)
+> InlineResponse20085 configIngressTrunkTemplateResourceTemplateIdPatch(resourceTemplateId, opts)
 
 
 
@@ -2996,7 +3696,7 @@ var apiInstance = new DnlApi.ConfigApi();
 var resourceTemplateId = 789; // Number | IngressTrunkTemplate id to get info about
 
 var opts = { 
-  'body': new DnlApi.TrunkTemplate() // TrunkTemplate | IngressTrunkTemplate to modify
+  'body': new DnlApi.IngressTrunkTemplate() // IngressTrunkTemplate | IngressTrunkTemplate to modify
 };
 
 var callback = function(error, data, response) {
@@ -3014,11 +3714,11 @@ apiInstance.configIngressTrunkTemplateResourceTemplateIdPatch(resourceTemplateId
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **resourceTemplateId** | **Number**| IngressTrunkTemplate id to get info about | 
- **body** | [**TrunkTemplate**](TrunkTemplate.md)| IngressTrunkTemplate to modify | [optional] 
+ **body** | [**IngressTrunkTemplate**](IngressTrunkTemplate.md)| IngressTrunkTemplate to modify | [optional] 
 
 ### Return type
 
-[**InlineResponse20070**](InlineResponse20070.md)
+[**InlineResponse20085**](InlineResponse20085.md)
 
 ### Authorization
 
@@ -3031,7 +3731,7 @@ Name | Type | Description  | Notes
 
 <a name="configInvoiceGet"></a>
 # **configInvoiceGet**
-> InlineResponse20063 configInvoiceGet()
+> InlineResponse20073 configInvoiceGet()
 
 
 
@@ -3065,7 +3765,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20063**](InlineResponse20063.md)
+[**InlineResponse20073**](InlineResponse20073.md)
 
 ### Authorization
 
@@ -3078,7 +3778,7 @@ This endpoint does not need any parameter.
 
 <a name="configInvoicePatch"></a>
 # **configInvoicePatch**
-> InlineResponse20063 configInvoicePatch(opts)
+> InlineResponse20073 configInvoicePatch(opts)
 
 
 
@@ -3119,7 +3819,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20063**](InlineResponse20063.md)
+[**InlineResponse20073**](InlineResponse20073.md)
 
 ### Authorization
 
@@ -3132,7 +3832,7 @@ Name | Type | Description  | Notes
 
 <a name="configLoginGet"></a>
 # **configLoginGet**
-> InlineResponse20062 configLoginGet()
+> InlineResponse20072 configLoginGet()
 
 
 
@@ -3141,6 +3841,13 @@ Gets systemparameter - login settings
 ### Example
 ```javascript
 var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
 
 var apiInstance = new DnlApi.ConfigApi();
 
@@ -3159,11 +3866,11 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20062**](InlineResponse20062.md)
+[**InlineResponse20072**](InlineResponse20072.md)
 
 ### Authorization
 
-No authorization required
+[auth_token](../README.md#auth_token)
 
 ### HTTP request headers
 
@@ -3172,7 +3879,7 @@ No authorization required
 
 <a name="configLoginPatch"></a>
 # **configLoginPatch**
-> InlineResponse20062 configLoginPatch(opts)
+> InlineResponse20072 configLoginPatch(opts)
 
 
 
@@ -3181,6 +3888,13 @@ Modifies systemparameter - login settings
 ### Example
 ```javascript
 var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
 
 var apiInstance = new DnlApi.ConfigApi();
 
@@ -3206,11 +3920,224 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20062**](InlineResponse20062.md)
+[**InlineResponse20072**](InlineResponse20072.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="configLoginPublicGet"></a>
+# **configLoginPublicGet**
+> InlineResponse20072 configLoginPublicGet()
+
+
+
+Gets systemparameter - login settings
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+
+var apiInstance = new DnlApi.ConfigApi();
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.configLoginPublicGet(callback);
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**InlineResponse20072**](InlineResponse20072.md)
 
 ### Authorization
 
 No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="configLrnGet"></a>
+# **configLrnGet**
+> InlineResponse20078 configLrnGet()
+
+
+
+Gets systemparameter - lrn settings
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.ConfigApi();
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.configLrnGet(callback);
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**InlineResponse20078**](InlineResponse20078.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="configLrnPatch"></a>
+# **configLrnPatch**
+> InlineResponse20078 configLrnPatch(opts)
+
+
+
+Modifies systemparameter - lrn settings
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.ConfigApi();
+
+var opts = { 
+  'body': new DnlApi.C4Lrn() // C4Lrn | SystemParameter - LRN settings to modify
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.configLrnPatch(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**C4Lrn**](C4Lrn.md)| SystemParameter - LRN settings to modify | [optional] 
+
+### Return type
+
+[**InlineResponse20078**](InlineResponse20078.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="configMailSenderAllDelete"></a>
+# **configMailSenderAllDelete**
+> InlineResponse2002 configMailSenderAllDelete(opts)
+
+
+
+Deletes multiple found mailsender
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.ConfigApi();
+
+var opts = { 
+  'email': "email_example", // String | 
+  'id': 56, // Number | 
+  'idIn': "idIn_example", // String | 
+  'mailServer': "mailServer_example", // String | 
+  'name': "name_example", // String | 
+  'secure': "secure_example", // String | 
+  'updateBy': "updateBy_example", // String | 
+  'updateOnGt': "updateOnGt_example", // String | 
+  'updateOnLt': "updateOnLt_example", // String | 
+  'username': "username_example" // String | 
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.configMailSenderAllDelete(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **email** | **String**|  | [optional] 
+ **id** | **Number**|  | [optional] 
+ **idIn** | **String**|  | [optional] 
+ **mailServer** | **String**|  | [optional] 
+ **name** | **String**|  | [optional] 
+ **secure** | **String**|  | [optional] 
+ **updateBy** | **String**|  | [optional] 
+ **updateOnGt** | **String**|  | [optional] 
+ **updateOnLt** | **String**|  | [optional] 
+ **username** | **String**|  | [optional] 
+
+### Return type
+
+[**InlineResponse2002**](InlineResponse2002.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
 
 ### HTTP request headers
 
@@ -3326,7 +4253,7 @@ Name | Type | Description  | Notes
 
 <a name="configMailSenderIdGet"></a>
 # **configMailSenderIdGet**
-> InlineResponse20045 configMailSenderIdGet(id)
+> InlineResponse20054 configMailSenderIdGet(id)
 
 
 
@@ -3366,7 +4293,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20045**](InlineResponse20045.md)
+[**InlineResponse20054**](InlineResponse20054.md)
 
 ### Authorization
 
@@ -3379,7 +4306,7 @@ Name | Type | Description  | Notes
 
 <a name="configMailSenderIdPatch"></a>
 # **configMailSenderIdPatch**
-> InlineResponse20045 configMailSenderIdPatch(id, opts)
+> InlineResponse20054 configMailSenderIdPatch(id, opts)
 
 
 
@@ -3401,7 +4328,7 @@ var apiInstance = new DnlApi.ConfigApi();
 var id = 789; // Number | MailSender id to get info about
 
 var opts = { 
-  'body': new DnlApi.MailSender() // MailSender | MailSender to modify
+  'body': new DnlApi.MailSenderModify() // MailSenderModify | MailSender to modify
 };
 
 var callback = function(error, data, response) {
@@ -3419,11 +4346,11 @@ apiInstance.configMailSenderIdPatch(id, opts, callback);
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Number**| MailSender id to get info about | 
- **body** | [**MailSender**](MailSender.md)| MailSender to modify | [optional] 
+ **body** | [**MailSenderModify**](MailSenderModify.md)| MailSender to modify | [optional] 
 
 ### Return type
 
-[**InlineResponse20045**](InlineResponse20045.md)
+[**InlineResponse20054**](InlineResponse20054.md)
 
 ### Authorization
 
@@ -3493,7 +4420,7 @@ Name | Type | Description  | Notes
 
 <a name="configMailSenderListGet"></a>
 # **configMailSenderListGet**
-> InlineResponse20046 configMailSenderListGet(opts)
+> InlineResponse20055 configMailSenderListGet(opts)
 
 
 
@@ -3524,6 +4451,7 @@ var opts = {
   'secure': "secure_example", // String | 
   'updateBy': "updateBy_example", // String | 
   'username': "username_example", // String | 
+  'idIn': "idIn_example", // String | 
   'updateOnGt': "updateOnGt_example", // String | 
   'updateOnLt': "updateOnLt_example" // String | 
 };
@@ -3553,12 +4481,83 @@ Name | Type | Description  | Notes
  **secure** | **String**|  | [optional] 
  **updateBy** | **String**|  | [optional] 
  **username** | **String**|  | [optional] 
+ **idIn** | **String**|  | [optional] 
  **updateOnGt** | **String**|  | [optional] 
  **updateOnLt** | **String**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse20046**](InlineResponse20046.md)
+[**InlineResponse20055**](InlineResponse20055.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="configMailTemplateListGet"></a>
+# **configMailTemplateListGet**
+> InlineResponse20057 configMailTemplateListGet(opts)
+
+
+
+Gets mailtemplates
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.ConfigApi();
+
+var opts = { 
+  'page': 56, // Number | 
+  'perPage': 56, // Number | 
+  'orderBy': "orderBy_example", // String | 
+  'orderDir': "orderDir_example", // String | 
+  'ccMail': "ccMail_example", // String | 
+  'fromMailId': 56, // Number | 
+  'subject': "subject_example", // String | 
+  'title': "title_example", // String | 
+  'toMail': "toMail_example" // String | 
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.configMailTemplateListGet(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**|  | [optional] 
+ **perPage** | **Number**|  | [optional] 
+ **orderBy** | **String**|  | [optional] 
+ **orderDir** | **String**|  | [optional] 
+ **ccMail** | **String**|  | [optional] 
+ **fromMailId** | **Number**|  | [optional] 
+ **subject** | **String**|  | [optional] 
+ **title** | **String**|  | [optional] 
+ **toMail** | **String**|  | [optional] 
+
+### Return type
+
+[**InlineResponse20057**](InlineResponse20057.md)
 
 ### Authorization
 
@@ -3571,7 +4570,7 @@ Name | Type | Description  | Notes
 
 <a name="configMailTemplateTitleGet"></a>
 # **configMailTemplateTitleGet**
-> InlineResponse20047 configMailTemplateTitleGet(title)
+> InlineResponse20056 configMailTemplateTitleGet(title)
 
 
 
@@ -3590,7 +4589,7 @@ auth_token.apiKey = 'YOUR API KEY';
 
 var apiInstance = new DnlApi.ConfigApi();
 
-var title = "title_example"; // String | One of: invoice,payment,lowbalance,noc_email,carrier_email,alert_email,carrier_invoice,auto_summary,auto_balance,auto_delivery,auto_cdr,no_route_available_alert_email,target_match_alert_email,rate_watch_alert_email,route_update_alert_email,rate_update_alert_email,low_balance_alert_email,new_invoice_posted_mail_alert_email,payment_sent,payment_received,trouble_ticket,send_cdr,select_route_up_email,exchange_auto_summary,finance_alert,buy_qos_alert,sell_qos_alert,rate_mail_success,rate_mail_fail,daily_payment,rate,dialer_detection,retrieve_password,registration,trunk_change,fraud_detection,welcom,download_rate_notice,no_download_rate,download_cdr,vendor_invoice_dispute,trunk_interop,regletter,paymresvd
+var title = "title_example"; // String | MailTemplateScheme id to get info about
 
 
 var callback = function(error, data, response) {
@@ -3607,11 +4606,11 @@ apiInstance.configMailTemplateTitleGet(title, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **title** | **String**| One of: invoice,payment,lowbalance,noc_email,carrier_email,alert_email,carrier_invoice,auto_summary,auto_balance,auto_delivery,auto_cdr,no_route_available_alert_email,target_match_alert_email,rate_watch_alert_email,route_update_alert_email,rate_update_alert_email,low_balance_alert_email,new_invoice_posted_mail_alert_email,payment_sent,payment_received,trouble_ticket,send_cdr,select_route_up_email,exchange_auto_summary,finance_alert,buy_qos_alert,sell_qos_alert,rate_mail_success,rate_mail_fail,daily_payment,rate,dialer_detection,retrieve_password,registration,trunk_change,fraud_detection,welcom,download_rate_notice,no_download_rate,download_cdr,vendor_invoice_dispute,trunk_interop,regletter,paymresvd | 
+ **title** | **String**| MailTemplateScheme id to get info about | 
 
 ### Return type
 
-[**InlineResponse20047**](InlineResponse20047.md)
+[**InlineResponse20056**](InlineResponse20056.md)
 
 ### Authorization
 
@@ -3624,7 +4623,7 @@ Name | Type | Description  | Notes
 
 <a name="configMailTemplateTitlePatch"></a>
 # **configMailTemplateTitlePatch**
-> InlineResponse20047 configMailTemplateTitlePatch(title, opts)
+> InlineResponse20056 configMailTemplateTitlePatch(title, opts)
 
 
 
@@ -3643,7 +4642,7 @@ auth_token.apiKey = 'YOUR API KEY';
 
 var apiInstance = new DnlApi.ConfigApi();
 
-var title = "title_example"; // String | One of: invoice,payment,lowbalance,noc_email,carrier_email,alert_email,carrier_invoice,auto_summary,auto_balance,auto_delivery,auto_cdr,no_route_available_alert_email,target_match_alert_email,rate_watch_alert_email,route_update_alert_email,rate_update_alert_email,low_balance_alert_email,new_invoice_posted_mail_alert_email,payment_sent,payment_received,trouble_ticket,send_cdr,select_route_up_email,exchange_auto_summary,finance_alert,buy_qos_alert,sell_qos_alert,rate_mail_success,rate_mail_fail,daily_payment,rate,dialer_detection,retrieve_password,registration,trunk_change,fraud_detection,welcom,download_rate_notice,no_download_rate,download_cdr,vendor_invoice_dispute,trunk_interop,regletter,paymresvd
+var title = "title_example"; // String | MailTemplateScheme id to get info about
 
 var opts = { 
   'body': new DnlApi.MailTemplate() // MailTemplate | MailTemplateScheme to modify
@@ -3663,12 +4662,12 @@ apiInstance.configMailTemplateTitlePatch(title, opts, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **title** | **String**| One of: invoice,payment,lowbalance,noc_email,carrier_email,alert_email,carrier_invoice,auto_summary,auto_balance,auto_delivery,auto_cdr,no_route_available_alert_email,target_match_alert_email,rate_watch_alert_email,route_update_alert_email,rate_update_alert_email,low_balance_alert_email,new_invoice_posted_mail_alert_email,payment_sent,payment_received,trouble_ticket,send_cdr,select_route_up_email,exchange_auto_summary,finance_alert,buy_qos_alert,sell_qos_alert,rate_mail_success,rate_mail_fail,daily_payment,rate,dialer_detection,retrieve_password,registration,trunk_change,fraud_detection,welcom,download_rate_notice,no_download_rate,download_cdr,vendor_invoice_dispute,trunk_interop,regletter,paymresvd | 
+ **title** | **String**| MailTemplateScheme id to get info about | 
  **body** | [**MailTemplate**](MailTemplate.md)| MailTemplateScheme to modify | [optional] 
 
 ### Return type
 
-[**InlineResponse20047**](InlineResponse20047.md)
+[**InlineResponse20056**](InlineResponse20056.md)
 
 ### Authorization
 
@@ -3681,7 +4680,7 @@ Name | Type | Description  | Notes
 
 <a name="configPaymentGet"></a>
 # **configPaymentGet**
-> InlineResponse20064 configPaymentGet()
+> InlineResponse20074 configPaymentGet()
 
 
 
@@ -3715,7 +4714,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20064**](InlineResponse20064.md)
+[**InlineResponse20074**](InlineResponse20074.md)
 
 ### Authorization
 
@@ -3728,7 +4727,7 @@ This endpoint does not need any parameter.
 
 <a name="configPaymentPatch"></a>
 # **configPaymentPatch**
-> InlineResponse20064 configPaymentPatch(opts)
+> InlineResponse20074 configPaymentPatch(opts)
 
 
 
@@ -3769,7 +4768,73 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20064**](InlineResponse20064.md)
+[**InlineResponse20074**](InlineResponse20074.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="configPaymentTermAllDelete"></a>
+# **configPaymentTermAllDelete**
+> InlineResponse2002 configPaymentTermAllDelete(opts)
+
+
+
+Deletes multiple found paymentterm
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.ConfigApi();
+
+var opts = { 
+  'gracePeriod': 56, // Number | 
+  'name': "name_example", // String | 
+  'paymentTermId': 56, // Number | 
+  'paymentTermIdIn': "paymentTermIdIn_example", // String | 
+  'type': "type_example", // String | 
+  'usageCountGt': 56, // Number | 
+  'usageCountLt': 56 // Number | 
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.configPaymentTermAllDelete(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **gracePeriod** | **Number**|  | [optional] 
+ **name** | **String**|  | [optional] 
+ **paymentTermId** | **Number**|  | [optional] 
+ **paymentTermIdIn** | **String**|  | [optional] 
+ **type** | **String**|  | [optional] 
+ **usageCountGt** | **Number**|  | [optional] 
+ **usageCountLt** | **Number**|  | [optional] 
+
+### Return type
+
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -3836,7 +4901,7 @@ Name | Type | Description  | Notes
 
 <a name="configPaymentTermListGet"></a>
 # **configPaymentTermListGet**
-> InlineResponse20044 configPaymentTermListGet(opts)
+> InlineResponse20053 configPaymentTermListGet(opts)
 
 
 
@@ -3859,7 +4924,14 @@ var opts = {
   'page': 56, // Number | 
   'perPage': 56, // Number | 
   'orderBy': "orderBy_example", // String | 
-  'orderDir': "orderDir_example" // String | 
+  'orderDir': "orderDir_example", // String | 
+  'gracePeriod': 56, // Number | 
+  'name': "name_example", // String | 
+  'paymentTermId': 56, // Number | 
+  'type': "type_example", // String | 
+  'paymentTermIdIn': "paymentTermIdIn_example", // String | 
+  'usageCountGt': 56, // Number | 
+  'usageCountLt': 56 // Number | 
 };
 
 var callback = function(error, data, response) {
@@ -3880,10 +4952,17 @@ Name | Type | Description  | Notes
  **perPage** | **Number**|  | [optional] 
  **orderBy** | **String**|  | [optional] 
  **orderDir** | **String**|  | [optional] 
+ **gracePeriod** | **Number**|  | [optional] 
+ **name** | **String**|  | [optional] 
+ **paymentTermId** | **Number**|  | [optional] 
+ **type** | **String**|  | [optional] 
+ **paymentTermIdIn** | **String**|  | [optional] 
+ **usageCountGt** | **Number**|  | [optional] 
+ **usageCountLt** | **Number**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse20044**](InlineResponse20044.md)
+[**InlineResponse20053**](InlineResponse20053.md)
 
 ### Authorization
 
@@ -3949,7 +5028,7 @@ Name | Type | Description  | Notes
 
 <a name="configPaymentTermPaymentTermIdGet"></a>
 # **configPaymentTermPaymentTermIdGet**
-> InlineResponse20043 configPaymentTermPaymentTermIdGet(paymentTermId)
+> InlineResponse20052 configPaymentTermPaymentTermIdGet(paymentTermId)
 
 
 
@@ -3989,7 +5068,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20043**](InlineResponse20043.md)
+[**InlineResponse20052**](InlineResponse20052.md)
 
 ### Authorization
 
@@ -4002,7 +5081,7 @@ Name | Type | Description  | Notes
 
 <a name="configPaymentTermPaymentTermIdPatch"></a>
 # **configPaymentTermPaymentTermIdPatch**
-> InlineResponse20043 configPaymentTermPaymentTermIdPatch(paymentTermId, opts)
+> InlineResponse20052 configPaymentTermPaymentTermIdPatch(paymentTermId, opts)
 
 
 
@@ -4046,7 +5125,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20043**](InlineResponse20043.md)
+[**InlineResponse20052**](InlineResponse20052.md)
 
 ### Authorization
 
@@ -4113,7 +5192,7 @@ Name | Type | Description  | Notes
 
 <a name="configRoleListGet"></a>
 # **configRoleListGet**
-> InlineResponse20040 configRoleListGet(opts)
+> InlineResponse20049 configRoleListGet(opts)
 
 
 
@@ -4166,7 +5245,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20040**](InlineResponse20040.md)
+[**InlineResponse20049**](InlineResponse20049.md)
 
 ### Authorization
 
@@ -4232,7 +5311,7 @@ Name | Type | Description  | Notes
 
 <a name="configRolePrivilegeRolePrivilegeIdGet"></a>
 # **configRolePrivilegeRolePrivilegeIdGet**
-> InlineResponse20041 configRolePrivilegeRolePrivilegeIdGet(rolePrivilegeId)
+> InlineResponse20050 configRolePrivilegeRolePrivilegeIdGet(rolePrivilegeId)
 
 
 
@@ -4272,7 +5351,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20041**](InlineResponse20041.md)
+[**InlineResponse20050**](InlineResponse20050.md)
 
 ### Authorization
 
@@ -4285,7 +5364,7 @@ Name | Type | Description  | Notes
 
 <a name="configRolePrivilegeRolePrivilegeIdPatch"></a>
 # **configRolePrivilegeRolePrivilegeIdPatch**
-> InlineResponse20041 configRolePrivilegeRolePrivilegeIdPatch(rolePrivilegeId, opts)
+> InlineResponse20050 configRolePrivilegeRolePrivilegeIdPatch(rolePrivilegeId, opts)
 
 
 
@@ -4329,7 +5408,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20041**](InlineResponse20041.md)
+[**InlineResponse20050**](InlineResponse20050.md)
 
 ### Authorization
 
@@ -4448,7 +5527,7 @@ Name | Type | Description  | Notes
 
 <a name="configRoleRoleIdGet"></a>
 # **configRoleRoleIdGet**
-> InlineResponse20039 configRoleRoleIdGet(roleId)
+> InlineResponse20048 configRoleRoleIdGet(roleId)
 
 
 
@@ -4488,7 +5567,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20039**](InlineResponse20039.md)
+[**InlineResponse20048**](InlineResponse20048.md)
 
 ### Authorization
 
@@ -4501,7 +5580,7 @@ Name | Type | Description  | Notes
 
 <a name="configRoleRoleIdPatch"></a>
 # **configRoleRoleIdPatch**
-> InlineResponse20039 configRoleRoleIdPatch(roleId, opts)
+> InlineResponse20048 configRoleRoleIdPatch(roleId, opts)
 
 
 
@@ -4545,7 +5624,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20039**](InlineResponse20039.md)
+[**InlineResponse20048**](InlineResponse20048.md)
 
 ### Authorization
 
@@ -4558,7 +5637,7 @@ Name | Type | Description  | Notes
 
 <a name="configRoleRoleIdPrivilegeListGet"></a>
 # **configRoleRoleIdPrivilegeListGet**
-> InlineResponse20042 configRoleRoleIdPrivilegeListGet(roleId, opts)
+> InlineResponse20051 configRoleRoleIdPrivilegeListGet(roleId, opts)
 
 
 
@@ -4608,7 +5687,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20042**](InlineResponse20042.md)
+[**InlineResponse20051**](InlineResponse20051.md)
 
 ### Authorization
 
@@ -4621,7 +5700,7 @@ Name | Type | Description  | Notes
 
 <a name="configRoleRoleIdPrivilegesGet"></a>
 # **configRoleRoleIdPrivilegesGet**
-> InlineResponse20040 configRoleRoleIdPrivilegesGet(opts)
+> InlineResponse20049 configRoleRoleIdPrivilegesGet(opts)
 
 
 
@@ -4674,7 +5753,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20040**](InlineResponse20040.md)
+[**InlineResponse20049**](InlineResponse20049.md)
 
 ### Authorization
 
@@ -4745,116 +5824,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="configRouteErrorCreatePost"></a>
-# **configRouteErrorCreatePost**
-> ObjectCreated configRouteErrorCreatePost(opts)
-
-
-
-Creates new globalrouteerror
-
-### Example
-```javascript
-var DnlApi = require('dnl_api');
-var defaultClient = DnlApi.ApiClient.instance;
-
-// Configure API key authorization: auth_token
-var auth_token = defaultClient.authentications['auth_token'];
-auth_token.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//auth_token.apiKeyPrefix = 'Token';
-
-var apiInstance = new DnlApi.ConfigApi();
-
-var opts = { 
-  'body': new DnlApi.GlobalRouteError() // GlobalRouteError | GlobalRouteError to create
-};
-
-var callback = function(error, data, response) {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-};
-apiInstance.configRouteErrorCreatePost(opts, callback);
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**GlobalRouteError**](GlobalRouteError.md)| GlobalRouteError to create | [optional] 
-
-### Return type
-
-[**ObjectCreated**](ObjectCreated.md)
-
-### Authorization
-
-[auth_token](../README.md#auth_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-<a name="configRouteErrorIdDelete"></a>
-# **configRouteErrorIdDelete**
-> Success configRouteErrorIdDelete(id)
-
-
-
-Deletes globalrouteerror
-
-### Example
-```javascript
-var DnlApi = require('dnl_api');
-var defaultClient = DnlApi.ApiClient.instance;
-
-// Configure API key authorization: auth_token
-var auth_token = defaultClient.authentications['auth_token'];
-auth_token.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//auth_token.apiKeyPrefix = 'Token';
-
-var apiInstance = new DnlApi.ConfigApi();
-
-var id = 789; // Number | GlobalRouteError id to get info about
-
-
-var callback = function(error, data, response) {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-};
-apiInstance.configRouteErrorIdDelete(id, callback);
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Number**| GlobalRouteError id to get info about | 
-
-### Return type
-
-[**Success**](Success.md)
-
-### Authorization
-
-[auth_token](../README.md#auth_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
 <a name="configRouteErrorIdGet"></a>
 # **configRouteErrorIdGet**
-> InlineResponse20052 configRouteErrorIdGet(id)
+> InlineResponse20062 configRouteErrorIdGet(id)
 
 
 
@@ -4894,7 +5866,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20052**](InlineResponse20052.md)
+[**InlineResponse20062**](InlineResponse20062.md)
 
 ### Authorization
 
@@ -4907,7 +5879,7 @@ Name | Type | Description  | Notes
 
 <a name="configRouteErrorIdPatch"></a>
 # **configRouteErrorIdPatch**
-> InlineResponse20052 configRouteErrorIdPatch(id, opts)
+> InlineResponse20062 configRouteErrorIdPatch(id, opts)
 
 
 
@@ -4929,7 +5901,7 @@ var apiInstance = new DnlApi.ConfigApi();
 var id = 789; // Number | GlobalRouteError id to get info about
 
 var opts = { 
-  'body': new DnlApi.GlobalRouteError() // GlobalRouteError | GlobalRouteError to modify
+  'body': new DnlApi.GlobalRouteErrorModify() // GlobalRouteErrorModify | GlobalRouteError to modify
 };
 
 var callback = function(error, data, response) {
@@ -4947,11 +5919,11 @@ apiInstance.configRouteErrorIdPatch(id, opts, callback);
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Number**| GlobalRouteError id to get info about | 
- **body** | [**GlobalRouteError**](GlobalRouteError.md)| GlobalRouteError to modify | [optional] 
+ **body** | [**GlobalRouteErrorModify**](GlobalRouteErrorModify.md)| GlobalRouteError to modify | [optional] 
 
 ### Return type
 
-[**InlineResponse20052**](InlineResponse20052.md)
+[**InlineResponse20062**](InlineResponse20062.md)
 
 ### Authorization
 
@@ -4964,7 +5936,7 @@ Name | Type | Description  | Notes
 
 <a name="configRouteErrorListGet"></a>
 # **configRouteErrorListGet**
-> InlineResponse20053 configRouteErrorListGet(opts)
+> InlineResponse20063 configRouteErrorListGet(opts)
 
 
 
@@ -4987,7 +5959,11 @@ var opts = {
   'page': 56, // Number | 
   'perPage': 56, // Number | 
   'orderBy': "orderBy_example", // String | 
-  'orderDir': "orderDir_example" // String | 
+  'orderDir': "orderDir_example", // String | 
+  'defaultToSipCode': 56, // Number | 
+  'errorCode': 56, // Number | 
+  'id': 56, // Number | 
+  'toSipCode': 56 // Number | 
 };
 
 var callback = function(error, data, response) {
@@ -5008,10 +5984,126 @@ Name | Type | Description  | Notes
  **perPage** | **Number**|  | [optional] 
  **orderBy** | **String**|  | [optional] 
  **orderDir** | **String**|  | [optional] 
+ **defaultToSipCode** | **Number**|  | [optional] 
+ **errorCode** | **Number**|  | [optional] 
+ **id** | **Number**|  | [optional] 
+ **toSipCode** | **Number**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse20053**](InlineResponse20053.md)
+[**InlineResponse20063**](InlineResponse20063.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="configRouteErrorPatch"></a>
+# **configRouteErrorPatch**
+> Success configRouteErrorPatch(opts)
+
+
+
+
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.ConfigApi();
+
+var opts = { 
+  'body': new DnlApi.GlobalRouteErrorMany() // GlobalRouteErrorMany | Global Route Error items
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.configRouteErrorPatch(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**GlobalRouteErrorMany**](GlobalRouteErrorMany.md)| Global Route Error items | [optional] 
+
+### Return type
+
+[**Success**](Success.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="configSendRateTemplateAllDelete"></a>
+# **configSendRateTemplateAllDelete**
+> InlineResponse2002 configSendRateTemplateAllDelete(opts)
+
+
+
+Deletes multiple found sendratetemplate
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.ConfigApi();
+
+var opts = { 
+  'idIn': "idIn_example", // String | 
+  'mailCc': "mailCc_example", // String | 
+  'senderId': 56 // Number | 
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.configSendRateTemplateAllDelete(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **idIn** | **String**|  | [optional] 
+ **mailCc** | **String**|  | [optional] 
+ **senderId** | **Number**|  | [optional] 
+
+### Return type
+
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -5131,7 +6223,7 @@ Name | Type | Description  | Notes
 
 <a name="configSendRateTemplateIdGet"></a>
 # **configSendRateTemplateIdGet**
-> InlineResponse20048 configSendRateTemplateIdGet(id)
+> InlineResponse20058 configSendRateTemplateIdGet(id)
 
 
 
@@ -5171,7 +6263,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20048**](InlineResponse20048.md)
+[**InlineResponse20058**](InlineResponse20058.md)
 
 ### Authorization
 
@@ -5184,7 +6276,7 @@ Name | Type | Description  | Notes
 
 <a name="configSendRateTemplateIdPatch"></a>
 # **configSendRateTemplateIdPatch**
-> InlineResponse20048 configSendRateTemplateIdPatch(id, opts)
+> InlineResponse20058 configSendRateTemplateIdPatch(id, opts)
 
 
 
@@ -5206,7 +6298,7 @@ var apiInstance = new DnlApi.ConfigApi();
 var id = 789; // Number | SendRateTemplate id to get info about
 
 var opts = { 
-  'body': new DnlApi.SendRateTemplate() // SendRateTemplate | SendRateTemplate to modify
+  'body': new DnlApi.SendRateTemplateModify() // SendRateTemplateModify | SendRateTemplate to modify
 };
 
 var callback = function(error, data, response) {
@@ -5224,11 +6316,11 @@ apiInstance.configSendRateTemplateIdPatch(id, opts, callback);
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Number**| SendRateTemplate id to get info about | 
- **body** | [**SendRateTemplate**](SendRateTemplate.md)| SendRateTemplate to modify | [optional] 
+ **body** | [**SendRateTemplateModify**](SendRateTemplateModify.md)| SendRateTemplate to modify | [optional] 
 
 ### Return type
 
-[**InlineResponse20048**](InlineResponse20048.md)
+[**InlineResponse20058**](InlineResponse20058.md)
 
 ### Authorization
 
@@ -5241,7 +6333,7 @@ Name | Type | Description  | Notes
 
 <a name="configSendRateTemplateListGet"></a>
 # **configSendRateTemplateListGet**
-> InlineResponse20049 configSendRateTemplateListGet(opts)
+> InlineResponse20059 configSendRateTemplateListGet(opts)
 
 
 
@@ -5264,7 +6356,10 @@ var opts = {
   'page': 56, // Number | 
   'perPage': 56, // Number | 
   'orderBy': "orderBy_example", // String | 
-  'orderDir': "orderDir_example" // String | 
+  'orderDir': "orderDir_example", // String | 
+  'mailCc': "mailCc_example", // String | 
+  'senderId': 56, // Number | 
+  'idIn': "idIn_example" // String | 
 };
 
 var callback = function(error, data, response) {
@@ -5285,10 +6380,13 @@ Name | Type | Description  | Notes
  **perPage** | **Number**|  | [optional] 
  **orderBy** | **String**|  | [optional] 
  **orderDir** | **String**|  | [optional] 
+ **mailCc** | **String**|  | [optional] 
+ **senderId** | **Number**|  | [optional] 
+ **idIn** | **String**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse20049**](InlineResponse20049.md)
+[**InlineResponse20059**](InlineResponse20059.md)
 
 ### Authorization
 
@@ -5301,7 +6399,7 @@ Name | Type | Description  | Notes
 
 <a name="configSystemFunctionListGet"></a>
 # **configSystemFunctionListGet**
-> InlineResponse20037 configSystemFunctionListGet(opts)
+> InlineResponse20046 configSystemFunctionListGet(opts)
 
 
 
@@ -5360,7 +6458,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20037**](InlineResponse20037.md)
+[**InlineResponse20046**](InlineResponse20046.md)
 
 ### Authorization
 
@@ -5426,7 +6524,7 @@ Name | Type | Description  | Notes
 
 <a name="configSystemFunctionSystemFunctionIdGet"></a>
 # **configSystemFunctionSystemFunctionIdGet**
-> InlineResponse20036 configSystemFunctionSystemFunctionIdGet(systemFunctionId)
+> InlineResponse20045 configSystemFunctionSystemFunctionIdGet(systemFunctionId)
 
 
 
@@ -5466,7 +6564,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20036**](InlineResponse20036.md)
+[**InlineResponse20045**](InlineResponse20045.md)
 
 ### Authorization
 
@@ -5479,7 +6577,7 @@ Name | Type | Description  | Notes
 
 <a name="configSystemFunctionSystemFunctionIdPatch"></a>
 # **configSystemFunctionSystemFunctionIdPatch**
-> InlineResponse20036 configSystemFunctionSystemFunctionIdPatch(systemFunctionId, opts)
+> InlineResponse20045 configSystemFunctionSystemFunctionIdPatch(systemFunctionId, opts)
 
 
 
@@ -5523,7 +6621,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20036**](InlineResponse20036.md)
+[**InlineResponse20045**](InlineResponse20045.md)
 
 ### Authorization
 
@@ -5590,7 +6688,7 @@ Name | Type | Description  | Notes
 
 <a name="configSystemGet"></a>
 # **configSystemGet**
-> InlineResponse20065 configSystemGet()
+> InlineResponse20075 configSystemGet()
 
 
 
@@ -5624,7 +6722,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20065**](InlineResponse20065.md)
+[**InlineResponse20075**](InlineResponse20075.md)
 
 ### Authorization
 
@@ -5637,7 +6735,7 @@ This endpoint does not need any parameter.
 
 <a name="configSystemModulesListGet"></a>
 # **configSystemModulesListGet**
-> InlineResponse20038 configSystemModulesListGet(opts)
+> InlineResponse20047 configSystemModulesListGet(opts)
 
 
 
@@ -5684,7 +6782,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20038**](InlineResponse20038.md)
+[**InlineResponse20047**](InlineResponse20047.md)
 
 ### Authorization
 
@@ -5697,7 +6795,7 @@ Name | Type | Description  | Notes
 
 <a name="configSystemPatch"></a>
 # **configSystemPatch**
-> InlineResponse20065 configSystemPatch(opts)
+> InlineResponse20075 configSystemPatch(opts)
 
 
 
@@ -5738,7 +6836,73 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20065**](InlineResponse20065.md)
+[**InlineResponse20075**](InlineResponse20075.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="configTimeProfileAllDelete"></a>
+# **configTimeProfileAllDelete**
+> InlineResponse2002 configTimeProfileAllDelete(opts)
+
+
+
+Deletes multiple found timeprofile
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.ConfigApi();
+
+var opts = { 
+  'endDayOfWeekGt': 56, // Number | 
+  'endDayOfWeekLt': 56, // Number | 
+  'name': "name_example", // String | 
+  'startDayOfWeekGt': 56, // Number | 
+  'startDayOfWeekLt': 56, // Number | 
+  'timeProfileIdIn': "timeProfileIdIn_example", // String | 
+  'type': "type_example" // String | 
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.configTimeProfileAllDelete(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **endDayOfWeekGt** | **Number**|  | [optional] 
+ **endDayOfWeekLt** | **Number**|  | [optional] 
+ **name** | **String**|  | [optional] 
+ **startDayOfWeekGt** | **Number**|  | [optional] 
+ **startDayOfWeekLt** | **Number**|  | [optional] 
+ **timeProfileIdIn** | **String**|  | [optional] 
+ **type** | **String**|  | [optional] 
+
+### Return type
+
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -5805,7 +6969,7 @@ Name | Type | Description  | Notes
 
 <a name="configTimeProfileListGet"></a>
 # **configTimeProfileListGet**
-> InlineResponse20035 configTimeProfileListGet(opts)
+> InlineResponse20044 configTimeProfileListGet(opts)
 
 
 
@@ -5834,7 +6998,8 @@ var opts = {
   'endDayOfWeekGt': 56, // Number | 
   'endDayOfWeekLt': 56, // Number | 
   'startDayOfWeekGt': 56, // Number | 
-  'startDayOfWeekLt': 56 // Number | 
+  'startDayOfWeekLt': 56, // Number | 
+  'timeProfileIdIn': "timeProfileIdIn_example" // String | 
 };
 
 var callback = function(error, data, response) {
@@ -5861,10 +7026,11 @@ Name | Type | Description  | Notes
  **endDayOfWeekLt** | **Number**|  | [optional] 
  **startDayOfWeekGt** | **Number**|  | [optional] 
  **startDayOfWeekLt** | **Number**|  | [optional] 
+ **timeProfileIdIn** | **String**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse20035**](InlineResponse20035.md)
+[**InlineResponse20044**](InlineResponse20044.md)
 
 ### Authorization
 
@@ -5930,7 +7096,7 @@ Name | Type | Description  | Notes
 
 <a name="configTimeProfileTimeProfileIdGet"></a>
 # **configTimeProfileTimeProfileIdGet**
-> InlineResponse20034 configTimeProfileTimeProfileIdGet(timeProfileId)
+> InlineResponse20043 configTimeProfileTimeProfileIdGet(timeProfileId)
 
 
 
@@ -5970,7 +7136,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20034**](InlineResponse20034.md)
+[**InlineResponse20043**](InlineResponse20043.md)
 
 ### Authorization
 
@@ -5983,7 +7149,7 @@ Name | Type | Description  | Notes
 
 <a name="configTimeProfileTimeProfileIdPatch"></a>
 # **configTimeProfileTimeProfileIdPatch**
-> InlineResponse20034 configTimeProfileTimeProfileIdPatch(timeProfileId, opts)
+> InlineResponse20043 configTimeProfileTimeProfileIdPatch(timeProfileId, opts)
 
 
 
@@ -6027,7 +7193,176 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20034**](InlineResponse20034.md)
+[**InlineResponse20043**](InlineResponse20043.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="configTimeoutsGet"></a>
+# **configTimeoutsGet**
+> InlineResponse20076 configTimeoutsGet()
+
+
+
+Gets systemparameter - system timeouts
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.ConfigApi();
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.configTimeoutsGet(callback);
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**InlineResponse20076**](InlineResponse20076.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="configTimeoutsPatch"></a>
+# **configTimeoutsPatch**
+> InlineResponse20076 configTimeoutsPatch(opts)
+
+
+
+Modifies systemparameter - system timeouts
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.ConfigApi();
+
+var opts = { 
+  'body': new DnlApi.SystemParameterSystemTimeouts() // SystemParameterSystemTimeouts | SystemParameter - System timeouts to modify
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.configTimeoutsPatch(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**SystemParameterSystemTimeouts**](SystemParameterSystemTimeouts.md)| SystemParameter - System timeouts to modify | [optional] 
+
+### Return type
+
+[**InlineResponse20076**](InlineResponse20076.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="configUsJurisdictionprefixAllDelete"></a>
+# **configUsJurisdictionprefixAllDelete**
+> InlineResponse2002 configUsJurisdictionprefixAllDelete(opts)
+
+
+
+Deletes multiple found jurisdictionprefix
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.ConfigApi();
+
+var opts = { 
+  'country': "country_example", // String | 
+  'effectiveDateGt': "effectiveDateGt_example", // String | 
+  'effectiveDateLt': "effectiveDateLt_example", // String | 
+  'idIn': "idIn_example", // String | 
+  'lata': "lata_example", // String | 
+  'ocn': "ocn_example", // String | 
+  'prefix': "prefix_example", // String | 
+  'state': "state_example" // String | 
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.configUsJurisdictionprefixAllDelete(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **country** | **String**|  | [optional] 
+ **effectiveDateGt** | **String**|  | [optional] 
+ **effectiveDateLt** | **String**|  | [optional] 
+ **idIn** | **String**|  | [optional] 
+ **lata** | **String**|  | [optional] 
+ **ocn** | **String**|  | [optional] 
+ **prefix** | **String**|  | [optional] 
+ **state** | **String**|  | [optional] 
+
+### Return type
+
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -6147,7 +7482,7 @@ Name | Type | Description  | Notes
 
 <a name="configUsJurisdictionprefixIdGet"></a>
 # **configUsJurisdictionprefixIdGet**
-> InlineResponse20066 configUsJurisdictionprefixIdGet(id)
+> InlineResponse20079 configUsJurisdictionprefixIdGet(id)
 
 
 
@@ -6187,7 +7522,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20066**](InlineResponse20066.md)
+[**InlineResponse20079**](InlineResponse20079.md)
 
 ### Authorization
 
@@ -6200,7 +7535,7 @@ Name | Type | Description  | Notes
 
 <a name="configUsJurisdictionprefixIdPatch"></a>
 # **configUsJurisdictionprefixIdPatch**
-> InlineResponse20066 configUsJurisdictionprefixIdPatch(id, opts)
+> InlineResponse20079 configUsJurisdictionprefixIdPatch(id, opts)
 
 
 
@@ -6244,7 +7579,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20066**](InlineResponse20066.md)
+[**InlineResponse20079**](InlineResponse20079.md)
 
 ### Authorization
 
@@ -6257,7 +7592,7 @@ Name | Type | Description  | Notes
 
 <a name="configUsJurisdictionprefixListGet"></a>
 # **configUsJurisdictionprefixListGet**
-> InlineResponse20067 configUsJurisdictionprefixListGet(opts)
+> InlineResponse20080 configUsJurisdictionprefixListGet(opts)
 
 
 
@@ -6287,7 +7622,8 @@ var opts = {
   'prefix': "prefix_example", // String | 
   'state': "state_example", // String | 
   'effectiveDateGt': "effectiveDateGt_example", // String | 
-  'effectiveDateLt': "effectiveDateLt_example" // String | 
+  'effectiveDateLt': "effectiveDateLt_example", // String | 
+  'idIn': "idIn_example" // String | 
 };
 
 var callback = function(error, data, response) {
@@ -6315,10 +7651,11 @@ Name | Type | Description  | Notes
  **state** | **String**|  | [optional] 
  **effectiveDateGt** | **String**|  | [optional] 
  **effectiveDateLt** | **String**|  | [optional] 
+ **idIn** | **String**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse20067**](InlineResponse20067.md)
+[**InlineResponse20080**](InlineResponse20080.md)
 
 ### Authorization
 

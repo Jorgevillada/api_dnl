@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**TranslationItemGet**](TranslationItemGet.md) |  | [optional] 
+**payload** | [**ProductGet**](ProductGet.md) |  | [optional] 
 
 

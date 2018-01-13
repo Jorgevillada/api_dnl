@@ -1,15 +1,18 @@
 # DnlApi.AgentApi
 
-All URIs are relative to *https://148.251.91.143:8000/v1*
+All URIs are relative to *https://198.100.149.164:8000/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**agentAgentIdAddCarrierPost**](AgentApi.md#agentAgentIdAddCarrierPost) | **POST** /agent/{agent_id}/add_carrier | 
 [**agentAgentIdCarrierGet**](AgentApi.md#agentAgentIdCarrierGet) | **GET** /agent/{agent_id}/carrier | 
 [**agentAgentIdCarrierIdDelete**](AgentApi.md#agentAgentIdCarrierIdDelete) | **DELETE** /agent/{agent_id}/{carrier_id} | 
 [**agentAgentIdCarrierPatch**](AgentApi.md#agentAgentIdCarrierPatch) | **PATCH** /agent/{agent_id}/carrier | 
 [**agentAgentIdDelete**](AgentApi.md#agentAgentIdDelete) | **DELETE** /agent/{agent_id} | 
 [**agentAgentIdGet**](AgentApi.md#agentAgentIdGet) | **GET** /agent/{agent_id} | 
 [**agentAgentIdPatch**](AgentApi.md#agentAgentIdPatch) | **PATCH** /agent/{agent_id} | 
+[**agentAllDelete**](AgentApi.md#agentAllDelete) | **DELETE** /agent/all | 
+[**agentAllPatch**](AgentApi.md#agentAllPatch) | **PATCH** /agent/all | 
 [**agentClientsGet**](AgentApi.md#agentClientsGet) | **GET** /agent/clients | 
 [**agentCommissionGet**](AgentApi.md#agentCommissionGet) | **GET** /agent/commission | 
 [**agentCreatePost**](AgentApi.md#agentCreatePost) | **POST** /agent/create | 
@@ -17,9 +20,66 @@ Method | HTTP request | Description
 [**agentNotAssignedClientsGet**](AgentApi.md#agentNotAssignedClientsGet) | **GET** /agent/not_assigned_clients | 
 
 
+<a name="agentAgentIdAddCarrierPost"></a>
+# **agentAgentIdAddCarrierPost**
+> Success agentAgentIdAddCarrierPost(agentId, opts)
+
+
+
+add carrier list to agent
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.AgentApi();
+
+var agentId = 789; // Number | Parent agent id
+
+var opts = { 
+  'body': new DnlApi.AgentCarriersAdd() // AgentCarriersAdd | Carriers to add
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.agentAgentIdAddCarrierPost(agentId, opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **agentId** | **Number**| Parent agent id | 
+ **body** | [**AgentCarriersAdd**](AgentCarriersAdd.md)| Carriers to add | [optional] 
+
+### Return type
+
+[**Success**](Success.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
 <a name="agentAgentIdCarrierGet"></a>
 # **agentAgentIdCarrierGet**
-> InlineResponse2007 agentAgentIdCarrierGet(agentId)
+> InlineResponse2008 agentAgentIdCarrierGet(agentId)
 
 
 
@@ -59,7 +119,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2007**](InlineResponse2007.md)
+[**InlineResponse2008**](InlineResponse2008.md)
 
 ### Authorization
 
@@ -128,7 +188,7 @@ Name | Type | Description  | Notes
 
 <a name="agentAgentIdCarrierPatch"></a>
 # **agentAgentIdCarrierPatch**
-> InlineResponse2007 agentAgentIdCarrierPatch(agentId, opts)
+> InlineResponse2008 agentAgentIdCarrierPatch(agentId, opts)
 
 
 
@@ -172,7 +232,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2007**](InlineResponse2007.md)
+[**InlineResponse2008**](InlineResponse2008.md)
 
 ### Authorization
 
@@ -238,7 +298,7 @@ Name | Type | Description  | Notes
 
 <a name="agentAgentIdGet"></a>
 # **agentAgentIdGet**
-> InlineResponse2005 agentAgentIdGet(agentId)
+> InlineResponse2006 agentAgentIdGet(agentId)
 
 
 
@@ -278,7 +338,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2005**](InlineResponse2005.md)
+[**InlineResponse2006**](InlineResponse2006.md)
 
 ### Authorization
 
@@ -291,7 +351,7 @@ Name | Type | Description  | Notes
 
 <a name="agentAgentIdPatch"></a>
 # **agentAgentIdPatch**
-> InlineResponse2005 agentAgentIdPatch(agentId, opts)
+> InlineResponse2006 agentAgentIdPatch(agentId, opts)
 
 
 
@@ -335,7 +395,145 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2005**](InlineResponse2005.md)
+[**InlineResponse2006**](InlineResponse2006.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="agentAllDelete"></a>
+# **agentAllDelete**
+> InlineResponse2002 agentAllDelete(opts)
+
+
+
+Deletes multiple found agent
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.AgentApi();
+
+var opts = { 
+  'agentIdIn': "agentIdIn_example", // String | 
+  'agentName': "agentName_example", // String | 
+  'commissionGt': "commissionGt_example", // String | 
+  'commissionLt': "commissionLt_example", // String | 
+  'editPermission': true, // Boolean | 
+  'email': "email_example", // String | 
+  'frequencyType': "frequencyType_example", // String | 
+  'methodType': "methodType_example" // String | 
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.agentAllDelete(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **agentIdIn** | **String**|  | [optional] 
+ **agentName** | **String**|  | [optional] 
+ **commissionGt** | **String**|  | [optional] 
+ **commissionLt** | **String**|  | [optional] 
+ **editPermission** | **Boolean**|  | [optional] 
+ **email** | **String**|  | [optional] 
+ **frequencyType** | **String**|  | [optional] 
+ **methodType** | **String**|  | [optional] 
+
+### Return type
+
+[**InlineResponse2002**](InlineResponse2002.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="agentAllPatch"></a>
+# **agentAllPatch**
+> InlineResponse2002 agentAllPatch(opts)
+
+
+
+Modifies multiple found agent
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.AgentApi();
+
+var opts = { 
+  'body': new DnlApi.AgentActivate(), // AgentActivate | Agent to modify
+  'agentIdIn': "agentIdIn_example", // String | 
+  'agentName': "agentName_example", // String | 
+  'commissionGt': "commissionGt_example", // String | 
+  'commissionLt': "commissionLt_example", // String | 
+  'editPermission': true, // Boolean | 
+  'email': "email_example", // String | 
+  'frequencyType': "frequencyType_example", // String | 
+  'methodType': "methodType_example" // String | 
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.agentAllPatch(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**AgentActivate**](AgentActivate.md)| Agent to modify | [optional] 
+ **agentIdIn** | **String**|  | [optional] 
+ **agentName** | **String**|  | [optional] 
+ **commissionGt** | **String**|  | [optional] 
+ **commissionLt** | **String**|  | [optional] 
+ **editPermission** | **Boolean**|  | [optional] 
+ **email** | **String**|  | [optional] 
+ **frequencyType** | **String**|  | [optional] 
+ **methodType** | **String**|  | [optional] 
+
+### Return type
+
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -348,7 +546,7 @@ Name | Type | Description  | Notes
 
 <a name="agentClientsGet"></a>
 # **agentClientsGet**
-> InlineResponse2009 agentClientsGet(opts)
+> InlineResponse20010 agentClientsGet(opts)
 
 
 
@@ -372,7 +570,10 @@ var opts = {
   'perPage': 56, // Number | 
   'orderBy': "orderBy_example", // String | 
   'orderDir': "orderDir_example", // String | 
+  'agentId': 56, // Number | 
   'assignedBy': "assignedBy_example", // String | 
+  'clientId': 56, // Number | 
+  'clientName': "clientName_example", // String | 
   'assignedOnGt': "assignedOnGt_example", // String | 
   'assignedOnLt': "assignedOnLt_example" // String | 
 };
@@ -395,13 +596,16 @@ Name | Type | Description  | Notes
  **perPage** | **Number**|  | [optional] 
  **orderBy** | **String**|  | [optional] 
  **orderDir** | **String**|  | [optional] 
+ **agentId** | **Number**|  | [optional] 
  **assignedBy** | **String**|  | [optional] 
+ **clientId** | **Number**|  | [optional] 
+ **clientName** | **String**|  | [optional] 
  **assignedOnGt** | **String**|  | [optional] 
  **assignedOnLt** | **String**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse2009**](InlineResponse2009.md)
+[**InlineResponse20010**](InlineResponse20010.md)
 
 ### Authorization
 
@@ -414,7 +618,7 @@ Name | Type | Description  | Notes
 
 <a name="agentCommissionGet"></a>
 # **agentCommissionGet**
-> InlineResponse2008 agentCommissionGet(opts)
+> InlineResponse2009 agentCommissionGet(opts)
 
 
 
@@ -477,7 +681,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2008**](InlineResponse2008.md)
+[**InlineResponse2009**](InlineResponse2009.md)
 
 ### Authorization
 
@@ -544,7 +748,7 @@ Name | Type | Description  | Notes
 
 <a name="agentListGet"></a>
 # **agentListGet**
-> InlineResponse2006 agentListGet(opts)
+> InlineResponse2007 agentListGet(opts)
 
 
 
@@ -574,7 +778,12 @@ var opts = {
   'email': "email_example", // String | 
   'frequencyType': "frequencyType_example", // String | 
   'methodType': "methodType_example", // String | 
-  'commissionGt': "commissionGt_example" // String | 
+  'status': true, // Boolean | 
+  'usageCount': 56, // Number | 
+  'commissionGt': "commissionGt_example", // String | 
+  'commissionLt': "commissionLt_example", // String | 
+  'usageCountGt': 56, // Number | 
+  'usageCountLt': 56 // Number | 
 };
 
 var callback = function(error, data, response) {
@@ -601,11 +810,16 @@ Name | Type | Description  | Notes
  **email** | **String**|  | [optional] 
  **frequencyType** | **String**|  | [optional] 
  **methodType** | **String**|  | [optional] 
+ **status** | **Boolean**|  | [optional] 
+ **usageCount** | **Number**|  | [optional] 
  **commissionGt** | **String**|  | [optional] 
+ **commissionLt** | **String**|  | [optional] 
+ **usageCountGt** | **Number**|  | [optional] 
+ **usageCountLt** | **Number**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse2006**](InlineResponse2006.md)
+[**InlineResponse2007**](InlineResponse2007.md)
 
 ### Authorization
 
@@ -618,7 +832,7 @@ Name | Type | Description  | Notes
 
 <a name="agentNotAssignedClientsGet"></a>
 # **agentNotAssignedClientsGet**
-> InlineResponse20010 agentNotAssignedClientsGet(opts)
+> InlineResponse20011 agentNotAssignedClientsGet(opts)
 
 
 
@@ -643,7 +857,14 @@ var opts = {
   'orderBy': "orderBy_example", // String | 
   'orderDir': "orderDir_example", // String | 
   'clientId': 56, // Number | 
-  'name': "name_example" // String | 
+  'clientType': "clientType_example", // String | 
+  'email': "email_example", // String | 
+  'groupId': 56, // Number | 
+  'mode': 56, // Number | 
+  'name': "name_example", // String | 
+  'status': true, // Boolean | 
+  'egressCountGt': 56, // Number | 
+  'ingressCountGt': 56 // Number | 
 };
 
 var callback = function(error, data, response) {
@@ -665,11 +886,18 @@ Name | Type | Description  | Notes
  **orderBy** | **String**|  | [optional] 
  **orderDir** | **String**|  | [optional] 
  **clientId** | **Number**|  | [optional] 
+ **clientType** | **String**|  | [optional] 
+ **email** | **String**|  | [optional] 
+ **groupId** | **Number**|  | [optional] 
+ **mode** | **Number**|  | [optional] 
  **name** | **String**|  | [optional] 
+ **status** | **Boolean**|  | [optional] 
+ **egressCountGt** | **Number**|  | [optional] 
+ **ingressCountGt** | **Number**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse20010**](InlineResponse20010.md)
+[**InlineResponse20011**](InlineResponse20011.md)
 
 ### Authorization
 

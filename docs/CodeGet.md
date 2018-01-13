@@ -3,10 +3,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**code** | **String** |  | 
 **state** | **String** |  | [optional] 
-**codeName** | **String** |  | [optional] 
 **country** | **String** |  | [optional] 
 **city** | **String** |  | [optional] 
-**code** | **String** |  | 
+**codeName** | **String** |  | [optional] 
 
 

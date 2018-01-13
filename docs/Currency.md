@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**rate** | **Number** |  | [optional] 
 **code** | **String** |  | 
-**active** | **Boolean** |  | [optional] 
 **rates** | **[String]** |  | [optional] 
+**active** | **Boolean** |  | [optional] 
+**rate** | **Number** |  | [optional] 
 
 

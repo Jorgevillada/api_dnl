@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**RoleGet**](RoleGet.md) |  | [optional] 
+**payload** | [**InlineResponse20039Payload**](InlineResponse20039Payload.md) |  | [optional] 
 
 

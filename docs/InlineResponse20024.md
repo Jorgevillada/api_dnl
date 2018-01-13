@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**IngressTrunkGet**](IngressTrunkGet.md) |  | [optional] 
+**payload** | [**EgressTrunkGet**](EgressTrunkGet.md) |  | [optional] 
 
 

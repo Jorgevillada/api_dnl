@@ -3,12 +3,11 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**clientBillingRuleId** | **Number** |  | [optional] 
-**vendorResId** | **Number** |  | [optional] 
-**vendorBillingRuleId** | **Number** |  | [optional] 
 **did** | **String** |  | [optional] 
-**startDate** | **Date** |  | [optional] 
-**endDate** | **Date** |  | [optional] 
-**clientResId** | **Number** |  | [optional] 
+**vendorBillingRuleId** | **Number** |  | [optional] 
+**isAvailable** | **Boolean** |  | [optional] 
+**vendorResId** | **Number** |  | [optional] 
+**clientId** | **Number** |  | [optional] 
+**clientBillingRuleId** | **Number** |  | [optional] 
 
 

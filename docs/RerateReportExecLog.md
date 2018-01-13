@@ -3,15 +3,15 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**startTime** | **Date** |  | [optional] 
-**finishTime** | **Date** |  | [optional] 
-**successFilesCount** | **Number** |  | [optional] 
 **execType** | **Number** |  | [optional] 
+**finishTime** | **Date** |  | [optional] 
 **id** | **Number** |  | [optional] 
+**startTime** | **Date** |  | [optional] 
 **status** | **String** |  | [optional] [default to &#39;waiting&#39;]
-**totalFilesCount** | **Number** |  | [optional] 
-**createBy** | **String** |  | [optional] 
+**successFilesCount** | **Number** |  | [optional] 
 **createOn** | **Date** |  | [optional] 
+**createBy** | **String** |  | [optional] 
+**totalFilesCount** | **Number** |  | [optional] 
 
 
 <a name="StatusEnum"></a>
@@ -20,9 +20,9 @@ Name | Type | Description | Notes
 
 * `waiting` (value: `"waiting"`)
 
-* `done` (value: `"done"`)
-
 * `progress` (value: `"progress"`)
+
+* `done` (value: `"done"`)
 
 * `error` (value: `"error"`)
 

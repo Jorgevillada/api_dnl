@@ -3,37 +3,38 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**billingInfo** | **String** |  | [optional] 
-**invoiceNumberFormat** | **String** |  | [optional] 
-**allowInvoiceOverlap** | **Boolean** |  | [optional] 
 **cdrFields** | **String** |  | [optional] 
-**companyInfoPosition** | **String** |  | [optional] [default to &#39;top&#39;]
-**companyInfo** | **String** |  | [optional] 
-**logoUrl** | **String** |  | [optional] 
 **billingInfoPosition** | **String** |  | [optional] [default to &#39;top&#39;]
-**invoiceSendMode** | **String** |  | [optional] [default to &#39;link&#39;]
-**decimal** | **Number** |  | [optional] 
+**logoUrl** | **String** |  | [optional] 
+**companyInfoPosition** | **String** |  | [optional] [default to &#39;top&#39;]
 **sendRateAs** | **String** |  | [optional] 
-
-
-<a name="CompanyInfoPositionEnum"></a>
-## Enum: CompanyInfoPositionEnum
-
-
-* `bottom` (value: `"bottom"`)
-
-* `top` (value: `"top"`)
-
-
+**invoiceSendMode** | **String** |  | [optional] [default to &#39;link&#39;]
+**companyInfo** | **String** |  | [optional] 
+**invoiceNumberFormat** | **String** |  | [optional] 
+**billingInfo** | **String** |  | [optional] 
+**invoicesLogoId** | **Number** |  | [optional] 
+**allowInvoiceOverlap** | **Boolean** |  | [optional] 
+**decimal** | **Number** |  | [optional] 
 
 
 <a name="BillingInfoPositionEnum"></a>
 ## Enum: BillingInfoPositionEnum
 
 
+* `top` (value: `"top"`)
+
 * `bottom` (value: `"bottom"`)
 
+
+
+
+<a name="CompanyInfoPositionEnum"></a>
+## Enum: CompanyInfoPositionEnum
+
+
 * `top` (value: `"top"`)
+
+* `bottom` (value: `"bottom"`)
 
 
 
@@ -42,9 +43,9 @@ Name | Type | Description | Notes
 ## Enum: InvoiceSendModeEnum
 
 
-* `attachment` (value: `"attachment"`)
-
 * `link` (value: `"link"`)
+
+* `attachment` (value: `"attachment"`)
 
 
 

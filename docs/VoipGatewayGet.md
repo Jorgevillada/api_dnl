@@ -3,12 +3,12 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** |  | [optional] 
-**lanPort** | **Number** |  | [optional] 
-**lanIp** | **String** |  | [optional] 
-**sipHost** | [**[SwitchProfileSipHostGet]**](SwitchProfileSipHostGet.md) |  | [optional] 
-**connected** | **Boolean** |  | [optional] 
-**paidReplaceIp** | **Number** |  | [optional] 
 **switchId** | **Number** |  | [optional] 
+**lanPort** | **Number** |  | [optional] 
+**paidReplaceIp** | **Number** |  | [optional] 
+**lanIp** | **String** |  | [optional] 
+**connected** | **Boolean** |  | [optional] 
+**name** | **String** |  | [optional] 
+**sipHost** | [**[SwitchProfileSipHostGet]**](SwitchProfileSipHostGet.md) |  | [optional] 
 
 

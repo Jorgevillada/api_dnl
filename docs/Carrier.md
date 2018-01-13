@@ -3,49 +3,46 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** |  | [optional] 
-**isUnlimited** | **Boolean** |  | [optional] 
-**cpsLimit** | **Number** |  | [optional] 
-**company** | **String** |  | [optional] 
-**testCredit** | **Number** |  | [optional] 
-**phone** | **String** |  | [optional] 
-**profitType** | **String** |  | [optional] [default to &#39;percentage&#39;]
-**reportFrequency** | **Number** |  | [optional] 
-**shortCallChargeExceedOnly** | **Number** |  | [optional] 
-**dailyUsageSummary** | **Boolean** |  | [optional] 
 **dailyUsageGroupBy** | **String** |  | [optional] [default to &#39;By Country&#39;]
+**dailyUsageOnNonZero** | **Boolean** |  | [optional] 
+**dailyUsageSummary** | **Boolean** |  | [optional] 
+**profitType** | **String** |  | [optional] [default to &#39;percentage&#39;]
+**shortCallPercent** | **Number** |  | [optional] 
 **billingEmail** | **String** |  | [optional] 
+**paymentTermId** | **Number** |  | [optional] 
+**dailyCdrDelivery** | **Boolean** |  | [optional] 
+**paymentReceivedNotice** | **Boolean** |  | [optional] 
+**testCredit** | **Number** |  | [optional] 
 **shortCallDuration** | **Number** |  | [optional] 
-**oneTimeReportTime** | **Number** |  | [optional] 
+**isPrepay** | **Boolean** |  | [optional] 
+**cpsLimit** | **Number** |  | [optional] 
+**lowBalanceAlert** | **Boolean** |  | [optional] 
 **nocEmail** | **String** |  | [optional] 
+**creditLimit** | **Number** |  | [optional] 
+**reportFrequency** | **Number** |  | [optional] 
+**profitMargin** | **Number** |  | [optional] 
+**unlimitedCredit** | **Boolean** |  | [optional] [default to false]
+**currencyName** | **String** |  | [optional] 
+**enoughBalance** | **Boolean** |  | [optional] [default to false]
+**company** | **String** |  | [optional] 
+**password** | **String** |  | [optional] 
+**dailyBalanceSummary** | **Boolean** |  | [optional] 
+**shortCallCharge** | **Number** |  | [optional] 
+**login** | **String** |  | [optional] 
+**autoInvoiceType** | **String** |  | [optional] [default to &#39;buy&#39;]
+**name** | **String** |  | [optional] 
 **isActive** | **Boolean** |  | [optional] 
 **rateEmail** | **String** |  | [optional] 
+**financeEmailCc** | **String** |  | [optional] 
+**accountDetail** | **String** |  | [optional] [default to &#39;&#39;]
+**shortCallChargeExceedOnly** | **Number** |  | [optional] 
 **callLimit** | **Number** |  | [optional] 
-**dailyBalanceSummary** | **Boolean** |  | [optional] 
-**trunkUpdateAlert** | **Boolean** |  | [optional] 
-**shortCallPercent** | **Number** |  | [optional] 
-**isPrepay** | **Boolean** |  | [optional] 
-**shortCallCharge** | **Number** |  | [optional] 
-**dailyCdrDelivery** | **Boolean** |  | [optional] 
-**lowBalanceAlert** | **Boolean** |  | [optional] 
+**oneTimeReportTime** | **Number** |  | [optional] 
 **mainEmail** | **String** |  | [optional] 
-**accountDetail** | **String** |  | [optional] 
-**currencyName** | **String** |  | [optional] 
-**autoInvoiceType** | **String** |  | [optional] [default to &#39;buy&#39;]
-**dailyUsageOnNonZero** | **Boolean** |  | [optional] 
-**creditLimit** | **Number** |  | [optional] 
 **address** | **String** |  | [optional] 
-
-
-<a name="ProfitTypeEnum"></a>
-## Enum: ProfitTypeEnum
-
-
-* `value` (value: `"value"`)
-
-* `percentage` (value: `"percentage"`)
-
-
+**trunkUpdateAlert** | **Boolean** |  | [optional] 
+**groupId** | **Number** |  | [optional] 
+**phone** | **String** |  | [optional] 
 
 
 <a name="DailyUsageGroupByEnum"></a>
@@ -61,15 +58,26 @@ Name | Type | Description | Notes
 
 
 
+<a name="ProfitTypeEnum"></a>
+## Enum: ProfitTypeEnum
+
+
+* `percentage` (value: `"percentage"`)
+
+* `value` (value: `"value"`)
+
+
+
+
 <a name="AutoInvoiceTypeEnum"></a>
 ## Enum: AutoInvoiceTypeEnum
 
 
-* `both` (value: `"both"`)
-
 * `buy` (value: `"buy"`)
 
 * `sell` (value: `"sell"`)
+
+* `both` (value: `"both"`)
 
 
 

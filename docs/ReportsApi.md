@@ -1,6 +1,6 @@
 # DnlApi.ReportsApi
 
-All URIs are relative to *https://148.251.91.143:8000/v1*
+All URIs are relative to *https://198.100.149.164:8000/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 <a name="reportCdrActiveGet"></a>
 # **reportCdrActiveGet**
-> InlineResponse200135 reportCdrActiveGet(opts)
+> InlineResponse200153 reportCdrActiveGet(opts)
 
 
 
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200135**](InlineResponse200135.md)
+[**InlineResponse200153**](InlineResponse200153.md)
 
 ### Authorization
 
@@ -86,7 +86,7 @@ Name | Type | Description  | Notes
 
 <a name="reportSipActiveGet"></a>
 # **reportSipActiveGet**
-> InlineResponse200108 reportSipActiveGet(opts)
+> InlineResponse200124 reportSipActiveGet(opts)
 
 
 
@@ -151,7 +151,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200108**](InlineResponse200108.md)
+[**InlineResponse200124**](InlineResponse200124.md)
 
 ### Authorization
 

@@ -3,8 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** |  | [optional] 
 **clientId** | **Number** |  | [optional] 
+**overDue** | **Number** |  | [optional] 
+**name** | **String** |  | [optional] 
 **pastDue** | [**PastDue**](PastDue.md) |  | [optional] 
 
 

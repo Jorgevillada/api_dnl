@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**userCount** | **Number** |  | [optional] 
+**rolePrivilegies** | [**[RolePrivilegeGet]**](RolePrivilegeGet.md) |  | [optional] 
 **roleId** | **Number** |  | [optional] 
 **roleName** | **String** |  | 
-**rolePrivilegies** | [**[RolePrivilegeGet]**](RolePrivilegeGet.md) |  | [optional] 
+**userCount** | **Number** |  | [optional] 
 
 

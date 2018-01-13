@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**CarrierGetUser**](CarrierGetUser.md) |  | [optional] 
+**payload** | [**InlineResponse20028Payload**](InlineResponse20028Payload.md) |  | [optional] 
 
 

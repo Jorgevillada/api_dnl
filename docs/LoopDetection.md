@@ -3,10 +3,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** |  | [optional] 
-**period** | **Number** |  | [optional] 
 **ingressTrunks** | [**[LoopDetectionDetail]**](LoopDetectionDetail.md) |  | [optional] 
-**occurance** | **Number** |  | [optional] 
+**period** | **Number** |  | [optional] 
 **blockSecond** | **Number** |  | [optional] 
+**occurance** | **Number** |  | [optional] 
+**name** | **String** |  | [optional] 
 
 

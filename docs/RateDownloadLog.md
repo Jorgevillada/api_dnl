@@ -3,11 +3,11 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**filePath** | **String** |  | [optional] 
+**logDetailId** | **String** |  | [optional] 
 **downloadTime** | **Date** |  | [optional] 
+**resource** | [**ResourceInfoGet**](ResourceInfoGet.md) |  | [optional] 
 **id** | **Number** |  | [optional] 
 **resourceId** | **Number** |  | [optional] 
-**logDetailId** | **String** |  | [optional] 
-**resource** | [**ResourceGet**](ResourceGet.md) |  | [optional] 
+**filePath** | **String** |  | [optional] 
 
 

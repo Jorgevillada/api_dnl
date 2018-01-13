@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**TrunkGroupGet**](TrunkGroupGet.md) |  | [optional] 
+**payload** | [**InlineResponse200183Payload**](InlineResponse200183Payload.md) |  | [optional] 
 
 

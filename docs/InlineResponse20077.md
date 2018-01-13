@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**CarrierBalanceGet**](CarrierBalanceGet.md) |  | [optional] 
+**payload** | [**SystemParameterSystemEmails**](SystemParameterSystemEmails.md) |  | [optional] 
 
 

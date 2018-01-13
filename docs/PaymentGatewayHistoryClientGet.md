@@ -3,47 +3,47 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**clientId** | **Number** |  | [optional] 
-**paypalFee** | **Number** |  | [optional] 
-**id** | **Number** |  | [optional] 
+**amount** | **Number** |  | [optional] 
+**stripId** | **String** |  | [optional] 
 **paypalId** | **String** |  | [optional] 
+**paypalFee** | **Number** |  | [optional] 
+**status** | **String** |  | [optional] [default to &#39;initial&#39;]
 **paidOn** | **Date** |  | [optional] 
 **type** | **String** |  | [optional] [default to &#39;undefined&#39;]
-**actualReceived** | **Number** |  | [optional] 
-**clientName** | **String** |  | [optional] 
-**stripTransactionId** | **String** |  | [optional] 
-**returnCode** | **String** |  | [optional] 
-**error** | **String** |  | [optional] 
-**stripId** | **String** |  | [optional] 
+**clientId** | **Number** |  | [optional] 
 **paypalTransactionId** | **String** |  | [optional] 
-**status** | **String** |  | [optional] [default to &#39;initial&#39;]
-**enteredOn** | **Date** |  | [optional] 
-**amount** | **Number** |  | [optional] 
+**returnCode** | **String** |  | [optional] 
+**actualReceived** | **Number** |  | [optional] 
+**error** | **String** |  | [optional] 
+**id** | **Number** |  | [optional] 
+**stripTransactionId** | **String** |  | [optional] 
+**clientName** | **String** |  | [optional] 
 **response** | **String** |  | [optional] 
-
-
-<a name="TypeEnum"></a>
-## Enum: TypeEnum
-
-
-* `yourpay` (value: `"yourpay"`)
-
-* `paypal` (value: `"paypal"`)
-
-* `undefined` (value: `"undefined"`)
-
-
+**enteredOn** | **Date** |  | [optional] 
 
 
 <a name="StatusEnum"></a>
 ## Enum: StatusEnum
 
 
-* `success` (value: `"success"`)
-
 * `initial` (value: `"initial"`)
 
 * `error` (value: `"error"`)
+
+* `success` (value: `"success"`)
+
+
+
+
+<a name="TypeEnum"></a>
+## Enum: TypeEnum
+
+
+* `undefined` (value: `"undefined"`)
+
+* `paypal` (value: `"paypal"`)
+
+* `yourpay` (value: `"yourpay"`)
 
 
 

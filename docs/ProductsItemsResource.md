@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**trunkId** | **Number** |  | [optional] 
 **byPercentage** | **Number** |  | [optional] 
+**trunkId** | **Number** |  | [optional] 
 
 

@@ -5,9 +5,9 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **module** | **String** |  | [optional] 
 **updateBy** | **String** |  | [optional] 
-**logId** | **Number** |  | [optional] 
-**detail** | **String** |  | [optional] 
 **updateOn** | **Date** |  | [optional] 
+**detail** | **String** |  | [optional] 
+**logId** | **Number** |  | [optional] 
 **type** | **String** |  | [optional] [default to &#39;Creation&#39;]
 
 
@@ -15,11 +15,11 @@ Name | Type | Description | Notes
 ## Enum: TypeEnum
 
 
-* `Modification` (value: `"Modification"`)
+* `Creation` (value: `"Creation"`)
 
 * `Deletion` (value: `"Deletion"`)
 
-* `Creation` (value: `"Creation"`)
+* `Modification` (value: `"Modification"`)
 
 
 

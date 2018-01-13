@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**RateTableGet**](RateTableGet.md) |  | [optional] 
+**payload** | [**InlineResponse200171Payload**](InlineResponse200171Payload.md) |  | [optional] 
 
 

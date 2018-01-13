@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**ResourceBlockGet**](ResourceBlockGet.md) |  | [optional] 
+**payload** | [**InlineResponse200152Payload**](InlineResponse200152Payload.md) |  | [optional] 
 
 

@@ -3,14 +3,27 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**methodType** | **String** |  | [default to &#39;By Profit&#39;]
-**commission** | **Number** |  | 
-**email** | **String** |  | [optional] 
-**agentName** | **String** |  | 
-**frequencyType** | **String** |  | [default to &#39;daily&#39;]
 **status** | **Boolean** |  | [optional] 
+**commission** | **Number** |  | 
 **user** | [**UserMin**](UserMin.md) |  | [optional] 
+**frequencyType** | **String** |  | [default to &#39;daily&#39;]
+**methodType** | **String** |  | [default to &#39;By Profit&#39;]
+**email** | **String** |  | [optional] 
 **editPermission** | **Boolean** |  | [optional] 
+**agentName** | **String** |  | 
+
+
+<a name="FrequencyTypeEnum"></a>
+## Enum: FrequencyTypeEnum
+
+
+* `daily` (value: `"daily"`)
+
+* `weekly` (value: `"weekly"`)
+
+* `monthly` (value: `"monthly"`)
+
+
 
 
 <a name="MethodTypeEnum"></a>
@@ -20,19 +33,6 @@ Name | Type | Description | Notes
 * `Profit` (value: `"By Profit"`)
 
 * `Revenue` (value: `"By Revenue"`)
-
-
-
-
-<a name="FrequencyTypeEnum"></a>
-## Enum: FrequencyTypeEnum
-
-
-* `monthly` (value: `"monthly"`)
-
-* `weekly` (value: `"weekly"`)
-
-* `daily` (value: `"daily"`)
 
 
 

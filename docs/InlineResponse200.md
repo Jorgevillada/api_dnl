@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**UserGetExt**](UserGetExt.md) |  | [optional] 
+**payload** | [**UserInfoGet**](UserInfoGet.md) |  | [optional] 
 
 

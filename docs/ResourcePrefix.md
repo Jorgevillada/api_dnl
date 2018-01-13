@@ -3,13 +3,15 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**trunkId** | **Number** |  | [optional] 
-**techPrefix** | **String** |  | 
-**routingPlanId** | **Number** |  | [optional] 
+**code** | **String** |  | [optional] 
+**product** | **String** |  | [optional] 
 **rateTableId** | **Number** |  | [optional] 
 **codeCps** | **Number** |  | [optional] 
-**code** | **String** |  | [optional] 
 **productId** | **Number** |  | [optional] 
+**trunkName** | **String** |  | [optional] 
+**techPrefix** | **String** |  | [optional] 
+**trunkId** | **Number** |  | [optional] 
+**routingPlanId** | **Number** |  | [optional] 
 **codeCap** | **Number** |  | [optional] 
 
 

@@ -1,14 +1,18 @@
 # DnlApi.RouteApi
 
-All URIs are relative to *https://148.251.91.143:8000/v1*
+All URIs are relative to *https://198.100.149.164:8000/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**routeAllDelete**](RouteApi.md#routeAllDelete) | **DELETE** /route/all | 
+[**routeBlockAllDelete**](RouteApi.md#routeBlockAllDelete) | **DELETE** /route/block/all | 
 [**routeBlockListGet**](RouteApi.md#routeBlockListGet) | **GET** /route/block/list | 
 [**routeBlockPost**](RouteApi.md#routeBlockPost) | **POST** /route/block | 
 [**routeBlockResBlockIdDelete**](RouteApi.md#routeBlockResBlockIdDelete) | **DELETE** /route/block/{res_block_id} | 
 [**routeBlockResBlockIdGet**](RouteApi.md#routeBlockResBlockIdGet) | **GET** /route/block/{res_block_id} | 
 [**routeBlockResBlockIdPatch**](RouteApi.md#routeBlockResBlockIdPatch) | **PATCH** /route/block/{res_block_id} | 
+[**routeDigitMapAllDelete**](RouteApi.md#routeDigitMapAllDelete) | **DELETE** /route/digit_map/all | 
+[**routeDigitMapItemAllDelete**](RouteApi.md#routeDigitMapItemAllDelete) | **DELETE** /route/digit_map/item/all | 
 [**routeDigitMapItemRefIdDelete**](RouteApi.md#routeDigitMapItemRefIdDelete) | **DELETE** /route/digit_map/item/{ref_id} | 
 [**routeDigitMapItemRefIdGet**](RouteApi.md#routeDigitMapItemRefIdGet) | **GET** /route/digit_map/item/{ref_id} | 
 [**routeDigitMapItemRefIdPatch**](RouteApi.md#routeDigitMapItemRefIdPatch) | **PATCH** /route/digit_map/item/{ref_id} | 
@@ -19,6 +23,7 @@ Method | HTTP request | Description
 [**routeDigitMapTranslationIdItemListGet**](RouteApi.md#routeDigitMapTranslationIdItemListGet) | **GET** /route/digit_map/{translation_id}/item/list | 
 [**routeDigitMapTranslationIdItemPost**](RouteApi.md#routeDigitMapTranslationIdItemPost) | **POST** /route/digit_map/{translation_id}/item | 
 [**routeDigitMapTranslationIdPatch**](RouteApi.md#routeDigitMapTranslationIdPatch) | **PATCH** /route/digit_map/{translation_id} | 
+[**routeDynamicAllDelete**](RouteApi.md#routeDynamicAllDelete) | **DELETE** /route/dynamic/all | 
 [**routeDynamicDynamicRouteIdAddTrunkPost**](RouteApi.md#routeDynamicDynamicRouteIdAddTrunkPost) | **POST** /route/dynamic/{dynamic_route_id}/add_trunk | 
 [**routeDynamicDynamicRouteIdAddTrunksPost**](RouteApi.md#routeDynamicDynamicRouteIdAddTrunksPost) | **POST** /route/dynamic/{dynamic_route_id}/add_trunks | 
 [**routeDynamicDynamicRouteIdDelete**](RouteApi.md#routeDynamicDynamicRouteIdDelete) | **DELETE** /route/dynamic/{dynamic_route_id} | 
@@ -30,6 +35,7 @@ Method | HTTP request | Description
 [**routeDynamicDynamicRouteIdPriListGet**](RouteApi.md#routeDynamicDynamicRouteIdPriListGet) | **GET** /route/dynamic/{dynamic_route_id}/pri/list | 
 [**routeDynamicDynamicRouteIdQosCreatePost**](RouteApi.md#routeDynamicDynamicRouteIdQosCreatePost) | **POST** /route/dynamic/{dynamic_route_id}/qos/create | 
 [**routeDynamicDynamicRouteIdQosListGet**](RouteApi.md#routeDynamicDynamicRouteIdQosListGet) | **GET** /route/dynamic/{dynamic_route_id}/qos/list | 
+[**routeDynamicDynamicRouteIdRemoveTrunksPatch**](RouteApi.md#routeDynamicDynamicRouteIdRemoveTrunksPatch) | **PATCH** /route/dynamic/{dynamic_route_id}/remove_trunks | 
 [**routeDynamicListGet**](RouteApi.md#routeDynamicListGet) | **GET** /route/dynamic/list | 
 [**routeDynamicOverrideIdDelete**](RouteApi.md#routeDynamicOverrideIdDelete) | **DELETE** /route/dynamic/override/{id} | 
 [**routeDynamicOverrideIdGet**](RouteApi.md#routeDynamicOverrideIdGet) | **GET** /route/dynamic/override/{id} | 
@@ -42,6 +48,7 @@ Method | HTTP request | Description
 [**routeDynamicQosIdGet**](RouteApi.md#routeDynamicQosIdGet) | **GET** /route/dynamic/qos/{id} | 
 [**routeDynamicQosIdPatch**](RouteApi.md#routeDynamicQosIdPatch) | **PATCH** /route/dynamic/qos/{id} | 
 [**routeListGet**](RouteApi.md#routeListGet) | **GET** /route/list | 
+[**routePlanAllDelete**](RouteApi.md#routePlanAllDelete) | **DELETE** /route/plan/all | 
 [**routePlanListGet**](RouteApi.md#routePlanListGet) | **GET** /route/plan/list | 
 [**routePlanPost**](RouteApi.md#routePlanPost) | **POST** /route/plan | 
 [**routePlanRoutePlanIdAddRoutePost**](RouteApi.md#routePlanRoutePlanIdAddRoutePost) | **POST** /route/plan/{route_plan_id}/add_route | 
@@ -52,7 +59,9 @@ Method | HTTP request | Description
 [**routeRouteIdDelete**](RouteApi.md#routeRouteIdDelete) | **DELETE** /route/{route_id} | 
 [**routeRouteIdGet**](RouteApi.md#routeRouteIdGet) | **GET** /route/{route_id} | 
 [**routeRouteIdPatch**](RouteApi.md#routeRouteIdPatch) | **PATCH** /route/{route_id} | 
+[**routeStaticAllDelete**](RouteApi.md#routeStaticAllDelete) | **DELETE** /route/static/all | 
 [**routeStaticCreatePost**](RouteApi.md#routeStaticCreatePost) | **POST** /route/static/create | 
+[**routeStaticItemAllDelete**](RouteApi.md#routeStaticItemAllDelete) | **DELETE** /route/static/item/all | 
 [**routeStaticItemItemIdDelete**](RouteApi.md#routeStaticItemItemIdDelete) | **DELETE** /route/static/item/{item_id} | 
 [**routeStaticItemItemIdGet**](RouteApi.md#routeStaticItemItemIdGet) | **GET** /route/static/item/{item_id} | 
 [**routeStaticItemItemIdPatch**](RouteApi.md#routeStaticItemItemIdPatch) | **PATCH** /route/static/item/{item_id} | 
@@ -64,9 +73,197 @@ Method | HTTP request | Description
 [**routeStaticStaticRouteIdPatch**](RouteApi.md#routeStaticStaticRouteIdPatch) | **PATCH** /route/static/{static_route_id} | 
 
 
+<a name="routeAllDelete"></a>
+# **routeAllDelete**
+> InlineResponse2002 routeAllDelete(opts)
+
+
+
+Deletes multiple found route
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.RouteApi();
+
+var opts = { 
+  'aNIPrefix': "aNIPrefix_example", // String | 
+  'aNIPrefixGt': "aNIPrefixGt_example", // String | 
+  'aNIPrefixLt': "aNIPrefixLt_example", // String | 
+  'dNISPrefix': "dNISPrefix_example", // String | 
+  'dNISPrefixGt': "dNISPrefixGt_example", // String | 
+  'dNISPrefixLt': "dNISPrefixLt_example", // String | 
+  'dynamicRouteId': 56, // Number | 
+  'dynamicRouteName': "dynamicRouteName_example", // String | 
+  'interStaticRouteId': 56, // Number | 
+  'intraStaticRouteId': 56, // Number | 
+  'intraStaticRouteIdIsnull': true, // Boolean | 
+  'routeIdIn': "routeIdIn_example", // String | 
+  'routePlanName': "routePlanName_example", // String | 
+  'routeTypeFlg': "routeTypeFlg_example", // String | 
+  'staticRouteId': 56, // Number | 
+  'staticRouteName': "staticRouteName_example", // String | 
+  'updateAtGt': "updateAtGt_example", // String | 
+  'updateAtLt': "updateAtLt_example" // String | 
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.routeAllDelete(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **aNIPrefix** | **String**|  | [optional] 
+ **aNIPrefixGt** | **String**|  | [optional] 
+ **aNIPrefixLt** | **String**|  | [optional] 
+ **dNISPrefix** | **String**|  | [optional] 
+ **dNISPrefixGt** | **String**|  | [optional] 
+ **dNISPrefixLt** | **String**|  | [optional] 
+ **dynamicRouteId** | **Number**|  | [optional] 
+ **dynamicRouteName** | **String**|  | [optional] 
+ **interStaticRouteId** | **Number**|  | [optional] 
+ **intraStaticRouteId** | **Number**|  | [optional] 
+ **intraStaticRouteIdIsnull** | **Boolean**|  | [optional] 
+ **routeIdIn** | **String**|  | [optional] 
+ **routePlanName** | **String**|  | [optional] 
+ **routeTypeFlg** | **String**|  | [optional] 
+ **staticRouteId** | **Number**|  | [optional] 
+ **staticRouteName** | **String**|  | [optional] 
+ **updateAtGt** | **String**|  | [optional] 
+ **updateAtLt** | **String**|  | [optional] 
+
+### Return type
+
+[**InlineResponse2002**](InlineResponse2002.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="routeBlockAllDelete"></a>
+# **routeBlockAllDelete**
+> InlineResponse2002 routeBlockAllDelete(opts)
+
+
+
+Deletes multiple found resourceblock
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.RouteApi();
+
+var opts = { 
+  'aNIMax': 56, // Number | 
+  'aNIMin': 56, // Number | 
+  'aNIPrefix': "aNIPrefix_example", // String | 
+  'dNISMax': 56, // Number | 
+  'dNISMin': 56, // Number | 
+  'dNISPrefix': "dNISPrefix_example", // String | 
+  'blockBy': "blockBy_example", // String | 
+  'createTimeGt': "createTimeGt_example", // String | 
+  'createTimeLt': "createTimeLt_example", // String | 
+  'egressClientId': 56, // Number | 
+  'egressClientName': "egressClientName_example", // String | 
+  'egressGroupId': 56, // Number | 
+  'egressGroupName': "egressGroupName_example", // String | 
+  'egressTrunkId': 56, // Number | 
+  'egressTrunkName': "egressTrunkName_example", // String | 
+  'ingressClientId': 56, // Number | 
+  'ingressClientName': "ingressClientName_example", // String | 
+  'ingressGroupId': 56, // Number | 
+  'ingressGroupName': "ingressGroupName_example", // String | 
+  'ingressTrunkId': 56, // Number | 
+  'ingressTrunkName': "ingressTrunkName_example", // String | 
+  'resBlockIdIn': "resBlockIdIn_example", // String | 
+  'timeProfileName': "timeProfileName_example", // String | 
+  'updateBy': "updateBy_example" // String | 
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.routeBlockAllDelete(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **aNIMax** | **Number**|  | [optional] 
+ **aNIMin** | **Number**|  | [optional] 
+ **aNIPrefix** | **String**|  | [optional] 
+ **dNISMax** | **Number**|  | [optional] 
+ **dNISMin** | **Number**|  | [optional] 
+ **dNISPrefix** | **String**|  | [optional] 
+ **blockBy** | **String**|  | [optional] 
+ **createTimeGt** | **String**|  | [optional] 
+ **createTimeLt** | **String**|  | [optional] 
+ **egressClientId** | **Number**|  | [optional] 
+ **egressClientName** | **String**|  | [optional] 
+ **egressGroupId** | **Number**|  | [optional] 
+ **egressGroupName** | **String**|  | [optional] 
+ **egressTrunkId** | **Number**|  | [optional] 
+ **egressTrunkName** | **String**|  | [optional] 
+ **ingressClientId** | **Number**|  | [optional] 
+ **ingressClientName** | **String**|  | [optional] 
+ **ingressGroupId** | **Number**|  | [optional] 
+ **ingressGroupName** | **String**|  | [optional] 
+ **ingressTrunkId** | **Number**|  | [optional] 
+ **ingressTrunkName** | **String**|  | [optional] 
+ **resBlockIdIn** | **String**|  | [optional] 
+ **timeProfileName** | **String**|  | [optional] 
+ **updateBy** | **String**|  | [optional] 
+
+### Return type
+
+[**InlineResponse2002**](InlineResponse2002.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
 <a name="routeBlockListGet"></a>
 # **routeBlockListGet**
-> InlineResponse200153 routeBlockListGet(opts)
+> InlineResponse200171 routeBlockListGet(opts)
 
 
 
@@ -90,15 +287,30 @@ var opts = {
   'perPage': 56, // Number | 
   'orderBy': "orderBy_example", // String | 
   'orderDir': "orderDir_example", // String | 
+  'aNIMax': 56, // Number | 
+  'aNIMin': 56, // Number | 
   'aNIPrefix': "aNIPrefix_example", // String | 
+  'dNISMax': 56, // Number | 
+  'dNISMin': 56, // Number | 
   'dNISPrefix': "dNISPrefix_example", // String | 
-  'blockBy': 56, // Number | 
+  'blockBy': "blockBy_example", // String | 
   'egressClientId': 56, // Number | 
+  'egressClientName': "egressClientName_example", // String | 
   'egressGroupId': 56, // Number | 
+  'egressGroupName': "egressGroupName_example", // String | 
   'egressTrunkId': 56, // Number | 
+  'egressTrunkName': "egressTrunkName_example", // String | 
   'ingressClientId': 56, // Number | 
+  'ingressClientName': "ingressClientName_example", // String | 
   'ingressGroupId': 56, // Number | 
-  'ingressTrunkId': 56 // Number | 
+  'ingressGroupName': "ingressGroupName_example", // String | 
+  'ingressTrunkId': 56, // Number | 
+  'ingressTrunkName': "ingressTrunkName_example", // String | 
+  'timeProfileName': "timeProfileName_example", // String | 
+  'updateBy': "updateBy_example", // String | 
+  'createTimeGt': "createTimeGt_example", // String | 
+  'createTimeLt': "createTimeLt_example", // String | 
+  'resBlockIdIn': "resBlockIdIn_example" // String | 
 };
 
 var callback = function(error, data, response) {
@@ -119,19 +331,34 @@ Name | Type | Description  | Notes
  **perPage** | **Number**|  | [optional] 
  **orderBy** | **String**|  | [optional] 
  **orderDir** | **String**|  | [optional] 
+ **aNIMax** | **Number**|  | [optional] 
+ **aNIMin** | **Number**|  | [optional] 
  **aNIPrefix** | **String**|  | [optional] 
+ **dNISMax** | **Number**|  | [optional] 
+ **dNISMin** | **Number**|  | [optional] 
  **dNISPrefix** | **String**|  | [optional] 
- **blockBy** | **Number**|  | [optional] 
+ **blockBy** | **String**|  | [optional] 
  **egressClientId** | **Number**|  | [optional] 
+ **egressClientName** | **String**|  | [optional] 
  **egressGroupId** | **Number**|  | [optional] 
+ **egressGroupName** | **String**|  | [optional] 
  **egressTrunkId** | **Number**|  | [optional] 
+ **egressTrunkName** | **String**|  | [optional] 
  **ingressClientId** | **Number**|  | [optional] 
+ **ingressClientName** | **String**|  | [optional] 
  **ingressGroupId** | **Number**|  | [optional] 
+ **ingressGroupName** | **String**|  | [optional] 
  **ingressTrunkId** | **Number**|  | [optional] 
+ **ingressTrunkName** | **String**|  | [optional] 
+ **timeProfileName** | **String**|  | [optional] 
+ **updateBy** | **String**|  | [optional] 
+ **createTimeGt** | **String**|  | [optional] 
+ **createTimeLt** | **String**|  | [optional] 
+ **resBlockIdIn** | **String**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse200153**](InlineResponse200153.md)
+[**InlineResponse200171**](InlineResponse200171.md)
 
 ### Authorization
 
@@ -251,7 +478,7 @@ Name | Type | Description  | Notes
 
 <a name="routeBlockResBlockIdGet"></a>
 # **routeBlockResBlockIdGet**
-> InlineResponse200152 routeBlockResBlockIdGet(resBlockId)
+> InlineResponse200170 routeBlockResBlockIdGet(resBlockId)
 
 
 
@@ -291,7 +518,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200152**](InlineResponse200152.md)
+[**InlineResponse200170**](InlineResponse200170.md)
 
 ### Authorization
 
@@ -304,7 +531,7 @@ Name | Type | Description  | Notes
 
 <a name="routeBlockResBlockIdPatch"></a>
 # **routeBlockResBlockIdPatch**
-> InlineResponse200152 routeBlockResBlockIdPatch(resBlockId, opts)
+> InlineResponse200170 routeBlockResBlockIdPatch(resBlockId, opts)
 
 
 
@@ -348,7 +575,133 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200152**](InlineResponse200152.md)
+[**InlineResponse200170**](InlineResponse200170.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="routeDigitMapAllDelete"></a>
+# **routeDigitMapAllDelete**
+> InlineResponse2002 routeDigitMapAllDelete(opts)
+
+
+
+Deletes multiple found digittranslation
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.RouteApi();
+
+var opts = { 
+  'digitMapCount': 56, // Number | 
+  'digitMapName': "digitMapName_example", // String | 
+  'translationId': 56, // Number | 
+  'translationIdIn': "translationIdIn_example", // String | 
+  'updateAtGte': "updateAtGte_example", // String | 
+  'updateAtLt': "updateAtLt_example" // String | 
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.routeDigitMapAllDelete(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **digitMapCount** | **Number**|  | [optional] 
+ **digitMapName** | **String**|  | [optional] 
+ **translationId** | **Number**|  | [optional] 
+ **translationIdIn** | **String**|  | [optional] 
+ **updateAtGte** | **String**|  | [optional] 
+ **updateAtLt** | **String**|  | [optional] 
+
+### Return type
+
+[**InlineResponse2002**](InlineResponse2002.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="routeDigitMapItemAllDelete"></a>
+# **routeDigitMapItemAllDelete**
+> InlineResponse2002 routeDigitMapItemAllDelete(opts)
+
+
+
+Deletes multiple found translationitem
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.RouteApi();
+
+var opts = { 
+  'aNIPrefix': "aNIPrefix_example", // String | 
+  'aNIReplaceTo': "aNIReplaceTo_example", // String | 
+  'dNISPrefix': "dNISPrefix_example", // String | 
+  'dNISReplaceTo': "dNISReplaceTo_example", // String | 
+  'digitMapName': "digitMapName_example" // String | 
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.routeDigitMapItemAllDelete(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **aNIPrefix** | **String**|  | [optional] 
+ **aNIReplaceTo** | **String**|  | [optional] 
+ **dNISPrefix** | **String**|  | [optional] 
+ **dNISReplaceTo** | **String**|  | [optional] 
+ **digitMapName** | **String**|  | [optional] 
+
+### Return type
+
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -414,7 +767,7 @@ Name | Type | Description  | Notes
 
 <a name="routeDigitMapItemRefIdGet"></a>
 # **routeDigitMapItemRefIdGet**
-> InlineResponse200156 routeDigitMapItemRefIdGet(refId)
+> InlineResponse200174 routeDigitMapItemRefIdGet(refId)
 
 
 
@@ -454,7 +807,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200156**](InlineResponse200156.md)
+[**InlineResponse200174**](InlineResponse200174.md)
 
 ### Authorization
 
@@ -467,7 +820,7 @@ Name | Type | Description  | Notes
 
 <a name="routeDigitMapItemRefIdPatch"></a>
 # **routeDigitMapItemRefIdPatch**
-> InlineResponse200156 routeDigitMapItemRefIdPatch(refId, opts)
+> InlineResponse200174 routeDigitMapItemRefIdPatch(refId, opts)
 
 
 
@@ -511,7 +864,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200156**](InlineResponse200156.md)
+[**InlineResponse200174**](InlineResponse200174.md)
 
 ### Authorization
 
@@ -524,7 +877,7 @@ Name | Type | Description  | Notes
 
 <a name="routeDigitMapListGet"></a>
 # **routeDigitMapListGet**
-> InlineResponse200155 routeDigitMapListGet(opts)
+> InlineResponse200173 routeDigitMapListGet(opts)
 
 
 
@@ -551,6 +904,7 @@ var opts = {
   'digitMapCount': 56, // Number | 
   'digitMapName': "digitMapName_example", // String | 
   'translationId': 56, // Number | 
+  'translationIdIn': "translationIdIn_example", // String | 
   'updateAtGte': "updateAtGte_example", // String | 
   'updateAtLt': "updateAtLt_example" // String | 
 };
@@ -576,12 +930,13 @@ Name | Type | Description  | Notes
  **digitMapCount** | **Number**|  | [optional] 
  **digitMapName** | **String**|  | [optional] 
  **translationId** | **Number**|  | [optional] 
+ **translationIdIn** | **String**|  | [optional] 
  **updateAtGte** | **String**|  | [optional] 
  **updateAtLt** | **String**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse200155**](InlineResponse200155.md)
+[**InlineResponse200173**](InlineResponse200173.md)
 
 ### Authorization
 
@@ -701,7 +1056,7 @@ Name | Type | Description  | Notes
 
 <a name="routeDigitMapTranslationIdGet"></a>
 # **routeDigitMapTranslationIdGet**
-> InlineResponse200154 routeDigitMapTranslationIdGet(translationId)
+> InlineResponse200172 routeDigitMapTranslationIdGet(translationId)
 
 
 
@@ -741,7 +1096,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200154**](InlineResponse200154.md)
+[**InlineResponse200172**](InlineResponse200172.md)
 
 ### Authorization
 
@@ -754,7 +1109,7 @@ Name | Type | Description  | Notes
 
 <a name="routeDigitMapTranslationIdItemListGet"></a>
 # **routeDigitMapTranslationIdItemListGet**
-> InlineResponse200157 routeDigitMapTranslationIdItemListGet(translationId, opts)
+> InlineResponse200175 routeDigitMapTranslationIdItemListGet(translationId, opts)
 
 
 
@@ -814,7 +1169,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200157**](InlineResponse200157.md)
+[**InlineResponse200175**](InlineResponse200175.md)
 
 ### Authorization
 
@@ -884,7 +1239,7 @@ Name | Type | Description  | Notes
 
 <a name="routeDigitMapTranslationIdPatch"></a>
 # **routeDigitMapTranslationIdPatch**
-> InlineResponse200154 routeDigitMapTranslationIdPatch(translationId, opts)
+> InlineResponse200172 routeDigitMapTranslationIdPatch(translationId, opts)
 
 
 
@@ -928,7 +1283,75 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200154**](InlineResponse200154.md)
+[**InlineResponse200172**](InlineResponse200172.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="routeDynamicAllDelete"></a>
+# **routeDynamicAllDelete**
+> InlineResponse2002 routeDynamicAllDelete(opts)
+
+
+
+Deletes multiple found dynamicroute
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.RouteApi();
+
+var opts = { 
+  'egressTrunkId': 56, // Number | 
+  'modifiedBy': "modifiedBy_example", // String | 
+  'name': "name_example", // String | 
+  'qosCycle': "qosCycle_example", // String | 
+  'routeRuleName': "routeRuleName_example", // String | 
+  'timeProfileId': 56, // Number | 
+  'timeProfileName': "timeProfileName_example", // String | 
+  'usageCount': 56 // Number | 
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.routeDynamicAllDelete(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **egressTrunkId** | **Number**|  | [optional] 
+ **modifiedBy** | **String**|  | [optional] 
+ **name** | **String**|  | [optional] 
+ **qosCycle** | **String**|  | [optional] 
+ **routeRuleName** | **String**|  | [optional] 
+ **timeProfileId** | **Number**|  | [optional] 
+ **timeProfileName** | **String**|  | [optional] 
+ **usageCount** | **Number**|  | [optional] 
+
+### Return type
+
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -1108,7 +1531,7 @@ Name | Type | Description  | Notes
 
 <a name="routeDynamicDynamicRouteIdGet"></a>
 # **routeDynamicDynamicRouteIdGet**
-> InlineResponse200144 routeDynamicDynamicRouteIdGet(dynamicRouteId)
+> InlineResponse200162 routeDynamicDynamicRouteIdGet(dynamicRouteId)
 
 
 
@@ -1148,7 +1571,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200144**](InlineResponse200144.md)
+[**InlineResponse200162**](InlineResponse200162.md)
 
 ### Authorization
 
@@ -1218,7 +1641,7 @@ Name | Type | Description  | Notes
 
 <a name="routeDynamicDynamicRouteIdOverrideListGet"></a>
 # **routeDynamicDynamicRouteIdOverrideListGet**
-> InlineResponse200151 routeDynamicDynamicRouteIdOverrideListGet(dynamicRouteId, opts)
+> InlineResponse200169 routeDynamicDynamicRouteIdOverrideListGet(dynamicRouteId, opts)
 
 
 
@@ -1248,6 +1671,7 @@ var opts = {
   'id': 56, // Number | 
   'percentage': 56, // Number | 
   'resourceId': 56, // Number | 
+  'resourceName': "resourceName_example", // String | 
   'percentageGt': 56, // Number | 
   'percentageLt': 56 // Number | 
 };
@@ -1275,12 +1699,13 @@ Name | Type | Description  | Notes
  **id** | **Number**|  | [optional] 
  **percentage** | **Number**|  | [optional] 
  **resourceId** | **Number**|  | [optional] 
+ **resourceName** | **String**|  | [optional] 
  **percentageGt** | **Number**|  | [optional] 
  **percentageLt** | **Number**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse200151**](InlineResponse200151.md)
+[**InlineResponse200169**](InlineResponse200169.md)
 
 ### Authorization
 
@@ -1293,7 +1718,7 @@ Name | Type | Description  | Notes
 
 <a name="routeDynamicDynamicRouteIdPatch"></a>
 # **routeDynamicDynamicRouteIdPatch**
-> InlineResponse200144 routeDynamicDynamicRouteIdPatch(dynamicRouteId, opts)
+> InlineResponse200162 routeDynamicDynamicRouteIdPatch(dynamicRouteId, opts)
 
 
 
@@ -1337,7 +1762,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200144**](InlineResponse200144.md)
+[**InlineResponse200162**](InlineResponse200162.md)
 
 ### Authorization
 
@@ -1407,7 +1832,7 @@ Name | Type | Description  | Notes
 
 <a name="routeDynamicDynamicRouteIdPriListGet"></a>
 # **routeDynamicDynamicRouteIdPriListGet**
-> InlineResponse200149 routeDynamicDynamicRouteIdPriListGet(dynamicRouteId, opts)
+> InlineResponse200167 routeDynamicDynamicRouteIdPriListGet(dynamicRouteId, opts)
 
 
 
@@ -1467,7 +1892,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200149**](InlineResponse200149.md)
+[**InlineResponse200167**](InlineResponse200167.md)
 
 ### Authorization
 
@@ -1537,7 +1962,7 @@ Name | Type | Description  | Notes
 
 <a name="routeDynamicDynamicRouteIdQosListGet"></a>
 # **routeDynamicDynamicRouteIdQosListGet**
-> InlineResponse200147 routeDynamicDynamicRouteIdQosListGet(dynamicRouteId, opts)
+> InlineResponse200165 routeDynamicDynamicRouteIdQosListGet(dynamicRouteId, opts)
 
 
 
@@ -1565,14 +1990,20 @@ var opts = {
   'orderDir': "orderDir_example", // String | 
   'digits': "digits_example", // String | 
   'id': 56, // Number | 
+  'limitPriceGt': "limitPriceGt_example", // String | 
+  'limitPriceLt': "limitPriceLt_example", // String | 
   'maxAcdGt': "maxAcdGt_example", // String | 
   'maxAcdLt': "maxAcdLt_example", // String | 
   'maxAsrGt': "maxAsrGt_example", // String | 
   'maxAsrLt': "maxAsrLt_example", // String | 
   'minAcdGt': "minAcdGt_example", // String | 
   'minAcdLt': "minAcdLt_example", // String | 
+  'minAlocGt': "minAlocGt_example", // String | 
+  'minAlocLt': "minAlocLt_example", // String | 
   'minAsrGt': "minAsrGt_example", // String | 
-  'minAsrLt': "minAsrLt_example" // String | 
+  'minAsrLt': "minAsrLt_example", // String | 
+  'minPddGt': 56, // Number | 
+  'minPddLt': 56 // Number | 
 };
 
 var callback = function(error, data, response) {
@@ -1596,18 +2027,81 @@ Name | Type | Description  | Notes
  **orderDir** | **String**|  | [optional] 
  **digits** | **String**|  | [optional] 
  **id** | **Number**|  | [optional] 
+ **limitPriceGt** | **String**|  | [optional] 
+ **limitPriceLt** | **String**|  | [optional] 
  **maxAcdGt** | **String**|  | [optional] 
  **maxAcdLt** | **String**|  | [optional] 
  **maxAsrGt** | **String**|  | [optional] 
  **maxAsrLt** | **String**|  | [optional] 
  **minAcdGt** | **String**|  | [optional] 
  **minAcdLt** | **String**|  | [optional] 
+ **minAlocGt** | **String**|  | [optional] 
+ **minAlocLt** | **String**|  | [optional] 
  **minAsrGt** | **String**|  | [optional] 
  **minAsrLt** | **String**|  | [optional] 
+ **minPddGt** | **Number**|  | [optional] 
+ **minPddLt** | **Number**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse200147**](InlineResponse200147.md)
+[**InlineResponse200165**](InlineResponse200165.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="routeDynamicDynamicRouteIdRemoveTrunksPatch"></a>
+# **routeDynamicDynamicRouteIdRemoveTrunksPatch**
+> Success routeDynamicDynamicRouteIdRemoveTrunksPatch(dynamicRouteId, opts)
+
+
+
+
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.RouteApi();
+
+var dynamicRouteId = 789; // Number | Parent DynamicRoute
+
+var opts = { 
+  'body': new DnlApi.DynamicRouteItemMultiple() // DynamicRouteItemMultiple | Trunks to remove
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.routeDynamicDynamicRouteIdRemoveTrunksPatch(dynamicRouteId, opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **dynamicRouteId** | **Number**| Parent DynamicRoute | 
+ **body** | [**DynamicRouteItemMultiple**](DynamicRouteItemMultiple.md)| Trunks to remove | [optional] 
+
+### Return type
+
+[**Success**](Success.md)
 
 ### Authorization
 
@@ -1620,7 +2114,7 @@ Name | Type | Description  | Notes
 
 <a name="routeDynamicListGet"></a>
 # **routeDynamicListGet**
-> InlineResponse200145 routeDynamicListGet(opts)
+> InlineResponse200163 routeDynamicListGet(opts)
 
 
 
@@ -1644,11 +2138,13 @@ var opts = {
   'perPage': 56, // Number | 
   'orderBy': "orderBy_example", // String | 
   'orderDir': "orderDir_example", // String | 
+  'egressTrunkId': 56, // Number | 
   'modifiedBy': "modifiedBy_example", // String | 
   'name': "name_example", // String | 
   'qosCycle': "qosCycle_example", // String | 
   'routeRuleName': "routeRuleName_example", // String | 
   'timeProfileId': 56, // Number | 
+  'timeProfileName': "timeProfileName_example", // String | 
   'usageCount': 56 // Number | 
 };
 
@@ -1670,16 +2166,18 @@ Name | Type | Description  | Notes
  **perPage** | **Number**|  | [optional] 
  **orderBy** | **String**|  | [optional] 
  **orderDir** | **String**|  | [optional] 
+ **egressTrunkId** | **Number**|  | [optional] 
  **modifiedBy** | **String**|  | [optional] 
  **name** | **String**|  | [optional] 
  **qosCycle** | **String**|  | [optional] 
  **routeRuleName** | **String**|  | [optional] 
  **timeProfileId** | **Number**|  | [optional] 
+ **timeProfileName** | **String**|  | [optional] 
  **usageCount** | **Number**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse200145**](InlineResponse200145.md)
+[**InlineResponse200163**](InlineResponse200163.md)
 
 ### Authorization
 
@@ -1745,7 +2243,7 @@ Name | Type | Description  | Notes
 
 <a name="routeDynamicOverrideIdGet"></a>
 # **routeDynamicOverrideIdGet**
-> InlineResponse200150 routeDynamicOverrideIdGet(id)
+> InlineResponse200168 routeDynamicOverrideIdGet(id)
 
 
 
@@ -1785,7 +2283,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200150**](InlineResponse200150.md)
+[**InlineResponse200168**](InlineResponse200168.md)
 
 ### Authorization
 
@@ -1798,7 +2296,7 @@ Name | Type | Description  | Notes
 
 <a name="routeDynamicOverrideIdPatch"></a>
 # **routeDynamicOverrideIdPatch**
-> InlineResponse200150 routeDynamicOverrideIdPatch(id, opts)
+> InlineResponse200168 routeDynamicOverrideIdPatch(id, opts)
 
 
 
@@ -1842,7 +2340,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200150**](InlineResponse200150.md)
+[**InlineResponse200168**](InlineResponse200168.md)
 
 ### Authorization
 
@@ -1962,7 +2460,7 @@ Name | Type | Description  | Notes
 
 <a name="routeDynamicPriIdGet"></a>
 # **routeDynamicPriIdGet**
-> InlineResponse200148 routeDynamicPriIdGet(id)
+> InlineResponse200166 routeDynamicPriIdGet(id)
 
 
 
@@ -2002,7 +2500,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200148**](InlineResponse200148.md)
+[**InlineResponse200166**](InlineResponse200166.md)
 
 ### Authorization
 
@@ -2015,7 +2513,7 @@ Name | Type | Description  | Notes
 
 <a name="routeDynamicPriIdPatch"></a>
 # **routeDynamicPriIdPatch**
-> InlineResponse200148 routeDynamicPriIdPatch(id, opts)
+> InlineResponse200166 routeDynamicPriIdPatch(id, opts)
 
 
 
@@ -2059,7 +2557,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200148**](InlineResponse200148.md)
+[**InlineResponse200166**](InlineResponse200166.md)
 
 ### Authorization
 
@@ -2125,7 +2623,7 @@ Name | Type | Description  | Notes
 
 <a name="routeDynamicQosIdGet"></a>
 # **routeDynamicQosIdGet**
-> InlineResponse200146 routeDynamicQosIdGet(id)
+> InlineResponse200164 routeDynamicQosIdGet(id)
 
 
 
@@ -2165,7 +2663,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200146**](InlineResponse200146.md)
+[**InlineResponse200164**](InlineResponse200164.md)
 
 ### Authorization
 
@@ -2178,7 +2676,7 @@ Name | Type | Description  | Notes
 
 <a name="routeDynamicQosIdPatch"></a>
 # **routeDynamicQosIdPatch**
-> InlineResponse200146 routeDynamicQosIdPatch(id, opts)
+> InlineResponse200164 routeDynamicQosIdPatch(id, opts)
 
 
 
@@ -2222,7 +2720,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200146**](InlineResponse200146.md)
+[**InlineResponse200164**](InlineResponse200164.md)
 
 ### Authorization
 
@@ -2235,7 +2733,7 @@ Name | Type | Description  | Notes
 
 <a name="routeListGet"></a>
 # **routeListGet**
-> InlineResponse200143 routeListGet(opts)
+> InlineResponse200161 routeListGet(opts)
 
 
 
@@ -2262,14 +2760,19 @@ var opts = {
   'aNIPrefix': "aNIPrefix_example", // String | 
   'dNISPrefix': "dNISPrefix_example", // String | 
   'dynamicRouteId': 56, // Number | 
+  'dynamicRouteName': "dynamicRouteName_example", // String | 
   'interStaticRouteId': 56, // Number | 
   'intraStaticRouteId': 56, // Number | 
-  'routeType': "routeType_example", // String | 
+  'routePlanName': "routePlanName_example", // String | 
+  'routeTypeFlg': "routeTypeFlg_example", // String | 
   'staticRouteId': 56, // Number | 
+  'staticRouteName': "staticRouteName_example", // String | 
   'aNIPrefixGt': "aNIPrefixGt_example", // String | 
   'aNIPrefixLt': "aNIPrefixLt_example", // String | 
   'dNISPrefixGt': "dNISPrefixGt_example", // String | 
   'dNISPrefixLt': "dNISPrefixLt_example", // String | 
+  'intraStaticRouteIdIsnull': true, // Boolean | 
+  'routeIdIn': "routeIdIn_example", // String | 
   'updateAtGt': "updateAtGt_example", // String | 
   'updateAtLt': "updateAtLt_example" // String | 
 };
@@ -2295,20 +2798,93 @@ Name | Type | Description  | Notes
  **aNIPrefix** | **String**|  | [optional] 
  **dNISPrefix** | **String**|  | [optional] 
  **dynamicRouteId** | **Number**|  | [optional] 
+ **dynamicRouteName** | **String**|  | [optional] 
  **interStaticRouteId** | **Number**|  | [optional] 
  **intraStaticRouteId** | **Number**|  | [optional] 
- **routeType** | **String**|  | [optional] 
+ **routePlanName** | **String**|  | [optional] 
+ **routeTypeFlg** | **String**|  | [optional] 
  **staticRouteId** | **Number**|  | [optional] 
+ **staticRouteName** | **String**|  | [optional] 
  **aNIPrefixGt** | **String**|  | [optional] 
  **aNIPrefixLt** | **String**|  | [optional] 
  **dNISPrefixGt** | **String**|  | [optional] 
  **dNISPrefixLt** | **String**|  | [optional] 
+ **intraStaticRouteIdIsnull** | **Boolean**|  | [optional] 
+ **routeIdIn** | **String**|  | [optional] 
  **updateAtGt** | **String**|  | [optional] 
  **updateAtLt** | **String**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse200143**](InlineResponse200143.md)
+[**InlineResponse200161**](InlineResponse200161.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="routePlanAllDelete"></a>
+# **routePlanAllDelete**
+> InlineResponse2002 routePlanAllDelete(opts)
+
+
+
+Deletes multiple found routestrategy
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.RouteApi();
+
+var opts = { 
+  'isVirtual': true, // Boolean | 
+  'name': "name_example", // String | 
+  'routePlanId': 56, // Number | 
+  'routePlanIdIn': "routePlanIdIn_example", // String | 
+  'updateAtGt': "updateAtGt_example", // String | 
+  'updateAtLt': "updateAtLt_example", // String | 
+  'updateBy': "updateBy_example", // String | 
+  'usageCount': 56 // Number | 
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.routePlanAllDelete(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **isVirtual** | **Boolean**|  | [optional] 
+ **name** | **String**|  | [optional] 
+ **routePlanId** | **Number**|  | [optional] 
+ **routePlanIdIn** | **String**|  | [optional] 
+ **updateAtGt** | **String**|  | [optional] 
+ **updateAtLt** | **String**|  | [optional] 
+ **updateBy** | **String**|  | [optional] 
+ **usageCount** | **Number**|  | [optional] 
+
+### Return type
+
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -2321,7 +2897,7 @@ Name | Type | Description  | Notes
 
 <a name="routePlanListGet"></a>
 # **routePlanListGet**
-> InlineResponse200137 routePlanListGet(opts)
+> InlineResponse200155 routePlanListGet(opts)
 
 
 
@@ -2350,6 +2926,7 @@ var opts = {
   'routePlanId': 56, // Number | 
   'updateBy': "updateBy_example", // String | 
   'usageCount': 56, // Number | 
+  'routePlanIdIn': "routePlanIdIn_example", // String | 
   'updateAtGt': "updateAtGt_example", // String | 
   'updateAtLt': "updateAtLt_example" // String | 
 };
@@ -2377,12 +2954,13 @@ Name | Type | Description  | Notes
  **routePlanId** | **Number**|  | [optional] 
  **updateBy** | **String**|  | [optional] 
  **usageCount** | **Number**|  | [optional] 
+ **routePlanIdIn** | **String**|  | [optional] 
  **updateAtGt** | **String**|  | [optional] 
  **updateAtLt** | **String**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse200137**](InlineResponse200137.md)
+[**InlineResponse200155**](InlineResponse200155.md)
 
 ### Authorization
 
@@ -2559,7 +3137,7 @@ Name | Type | Description  | Notes
 
 <a name="routePlanRoutePlanIdGet"></a>
 # **routePlanRoutePlanIdGet**
-> InlineResponse200136 routePlanRoutePlanIdGet(routePlanId)
+> InlineResponse200154 routePlanRoutePlanIdGet(routePlanId)
 
 
 
@@ -2599,7 +3177,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200136**](InlineResponse200136.md)
+[**InlineResponse200154**](InlineResponse200154.md)
 
 ### Authorization
 
@@ -2612,7 +3190,7 @@ Name | Type | Description  | Notes
 
 <a name="routePlanRoutePlanIdListRoutesGet"></a>
 # **routePlanRoutePlanIdListRoutesGet**
-> InlineResponse200143 routePlanRoutePlanIdListRoutesGet(routePlanId, opts)
+> InlineResponse200161 routePlanRoutePlanIdListRoutesGet(routePlanId, opts)
 
 
 
@@ -2641,14 +3219,19 @@ var opts = {
   'aNIPrefix': "aNIPrefix_example", // String | 
   'dNISPrefix': "dNISPrefix_example", // String | 
   'dynamicRouteId': 56, // Number | 
+  'dynamicRouteName': "dynamicRouteName_example", // String | 
   'interStaticRouteId': 56, // Number | 
   'intraStaticRouteId': 56, // Number | 
-  'routeType': "routeType_example", // String | 
+  'routePlanName': "routePlanName_example", // String | 
+  'routeTypeFlg': "routeTypeFlg_example", // String | 
   'staticRouteId': 56, // Number | 
+  'staticRouteName': "staticRouteName_example", // String | 
   'aNIPrefixGt': "aNIPrefixGt_example", // String | 
   'aNIPrefixLt': "aNIPrefixLt_example", // String | 
   'dNISPrefixGt': "dNISPrefixGt_example", // String | 
   'dNISPrefixLt': "dNISPrefixLt_example", // String | 
+  'intraStaticRouteIdIsnull': true, // Boolean | 
+  'routeIdIn': "routeIdIn_example", // String | 
   'updateAtGt': "updateAtGt_example", // String | 
   'updateAtLt': "updateAtLt_example" // String | 
 };
@@ -2675,20 +3258,25 @@ Name | Type | Description  | Notes
  **aNIPrefix** | **String**|  | [optional] 
  **dNISPrefix** | **String**|  | [optional] 
  **dynamicRouteId** | **Number**|  | [optional] 
+ **dynamicRouteName** | **String**|  | [optional] 
  **interStaticRouteId** | **Number**|  | [optional] 
  **intraStaticRouteId** | **Number**|  | [optional] 
- **routeType** | **String**|  | [optional] 
+ **routePlanName** | **String**|  | [optional] 
+ **routeTypeFlg** | **String**|  | [optional] 
  **staticRouteId** | **Number**|  | [optional] 
+ **staticRouteName** | **String**|  | [optional] 
  **aNIPrefixGt** | **String**|  | [optional] 
  **aNIPrefixLt** | **String**|  | [optional] 
  **dNISPrefixGt** | **String**|  | [optional] 
  **dNISPrefixLt** | **String**|  | [optional] 
+ **intraStaticRouteIdIsnull** | **Boolean**|  | [optional] 
+ **routeIdIn** | **String**|  | [optional] 
  **updateAtGt** | **String**|  | [optional] 
  **updateAtLt** | **String**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse200143**](InlineResponse200143.md)
+[**InlineResponse200161**](InlineResponse200161.md)
 
 ### Authorization
 
@@ -2701,7 +3289,7 @@ Name | Type | Description  | Notes
 
 <a name="routePlanRoutePlanIdPatch"></a>
 # **routePlanRoutePlanIdPatch**
-> InlineResponse200136 routePlanRoutePlanIdPatch(routePlanId, opts)
+> InlineResponse200154 routePlanRoutePlanIdPatch(routePlanId, opts)
 
 
 
@@ -2745,7 +3333,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200136**](InlineResponse200136.md)
+[**InlineResponse200154**](InlineResponse200154.md)
 
 ### Authorization
 
@@ -2811,7 +3399,7 @@ Name | Type | Description  | Notes
 
 <a name="routeRouteIdGet"></a>
 # **routeRouteIdGet**
-> InlineResponse200142 routeRouteIdGet(routeId)
+> InlineResponse200160 routeRouteIdGet(routeId)
 
 
 
@@ -2851,7 +3439,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200142**](InlineResponse200142.md)
+[**InlineResponse200160**](InlineResponse200160.md)
 
 ### Authorization
 
@@ -2864,7 +3452,7 @@ Name | Type | Description  | Notes
 
 <a name="routeRouteIdPatch"></a>
 # **routeRouteIdPatch**
-> InlineResponse200142 routeRouteIdPatch(routeId, opts)
+> InlineResponse200160 routeRouteIdPatch(routeId, opts)
 
 
 
@@ -2908,7 +3496,77 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200142**](InlineResponse200142.md)
+[**InlineResponse200160**](InlineResponse200160.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="routeStaticAllDelete"></a>
+# **routeStaticAllDelete**
+> InlineResponse2002 routeStaticAllDelete(opts)
+
+
+
+Deletes multiple found staticroute
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.RouteApi();
+
+var opts = { 
+  'codeDeckName': "codeDeckName_example", // String | 
+  'definedBy': "definedBy_example", // String | 
+  'name': "name_example", // String | 
+  'routedBy': "routedBy_example", // String | 
+  'staticRouteId': 56, // Number | 
+  'staticRouteIdIn': "staticRouteIdIn_example", // String | 
+  'updateAtGt': "updateAtGt_example", // String | 
+  'updateAtLt': "updateAtLt_example", // String | 
+  'updateBy': "updateBy_example" // String | 
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.routeStaticAllDelete(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **codeDeckName** | **String**|  | [optional] 
+ **definedBy** | **String**|  | [optional] 
+ **name** | **String**|  | [optional] 
+ **routedBy** | **String**|  | [optional] 
+ **staticRouteId** | **Number**|  | [optional] 
+ **staticRouteIdIn** | **String**|  | [optional] 
+ **updateAtGt** | **String**|  | [optional] 
+ **updateAtLt** | **String**|  | [optional] 
+ **updateBy** | **String**|  | [optional] 
+
+### Return type
+
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -2963,6 +3621,82 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ObjectCreated**](ObjectCreated.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="routeStaticItemAllDelete"></a>
+# **routeStaticItemAllDelete**
+> InlineResponse2002 routeStaticItemAllDelete(opts)
+
+
+
+Deletes multiple found productitems
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.RouteApi();
+
+var opts = { 
+  'alias': "alias_example", // String | 
+  'codeName': "codeName_example", // String | 
+  'did': "did_example", // String | 
+  'hasTrunkId': 56, // Number | 
+  'itemId': 56, // Number | 
+  'itemIdIn': "itemIdIn_example", // String | 
+  'staticRouteId': 56, // Number | 
+  'strategy': "strategy_example", // String | 
+  'timeProfileName': "timeProfileName_example", // String | 
+  'updateAtGt': "updateAtGt_example", // String | 
+  'updateAtLt': "updateAtLt_example", // String | 
+  'updateBy': "updateBy_example" // String | 
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.routeStaticItemAllDelete(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **alias** | **String**|  | [optional] 
+ **codeName** | **String**|  | [optional] 
+ **did** | **String**|  | [optional] 
+ **hasTrunkId** | **Number**|  | [optional] 
+ **itemId** | **Number**|  | [optional] 
+ **itemIdIn** | **String**|  | [optional] 
+ **staticRouteId** | **Number**|  | [optional] 
+ **strategy** | **String**|  | [optional] 
+ **timeProfileName** | **String**|  | [optional] 
+ **updateAtGt** | **String**|  | [optional] 
+ **updateAtLt** | **String**|  | [optional] 
+ **updateBy** | **String**|  | [optional] 
+
+### Return type
+
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -3028,7 +3762,7 @@ Name | Type | Description  | Notes
 
 <a name="routeStaticItemItemIdGet"></a>
 # **routeStaticItemItemIdGet**
-> InlineResponse200140 routeStaticItemItemIdGet(itemId)
+> InlineResponse200158 routeStaticItemItemIdGet(itemId)
 
 
 
@@ -3068,7 +3802,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200140**](InlineResponse200140.md)
+[**InlineResponse200158**](InlineResponse200158.md)
 
 ### Authorization
 
@@ -3081,7 +3815,7 @@ Name | Type | Description  | Notes
 
 <a name="routeStaticItemItemIdPatch"></a>
 # **routeStaticItemItemIdPatch**
-> InlineResponse200140 routeStaticItemItemIdPatch(itemId, opts)
+> InlineResponse200158 routeStaticItemItemIdPatch(itemId, opts)
 
 
 
@@ -3125,7 +3859,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200140**](InlineResponse200140.md)
+[**InlineResponse200158**](InlineResponse200158.md)
 
 ### Authorization
 
@@ -3138,7 +3872,7 @@ Name | Type | Description  | Notes
 
 <a name="routeStaticListGet"></a>
 # **routeStaticListGet**
-> InlineResponse200139 routeStaticListGet(opts)
+> InlineResponse200157 routeStaticListGet(opts)
 
 
 
@@ -3168,6 +3902,7 @@ var opts = {
   'routedBy': "routedBy_example", // String | 
   'staticRouteId': 56, // Number | 
   'updateBy': "updateBy_example", // String | 
+  'staticRouteIdIn': "staticRouteIdIn_example", // String | 
   'updateAtGt': "updateAtGt_example", // String | 
   'updateAtLt': "updateAtLt_example" // String | 
 };
@@ -3196,12 +3931,13 @@ Name | Type | Description  | Notes
  **routedBy** | **String**|  | [optional] 
  **staticRouteId** | **Number**|  | [optional] 
  **updateBy** | **String**|  | [optional] 
+ **staticRouteIdIn** | **String**|  | [optional] 
  **updateAtGt** | **String**|  | [optional] 
  **updateAtLt** | **String**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse200139**](InlineResponse200139.md)
+[**InlineResponse200157**](InlineResponse200157.md)
 
 ### Authorization
 
@@ -3267,7 +4003,7 @@ Name | Type | Description  | Notes
 
 <a name="routeStaticStaticRouteIdGet"></a>
 # **routeStaticStaticRouteIdGet**
-> InlineResponse200138 routeStaticStaticRouteIdGet(staticRouteId)
+> InlineResponse200156 routeStaticStaticRouteIdGet(staticRouteId)
 
 
 
@@ -3307,7 +4043,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200138**](InlineResponse200138.md)
+[**InlineResponse200156**](InlineResponse200156.md)
 
 ### Authorization
 
@@ -3377,7 +4113,7 @@ Name | Type | Description  | Notes
 
 <a name="routeStaticStaticRouteIdItemListGet"></a>
 # **routeStaticStaticRouteIdItemListGet**
-> InlineResponse200141 routeStaticStaticRouteIdItemListGet(staticRouteId, opts)
+> InlineResponse200159 routeStaticStaticRouteIdItemListGet(staticRouteId, opts)
 
 
 
@@ -3402,7 +4138,19 @@ var opts = {
   'page': 56, // Number | 
   'perPage': 56, // Number | 
   'orderBy': "orderBy_example", // String | 
-  'orderDir': "orderDir_example" // String | 
+  'orderDir': "orderDir_example", // String | 
+  'alias': "alias_example", // String | 
+  'codeName': "codeName_example", // String | 
+  'did': "did_example", // String | 
+  'hasTrunkId': 56, // Number | 
+  'itemId': 56, // Number | 
+  'staticRouteId2': 56, // Number | 
+  'strategy': "strategy_example", // String | 
+  'timeProfileName': "timeProfileName_example", // String | 
+  'updateBy': "updateBy_example", // String | 
+  'itemIdIn': "itemIdIn_example", // String | 
+  'updateAtGt': "updateAtGt_example", // String | 
+  'updateAtLt': "updateAtLt_example" // String | 
 };
 
 var callback = function(error, data, response) {
@@ -3424,10 +4172,22 @@ Name | Type | Description  | Notes
  **perPage** | **Number**|  | [optional] 
  **orderBy** | **String**|  | [optional] 
  **orderDir** | **String**|  | [optional] 
+ **alias** | **String**|  | [optional] 
+ **codeName** | **String**|  | [optional] 
+ **did** | **String**|  | [optional] 
+ **hasTrunkId** | **Number**|  | [optional] 
+ **itemId** | **Number**|  | [optional] 
+ **staticRouteId2** | **Number**|  | [optional] 
+ **strategy** | **String**|  | [optional] 
+ **timeProfileName** | **String**|  | [optional] 
+ **updateBy** | **String**|  | [optional] 
+ **itemIdIn** | **String**|  | [optional] 
+ **updateAtGt** | **String**|  | [optional] 
+ **updateAtLt** | **String**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse200141**](InlineResponse200141.md)
+[**InlineResponse200159**](InlineResponse200159.md)
 
 ### Authorization
 
@@ -3440,7 +4200,7 @@ Name | Type | Description  | Notes
 
 <a name="routeStaticStaticRouteIdPatch"></a>
 # **routeStaticStaticRouteIdPatch**
-> InlineResponse200138 routeStaticStaticRouteIdPatch(staticRouteId, opts)
+> InlineResponse200156 routeStaticStaticRouteIdPatch(staticRouteId, opts)
 
 
 
@@ -3462,7 +4222,7 @@ var apiInstance = new DnlApi.RouteApi();
 var staticRouteId = 789; // Number | Static Route id to get info about
 
 var opts = { 
-  'body': new DnlApi.Product() // Product | Static Route to modify
+  'body': new DnlApi.ProductModify() // ProductModify | Static Route to modify
 };
 
 var callback = function(error, data, response) {
@@ -3480,11 +4240,11 @@ apiInstance.routeStaticStaticRouteIdPatch(staticRouteId, opts, callback);
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **staticRouteId** | **Number**| Static Route id to get info about | 
- **body** | [**Product**](Product.md)| Static Route to modify | [optional] 
+ **body** | [**ProductModify**](ProductModify.md)| Static Route to modify | [optional] 
 
 ### Return type
 
-[**InlineResponse200138**](InlineResponse200138.md)
+[**InlineResponse200156**](InlineResponse200156.md)
 
 ### Authorization
 

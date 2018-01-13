@@ -3,35 +3,35 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**clientId** | **Number** |  | [optional] 
+**returnCode** | **String** |  | [optional] 
+**stripId** | **String** |  | [optional] 
+**paypalId** | **String** |  | [optional] 
 **paypalFee** | **Number** |  | [optional] 
+**status** | **String** |  | [optional] [default to &#39;initial&#39;]
+**cardexpyear** | **String** |  | [optional] 
+**type** | **String** |  | [optional] [default to &#39;undefined&#39;]
+**paypalTransactionId** | **String** |  | [optional] 
+**clientId** | **Number** |  | [optional] 
 **clientNameamount** | **String** |  | [optional] 
+**actualReceived** | **Number** |  | [optional] 
+**paidOn** | **Date** |  | [optional] 
 **error** | **String** |  | [optional] 
 **stripTransactionId** | **String** |  | [optional] 
-**paypalId** | **String** |  | [optional] 
-**paidOn** | **Date** |  | [optional] 
-**actualReceived** | **Number** |  | [optional] 
-**cardexpyear** | **String** |  | [optional] 
-**returnCode** | **String** |  | [optional] 
-**status** | **String** |  | [optional] [default to &#39;initial&#39;]
-**cardexpmonth** | **String** |  | [optional] 
-**stripId** | **String** |  | [optional] 
 **cardnumber** | **String** |  | [optional] 
-**paypalTransactionId** | **String** |  | [optional] 
-**type** | **String** |  | [optional] [default to &#39;undefined&#39;]
-**enteredOn** | **Date** |  | [optional] 
 **response** | **String** |  | [optional] 
+**enteredOn** | **Date** |  | [optional] 
+**cardexpmonth** | **String** |  | [optional] 
 
 
 <a name="StatusEnum"></a>
 ## Enum: StatusEnum
 
 
-* `success` (value: `"success"`)
-
 * `initial` (value: `"initial"`)
 
 * `error` (value: `"error"`)
+
+* `success` (value: `"success"`)
 
 
 
@@ -40,11 +40,11 @@ Name | Type | Description | Notes
 ## Enum: TypeEnum
 
 
-* `yourpay` (value: `"yourpay"`)
+* `undefined` (value: `"undefined"`)
 
 * `paypal` (value: `"paypal"`)
 
-* `undefined` (value: `"undefined"`)
+* `yourpay` (value: `"yourpay"`)
 
 
 

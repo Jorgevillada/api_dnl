@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**startTime** | **Date** |  | [optional] 
-**endTime** | **Date** |  | [optional] 
 **id** | **Number** |  | [optional] 
+**startTime** | **Date** |  | [optional] 
 **scriptName** | **String** |  | [optional] 
+**endTime** | **Date** |  | [optional] 
 
 

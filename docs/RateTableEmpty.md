@@ -3,24 +3,29 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**resources** | **[String]** |  | [optional] 
-**name** | **String** |  | 
-**prefixMaxLength** | **Number** |  | [optional] 
-**jurType** | **Number** |  | [optional] 
-**codeDeckId** | **Number** |  | [optional] 
-**rateType** | **Number** |  | [optional] 
-**currencyId** | **Number** |  | [optional] [default to 1]
+**egressCount** | **Number** |  | [optional] 
+**usageCount** | **Number** |  | [optional] 
 **noprefixMinLength** | **Number** |  | [optional] 
-**billingMethod** | **String** |  | [optional] [default to &#39;DNIS&#39;]
-**lnpDippingRate** | **Number** |  | [optional] 
-**rateTypeName** | **String** |  | [optional] [default to &#39;A-Z&#39;]
-**noprefixMaxLength** | **Number** |  | [optional] 
-**jurisdictionCountryId** | **Number** |  | [optional] 
-**isVirtual** | **Boolean** |  | [optional] 
+**currencyId** | **Number** |  | [optional] [default to 1]
+**resources** | **[String]** |  | [optional] 
+**jurType** | **Number** |  | [optional] 
 **prefixMinLength** | **Number** |  | [optional] 
-**jurisdictionPrefix** | **String** |  | [optional] 
-**origination** | **Boolean** |  | [optional] 
+**billingMethod** | **String** |  | [optional] [default to &#39;DNIS&#39;]
 **rates** | **[String]** |  | [optional] 
+**isVirtual** | **Boolean** |  | [optional] 
+**noprefixMaxLength** | **Number** |  | [optional] 
+**currencyName_** | **String** |  | [optional] 
+**prefixMaxLength** | **Number** |  | [optional] 
+**jurisdictionCountryId** | **Number** |  | [optional] 
+**rateTypeName** | **String** |  | [optional] [default to &#39;A-Z&#39;]
+**name** | **String** |  | 
+**ingressCount** | **Number** |  | [optional] 
+**jurisdictionPrefix** | **String** |  | [optional] 
+**lnpDippingRate** | **Number** |  | [optional] 
+**codeDeckId** | **Number** |  | [optional] 
+**codeDeckName_** | **String** |  | [optional] 
+**origination** | **Boolean** |  | [optional] 
+**rateType** | **Number** |  | [optional] 
 
 
 <a name="BillingMethodEnum"></a>
@@ -29,9 +34,9 @@ Name | Type | Description | Notes
 
 * `DNIS` (value: `"DNIS"`)
 
-* `LRN BLOCK` (value: `"LRN BLOCK"`)
-
 * `LRN` (value: `"LRN"`)
+
+* `LRN BLOCK` (value: `"LRN BLOCK"`)
 
 
 
@@ -40,13 +45,13 @@ Name | Type | Description | Notes
 ## Enum: RateTypeNameEnum
 
 
-* `OCN-LATA` (value: `"OCN-LATA"`)
-
-* `US Non Jurisdictional` (value: `"US Non Jurisdictional"`)
+* `A-Z` (value: `"A-Z"`)
 
 * `US Jurisdictional` (value: `"US Jurisdictional"`)
 
-* `A-Z` (value: `"A-Z"`)
+* `US Non Jurisdictional` (value: `"US Non Jurisdictional"`)
+
+* `OCN-LATA` (value: `"OCN-LATA"`)
 
 
 

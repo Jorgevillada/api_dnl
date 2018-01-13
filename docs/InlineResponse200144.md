@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**DynamicRouteGet**](DynamicRouteGet.md) |  | [optional] 
+**payload** | [**DidBillingRelGet**](DidBillingRelGet.md) |  | [optional] 
 
 

@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**resourceId** | **Number** |  | [optional] 
-**percentage** | **Number** |  | [optional] 
 **digits** | **String** |  | [optional] 
+**percentage** | **Number** |  | [optional] 
+**resourceId** | **Number** |  | [optional] 
 
 

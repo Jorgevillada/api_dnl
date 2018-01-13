@@ -1,6 +1,6 @@
 # DnlApi.FinanceApi
 
-All URIs are relative to *https://148.251.91.143:8000/v1*
+All URIs are relative to *https://198.100.149.164:8000/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -10,6 +10,7 @@ Method | HTTP request | Description
 [**carrierClientIdGatewayPaymentsGet**](FinanceApi.md#carrierClientIdGatewayPaymentsGet) | **GET** /carrier/{client_id}/gateway_payments | 
 [**carrierClientIdInvoiceListGet**](FinanceApi.md#carrierClientIdInvoiceListGet) | **GET** /carrier/{client_id}/invoice/list | 
 [**carrierClientIdInvoicePost**](FinanceApi.md#carrierClientIdInvoicePost) | **POST** /carrier/{client_id}/invoice | 
+[**carrierClientIdManualInvoicePost**](FinanceApi.md#carrierClientIdManualInvoicePost) | **POST** /carrier/{client_id}/manual_invoice | 
 [**carrierClientIdMutualBalanceGet**](FinanceApi.md#carrierClientIdMutualBalanceGet) | **GET** /carrier/{client_id}/mutual_balance | 
 [**carrierClientIdPaymentListGet**](FinanceApi.md#carrierClientIdPaymentListGet) | **GET** /carrier/{client_id}/payment/list | 
 [**carrierClientIdPaymentPost**](FinanceApi.md#carrierClientIdPaymentPost) | **POST** /carrier/{client_id}/payment | 
@@ -18,10 +19,14 @@ Method | HTTP request | Description
 [**financeAllPaymentListGet**](FinanceApi.md#financeAllPaymentListGet) | **GET** /finance/all_payment/list | 
 [**financeAutoInvoiceListGet**](FinanceApi.md#financeAutoInvoiceListGet) | **GET** /finance/auto_invoice/list | 
 [**financeGatewayPaymentsGet**](FinanceApi.md#financeGatewayPaymentsGet) | **GET** /finance/gateway_payments | 
+[**financeInvoiceAllDelete**](FinanceApi.md#financeInvoiceAllDelete) | **DELETE** /finance/invoice/all | 
+[**financeInvoiceFileInvoiceIdGet**](FinanceApi.md#financeInvoiceFileInvoiceIdGet) | **GET** /finance/invoice/file/{invoice_id} | 
 [**financeInvoiceInvoiceIdDelete**](FinanceApi.md#financeInvoiceInvoiceIdDelete) | **DELETE** /finance/invoice/{invoice_id} | 
 [**financeInvoiceInvoiceIdGet**](FinanceApi.md#financeInvoiceInvoiceIdGet) | **GET** /finance/invoice/{invoice_id} | 
 [**financeInvoiceInvoiceIdPatch**](FinanceApi.md#financeInvoiceInvoiceIdPatch) | **PATCH** /finance/invoice/{invoice_id} | 
 [**financeInvoiceListGet**](FinanceApi.md#financeInvoiceListGet) | **GET** /finance/invoice/list | 
+[**financeInvoiceLogIdSendPatch**](FinanceApi.md#financeInvoiceLogIdSendPatch) | **PATCH** /finance/invoice_log/{id}/send | 
+[**financeInvoicePost**](FinanceApi.md#financeInvoicePost) | **POST** /finance/invoice | 
 [**financePaymentClientPaymentIdDelete**](FinanceApi.md#financePaymentClientPaymentIdDelete) | **DELETE** /finance/payment/{client_payment_id} | 
 [**financePaymentClientPaymentIdEditAndSendNotePost**](FinanceApi.md#financePaymentClientPaymentIdEditAndSendNotePost) | **POST** /finance/payment/{client_payment_id}/edit_and_send_note | 
 [**financePaymentClientPaymentIdGet**](FinanceApi.md#financePaymentClientPaymentIdGet) | **GET** /finance/payment/{client_payment_id} | 
@@ -36,7 +41,7 @@ Method | HTTP request | Description
 
 <a name="carrierClientIdActualBalanceGet"></a>
 # **carrierClientIdActualBalanceGet**
-> InlineResponse20079 carrierClientIdActualBalanceGet(clientId, opts)
+> InlineResponse20095 carrierClientIdActualBalanceGet(clientId, opts)
 
 
 
@@ -92,7 +97,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20079**](InlineResponse20079.md)
+[**InlineResponse20095**](InlineResponse20095.md)
 
 ### Authorization
 
@@ -105,7 +110,7 @@ Name | Type | Description  | Notes
 
 <a name="carrierClientIdBalanceGet"></a>
 # **carrierClientIdBalanceGet**
-> InlineResponse20077 carrierClientIdBalanceGet(clientId)
+> InlineResponse20093 carrierClientIdBalanceGet(clientId)
 
 
 
@@ -145,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20077**](InlineResponse20077.md)
+[**InlineResponse20093**](InlineResponse20093.md)
 
 ### Authorization
 
@@ -215,7 +220,7 @@ Name | Type | Description  | Notes
 
 <a name="carrierClientIdGatewayPaymentsGet"></a>
 # **carrierClientIdGatewayPaymentsGet**
-> InlineResponse20081 carrierClientIdGatewayPaymentsGet(clientId, opts)
+> InlineResponse20097 carrierClientIdGatewayPaymentsGet(clientId, opts)
 
 
 
@@ -241,8 +246,10 @@ var opts = {
   'perPage': 56, // Number | 
   'orderBy': "orderBy_example", // String | 
   'orderDir': "orderDir_example", // String | 
+  'clientId2': 56, // Number | 
   'paypalId': "paypalId_example", // String | 
   'paypalTransactionId': "paypalTransactionId_example", // String | 
+  'status': "status_example", // String | 
   'type': "type_example", // String | 
   'paidOnGt': "paidOnGt_example", // String | 
   'paidOnLt': "paidOnLt_example" // String | 
@@ -267,15 +274,17 @@ Name | Type | Description  | Notes
  **perPage** | **Number**|  | [optional] 
  **orderBy** | **String**|  | [optional] 
  **orderDir** | **String**|  | [optional] 
+ **clientId2** | **Number**|  | [optional] 
  **paypalId** | **String**|  | [optional] 
  **paypalTransactionId** | **String**|  | [optional] 
+ **status** | **String**|  | [optional] 
  **type** | **String**|  | [optional] 
  **paidOnGt** | **String**|  | [optional] 
  **paidOnLt** | **String**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse20081**](InlineResponse20081.md)
+[**InlineResponse20097**](InlineResponse20097.md)
 
 ### Authorization
 
@@ -288,7 +297,7 @@ Name | Type | Description  | Notes
 
 <a name="carrierClientIdInvoiceListGet"></a>
 # **carrierClientIdInvoiceListGet**
-> InlineResponse20075 carrierClientIdInvoiceListGet(clientId, opts)
+> InlineResponse20091 carrierClientIdInvoiceListGet(clientId, opts)
 
 
 
@@ -316,6 +325,7 @@ var opts = {
   'orderDir': "orderDir_example", // String | 
   'clientId2': 56, // Number | 
   'clientName': "clientName_example", // String | 
+  'createType': "createType_example", // String | 
   'invoiceNumber': "invoiceNumber_example", // String | 
   'paid': true, // Boolean | 
   'state': "state_example", // String | 
@@ -323,7 +333,8 @@ var opts = {
   'dueDateGt': "dueDateGt_example", // String | 
   'dueDateLt': "dueDateLt_example", // String | 
   'invoiceDateGt': "invoiceDateGt_example", // String | 
-  'invoiceDateLt': "invoiceDateLt_example" // String | 
+  'invoiceDateLt': "invoiceDateLt_example", // String | 
+  'invoiceIdIn': "invoiceIdIn_example" // String | 
 };
 
 var callback = function(error, data, response) {
@@ -347,6 +358,7 @@ Name | Type | Description  | Notes
  **orderDir** | **String**|  | [optional] 
  **clientId2** | **Number**|  | [optional] 
  **clientName** | **String**|  | [optional] 
+ **createType** | **String**|  | [optional] 
  **invoiceNumber** | **String**|  | [optional] 
  **paid** | **Boolean**|  | [optional] 
  **state** | **String**|  | [optional] 
@@ -355,10 +367,11 @@ Name | Type | Description  | Notes
  **dueDateLt** | **String**|  | [optional] 
  **invoiceDateGt** | **String**|  | [optional] 
  **invoiceDateLt** | **String**|  | [optional] 
+ **invoiceIdIn** | **String**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse20075**](InlineResponse20075.md)
+[**InlineResponse20091**](InlineResponse20091.md)
 
 ### Authorization
 
@@ -426,9 +439,71 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
+<a name="carrierClientIdManualInvoicePost"></a>
+# **carrierClientIdManualInvoicePost**
+> ObjectCreated carrierClientIdManualInvoicePost(pdfFile, startDate, endDate, clientId)
+
+
+
+Creates new invoice
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.FinanceApi();
+
+var pdfFile = "/path/to/file.txt"; // File | Invoice File to upload
+
+var startDate = "startDate_example"; // String | Invoice start date
+
+var endDate = "endDate_example"; // String | Invoice end date
+
+var clientId = 789; // Number | Parent carrier
+
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.carrierClientIdManualInvoicePost(pdfFile, startDate, endDate, clientId, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pdfFile** | **File**| Invoice File to upload | 
+ **startDate** | **String**| Invoice start date | 
+ **endDate** | **String**| Invoice end date | 
+ **clientId** | **Number**| Parent carrier | 
+
+### Return type
+
+[**ObjectCreated**](ObjectCreated.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: multipart/form-data
+ - **Accept**: application/json
+
 <a name="carrierClientIdMutualBalanceGet"></a>
 # **carrierClientIdMutualBalanceGet**
-> InlineResponse20078 carrierClientIdMutualBalanceGet(clientId, opts)
+> InlineResponse20094 carrierClientIdMutualBalanceGet(clientId, opts)
 
 
 
@@ -484,7 +559,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20078**](InlineResponse20078.md)
+[**InlineResponse20094**](InlineResponse20094.md)
 
 ### Authorization
 
@@ -497,7 +572,7 @@ Name | Type | Description  | Notes
 
 <a name="carrierClientIdPaymentListGet"></a>
 # **carrierClientIdPaymentListGet**
-> InlineResponse20073 carrierClientIdPaymentListGet(clientId, opts)
+> InlineResponse20088 carrierClientIdPaymentListGet(clientId, opts)
 
 
 
@@ -555,7 +630,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20073**](InlineResponse20073.md)
+[**InlineResponse20088**](InlineResponse20088.md)
 
 ### Authorization
 
@@ -682,7 +757,7 @@ Name | Type | Description  | Notes
 
 <a name="carrierClientIdTransactionsListGet"></a>
 # **carrierClientIdTransactionsListGet**
-> InlineResponse20080 carrierClientIdTransactionsListGet(clientId, opts)
+> InlineResponse20096 carrierClientIdTransactionsListGet(clientId, opts)
 
 
 
@@ -740,7 +815,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20080**](InlineResponse20080.md)
+[**InlineResponse20096**](InlineResponse20096.md)
 
 ### Authorization
 
@@ -753,7 +828,7 @@ Name | Type | Description  | Notes
 
 <a name="financeAllPaymentListGet"></a>
 # **financeAllPaymentListGet**
-> InlineResponse20084 financeAllPaymentListGet(opts)
+> InlineResponse200100 financeAllPaymentListGet(opts)
 
 
 
@@ -781,6 +856,8 @@ var opts = {
   'clientPaymentId': 56, // Number | 
   'paymentType': "paymentType_example", // String | 
   'updateBy': "updateBy_example", // String | 
+  'amountGt': 3.4, // Number | 
+  'amountLt': 3.4, // Number | 
   'paymentTimeGt': "paymentTimeGt_example", // String | 
   'paymentTimeLt': "paymentTimeLt_example", // String | 
   'receivingTimeGt': "receivingTimeGt_example", // String | 
@@ -809,6 +886,8 @@ Name | Type | Description  | Notes
  **clientPaymentId** | **Number**|  | [optional] 
  **paymentType** | **String**|  | [optional] 
  **updateBy** | **String**|  | [optional] 
+ **amountGt** | **Number**|  | [optional] 
+ **amountLt** | **Number**|  | [optional] 
  **paymentTimeGt** | **String**|  | [optional] 
  **paymentTimeLt** | **String**|  | [optional] 
  **receivingTimeGt** | **String**|  | [optional] 
@@ -816,7 +895,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20084**](InlineResponse20084.md)
+[**InlineResponse200100**](InlineResponse200100.md)
 
 ### Authorization
 
@@ -829,7 +908,7 @@ Name | Type | Description  | Notes
 
 <a name="financeAutoInvoiceListGet"></a>
 # **financeAutoInvoiceListGet**
-> InlineResponse20076 financeAutoInvoiceListGet(opts)
+> InlineResponse20092 financeAutoInvoiceListGet(opts)
 
 
 
@@ -880,7 +959,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20076**](InlineResponse20076.md)
+[**InlineResponse20092**](InlineResponse20092.md)
 
 ### Authorization
 
@@ -893,7 +972,7 @@ Name | Type | Description  | Notes
 
 <a name="financeGatewayPaymentsGet"></a>
 # **financeGatewayPaymentsGet**
-> InlineResponse20082 financeGatewayPaymentsGet(opts)
+> InlineResponse20098 financeGatewayPaymentsGet(opts)
 
 
 
@@ -917,8 +996,11 @@ var opts = {
   'perPage': 56, // Number | 
   'orderBy': "orderBy_example", // String | 
   'orderDir': "orderDir_example", // String | 
+  'cardnumber': "cardnumber_example", // String | 
+  'clientId': 56, // Number | 
   'paypalId': "paypalId_example", // String | 
   'paypalTransactionId': "paypalTransactionId_example", // String | 
+  'status': "status_example", // String | 
   'type': "type_example", // String | 
   'paidOnGt': "paidOnGt_example", // String | 
   'paidOnLt': "paidOnLt_example" // String | 
@@ -942,15 +1024,18 @@ Name | Type | Description  | Notes
  **perPage** | **Number**|  | [optional] 
  **orderBy** | **String**|  | [optional] 
  **orderDir** | **String**|  | [optional] 
+ **cardnumber** | **String**|  | [optional] 
+ **clientId** | **Number**|  | [optional] 
  **paypalId** | **String**|  | [optional] 
  **paypalTransactionId** | **String**|  | [optional] 
+ **status** | **String**|  | [optional] 
  **type** | **String**|  | [optional] 
  **paidOnGt** | **String**|  | [optional] 
  **paidOnLt** | **String**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse20082**](InlineResponse20082.md)
+[**InlineResponse20098**](InlineResponse20098.md)
 
 ### Authorization
 
@@ -960,6 +1045,135 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
+
+<a name="financeInvoiceAllDelete"></a>
+# **financeInvoiceAllDelete**
+> InlineResponse2002 financeInvoiceAllDelete(opts)
+
+
+
+Deletes multiple found invoice
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.FinanceApi();
+
+var opts = { 
+  'clientId': 56, // Number | 
+  'clientName': "clientName_example", // String | 
+  'createType': "createType_example", // String | 
+  'dueDateGt': "dueDateGt_example", // String | 
+  'dueDateLt': "dueDateLt_example", // String | 
+  'invoiceDateGt': "invoiceDateGt_example", // String | 
+  'invoiceDateLt': "invoiceDateLt_example", // String | 
+  'invoiceIdIn': "invoiceIdIn_example", // String | 
+  'invoiceNumber': "invoiceNumber_example", // String | 
+  'paid': true, // Boolean | 
+  'state': "state_example", // String | 
+  'status': 56 // Number | 
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.financeInvoiceAllDelete(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **clientId** | **Number**|  | [optional] 
+ **clientName** | **String**|  | [optional] 
+ **createType** | **String**|  | [optional] 
+ **dueDateGt** | **String**|  | [optional] 
+ **dueDateLt** | **String**|  | [optional] 
+ **invoiceDateGt** | **String**|  | [optional] 
+ **invoiceDateLt** | **String**|  | [optional] 
+ **invoiceIdIn** | **String**|  | [optional] 
+ **invoiceNumber** | **String**|  | [optional] 
+ **paid** | **Boolean**|  | [optional] 
+ **state** | **String**|  | [optional] 
+ **status** | **Number**|  | [optional] 
+
+### Return type
+
+[**InlineResponse2002**](InlineResponse2002.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="financeInvoiceFileInvoiceIdGet"></a>
+# **financeInvoiceFileInvoiceIdGet**
+> InlineResponse20090 financeInvoiceFileInvoiceIdGet(invoiceId)
+
+
+
+Gets invoice pdf file
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.FinanceApi();
+
+var invoiceId = 789; // Number | Invoice pdf file id to get info about
+
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.financeInvoiceFileInvoiceIdGet(invoiceId, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **invoiceId** | **Number**| Invoice pdf file id to get info about | 
+
+### Return type
+
+[**InlineResponse20090**](InlineResponse20090.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/pdf
 
 <a name="financeInvoiceInvoiceIdDelete"></a>
 # **financeInvoiceInvoiceIdDelete**
@@ -1016,7 +1230,7 @@ Name | Type | Description  | Notes
 
 <a name="financeInvoiceInvoiceIdGet"></a>
 # **financeInvoiceInvoiceIdGet**
-> InlineResponse20074 financeInvoiceInvoiceIdGet(invoiceId)
+> InlineResponse20089 financeInvoiceInvoiceIdGet(invoiceId)
 
 
 
@@ -1056,7 +1270,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20074**](InlineResponse20074.md)
+[**InlineResponse20089**](InlineResponse20089.md)
 
 ### Authorization
 
@@ -1069,7 +1283,7 @@ Name | Type | Description  | Notes
 
 <a name="financeInvoiceInvoiceIdPatch"></a>
 # **financeInvoiceInvoiceIdPatch**
-> InlineResponse20074 financeInvoiceInvoiceIdPatch(invoiceId, opts)
+> InlineResponse20089 financeInvoiceInvoiceIdPatch(invoiceId, opts)
 
 
 
@@ -1113,7 +1327,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20074**](InlineResponse20074.md)
+[**InlineResponse20089**](InlineResponse20089.md)
 
 ### Authorization
 
@@ -1126,7 +1340,7 @@ Name | Type | Description  | Notes
 
 <a name="financeInvoiceListGet"></a>
 # **financeInvoiceListGet**
-> InlineResponse20075 financeInvoiceListGet(opts)
+> InlineResponse20091 financeInvoiceListGet(opts)
 
 
 
@@ -1152,6 +1366,7 @@ var opts = {
   'orderDir': "orderDir_example", // String | 
   'clientId': 56, // Number | 
   'clientName': "clientName_example", // String | 
+  'createType': "createType_example", // String | 
   'invoiceNumber': "invoiceNumber_example", // String | 
   'paid': true, // Boolean | 
   'state': "state_example", // String | 
@@ -1159,7 +1374,8 @@ var opts = {
   'dueDateGt': "dueDateGt_example", // String | 
   'dueDateLt': "dueDateLt_example", // String | 
   'invoiceDateGt': "invoiceDateGt_example", // String | 
-  'invoiceDateLt': "invoiceDateLt_example" // String | 
+  'invoiceDateLt': "invoiceDateLt_example", // String | 
+  'invoiceIdIn': "invoiceIdIn_example" // String | 
 };
 
 var callback = function(error, data, response) {
@@ -1182,6 +1398,7 @@ Name | Type | Description  | Notes
  **orderDir** | **String**|  | [optional] 
  **clientId** | **Number**|  | [optional] 
  **clientName** | **String**|  | [optional] 
+ **createType** | **String**|  | [optional] 
  **invoiceNumber** | **String**|  | [optional] 
  **paid** | **Boolean**|  | [optional] 
  **state** | **String**|  | [optional] 
@@ -1190,10 +1407,118 @@ Name | Type | Description  | Notes
  **dueDateLt** | **String**|  | [optional] 
  **invoiceDateGt** | **String**|  | [optional] 
  **invoiceDateLt** | **String**|  | [optional] 
+ **invoiceIdIn** | **String**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse20075**](InlineResponse20075.md)
+[**InlineResponse20091**](InlineResponse20091.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="financeInvoiceLogIdSendPatch"></a>
+# **financeInvoiceLogIdSendPatch**
+> Success financeInvoiceLogIdSendPatch(id)
+
+
+
+
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.FinanceApi();
+
+var id = 789; // Number | mark as sent
+
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.financeInvoiceLogIdSendPatch(id, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **Number**| mark as sent | 
+
+### Return type
+
+[**Success**](Success.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="financeInvoicePost"></a>
+# **financeInvoicePost**
+> ObjectCreatedMultiple financeInvoicePost(opts)
+
+
+
+Creates new invoice
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.FinanceApi();
+
+var opts = { 
+  'body': new DnlApi.InvoiceGenerationMany() // InvoiceGenerationMany | Invoice to create
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.financeInvoicePost(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**InvoiceGenerationMany**](InvoiceGenerationMany.md)| Invoice to create | [optional] 
+
+### Return type
+
+[**ObjectCreatedMultiple**](ObjectCreatedMultiple.md)
 
 ### Authorization
 
@@ -1316,7 +1641,7 @@ Name | Type | Description  | Notes
 
 <a name="financePaymentClientPaymentIdGet"></a>
 # **financePaymentClientPaymentIdGet**
-> InlineResponse20072 financePaymentClientPaymentIdGet(clientPaymentId)
+> InlineResponse20087 financePaymentClientPaymentIdGet(clientPaymentId)
 
 
 
@@ -1356,7 +1681,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20072**](InlineResponse20072.md)
+[**InlineResponse20087**](InlineResponse20087.md)
 
 ### Authorization
 
@@ -1369,7 +1694,7 @@ Name | Type | Description  | Notes
 
 <a name="financePaymentClientPaymentIdPatch"></a>
 # **financePaymentClientPaymentIdPatch**
-> InlineResponse20072 financePaymentClientPaymentIdPatch(clientPaymentId, opts)
+> InlineResponse20087 financePaymentClientPaymentIdPatch(clientPaymentId, opts)
 
 
 
@@ -1413,7 +1738,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20072**](InlineResponse20072.md)
+[**InlineResponse20087**](InlineResponse20087.md)
 
 ### Authorization
 
@@ -1426,7 +1751,7 @@ Name | Type | Description  | Notes
 
 <a name="financeReceivedPaymentListGet"></a>
 # **financeReceivedPaymentListGet**
-> InlineResponse20084 financeReceivedPaymentListGet(opts)
+> InlineResponse200100 financeReceivedPaymentListGet(opts)
 
 
 
@@ -1454,6 +1779,8 @@ var opts = {
   'clientPaymentId': 56, // Number | 
   'paymentType': "paymentType_example", // String | 
   'updateBy': "updateBy_example", // String | 
+  'amountGt': 3.4, // Number | 
+  'amountLt': 3.4, // Number | 
   'paymentTimeGt': "paymentTimeGt_example", // String | 
   'paymentTimeLt': "paymentTimeLt_example", // String | 
   'receivingTimeGt': "receivingTimeGt_example", // String | 
@@ -1482,6 +1809,8 @@ Name | Type | Description  | Notes
  **clientPaymentId** | **Number**|  | [optional] 
  **paymentType** | **String**|  | [optional] 
  **updateBy** | **String**|  | [optional] 
+ **amountGt** | **Number**|  | [optional] 
+ **amountLt** | **Number**|  | [optional] 
  **paymentTimeGt** | **String**|  | [optional] 
  **paymentTimeLt** | **String**|  | [optional] 
  **receivingTimeGt** | **String**|  | [optional] 
@@ -1489,7 +1818,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20084**](InlineResponse20084.md)
+[**InlineResponse200100**](InlineResponse200100.md)
 
 ### Authorization
 
@@ -1555,7 +1884,7 @@ Name | Type | Description  | Notes
 
 <a name="financeSentPaymentClientPaymentIdGet"></a>
 # **financeSentPaymentClientPaymentIdGet**
-> InlineResponse20083 financeSentPaymentClientPaymentIdGet(clientPaymentId)
+> InlineResponse20099 financeSentPaymentClientPaymentIdGet(clientPaymentId)
 
 
 
@@ -1595,7 +1924,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20083**](InlineResponse20083.md)
+[**InlineResponse20099**](InlineResponse20099.md)
 
 ### Authorization
 
@@ -1608,7 +1937,7 @@ Name | Type | Description  | Notes
 
 <a name="financeSentPaymentClientPaymentIdPatch"></a>
 # **financeSentPaymentClientPaymentIdPatch**
-> InlineResponse20083 financeSentPaymentClientPaymentIdPatch(clientPaymentId, opts)
+> InlineResponse20099 financeSentPaymentClientPaymentIdPatch(clientPaymentId, opts)
 
 
 
@@ -1652,7 +1981,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20083**](InlineResponse20083.md)
+[**InlineResponse20099**](InlineResponse20099.md)
 
 ### Authorization
 
@@ -1665,7 +1994,7 @@ Name | Type | Description  | Notes
 
 <a name="financeSentPaymentListGet"></a>
 # **financeSentPaymentListGet**
-> InlineResponse20084 financeSentPaymentListGet(opts)
+> InlineResponse200100 financeSentPaymentListGet(opts)
 
 
 
@@ -1693,6 +2022,8 @@ var opts = {
   'clientPaymentId': 56, // Number | 
   'paymentType': "paymentType_example", // String | 
   'updateBy': "updateBy_example", // String | 
+  'amountGt': 3.4, // Number | 
+  'amountLt': 3.4, // Number | 
   'paymentTimeGt': "paymentTimeGt_example", // String | 
   'paymentTimeLt': "paymentTimeLt_example", // String | 
   'receivingTimeGt': "receivingTimeGt_example", // String | 
@@ -1721,6 +2052,8 @@ Name | Type | Description  | Notes
  **clientPaymentId** | **Number**|  | [optional] 
  **paymentType** | **String**|  | [optional] 
  **updateBy** | **String**|  | [optional] 
+ **amountGt** | **Number**|  | [optional] 
+ **amountLt** | **Number**|  | [optional] 
  **paymentTimeGt** | **String**|  | [optional] 
  **paymentTimeLt** | **String**|  | [optional] 
  **receivingTimeGt** | **String**|  | [optional] 
@@ -1728,7 +2061,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20084**](InlineResponse20084.md)
+[**InlineResponse200100**](InlineResponse200100.md)
 
 ### Authorization
 

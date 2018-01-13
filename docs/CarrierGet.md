@@ -3,56 +3,89 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** |  | [optional] 
-**clientId** | **Number** |  | [optional] 
-**isUnlimited** | **Boolean** |  | [optional] 
-**cpsLimit** | **Number** |  | [optional] 
-**company** | **String** |  | [optional] 
-**testCredit** | **Number** |  | [optional] 
-**phone** | **String** |  | [optional] 
-**profitType** | **String** |  | [optional] [default to &#39;percentage&#39;]
 **egressCount** | **Number** |  | [optional] 
-**reportFrequency** | **Number** |  | [optional] 
-**carrierTemplateId** | **Number** |  | [optional] 
 **dailyUsageSummary** | **Boolean** |  | [optional] 
-**updateBy** | **String** |  | [optional] 
-**dailyUsageGroupBy** | **String** |  | [optional] [default to &#39;By Country&#39;]
-**ingressCount** | **Number** |  | [optional] 
+**profitType** | **String** |  | [optional] [default to &#39;percentage&#39;]
 **billingEmail** | **String** |  | [optional] 
-**shortCallDuration** | **Number** |  | [optional] 
-**shortCallChargeExceedOnly** | **Number** |  | [optional] 
-**oneTimeReportTime** | **Number** |  | [optional] 
-**actualBalance** | **Number** |  | [optional] 
-**nocEmail** | **String** |  | [optional] 
-**creditLimit** | **Number** |  | [optional] 
-**mutualBalance** | **Number** |  | [optional] 
-**rateEmail** | **String** |  | [optional] 
-**ingressCountSql** | **Number** |  | [optional] 
-**dailyUsageOnNonZero** | **Boolean** |  | [optional] 
-**trunkUpdateAlert** | **Boolean** |  | [optional] 
-**shortCallPercent** | **Number** |  | [optional] 
-**updateAt** | **Date** |  | [optional] 
+**paymentTermId** | **Number** |  | [optional] 
+**mode** | **String** |  | [optional] [default to &#39;prepay&#39;]
+**paymentReceivedNotice** | **Boolean** |  | [optional] 
+**testCredit** | **Number** |  | [optional] 
 **isPrepay** | **Boolean** |  | [optional] 
-**shortCallCharge** | **Number** |  | [optional] 
-**isActive** | **Boolean** |  | [optional] 
-**currencyName** | **String** |  | [optional] 
-**mainEmail** | **String** |  | [optional] 
-**accountDetail** | **String** |  | [optional] 
-**callLimit** | **Number** |  | [optional] 
-**lowBalanceAlert** | **Boolean** |  | [optional] 
+**mutualBalance** | **Number** |  | [optional] 
+**creditLimit** | **Number** |  | [optional] 
+**rateEmail** | **String** |  | [optional] 
+**carrierTemplateId** | **Number** |  | [optional] 
+**company** | **String** |  | [optional] 
+**password** | **String** |  | [optional] 
+**usageFields** | **[String]** |  | [optional] 
+**shortCallPercent** | **Number** |  | [optional] 
 **autoInvoiceType** | **String** |  | [optional] [default to &#39;buy&#39;]
-**dailyBalanceSummary** | **Boolean** |  | [optional] 
+**clientId** | **Number** |  | [optional] 
+**name** | **String** |  | [optional] 
+**ingressCount** | **Number** |  | [optional] 
+**unlimitedCredit** | **Boolean** |  | [optional] 
+**accountDetail** | **String** |  | [optional] [default to &#39;&#39;]
+**shortCallChargeExceedOnly** | **Number** |  | [optional] 
 **dailyCdrDelivery** | **Boolean** |  | [optional] 
+**oneTimeReportTime** | **Number** |  | [optional] 
+**dailyUsageOnNonZero** | **Boolean** |  | [optional] 
 **address** | **String** |  | [optional] 
+**groupId** | **Number** |  | [optional] 
+**dailyUsageGroupBy** | **String** |  | [optional] [default to &#39;By Country&#39;]
+**dailyBalanceSummary** | **Boolean** |  | [optional] 
+**lowBalanceAlert** | **Boolean** |  | [optional] 
+**profitMargin** | **Number** |  | [optional] 
+**isActive** | **Boolean** |  | [optional] 
+**updateBy** | **String** |  | [optional] 
+**shortCallDuration** | **Number** |  | [optional] 
+**cpsLimit** | **Number** |  | [optional] 
+**nocEmail** | **String** |  | [optional] 
+**reportFrequency** | **Number** |  | [optional] 
+**updateAt** | **Date** |  | [optional] 
+**enoughBalance** | **Boolean** |  | [optional] [default to false]
+**currencyName** | **String** |  | [optional] 
+**shortCallCharge** | **Number** |  | [optional] 
+**login** | **String** |  | [optional] 
+**actualBalance** | **Number** |  | [optional] 
+**financeEmailCc** | **String** |  | [optional] 
+**callLimit** | **Number** |  | [optional] 
+**trunkUpdateAlert** | **Boolean** |  | [optional] 
+**mainEmail** | **String** |  | [optional] 
+**phone** | **String** |  | [optional] 
 
 
 <a name="ProfitTypeEnum"></a>
 ## Enum: ProfitTypeEnum
 
 
+* `percentage` (value: `"percentage"`)
+
 * `value` (value: `"value"`)
 
-* `percentage` (value: `"percentage"`)
+
+
+
+<a name="ModeEnum"></a>
+## Enum: ModeEnum
+
+
+* `prepay` (value: `"prepay"`)
+
+* `postpay` (value: `"postpay"`)
+
+
+
+
+<a name="AutoInvoiceTypeEnum"></a>
+## Enum: AutoInvoiceTypeEnum
+
+
+* `buy` (value: `"buy"`)
+
+* `sell` (value: `"sell"`)
+
+* `both` (value: `"both"`)
 
 
 
@@ -66,19 +99,6 @@ Name | Type | Description | Notes
 * `Code Name` (value: `"By Code Name"`)
 
 * `Code` (value: `"By Code"`)
-
-
-
-
-<a name="AutoInvoiceTypeEnum"></a>
-## Enum: AutoInvoiceTypeEnum
-
-
-* `both` (value: `"both"`)
-
-* `buy` (value: `"buy"`)
-
-* `sell` (value: `"sell"`)
 
 
 

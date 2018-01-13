@@ -3,24 +3,26 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**startTime** | **Date** |  | [optional] 
-**relatedCount** | **Number** |  | [optional] 
-**invoiceDueDate** | **String** |  | [optional] 
-**endTime** | **Date** |  | [optional] 
-**id** | **Number** |  | [optional] 
 **status** | **String** |  | [optional] [default to &#39;progress&#39;]
-**cnt** | **Number** |  | [optional] 
-**clientName** | **String** |  | [optional] 
 **amount** | **Number** |  | [optional] 
+**invoices** | [**[InvoiceGet]**](InvoiceGet.md) |  | [optional] 
+**startTime** | **Date** |  | [optional] 
+**cnt** | **Number** |  | [optional] 
+**progress** | **String** |  | [optional] 
+**invoiceDueDate** | **String** |  | [optional] 
+**clientName** | **String** |  | [optional] 
+**endTime** | **Date** |  | [optional] 
+**relatedCount** | **Number** |  | [optional] 
+**id** | **Number** |  | [optional] 
 
 
 <a name="StatusEnum"></a>
 ## Enum: StatusEnum
 
 
-* `done` (value: `"done"`)
-
 * `progress` (value: `"progress"`)
+
+* `done` (value: `"done"`)
 
 * `error` (value: `"error"`)
 

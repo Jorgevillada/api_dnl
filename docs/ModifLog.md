@@ -3,25 +3,25 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** |  | [optional] 
-**rollback** | **String** |  | [optional] 
-**rollbackExtraInfo** | **String** |  | [optional] 
-**id** | **Number** |  | [optional] 
 **module** | **String** |  | [optional] 
+**id** | **Number** |  | [optional] 
 **detail** | **String** |  | [optional] 
 **type** | **String** |  | [optional] [default to &#39;Creation&#39;]
 **time** | **Date** |  | [optional] 
+**rollbackExtraInfo** | **String** |  | [optional] 
+**rollback** | **String** |  | [optional] 
+**name** | **String** |  | [optional] 
 
 
 <a name="TypeEnum"></a>
 ## Enum: TypeEnum
 
 
-* `Modification` (value: `"Modification"`)
+* `Creation` (value: `"Creation"`)
 
 * `Deletion` (value: `"Deletion"`)
 
-* `Creation` (value: `"Creation"`)
+* `Modification` (value: `"Modification"`)
 
 
 

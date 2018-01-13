@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**ProductRoutRateTableGet**](ProductRoutRateTableGet.md) |  | [optional] 
+**payload** | [**LoopDetectionGet**](LoopDetectionGet.md) |  | [optional] 
 
 

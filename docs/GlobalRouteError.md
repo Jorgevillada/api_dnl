@@ -3,11 +3,11 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**toSipCode** | **Number** |  | [optional] 
-**defaultToSipString** | **String** |  | [optional] 
 **defaultToSipCode** | **Number** |  | [optional] 
-**errorCode** | **Number** |  | [optional] 
+**defaultToSipString** | **String** |  | [optional] 
 **toSipString** | **String** |  | [optional] 
 **errorDescription** | **String** |  | [optional] 
+**errorCode** | **Number** |  | [optional] 
+**toSipCode** | **Number** |  | [optional] 
 
 

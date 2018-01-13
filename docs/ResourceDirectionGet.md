@@ -3,29 +3,29 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**directionId** | **Number** |  | 
-**action** | **String** |  | [optional] [default to &#39;plus prefix&#39;]
+**dnis** | **String** |  | [optional] 
+**numberLength** | **Number** |  | [optional] 
+**numberType** | **String** |  | [optional] [default to &#39;all&#39;]
 **direction** | **String** |  | [optional] [default to &#39;ALL&#39;]
 **timeProfileId** | **Number** |  | [optional] 
-**resourceId** | **Number** |  | 
-**numberLength** | **Number** |  | [optional] 
-**dnis** | **String** |  | [optional] 
 **type** | **String** |  | [optional] [default to &#39;modify the caller&#39;]
-**numberType** | **String** |  | [optional] [default to &#39;all&#39;]
 **digits** | **String** |  | [optional] 
+**action** | **String** |  | [optional] [default to &#39;plus prefix&#39;]
+**resourceId** | **Number** |  | 
+**directionId** | **Number** |  | 
 
 
-<a name="ActionEnum"></a>
-## Enum: ActionEnum
+<a name="NumberTypeEnum"></a>
+## Enum: NumberTypeEnum
 
 
-* `minus suffix` (value: `"minus suffix"`)
+* `all` (value: `"all"`)
 
-* `plus prefix` (value: `"plus prefix"`)
+* `greater than` (value: `"greater than"`)
 
-* `minus prefix` (value: `"minus prefix"`)
+* `equal to` (value: `"equal to"`)
 
-* `plus suffix` (value: `"plus suffix"`)
+* `less than` (value: `"less than"`)
 
 
 
@@ -36,9 +36,9 @@ Name | Type | Description | Notes
 
 * `ALL` (value: `"ALL"`)
 
-* `egress` (value: `"egress"`)
-
 * `ingress` (value: `"ingress"`)
+
+* `egress` (value: `"egress"`)
 
 
 
@@ -49,22 +49,22 @@ Name | Type | Description | Notes
 
 * `caller` (value: `"modify the caller"`)
 
-* `called ` (value: `"modify the called "`)
+* `called` (value: `"modify the called"`)
 
 
 
 
-<a name="NumberTypeEnum"></a>
-## Enum: NumberTypeEnum
+<a name="ActionEnum"></a>
+## Enum: ActionEnum
 
 
-* `greater than` (value: `"greater than"`)
+* `plus prefix` (value: `"plus prefix"`)
 
-* `equal to` (value: `"equal to"`)
+* `plus suffix` (value: `"plus suffix"`)
 
-* `all` (value: `"all"`)
+* `minus prefix` (value: `"minus prefix"`)
 
-* `less than` (value: `"less than"`)
+* `minus suffix` (value: `"minus suffix"`)
 
 
 

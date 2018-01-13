@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**trunkId** | **Number** |  | [optional] 
-**rateTableId** | **Number** |  | [optional] 
 **effectiveDate** | **Date** |  | [optional] 
+**rateTableId** | **Number** |  | [optional] 
 **updateRate** | **Boolean** |  | [optional] 
+**trunkId** | **Number** |  | [optional] 
 
 

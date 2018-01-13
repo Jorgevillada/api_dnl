@@ -3,13 +3,13 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**sendTo** | **String** |  | [optional] 
 **downloadDate** | **Date** |  | [optional] 
+**parentJob** | [**RateSendGet**](RateSendGet.md) |  | [optional] 
 **id** | **Number** |  | [optional] 
+**sendTo** | **String** |  | [optional] 
+**status** | **String** |  | [optional] [default to &#39;In Progress&#39;]
 **trunkId** | **Number** |  | [optional] 
 **sendOn** | **Date** |  | [optional] 
-**parentJob** | [**RateSendGet**](RateSendGet.md) |  | [optional] 
-**status** | **String** |  | [optional] [default to &#39;Waiting&#39;]
 
 
 <a name="StatusEnum"></a>
@@ -20,13 +20,13 @@ Name | Type | Description | Notes
 
 * `completed` (value: `"completed"`)
 
-* `Not Yet Downloaded` (value: `"Not Yet Downloaded"`)
-
 * `failed` (value: `"failed"`)
 
-* `Waiting` (value: `"Waiting"`)
-
 * `Downloaded` (value: `"Downloaded"`)
+
+* `Not Yet Downloaded` (value: `"Not Yet Downloaded"`)
+
+* `Waiting` (value: `"Waiting"`)
 
 
 

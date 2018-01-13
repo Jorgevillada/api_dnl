@@ -3,14 +3,14 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**carrierName** | **String** |  | [optional] 
-**trunkId** | **String** |  | [optional] 
 **updateBy** | **String** |  | [optional] 
-**old** | **String** |  | [optional] 
+**carrierName** | **String** |  | [optional] 
+**detail** | **String** |  | [optional] 
+**trunkId** | **String** |  | [optional] 
 **modify** | **Number** |  | [optional] 
+**updateAt** | **Date** |  | [optional] 
+**old** | **String** |  | [optional] 
 **id** | **Number** |  | [optional] 
 **_new** | **String** |  | [optional] 
-**detail** | **String** |  | [optional] 
-**updateAt** | **Date** |  | [optional] 
 
 

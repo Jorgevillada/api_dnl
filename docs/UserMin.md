@@ -3,8 +3,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** |  | 
 **passwd** | **String** |  | 
-**fullname** | **String** |  | [optional] 
+**firstName** | **String** |  | [optional] 
+**name** | **String** |  | 
+**avatarId** | **Number** |  | [optional] 
+**lastName** | **String** |  | [optional] 
 
 

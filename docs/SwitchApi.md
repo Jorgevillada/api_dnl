@@ -1,6 +1,6 @@
 # DnlApi.SwitchApi
 
-All URIs are relative to *https://148.251.91.143:8000/v1*
+All URIs are relative to *https://198.100.149.164:8000/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,10 +8,12 @@ Method | HTTP request | Description
 [**switchCapacityIdGet**](SwitchApi.md#switchCapacityIdGet) | **GET** /switch/capacity/{id} | 
 [**switchCapacityIdPatch**](SwitchApi.md#switchCapacityIdPatch) | **PATCH** /switch/capacity/{id} | 
 [**switchCapacityListGet**](SwitchApi.md#switchCapacityListGet) | **GET** /switch/capacity/list | 
+[**switchCodeAllDelete**](SwitchApi.md#switchCodeAllDelete) | **DELETE** /switch/code/all | 
 [**switchCodeCodeIdDelete**](SwitchApi.md#switchCodeCodeIdDelete) | **DELETE** /switch/code/{code_id} | 
 [**switchCodeCodeIdGet**](SwitchApi.md#switchCodeCodeIdGet) | **GET** /switch/code/{code_id} | 
 [**switchCodeCodeIdPatch**](SwitchApi.md#switchCodeCodeIdPatch) | **PATCH** /switch/code/{code_id} | 
 [**switchCodeCreatePost**](SwitchApi.md#switchCodeCreatePost) | **POST** /switch/code/create | 
+[**switchCodeDeckAllDelete**](SwitchApi.md#switchCodeDeckAllDelete) | **DELETE** /switch/code_deck/all | 
 [**switchCodeDeckCodeDeckIdDelete**](SwitchApi.md#switchCodeDeckCodeDeckIdDelete) | **DELETE** /switch/code_deck/{code_deck_id} | 
 [**switchCodeDeckCodeDeckIdGet**](SwitchApi.md#switchCodeDeckCodeDeckIdGet) | **GET** /switch/code_deck/{code_deck_id} | 
 [**switchCodeDeckCodeDeckIdPatch**](SwitchApi.md#switchCodeDeckCodeDeckIdPatch) | **PATCH** /switch/code_deck/{code_deck_id} | 
@@ -26,6 +28,7 @@ Method | HTTP request | Description
 [**switchDestinationListGet**](SwitchApi.md#switchDestinationListGet) | **GET** /switch/destination/list | 
 [**switchListGet**](SwitchApi.md#switchListGet) | **GET** /switch/list | 
 [**switchPost**](SwitchApi.md#switchPost) | **POST** /switch | 
+[**switchRateAllDelete**](SwitchApi.md#switchRateAllDelete) | **DELETE** /switch/rate/all | 
 [**switchRateCodeRateTableIdCodeDelete**](SwitchApi.md#switchRateCodeRateTableIdCodeDelete) | **DELETE** /switch/rate_code/{rate_table_id}/{code} | 
 [**switchRateCodeRateTableIdCodeGet**](SwitchApi.md#switchRateCodeRateTableIdCodeGet) | **GET** /switch/rate_code/{rate_table_id}/{code} | 
 [**switchRateCodeRateTableIdCodePatch**](SwitchApi.md#switchRateCodeRateTableIdCodePatch) | **PATCH** /switch/rate_code/{rate_table_id}/{code} | 
@@ -33,11 +36,14 @@ Method | HTTP request | Description
 [**switchRateRateIdDelete**](SwitchApi.md#switchRateRateIdDelete) | **DELETE** /switch/rate/{rate_id} | 
 [**switchRateRateIdGet**](SwitchApi.md#switchRateRateIdGet) | **GET** /switch/rate/{rate_id} | 
 [**switchRateRateIdPatch**](SwitchApi.md#switchRateRateIdPatch) | **PATCH** /switch/rate/{rate_id} | 
+[**switchRateTableAllDelete**](SwitchApi.md#switchRateTableAllDelete) | **DELETE** /switch/rate_table/all | 
 [**switchRateTableCreatePost**](SwitchApi.md#switchRateTableCreatePost) | **POST** /switch/rate_table/create | 
 [**switchRateTableListGet**](SwitchApi.md#switchRateTableListGet) | **GET** /switch/rate_table/list | 
+[**switchRateTableRateTableIdCopyPost**](SwitchApi.md#switchRateTableRateTableIdCopyPost) | **POST** /switch/rate_table/{rate_table_id}/copy | 
 [**switchRateTableRateTableIdDelete**](SwitchApi.md#switchRateTableRateTableIdDelete) | **DELETE** /switch/rate_table/{rate_table_id} | 
 [**switchRateTableRateTableIdEditRatesPatch**](SwitchApi.md#switchRateTableRateTableIdEditRatesPatch) | **PATCH** /switch/rate_table/{rate_table_id}/edit_rates | 
 [**switchRateTableRateTableIdGet**](SwitchApi.md#switchRateTableRateTableIdGet) | **GET** /switch/rate_table/{rate_table_id} | 
+[**switchRateTableRateTableIdMassEditPatch**](SwitchApi.md#switchRateTableRateTableIdMassEditPatch) | **PATCH** /switch/rate_table/{rate_table_id}/mass_edit | 
 [**switchRateTableRateTableIdPatch**](SwitchApi.md#switchRateTableRateTableIdPatch) | **PATCH** /switch/rate_table/{rate_table_id} | 
 [**switchRateTableRateTableIdRateCsvGet**](SwitchApi.md#switchRateTableRateTableIdRateCsvGet) | **GET** /switch/rate_table/{rate_table_id}/rate.csv | 
 [**switchRateTableRateTableIdRateListGet**](SwitchApi.md#switchRateTableRateTableIdRateListGet) | **GET** /switch/rate_table/{rate_table_id}/rate/list | 
@@ -50,6 +56,7 @@ Method | HTTP request | Description
 [**switchSwitchIdDelete**](SwitchApi.md#switchSwitchIdDelete) | **DELETE** /switch/{switch_id} | 
 [**switchSwitchIdGet**](SwitchApi.md#switchSwitchIdGet) | **GET** /switch/{switch_id} | 
 [**switchSwitchIdPatch**](SwitchApi.md#switchSwitchIdPatch) | **PATCH** /switch/{switch_id} | 
+[**switchSwitchIdReloadPatch**](SwitchApi.md#switchSwitchIdReloadPatch) | **PATCH** /switch/{switch_id}/reload | 
 [**switchSwitchIdSipHostCreatePost**](SwitchApi.md#switchSwitchIdSipHostCreatePost) | **POST** /switch/{switch_id}/sip_host/create | 
 
 
@@ -108,7 +115,7 @@ Name | Type | Description  | Notes
 
 <a name="switchCapacityIdGet"></a>
 # **switchCapacityIdGet**
-> InlineResponse200162 switchCapacityIdGet(id)
+> InlineResponse200180 switchCapacityIdGet(id)
 
 
 
@@ -148,7 +155,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200162**](InlineResponse200162.md)
+[**InlineResponse200180**](InlineResponse200180.md)
 
 ### Authorization
 
@@ -161,7 +168,7 @@ Name | Type | Description  | Notes
 
 <a name="switchCapacityIdPatch"></a>
 # **switchCapacityIdPatch**
-> InlineResponse200162 switchCapacityIdPatch(id, opts)
+> InlineResponse200180 switchCapacityIdPatch(id, opts)
 
 
 
@@ -205,7 +212,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200162**](InlineResponse200162.md)
+[**InlineResponse200180**](InlineResponse200180.md)
 
 ### Authorization
 
@@ -218,7 +225,7 @@ Name | Type | Description  | Notes
 
 <a name="switchCapacityListGet"></a>
 # **switchCapacityListGet**
-> InlineResponse200163 switchCapacityListGet(opts)
+> InlineResponse200181 switchCapacityListGet(opts)
 
 
 
@@ -265,7 +272,69 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200163**](InlineResponse200163.md)
+[**InlineResponse200181**](InlineResponse200181.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="switchCodeAllDelete"></a>
+# **switchCodeAllDelete**
+> InlineResponse2002 switchCodeAllDelete(opts)
+
+
+
+Deletes multiple found code
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.SwitchApi();
+
+var opts = { 
+  'city': "city_example", // String | 
+  'code': "code_example", // String | 
+  'codeName': "codeName_example", // String | 
+  'country': "country_example", // String | 
+  'state': "state_example" // String | 
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.switchCodeAllDelete(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **city** | **String**|  | [optional] 
+ **code** | **String**|  | [optional] 
+ **codeName** | **String**|  | [optional] 
+ **country** | **String**|  | [optional] 
+ **state** | **String**|  | [optional] 
+
+### Return type
+
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -331,7 +400,7 @@ Name | Type | Description  | Notes
 
 <a name="switchCodeCodeIdGet"></a>
 # **switchCodeCodeIdGet**
-> InlineResponse200164 switchCodeCodeIdGet(codeId)
+> InlineResponse200182 switchCodeCodeIdGet(codeId)
 
 
 
@@ -371,7 +440,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200164**](InlineResponse200164.md)
+[**InlineResponse200182**](InlineResponse200182.md)
 
 ### Authorization
 
@@ -384,7 +453,7 @@ Name | Type | Description  | Notes
 
 <a name="switchCodeCodeIdPatch"></a>
 # **switchCodeCodeIdPatch**
-> InlineResponse200164 switchCodeCodeIdPatch(codeId, opts)
+> InlineResponse200182 switchCodeCodeIdPatch(codeId, opts)
 
 
 
@@ -428,7 +497,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200164**](InlineResponse200164.md)
+[**InlineResponse200182**](InlineResponse200182.md)
 
 ### Authorization
 
@@ -483,6 +552,74 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ObjectCreated**](ObjectCreated.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="switchCodeDeckAllDelete"></a>
+# **switchCodeDeckAllDelete**
+> InlineResponse2002 switchCodeDeckAllDelete(opts)
+
+
+
+Deletes multiple found codedeck
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.SwitchApi();
+
+var opts = { 
+  'codeCount': 56, // Number | 
+  'codeDeckId': 56, // Number | 
+  'codeDeckIdIn': "codeDeckIdIn_example", // String | 
+  'name': "name_example", // String | 
+  'updateBy': "updateBy_example", // String | 
+  'updateOnGte': "updateOnGte_example", // String | 
+  'updateOnLt': "updateOnLt_example", // String | 
+  'usageCount': 56 // Number | 
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.switchCodeDeckAllDelete(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **codeCount** | **Number**|  | [optional] 
+ **codeDeckId** | **Number**|  | [optional] 
+ **codeDeckIdIn** | **String**|  | [optional] 
+ **name** | **String**|  | [optional] 
+ **updateBy** | **String**|  | [optional] 
+ **updateOnGte** | **String**|  | [optional] 
+ **updateOnLt** | **String**|  | [optional] 
+ **usageCount** | **Number**|  | [optional] 
+
+### Return type
+
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -548,7 +685,7 @@ Name | Type | Description  | Notes
 
 <a name="switchCodeDeckCodeDeckIdGet"></a>
 # **switchCodeDeckCodeDeckIdGet**
-> InlineResponse200167 switchCodeDeckCodeDeckIdGet(codeDeckId)
+> InlineResponse200185 switchCodeDeckCodeDeckIdGet(codeDeckId)
 
 
 
@@ -588,7 +725,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200167**](InlineResponse200167.md)
+[**InlineResponse200185**](InlineResponse200185.md)
 
 ### Authorization
 
@@ -601,7 +738,7 @@ Name | Type | Description  | Notes
 
 <a name="switchCodeDeckCodeDeckIdPatch"></a>
 # **switchCodeDeckCodeDeckIdPatch**
-> InlineResponse200167 switchCodeDeckCodeDeckIdPatch(codeDeckId, opts)
+> InlineResponse200185 switchCodeDeckCodeDeckIdPatch(codeDeckId, opts)
 
 
 
@@ -645,7 +782,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200167**](InlineResponse200167.md)
+[**InlineResponse200185**](InlineResponse200185.md)
 
 ### Authorization
 
@@ -712,7 +849,7 @@ Name | Type | Description  | Notes
 
 <a name="switchCodeDeckListGet"></a>
 # **switchCodeDeckListGet**
-> InlineResponse200168 switchCodeDeckListGet(opts)
+> InlineResponse200186 switchCodeDeckListGet(opts)
 
 
 
@@ -736,10 +873,12 @@ var opts = {
   'perPage': 56, // Number | 
   'orderBy': "orderBy_example", // String | 
   'orderDir': "orderDir_example", // String | 
+  'codeCount': 56, // Number | 
   'codeDeckId': 56, // Number | 
   'name': "name_example", // String | 
   'updateBy': "updateBy_example", // String | 
   'usageCount': 56, // Number | 
+  'codeDeckIdIn': "codeDeckIdIn_example", // String | 
   'updateOnGte': "updateOnGte_example", // String | 
   'updateOnLt': "updateOnLt_example" // String | 
 };
@@ -762,16 +901,18 @@ Name | Type | Description  | Notes
  **perPage** | **Number**|  | [optional] 
  **orderBy** | **String**|  | [optional] 
  **orderDir** | **String**|  | [optional] 
+ **codeCount** | **Number**|  | [optional] 
  **codeDeckId** | **Number**|  | [optional] 
  **name** | **String**|  | [optional] 
  **updateBy** | **String**|  | [optional] 
  **usageCount** | **Number**|  | [optional] 
+ **codeDeckIdIn** | **String**|  | [optional] 
  **updateOnGte** | **String**|  | [optional] 
  **updateOnLt** | **String**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse200168**](InlineResponse200168.md)
+[**InlineResponse200186**](InlineResponse200186.md)
 
 ### Authorization
 
@@ -784,7 +925,7 @@ Name | Type | Description  | Notes
 
 <a name="switchCodeListGet"></a>
 # **switchCodeListGet**
-> InlineResponse200165 switchCodeListGet(opts)
+> InlineResponse200183 switchCodeListGet(opts)
 
 
 
@@ -843,7 +984,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200165**](InlineResponse200165.md)
+[**InlineResponse200183**](InlineResponse200183.md)
 
 ### Authorization
 
@@ -963,7 +1104,7 @@ Name | Type | Description  | Notes
 
 <a name="switchCurrencyCurrencyIdGet"></a>
 # **switchCurrencyCurrencyIdGet**
-> InlineResponse200169 switchCurrencyCurrencyIdGet(currencyId)
+> InlineResponse200187 switchCurrencyCurrencyIdGet(currencyId)
 
 
 
@@ -1003,7 +1144,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200169**](InlineResponse200169.md)
+[**InlineResponse200187**](InlineResponse200187.md)
 
 ### Authorization
 
@@ -1016,7 +1157,7 @@ Name | Type | Description  | Notes
 
 <a name="switchCurrencyCurrencyIdPatch"></a>
 # **switchCurrencyCurrencyIdPatch**
-> InlineResponse200169 switchCurrencyCurrencyIdPatch(currencyId, opts)
+> InlineResponse200187 switchCurrencyCurrencyIdPatch(currencyId, opts)
 
 
 
@@ -1060,7 +1201,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200169**](InlineResponse200169.md)
+[**InlineResponse200187**](InlineResponse200187.md)
 
 ### Authorization
 
@@ -1073,7 +1214,7 @@ Name | Type | Description  | Notes
 
 <a name="switchCurrencyListGet"></a>
 # **switchCurrencyListGet**
-> InlineResponse200170 switchCurrencyListGet(opts)
+> InlineResponse200188 switchCurrencyListGet(opts)
 
 
 
@@ -1120,7 +1261,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200170**](InlineResponse200170.md)
+[**InlineResponse200188**](InlineResponse200188.md)
 
 ### Authorization
 
@@ -1133,7 +1274,7 @@ Name | Type | Description  | Notes
 
 <a name="switchDestinationListGet"></a>
 # **switchDestinationListGet**
-> InlineResponse200166 switchDestinationListGet(opts)
+> InlineResponse200184 switchDestinationListGet(opts)
 
 
 
@@ -1186,7 +1327,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200166**](InlineResponse200166.md)
+[**InlineResponse200184**](InlineResponse200184.md)
 
 ### Authorization
 
@@ -1199,7 +1340,7 @@ Name | Type | Description  | Notes
 
 <a name="switchListGet"></a>
 # **switchListGet**
-> InlineResponse200159 switchListGet(opts)
+> InlineResponse200177 switchListGet(opts)
 
 
 
@@ -1256,7 +1397,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200159**](InlineResponse200159.md)
+[**InlineResponse200177**](InlineResponse200177.md)
 
 ### Authorization
 
@@ -1311,6 +1452,82 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ObjectCreated**](ObjectCreated.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="switchRateAllDelete"></a>
+# **switchRateAllDelete**
+> InlineResponse2002 switchRateAllDelete(opts)
+
+
+
+Deletes multiple found rate
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.SwitchApi();
+
+var opts = { 
+  'code': "code_example", // String | 
+  'codeName': "codeName_example", // String | 
+  'country': "country_example", // String | 
+  'gmt': "gmt_example", // String | 
+  'interRateGt': "interRateGt_example", // String | 
+  'interRateLt': "interRateLt_example", // String | 
+  'intraRateGt': "intraRateGt_example", // String | 
+  'intraRateLt': "intraRateLt_example", // String | 
+  'rateGt': "rateGt_example", // String | 
+  'rateIdIn': "rateIdIn_example", // String | 
+  'rateLt': "rateLt_example", // String | 
+  'timeProfileId': 56 // Number | 
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.switchRateAllDelete(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **code** | **String**|  | [optional] 
+ **codeName** | **String**|  | [optional] 
+ **country** | **String**|  | [optional] 
+ **gmt** | **String**|  | [optional] 
+ **interRateGt** | **String**|  | [optional] 
+ **interRateLt** | **String**|  | [optional] 
+ **intraRateGt** | **String**|  | [optional] 
+ **intraRateLt** | **String**|  | [optional] 
+ **rateGt** | **String**|  | [optional] 
+ **rateIdIn** | **String**|  | [optional] 
+ **rateLt** | **String**|  | [optional] 
+ **timeProfileId** | **Number**|  | [optional] 
+
+### Return type
+
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -1379,7 +1596,7 @@ Name | Type | Description  | Notes
 
 <a name="switchRateCodeRateTableIdCodeGet"></a>
 # **switchRateCodeRateTableIdCodeGet**
-> InlineResponse200174 switchRateCodeRateTableIdCodeGet(rateTableId, code)
+> InlineResponse200192 switchRateCodeRateTableIdCodeGet(rateTableId, code)
 
 
 
@@ -1422,7 +1639,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200174**](InlineResponse200174.md)
+[**InlineResponse200192**](InlineResponse200192.md)
 
 ### Authorization
 
@@ -1435,7 +1652,7 @@ Name | Type | Description  | Notes
 
 <a name="switchRateCodeRateTableIdCodePatch"></a>
 # **switchRateCodeRateTableIdCodePatch**
-> InlineResponse200174 switchRateCodeRateTableIdCodePatch(rateTableId, code, opts)
+> InlineResponse200192 switchRateCodeRateTableIdCodePatch(rateTableId, code, opts)
 
 
 
@@ -1482,7 +1699,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200174**](InlineResponse200174.md)
+[**InlineResponse200192**](InlineResponse200192.md)
 
 ### Authorization
 
@@ -1605,7 +1822,7 @@ Name | Type | Description  | Notes
 
 <a name="switchRateRateIdGet"></a>
 # **switchRateRateIdGet**
-> InlineResponse200174 switchRateRateIdGet(rateId)
+> InlineResponse200192 switchRateRateIdGet(rateId)
 
 
 
@@ -1645,7 +1862,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200174**](InlineResponse200174.md)
+[**InlineResponse200192**](InlineResponse200192.md)
 
 ### Authorization
 
@@ -1658,7 +1875,7 @@ Name | Type | Description  | Notes
 
 <a name="switchRateRateIdPatch"></a>
 # **switchRateRateIdPatch**
-> InlineResponse200174 switchRateRateIdPatch(rateId, opts)
+> InlineResponse200192 switchRateRateIdPatch(rateId, opts)
 
 
 
@@ -1702,7 +1919,85 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200174**](InlineResponse200174.md)
+[**InlineResponse200192**](InlineResponse200192.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="switchRateTableAllDelete"></a>
+# **switchRateTableAllDelete**
+> InlineResponse2002 switchRateTableAllDelete(opts)
+
+
+
+Deletes multiple found ratetable
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.SwitchApi();
+
+var opts = { 
+  'billingMethod': "billingMethod_example", // String | 
+  'codeDeckId': 56, // Number | 
+  'codeDeckName': "codeDeckName_example", // String | 
+  'currencyName': "currencyName_example", // String | 
+  'egressCount': 56, // Number | 
+  'ingressCount': 56, // Number | 
+  'name': "name_example", // String | 
+  'rateTableId': 56, // Number | 
+  'rateTableIdIn': "rateTableIdIn_example", // String | 
+  'rateTypeName': "rateTypeName_example", // String | 
+  'updateAtGt': "updateAtGt_example", // String | 
+  'updateAtLt': "updateAtLt_example", // String | 
+  'usageCountGt': 56 // Number | 
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.switchRateTableAllDelete(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **billingMethod** | **String**|  | [optional] 
+ **codeDeckId** | **Number**|  | [optional] 
+ **codeDeckName** | **String**|  | [optional] 
+ **currencyName** | **String**|  | [optional] 
+ **egressCount** | **Number**|  | [optional] 
+ **ingressCount** | **Number**|  | [optional] 
+ **name** | **String**|  | [optional] 
+ **rateTableId** | **Number**|  | [optional] 
+ **rateTableIdIn** | **String**|  | [optional] 
+ **rateTypeName** | **String**|  | [optional] 
+ **updateAtGt** | **String**|  | [optional] 
+ **updateAtLt** | **String**|  | [optional] 
+ **usageCountGt** | **Number**|  | [optional] 
+
+### Return type
+
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -1769,7 +2064,7 @@ Name | Type | Description  | Notes
 
 <a name="switchRateTableListGet"></a>
 # **switchRateTableListGet**
-> InlineResponse200172 switchRateTableListGet(opts)
+> InlineResponse200190 switchRateTableListGet(opts)
 
 
 
@@ -1794,13 +2089,18 @@ var opts = {
   'orderBy': "orderBy_example", // String | 
   'orderDir': "orderDir_example", // String | 
   'billingMethod': "billingMethod_example", // String | 
+  'codeDeckId': 56, // Number | 
   'codeDeckName': "codeDeckName_example", // String | 
   'currencyName': "currencyName_example", // String | 
+  'egressCount': 56, // Number | 
+  'ingressCount': 56, // Number | 
   'name': "name_example", // String | 
   'rateTableId': 56, // Number | 
   'rateTypeName': "rateTypeName_example", // String | 
+  'rateTableIdIn': "rateTableIdIn_example", // String | 
   'updateAtGt': "updateAtGt_example", // String | 
-  'updateAtLt': "updateAtLt_example" // String | 
+  'updateAtLt': "updateAtLt_example", // String | 
+  'usageCountGt': 56 // Number | 
 };
 
 var callback = function(error, data, response) {
@@ -1822,17 +2122,79 @@ Name | Type | Description  | Notes
  **orderBy** | **String**|  | [optional] 
  **orderDir** | **String**|  | [optional] 
  **billingMethod** | **String**|  | [optional] 
+ **codeDeckId** | **Number**|  | [optional] 
  **codeDeckName** | **String**|  | [optional] 
  **currencyName** | **String**|  | [optional] 
+ **egressCount** | **Number**|  | [optional] 
+ **ingressCount** | **Number**|  | [optional] 
  **name** | **String**|  | [optional] 
  **rateTableId** | **Number**|  | [optional] 
  **rateTypeName** | **String**|  | [optional] 
+ **rateTableIdIn** | **String**|  | [optional] 
  **updateAtGt** | **String**|  | [optional] 
  **updateAtLt** | **String**|  | [optional] 
+ **usageCountGt** | **Number**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse200172**](InlineResponse200172.md)
+[**InlineResponse200190**](InlineResponse200190.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="switchRateTableRateTableIdCopyPost"></a>
+# **switchRateTableRateTableIdCopyPost**
+> ObjectCreated switchRateTableRateTableIdCopyPost(rateTableId, opts)
+
+
+
+Creates new ratetable copy
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.SwitchApi();
+
+var rateTableId = 789; // Number | Rate table to copy
+
+var opts = { 
+  'body': new DnlApi.RateTableCopy() // RateTableCopy | RateTable copy to create
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.switchRateTableRateTableIdCopyPost(rateTableId, opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **rateTableId** | **Number**| Rate table to copy | 
+ **body** | [**RateTableCopy**](RateTableCopy.md)| RateTable copy to create | [optional] 
+
+### Return type
+
+[**ObjectCreated**](ObjectCreated.md)
 
 ### Authorization
 
@@ -1955,7 +2317,7 @@ Name | Type | Description  | Notes
 
 <a name="switchRateTableRateTableIdGet"></a>
 # **switchRateTableRateTableIdGet**
-> InlineResponse200171 switchRateTableRateTableIdGet(rateTableId)
+> InlineResponse200189 switchRateTableRateTableIdGet(rateTableId)
 
 
 
@@ -1995,7 +2357,64 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200171**](InlineResponse200171.md)
+[**InlineResponse200189**](InlineResponse200189.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="switchRateTableRateTableIdMassEditPatch"></a>
+# **switchRateTableRateTableIdMassEditPatch**
+> InlineResponse200191 switchRateTableRateTableIdMassEditPatch(rateTableId, opts)
+
+
+
+Mass edit multiply rate items in rate table
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.SwitchApi();
+
+var rateTableId = 789; // Number | Parent rate table
+
+var opts = { 
+  'body': new DnlApi.RateMassEdit() // RateMassEdit | Mass edit action
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.switchRateTableRateTableIdMassEditPatch(rateTableId, opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **rateTableId** | **Number**| Parent rate table | 
+ **body** | [**RateMassEdit**](RateMassEdit.md)| Mass edit action | [optional] 
+
+### Return type
+
+[**InlineResponse200191**](InlineResponse200191.md)
 
 ### Authorization
 
@@ -2008,7 +2427,7 @@ Name | Type | Description  | Notes
 
 <a name="switchRateTableRateTableIdPatch"></a>
 # **switchRateTableRateTableIdPatch**
-> InlineResponse200171 switchRateTableRateTableIdPatch(rateTableId, opts)
+> InlineResponse200189 switchRateTableRateTableIdPatch(rateTableId, opts)
 
 
 
@@ -2052,7 +2471,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200171**](InlineResponse200171.md)
+[**InlineResponse200189**](InlineResponse200189.md)
 
 ### Authorization
 
@@ -2065,7 +2484,7 @@ Name | Type | Description  | Notes
 
 <a name="switchRateTableRateTableIdRateCsvGet"></a>
 # **switchRateTableRateTableIdRateCsvGet**
-> InlineResponse200173 switchRateTableRateTableIdRateCsvGet(rateTableId, opts)
+> InlineResponse200191 switchRateTableRateTableIdRateCsvGet(rateTableId, opts)
 
 
 
@@ -2090,7 +2509,19 @@ var opts = {
   'page': 56, // Number | 
   'perPage': 56, // Number | 
   'orderBy': "orderBy_example", // String | 
-  'orderDir': "orderDir_example" // String | 
+  'orderDir': "orderDir_example", // String | 
+  'code': "code_example", // String | 
+  'codeName': "codeName_example", // String | 
+  'country': "country_example", // String | 
+  'gmt': "gmt_example", // String | 
+  'timeProfileId': 56, // Number | 
+  'interRateGt': "interRateGt_example", // String | 
+  'interRateLt': "interRateLt_example", // String | 
+  'intraRateGt': "intraRateGt_example", // String | 
+  'intraRateLt': "intraRateLt_example", // String | 
+  'rateGt': "rateGt_example", // String | 
+  'rateIdIn': "rateIdIn_example", // String | 
+  'rateLt': "rateLt_example" // String | 
 };
 
 var callback = function(error, data, response) {
@@ -2112,10 +2543,22 @@ Name | Type | Description  | Notes
  **perPage** | **Number**|  | [optional] 
  **orderBy** | **String**|  | [optional] 
  **orderDir** | **String**|  | [optional] 
+ **code** | **String**|  | [optional] 
+ **codeName** | **String**|  | [optional] 
+ **country** | **String**|  | [optional] 
+ **gmt** | **String**|  | [optional] 
+ **timeProfileId** | **Number**|  | [optional] 
+ **interRateGt** | **String**|  | [optional] 
+ **interRateLt** | **String**|  | [optional] 
+ **intraRateGt** | **String**|  | [optional] 
+ **intraRateLt** | **String**|  | [optional] 
+ **rateGt** | **String**|  | [optional] 
+ **rateIdIn** | **String**|  | [optional] 
+ **rateLt** | **String**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse200173**](InlineResponse200173.md)
+[**InlineResponse200191**](InlineResponse200191.md)
 
 ### Authorization
 
@@ -2128,7 +2571,7 @@ Name | Type | Description  | Notes
 
 <a name="switchRateTableRateTableIdRateListGet"></a>
 # **switchRateTableRateTableIdRateListGet**
-> InlineResponse200173 switchRateTableRateTableIdRateListGet(rateTableId, opts)
+> InlineResponse200191 switchRateTableRateTableIdRateListGet(rateTableId, opts)
 
 
 
@@ -2153,7 +2596,19 @@ var opts = {
   'page': 56, // Number | 
   'perPage': 56, // Number | 
   'orderBy': "orderBy_example", // String | 
-  'orderDir': "orderDir_example" // String | 
+  'orderDir': "orderDir_example", // String | 
+  'code': "code_example", // String | 
+  'codeName': "codeName_example", // String | 
+  'country': "country_example", // String | 
+  'gmt': "gmt_example", // String | 
+  'timeProfileId': 56, // Number | 
+  'interRateGt': "interRateGt_example", // String | 
+  'interRateLt': "interRateLt_example", // String | 
+  'intraRateGt': "intraRateGt_example", // String | 
+  'intraRateLt': "intraRateLt_example", // String | 
+  'rateGt': "rateGt_example", // String | 
+  'rateIdIn': "rateIdIn_example", // String | 
+  'rateLt': "rateLt_example" // String | 
 };
 
 var callback = function(error, data, response) {
@@ -2175,10 +2630,22 @@ Name | Type | Description  | Notes
  **perPage** | **Number**|  | [optional] 
  **orderBy** | **String**|  | [optional] 
  **orderDir** | **String**|  | [optional] 
+ **code** | **String**|  | [optional] 
+ **codeName** | **String**|  | [optional] 
+ **country** | **String**|  | [optional] 
+ **gmt** | **String**|  | [optional] 
+ **timeProfileId** | **Number**|  | [optional] 
+ **interRateGt** | **String**|  | [optional] 
+ **interRateLt** | **String**|  | [optional] 
+ **intraRateGt** | **String**|  | [optional] 
+ **intraRateLt** | **String**|  | [optional] 
+ **rateGt** | **String**|  | [optional] 
+ **rateIdIn** | **String**|  | [optional] 
+ **rateLt** | **String**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse200173**](InlineResponse200173.md)
+[**InlineResponse200191**](InlineResponse200191.md)
 
 ### Authorization
 
@@ -2358,7 +2825,7 @@ Name | Type | Description  | Notes
 
 <a name="switchSipHostIdGet"></a>
 # **switchSipHostIdGet**
-> InlineResponse200160 switchSipHostIdGet(id)
+> InlineResponse200178 switchSipHostIdGet(id)
 
 
 
@@ -2398,7 +2865,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200160**](InlineResponse200160.md)
+[**InlineResponse200178**](InlineResponse200178.md)
 
 ### Authorization
 
@@ -2411,7 +2878,7 @@ Name | Type | Description  | Notes
 
 <a name="switchSipHostIdPatch"></a>
 # **switchSipHostIdPatch**
-> InlineResponse200160 switchSipHostIdPatch(id, opts)
+> InlineResponse200178 switchSipHostIdPatch(id, opts)
 
 
 
@@ -2455,7 +2922,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200160**](InlineResponse200160.md)
+[**InlineResponse200178**](InlineResponse200178.md)
 
 ### Authorization
 
@@ -2468,7 +2935,7 @@ Name | Type | Description  | Notes
 
 <a name="switchSipHostListGet"></a>
 # **switchSipHostListGet**
-> InlineResponse200161 switchSipHostListGet(opts)
+> InlineResponse200179 switchSipHostListGet(opts)
 
 
 
@@ -2493,7 +2960,9 @@ var opts = {
   'orderBy': "orderBy_example", // String | 
   'orderDir': "orderDir_example", // String | 
   'hostName': "hostName_example", // String | 
-  'sipIp': "sipIp_example" // String | 
+  'serverName': "serverName_example", // String | 
+  'sipIp': "sipIp_example", // String | 
+  'switchId': 56 // Number | 
 };
 
 var callback = function(error, data, response) {
@@ -2515,11 +2984,13 @@ Name | Type | Description  | Notes
  **orderBy** | **String**|  | [optional] 
  **orderDir** | **String**|  | [optional] 
  **hostName** | **String**|  | [optional] 
+ **serverName** | **String**|  | [optional] 
  **sipIp** | **String**|  | [optional] 
+ **switchId** | **Number**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse200161**](InlineResponse200161.md)
+[**InlineResponse200179**](InlineResponse200179.md)
 
 ### Authorization
 
@@ -2532,7 +3003,7 @@ Name | Type | Description  | Notes
 
 <a name="switchSwitchIdDelete"></a>
 # **switchSwitchIdDelete**
-> Success switchSwitchIdDelete(id)
+> Success switchSwitchIdDelete(switchId)
 
 
 
@@ -2551,7 +3022,7 @@ auth_token.apiKey = 'YOUR API KEY';
 
 var apiInstance = new DnlApi.SwitchApi();
 
-var id = 789; // Number | VoipGateway id to get info about
+var switchId = 789; // Number | VoipGateway id to get info about
 
 
 var callback = function(error, data, response) {
@@ -2561,14 +3032,14 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.switchSwitchIdDelete(id, callback);
+apiInstance.switchSwitchIdDelete(switchId, callback);
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| VoipGateway id to get info about | 
+ **switchId** | **Number**| VoipGateway id to get info about | 
 
 ### Return type
 
@@ -2585,7 +3056,7 @@ Name | Type | Description  | Notes
 
 <a name="switchSwitchIdGet"></a>
 # **switchSwitchIdGet**
-> InlineResponse200158 switchSwitchIdGet(id)
+> InlineResponse200176 switchSwitchIdGet(switchId)
 
 
 
@@ -2604,7 +3075,7 @@ auth_token.apiKey = 'YOUR API KEY';
 
 var apiInstance = new DnlApi.SwitchApi();
 
-var id = 789; // Number | VoipGateway id to get info about
+var switchId = 789; // Number | VoipGateway id to get info about
 
 
 var callback = function(error, data, response) {
@@ -2614,18 +3085,18 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.switchSwitchIdGet(id, callback);
+apiInstance.switchSwitchIdGet(switchId, callback);
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| VoipGateway id to get info about | 
+ **switchId** | **Number**| VoipGateway id to get info about | 
 
 ### Return type
 
-[**InlineResponse200158**](InlineResponse200158.md)
+[**InlineResponse200176**](InlineResponse200176.md)
 
 ### Authorization
 
@@ -2638,7 +3109,7 @@ Name | Type | Description  | Notes
 
 <a name="switchSwitchIdPatch"></a>
 # **switchSwitchIdPatch**
-> InlineResponse200158 switchSwitchIdPatch(id, opts)
+> InlineResponse200176 switchSwitchIdPatch(switchId, opts)
 
 
 
@@ -2657,7 +3128,7 @@ auth_token.apiKey = 'YOUR API KEY';
 
 var apiInstance = new DnlApi.SwitchApi();
 
-var id = 789; // Number | VoipGateway id to get info about
+var switchId = 789; // Number | VoipGateway id to get info about
 
 var opts = { 
   'body': new DnlApi.VoipGateway() // VoipGateway | VoipGateway to modify
@@ -2670,19 +3141,72 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.switchSwitchIdPatch(id, opts, callback);
+apiInstance.switchSwitchIdPatch(switchId, opts, callback);
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| VoipGateway id to get info about | 
+ **switchId** | **Number**| VoipGateway id to get info about | 
  **body** | [**VoipGateway**](VoipGateway.md)| VoipGateway to modify | [optional] 
 
 ### Return type
 
-[**InlineResponse200158**](InlineResponse200158.md)
+[**InlineResponse200176**](InlineResponse200176.md)
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="switchSwitchIdReloadPatch"></a>
+# **switchSwitchIdReloadPatch**
+> Success switchSwitchIdReloadPatch(switchId)
+
+
+
+
+
+### Example
+```javascript
+var DnlApi = require('dnl_api');
+var defaultClient = DnlApi.ApiClient.instance;
+
+// Configure API key authorization: auth_token
+var auth_token = defaultClient.authentications['auth_token'];
+auth_token.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//auth_token.apiKeyPrefix = 'Token';
+
+var apiInstance = new DnlApi.SwitchApi();
+
+var switchId = 789; // Number | gateway id refresh
+
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.switchSwitchIdReloadPatch(switchId, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **switchId** | **Number**| gateway id refresh | 
+
+### Return type
+
+[**Success**](Success.md)
 
 ### Authorization
 

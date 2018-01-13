@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**ResourceDirectionGet**](ResourceDirectionGet.md) |  | [optional] 
+**payload** | [**InlineResponse200190Payload**](InlineResponse200190Payload.md) |  | [optional] 
 
 

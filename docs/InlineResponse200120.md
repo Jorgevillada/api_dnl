@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**AlertRuleGet**](AlertRuleGet.md) |  | [optional] 
+**payload** | [**InlineResponse200120Payload**](InlineResponse200120Payload.md) |  | [optional] 
 
 

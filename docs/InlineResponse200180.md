@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**InlineResponse200180Payload**](InlineResponse200180Payload.md) |  | [optional] 
+**payload** | [**SwitchProfileMinGet**](SwitchProfileMinGet.md) |  | [optional] 
 
 

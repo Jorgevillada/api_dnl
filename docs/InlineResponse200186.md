@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] [default to true]
-**payload** | [**ResourceIpAllGet**](ResourceIpAllGet.md) |  | [optional] 
+**payload** | [**InlineResponse200186Payload**](InlineResponse200186Payload.md) |  | [optional] 
 
 

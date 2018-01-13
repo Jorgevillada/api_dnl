@@ -3,10 +3,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**lanIp** | **String** |  | [optional] 
+**lanPort** | **Number** |  | [optional] 
 **name** | **String** |  | [optional] 
 **sipHost** | [**[SwitchProfileSipHost]**](SwitchProfileSipHost.md) |  | [optional] 
-**lanPort** | **Number** |  | [optional] 
 **paidReplaceIp** | **Number** |  | [optional] 
-**lanIp** | **String** |  | [optional] 
 
 

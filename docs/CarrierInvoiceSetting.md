@@ -3,28 +3,31 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**showCodeNameSummary** | **Boolean** |  | [optional] 
-**sendInvoiceAsLink** | **Boolean** |  | [optional] 
-**includeTax** | **Boolean** |  | [optional] 
-**cdrFormat** | **String** |  | [optional] [default to &#39;Excel&#39;]
-**inlcudeCdrInEmail** | **Boolean** |  | [optional] 
-**autoSendInvoice** | **Boolean** |  | [optional] 
-**rateValue** | **String** |  | [optional] [default to &#39;Actual Value&#39;]
-**nonZeroInvoiceOnly** | **Boolean** |  | [optional] 
-**showCountrySummary** | **Boolean** |  | [optional] 
-**includeShortCallCharge** | **Boolean** |  | [optional] 
-**showPaymentSummary** | **Boolean** |  | [optional] 
-**showTrunkSummary** | **Boolean** |  | [optional] 
-**format** | **String** |  | [optional] [default to &#39;PDF&#39;]
-**isBreakdownByRateTable** | **Boolean** |  | [optional] 
-**showJurisdictionDetail** | **Boolean** |  | [optional] 
-**timeZone** | **String** |  | [optional] 
-**decimal** | **Number** |  | [optional] [default to 5]
-**showDailyUsage** | **Boolean** |  | [optional] 
-**showCodeSummary** | **Boolean** |  | [optional] 
-**showDetailByTrunk** | **Boolean** |  | [optional] 
 **showAccountSummary** | **Boolean** |  | [optional] 
+**isBreakdownByRateTable** | **Boolean** |  | [optional] 
+**showTrunkSummary** | **Boolean** |  | [optional] 
+**includeTax** | **Boolean** |  | [optional] 
+**showCodeSummary** | **Boolean** |  | [optional] 
+**includeDetail** | **Boolean** |  | [optional] 
+**showCallsDate** | **Boolean** |  | [optional] 
 **paymentTerm** | **String** |  | [optional] 
+**showDailyUsage** | **Boolean** |  | [optional] 
+**nonZeroInvoiceOnly** | **Boolean** |  | [optional] 
+**cdrFormat** | **String** |  | [optional] [default to &#39;Excel&#39;]
+**usageFields** | **[String]** |  | [optional] 
+**showJurisdictionDetail** | **Boolean** |  | [optional] 
+**showPaymentSummary** | **Boolean** |  | [optional] 
+**sendInvoiceAsLink** | **Boolean** |  | [optional] 
+**rateValue** | **String** |  | [optional] [default to &#39;null&#39;]
+**timeZone** | **String** |  | [optional] 
+**autoSendInvoice** | **Boolean** |  | [optional] 
+**inlcudeCdrInEmail** | **Boolean** |  | [optional] 
+**includeShortCallCharge** | **Boolean** |  | [optional] 
+**decimal** | **Number** |  | [optional] [default to 5]
+**showCountrySummary** | **Boolean** |  | [optional] 
+**ingressPrefix** | **Boolean** |  | [optional] 
+**format** | **String** |  | [optional] [default to &#39;PDF&#39;]
+**showCodeNameSummary** | **Boolean** |  | [optional] 
 
 
 <a name="CdrFormatEnum"></a>
@@ -33,11 +36,11 @@ Name | Type | Description | Notes
 
 * `Excel` (value: `"Excel"`)
 
-* `tar.gz` (value: `"tar.gz"`)
-
 * `CSV` (value: `"CSV"`)
 
 * `zip` (value: `"zip"`)
+
+* `tar.gz` (value: `"tar.gz"`)
 
 
 
@@ -46,9 +49,13 @@ Name | Type | Description | Notes
 ## Enum: RateValueEnum
 
 
-* `Average Value` (value: `"Average Value"`)
+* `null` (value: `"null"`)
 
 * `Actual Value` (value: `"Actual Value"`)
+
+* `Average Value` (value: `"Average Value"`)
+
+* `undefined` (value: `"undefined"`)
 
 
 

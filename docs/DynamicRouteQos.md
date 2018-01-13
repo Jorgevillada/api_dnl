@@ -3,17 +3,17 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**maxAcd** | **Number** |  | [optional] 
-**minAcd** | **Number** |  | [optional] 
-**maxAsr** | **Number** |  | [optional] 
-**minAloc** | **Number** |  | [optional] 
-**limitPrice** | **Number** |  | [optional] 
-**minAsr** | **Number** |  | [optional] 
-**digits** | **String** |  | [optional] 
-**minPdd** | **Number** |  | [optional] 
 **maxAbr** | **Number** |  | [optional] 
+**digits** | **String** |  | [optional] 
 **maxPdd** | **Number** |  | [optional] 
-**minAbr** | **Number** |  | [optional] 
+**minAsr** | **Number** |  | [optional] 
+**minPdd** | **Number** |  | [optional] 
+**maxAcd** | **Number** |  | [optional] 
+**limitPrice** | **Number** |  | [optional] 
+**minAloc** | **Number** |  | [optional] 
+**minAcd** | **Number** |  | [optional] 
 **maxAloc** | **Number** |  | [optional] 
+**minAbr** | **Number** |  | [optional] 
+**maxAsr** | **Number** |  | [optional] 
 
 

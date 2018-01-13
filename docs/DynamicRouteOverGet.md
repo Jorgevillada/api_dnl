@@ -3,10 +3,11 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**resourceId** | **Number** |  | [optional] 
-**percentage** | **Number** |  | [optional] 
-**dynamicRouteId** | **Number** |  | [optional] 
 **id** | **Number** |  | [optional] 
+**percentage** | **Number** |  | [optional] 
+**resourceName** | **String** |  | [optional] 
+**dynamicRouteId** | **Number** |  | [optional] 
 **digits** | **String** |  | [optional] 
+**resourceId** | **Number** |  | [optional] 
 
 

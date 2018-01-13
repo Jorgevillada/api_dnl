@@ -3,10 +3,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**startTime** | **Date** |  | [optional] 
-**invoiceNumber** | **Number** |  | [optional] 
 **clientName** | **String** |  | [optional] 
-**endTime** | **Date** |  | [optional] 
+**startTime** | **Date** |  | [optional] 
 **id** | **Number** |  | [optional] 
+**invoiceNumber** | **Number** |  | [optional] 
+**endTime** | **Date** |  | [optional] 
 
 
